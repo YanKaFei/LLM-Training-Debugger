@@ -152,24 +152,46 @@ def assert_clean(payload: Any, *, where: str = "artifact") -> None:
 
 
 def write_artifact(path: Any, payload: Any, *, root: Optional[Path] = None,
-                   indent: int = 2, provenance: bool = True) -> Path:
+                   indent: int = 2, provenance: str = "inline") -> Path:
     """Relativise, verify, then write. The only supported way to emit evidence.
 
     A failure here is a bug in the caller, and it is better to fail than to commit
     one machine's layout as a finding.
 
-    When ``provenance`` is set, the payload records which code produced it. Evidence
-    that does not say what generated it cannot be checked for drift, and this
+    Evidence that does not say what generated it cannot be checked for drift, and this
     repository learned that the expensive way: artifacts committed under one revision
-    were regenerated under another, and nothing in either file revealed it.
+    were regenerated under another, and nothing in either file revealed it. So every
+    artifact records its revision. ``provenance`` chooses where:
+
+    ``"inline"``
+        Merge ``code_sha``, ``code_dirty`` and ``generated_at`` into the payload. For
+        a report, whose top level is a set of named fields.
+
+    ``"sibling"``
+        Write them to ``<name>.provenance.json`` beside the artifact. **For a keyed
+        map**, such as ground truth keyed by run id. Merging into a map was the first
+        implementation and it added three keys that look like run ids -- harmless for
+        the scorer, which looks runs up by name, and corrupt for anything that
+        iterates the file. A ground-truth file is a map, so it gets a sibling.
+
+    ``"none"``
+        Record nothing. Nothing in this repository currently uses it.
     """
     target = Path(path)
     cleaned = relativize(payload, root=root)
-    if provenance and isinstance(cleaned, dict) and "code_sha" not in cleaned:
-        cleaned = dict(cleaned)
-        cleaned["code_sha"] = code_sha(root=root)
-        cleaned["code_dirty"] = code_is_dirty(root=root)
-        cleaned["generated_at"] = _utc_now()
+    note = {
+        "code_sha": code_sha(root=root),
+        "code_dirty": code_is_dirty(root=root),
+        "generated_at": _utc_now(),
+    }
+    if provenance == "inline" and isinstance(cleaned, dict) and "code_sha" not in cleaned:
+        merged = dict(cleaned)
+        merged.update(note)
+        cleaned = merged
+    elif provenance == "sibling":
+        sidecar = target.with_suffix(".provenance.json")
+        sidecar.parent.mkdir(parents=True, exist_ok=True)
+        sidecar.write_text(json.dumps(note, indent=indent), encoding="utf-8")
     assert_clean(cleaned, where=str(target))
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(cleaned, indent=indent, default=str), encoding="utf-8")

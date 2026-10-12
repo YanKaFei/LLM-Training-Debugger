@@ -18,7 +18,11 @@
       95
     ],
     "independent_second_fault": null,
-    "expected_relation": true
+    "expected_relation": true,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M1_gradient_then_nonfinite-L4d32-s90001": {
     "scenario": "M1_gradient_then_nonfinite",
@@ -39,7 +43,11 @@
       95
     ],
     "independent_second_fault": null,
-    "expected_relation": true
+    "expected_relation": true,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M1_gradient_then_nonfinite-L4d32-s90002": {
     "scenario": "M1_gradient_then_nonfinite",
@@ -60,7 +68,11 @@
       95
     ],
     "independent_second_fault": null,
-    "expected_relation": true
+    "expected_relation": true,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M1_gradient_then_nonfinite-L4d32-s90003": {
     "scenario": "M1_gradient_then_nonfinite",
@@ -81,7 +93,11 @@
       95
     ],
     "independent_second_fault": null,
-    "expected_relation": true
+    "expected_relation": true,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M1_gradient_then_nonfinite-L4d32-s90004": {
     "scenario": "M1_gradient_then_nonfinite",
@@ -102,7 +118,11 @@
       95
     ],
     "independent_second_fault": null,
-    "expected_relation": true
+    "expected_relation": true,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M1_gradient_then_nonfinite-L6d48-s90000": {
     "scenario": "M1_gradient_then_nonfinite",
@@ -123,7 +143,11 @@
       95
     ],
     "independent_second_fault": null,
-    "expected_relation": true
+    "expected_relation": true,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M1_gradient_then_nonfinite-L6d48-s90001": {
     "scenario": "M1_gradient_then_nonfinite",
@@ -144,7 +168,11 @@
       95
     ],
     "independent_second_fault": null,
-    "expected_relation": true
+    "expected_relation": true,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M1_gradient_then_nonfinite-L6d48-s90002": {
     "scenario": "M1_gradient_then_nonfinite",
@@ -165,7 +193,11 @@
       95
     ],
     "independent_second_fault": null,
-    "expected_relation": true
+    "expected_relation": true,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M1_gradient_then_nonfinite-L6d48-s90003": {
     "scenario": "M1_gradient_then_nonfinite",
@@ -186,7 +218,11 @@
       95
     ],
     "independent_second_fault": null,
-    "expected_relation": true
+    "expected_relation": true,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M1_gradient_then_nonfinite-L6d48-s90004": {
     "scenario": "M1_gradient_then_nonfinite",
@@ -207,7 +243,11 @@
       95
     ],
     "independent_second_fault": null,
-    "expected_relation": true
+    "expected_relation": true,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M2_standalone_nonfinite-L4d32-s90000": {
     "scenario": "M2_standalone_nonfinite",
@@ -225,7 +265,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "NAN_DETECTED",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M2_standalone_nonfinite-L4d32-s90001": {
     "scenario": "M2_standalone_nonfinite",
@@ -243,7 +287,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "NAN_DETECTED",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M2_standalone_nonfinite-L4d32-s90002": {
     "scenario": "M2_standalone_nonfinite",
@@ -261,7 +309,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "NAN_DETECTED",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M2_standalone_nonfinite-L4d32-s90003": {
     "scenario": "M2_standalone_nonfinite",
@@ -279,7 +331,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "NAN_DETECTED",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M2_standalone_nonfinite-L4d32-s90004": {
     "scenario": "M2_standalone_nonfinite",
@@ -297,7 +353,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "NAN_DETECTED",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M2_standalone_nonfinite-L6d48-s90000": {
     "scenario": "M2_standalone_nonfinite",
@@ -315,7 +375,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "NAN_DETECTED",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M2_standalone_nonfinite-L6d48-s90001": {
     "scenario": "M2_standalone_nonfinite",
@@ -333,7 +397,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "NAN_DETECTED",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M2_standalone_nonfinite-L6d48-s90002": {
     "scenario": "M2_standalone_nonfinite",
@@ -351,7 +419,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "NAN_DETECTED",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M2_standalone_nonfinite-L6d48-s90003": {
     "scenario": "M2_standalone_nonfinite",
@@ -369,7 +441,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "NAN_DETECTED",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M2_standalone_nonfinite-L6d48-s90004": {
     "scenario": "M2_standalone_nonfinite",
@@ -387,7 +463,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "NAN_DETECTED",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M3_two_independent_faults-L4d32-s90000": {
     "scenario": "M3_two_independent_faults",
@@ -408,7 +488,11 @@
       "anomaly_type": "NAN_DETECTED",
       "step": 120
     },
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M3_two_independent_faults-L4d32-s90001": {
     "scenario": "M3_two_independent_faults",
@@ -429,7 +513,11 @@
       "anomaly_type": "NAN_DETECTED",
       "step": 120
     },
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M3_two_independent_faults-L4d32-s90002": {
     "scenario": "M3_two_independent_faults",
@@ -450,7 +538,11 @@
       "anomaly_type": "NAN_DETECTED",
       "step": 120
     },
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M3_two_independent_faults-L4d32-s90003": {
     "scenario": "M3_two_independent_faults",
@@ -471,7 +563,11 @@
       "anomaly_type": "NAN_DETECTED",
       "step": 120
     },
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M3_two_independent_faults-L4d32-s90004": {
     "scenario": "M3_two_independent_faults",
@@ -492,7 +588,11 @@
       "anomaly_type": "NAN_DETECTED",
       "step": 120
     },
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M3_two_independent_faults-L6d48-s90000": {
     "scenario": "M3_two_independent_faults",
@@ -513,7 +613,11 @@
       "anomaly_type": "NAN_DETECTED",
       "step": 120
     },
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M3_two_independent_faults-L6d48-s90001": {
     "scenario": "M3_two_independent_faults",
@@ -534,7 +638,11 @@
       "anomaly_type": "NAN_DETECTED",
       "step": 120
     },
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M3_two_independent_faults-L6d48-s90002": {
     "scenario": "M3_two_independent_faults",
@@ -555,7 +663,11 @@
       "anomaly_type": "NAN_DETECTED",
       "step": 120
     },
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M3_two_independent_faults-L6d48-s90003": {
     "scenario": "M3_two_independent_faults",
@@ -576,7 +688,11 @@
       "anomaly_type": "NAN_DETECTED",
       "step": 120
     },
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M3_two_independent_faults-L6d48-s90004": {
     "scenario": "M3_two_independent_faults",
@@ -597,7 +713,11 @@
       "anomaly_type": "NAN_DETECTED",
       "step": 120
     },
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M4_gradient_plus_loss_noise-L4d32-s90000": {
     "scenario": "M4_gradient_plus_loss_noise",
@@ -615,7 +735,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M4_gradient_plus_loss_noise-L4d32-s90001": {
     "scenario": "M4_gradient_plus_loss_noise",
@@ -633,7 +757,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M4_gradient_plus_loss_noise-L4d32-s90002": {
     "scenario": "M4_gradient_plus_loss_noise",
@@ -651,7 +779,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M4_gradient_plus_loss_noise-L4d32-s90003": {
     "scenario": "M4_gradient_plus_loss_noise",
@@ -669,7 +801,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M4_gradient_plus_loss_noise-L4d32-s90004": {
     "scenario": "M4_gradient_plus_loss_noise",
@@ -687,7 +823,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M4_gradient_plus_loss_noise-L6d48-s90000": {
     "scenario": "M4_gradient_plus_loss_noise",
@@ -705,7 +845,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M4_gradient_plus_loss_noise-L6d48-s90001": {
     "scenario": "M4_gradient_plus_loss_noise",
@@ -723,7 +867,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M4_gradient_plus_loss_noise-L6d48-s90002": {
     "scenario": "M4_gradient_plus_loss_noise",
@@ -741,7 +889,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M4_gradient_plus_loss_noise-L6d48-s90003": {
     "scenario": "M4_gradient_plus_loss_noise",
@@ -759,7 +911,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M4_gradient_plus_loss_noise-L6d48-s90004": {
     "scenario": "M4_gradient_plus_loss_noise",
@@ -777,7 +933,11 @@
     "observed_secondary_manifestation": null,
     "secondary_window": null,
     "independent_second_fault": null,
-    "expected_relation": false
+    "expected_relation": false,
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "mix-M5_healthy_heavy_tail-L4d32-s90000": {
     "scenario": "M5_healthy_heavy_tail",

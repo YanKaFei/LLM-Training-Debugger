@@ -40,6 +40,7 @@ import torch
 ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT / "tests") not in sys.path:
     sys.path.insert(0, str(ROOT / "tests"))
+from evaluation_truth import evaluation_truth  # noqa: E402
 from artifacts import write_artifact  # noqa: E402
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "tests"))
@@ -340,6 +341,15 @@ def ground_truth(scenario: str, seed: int, layers: int, d_model: int,
             "independent_second_fault": None,
             "expected_relation": False,
         })
+
+    # Canonical fields under the names the scorer actually reads. This corpus already
+    # computed both values, but stored the fault type as `injected_primary_fault`, and
+    # the scorer looks for a nested `ground_truth.primary_fault_type`. A corpus that
+    # knew the answer still could not be scored.
+    base.update(evaluation_truth(
+        scenario, injected=bool(base.get("injected")),
+        injection_step=base.get("injection_step"),
+    ))
     return base
 
 
@@ -363,7 +373,7 @@ def main() -> int:
                 truth[run_id] = ground_truth(scenario, seed, layers, d_model,
                                              {"nonfinite_steps": evidence["nonfinite_steps"]})
 
-    write_artifact(TRUTH / "mixed_fault_ground_truth.json", truth)
+    write_artifact(TRUTH / "mixed_fault_ground_truth.json", truth, provenance="sibling")
     payload = {
         "runs": len(results),
         "store": str(STORE),

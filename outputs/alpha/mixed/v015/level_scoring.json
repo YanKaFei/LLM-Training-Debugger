@@ -1,0 +1,709 @@
+{
+  "status": "VALID",
+  "missed_primary_faults": 20,
+  "validity": {
+    "status": "VALID",
+    "valid": true,
+    "issues": []
+  },
+  "levels": {
+    "SIGNAL": {
+      "level": "SIGNAL",
+      "eligible_population": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": null,
+      "abstained": 0,
+      "precision": null,
+      "recall": null,
+      "abstention_rate": null,
+      "recall_denominator": "NOT ESTIMABLE",
+      "precision_denominator": "NOT ESTIMABLE",
+      "notes": [
+        "no independent per-observation truth exists in this corpus, so signal-level precision/recall are NOT ESTIMABLE rather than assumed"
+      ]
+    },
+    "EPISODE": {
+      "level": "EPISODE",
+      "eligible_population": 180,
+      "tp": 40,
+      "fp": 140,
+      "fn": 0,
+      "tn": null,
+      "abstained": 0,
+      "precision": 0.2222222222222222,
+      "recall": null,
+      "abstention_rate": 0.0,
+      "recall_denominator": "NOT ESTIMABLE",
+      "precision_denominator": "all episodes observed",
+      "notes": [
+        "episode-level recall is NOT ESTIMABLE: ground truth names the injected fault, not the number of episodes it should yield. A missed fault appears here as an extra episode (a precision error), not as a missing one. Use RUN-level recall for 'was the fault found'."
+      ]
+    },
+    "INCIDENT": {
+      "level": "INCIDENT",
+      "eligible_population": 40,
+      "tp": 20,
+      "fp": 20,
+      "fn": 0,
+      "tn": null,
+      "abstained": 0,
+      "precision": 0.5,
+      "recall": null,
+      "abstention_rate": 0.0,
+      "recall_denominator": "NOT ESTIMABLE",
+      "precision_denominator": "confirmed incidents",
+      "notes": [
+        "incident-level recall is NOT ESTIMABLE: there is no independent truth for how many incidents a fault should produce. `missed_primary_faults` reports the misses explicitly and always equals RUN-level fn."
+      ]
+    },
+    "RUN": {
+      "level": "RUN",
+      "eligible_population": 50,
+      "tp": 20,
+      "fp": 0,
+      "fn": 20,
+      "tn": 10,
+      "abstained": 10,
+      "precision": 1.0,
+      "recall": 0.5,
+      "abstention_rate": 0.2,
+      "recall_denominator": "eligible injected runs",
+      "precision_denominator": "all runs that opened an incident",
+      "notes": []
+    },
+    "RELATION": {
+      "level": "RELATION",
+      "eligible_population": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": null,
+      "abstained": 0,
+      "precision": null,
+      "recall": null,
+      "abstention_rate": null,
+      "recall_denominator": "expected relations (allowed secondary in window)",
+      "precision_denominator": "all persisted relations",
+      "notes": []
+    }
+  },
+  "order_only_relations": [
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90004"
+    }
+  ],
+  "order_only_count": 100,
+  "unit_accounting": {
+    "runs": 50,
+    "episodes_classified": 180,
+    "runs_with_more_than_one_episode": 31,
+    "explanation": "The v0.1.1 scoreboard's 97 records were EPISODES, not runs. A run may hold several episodes, so the same injected fault can appear in more than one classification record. Episode counts must never be read as run counts."
+  },
+  "corpus": "mixed",
+  "store": "outputs/alpha/mixed/v015/store",
+  "ground_truth": "outputs/alpha/mixed/v015/ground_truth/mixed_fault_ground_truth.json",
+  "scenarios": 50,
+  "elapsed_s": 3.1,
+  "code_sha": "e6369aa18fd114122272a6960fc2ffdb66b24d24",
+  "code_dirty": true,
+  "generated_at": "2026-10-12T16:50:29Z"
+}

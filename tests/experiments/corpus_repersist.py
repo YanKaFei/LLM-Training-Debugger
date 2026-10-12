@@ -28,6 +28,7 @@ import torch
 ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT / "tests") not in sys.path:
     sys.path.insert(0, str(ROOT / "tests"))
+from evaluation_truth import evaluation_truth  # noqa: E402
 from artifacts import write_artifact  # noqa: E402
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "tests"))
@@ -251,15 +252,25 @@ def main() -> int:
                 row["kind"] = kind
                 rows.append(row)
                 # Ground truth lives in a SEPARATE tree and never enters the run dir.
-                truth[run_id] = {
+                injected = kind == "fault"
+                entry = {
                     "kind": kind, "scenario": scenario,
-                    "injected": kind == "fault",
-                    "injection_step": INJECTION if kind == "fault" else None,
+                    "injected": injected,
+                    "injection_step": INJECTION if injected else None,
                     "magnitude": magnitude, "layers": layers, "d_model": d_model,
                     "seed": seed,
                 }
+                # The fields the scorer reads. Written HERE, at generation time, so
+                # they travel with the evidence -- rather than being attached later by
+                # a command that is not kept, which is how the quality figures became
+                # impossible to re-derive.
+                entry.update(evaluation_truth(
+                    scenario, injected=injected,
+                    injection_step=INJECTION if injected else None,
+                ))
+                truth[run_id] = entry
 
-    write_artifact(TRUTH / "development_ground_truth.json", truth)
+    write_artifact(TRUTH / "development_ground_truth.json", truth, provenance="sibling")
     payload = {
         "runs": len(rows),
         "store": str(STORE),

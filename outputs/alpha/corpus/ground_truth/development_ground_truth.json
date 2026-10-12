@@ -67,7 +67,15 @@
     "magnitude": 20.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80000
+    "seed": 80000,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "LOSS_SPIKE",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-loss_spike-L4d32-s80001": {
     "kind": "fault",
@@ -77,7 +85,15 @@
     "magnitude": 20.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80001
+    "seed": 80001,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "LOSS_SPIKE",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-loss_spike-L4d32-s80002": {
     "kind": "fault",
@@ -87,7 +103,15 @@
     "magnitude": 20.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80002
+    "seed": 80002,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "LOSS_SPIKE",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-loss_spike-L4d32-s80003": {
     "kind": "fault",
@@ -97,7 +121,15 @@
     "magnitude": 20.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80003
+    "seed": 80003,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "LOSS_SPIKE",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-loss_spike-L4d32-s80004": {
     "kind": "fault",
@@ -107,7 +139,15 @@
     "magnitude": 20.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80004
+    "seed": 80004,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "LOSS_SPIKE",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-loss_spike-L4d32-s80005": {
     "kind": "fault",
@@ -117,7 +157,15 @@
     "magnitude": 20.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80005
+    "seed": 80005,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "LOSS_SPIKE",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_small-L4d32-s80000": {
     "kind": "fault",
@@ -127,7 +175,15 @@
     "magnitude": 2.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80000
+    "seed": 80000,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_small-L4d32-s80001": {
     "kind": "fault",
@@ -137,7 +193,15 @@
     "magnitude": 2.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80001
+    "seed": 80001,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_small-L4d32-s80002": {
     "kind": "fault",
@@ -147,7 +211,15 @@
     "magnitude": 2.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80002
+    "seed": 80002,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_small-L4d32-s80003": {
     "kind": "fault",
@@ -157,7 +229,15 @@
     "magnitude": 2.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80003
+    "seed": 80003,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_small-L4d32-s80004": {
     "kind": "fault",
@@ -167,7 +247,15 @@
     "magnitude": 2.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80004
+    "seed": 80004,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_small-L4d32-s80005": {
     "kind": "fault",
@@ -177,7 +265,15 @@
     "magnitude": 2.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80005
+    "seed": 80005,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_mid-L4d32-s80000": {
     "kind": "fault",
@@ -187,7 +283,15 @@
     "magnitude": 5.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80000
+    "seed": 80000,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_mid-L4d32-s80001": {
     "kind": "fault",
@@ -197,7 +301,15 @@
     "magnitude": 5.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80001
+    "seed": 80001,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_mid-L4d32-s80002": {
     "kind": "fault",
@@ -207,7 +319,15 @@
     "magnitude": 5.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80002
+    "seed": 80002,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_mid-L4d32-s80003": {
     "kind": "fault",
@@ -217,7 +337,15 @@
     "magnitude": 5.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80003
+    "seed": 80003,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_mid-L4d32-s80004": {
     "kind": "fault",
@@ -227,7 +355,15 @@
     "magnitude": 5.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80004
+    "seed": 80004,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_mid-L4d32-s80005": {
     "kind": "fault",
@@ -237,7 +373,15 @@
     "magnitude": 5.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80005
+    "seed": 80005,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_large-L4d32-s80000": {
     "kind": "fault",
@@ -247,7 +391,15 @@
     "magnitude": 20.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80000
+    "seed": 80000,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_large-L4d32-s80001": {
     "kind": "fault",
@@ -257,7 +409,15 @@
     "magnitude": 20.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80001
+    "seed": 80001,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_large-L4d32-s80002": {
     "kind": "fault",
@@ -267,7 +427,15 @@
     "magnitude": 20.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80002
+    "seed": 80002,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_large-L4d32-s80003": {
     "kind": "fault",
@@ -277,7 +445,15 @@
     "magnitude": 20.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80003
+    "seed": 80003,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_large-L4d32-s80004": {
     "kind": "fault",
@@ -287,7 +463,15 @@
     "magnitude": 20.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80004
+    "seed": 80004,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_large-L4d32-s80005": {
     "kind": "fault",
@@ -297,7 +481,15 @@
     "magnitude": 20.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80005
+    "seed": 80005,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_extreme-L4d32-s80000": {
     "kind": "fault",
@@ -307,7 +499,15 @@
     "magnitude": 40.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80000
+    "seed": 80000,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_extreme-L4d32-s80001": {
     "kind": "fault",
@@ -317,7 +517,15 @@
     "magnitude": 40.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80001
+    "seed": 80001,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_extreme-L4d32-s80002": {
     "kind": "fault",
@@ -327,7 +535,15 @@
     "magnitude": 40.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80002
+    "seed": 80002,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_extreme-L4d32-s80003": {
     "kind": "fault",
@@ -337,7 +553,15 @@
     "magnitude": 40.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80003
+    "seed": 80003,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_extreme-L4d32-s80004": {
     "kind": "fault",
@@ -347,7 +571,15 @@
     "magnitude": 40.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80004
+    "seed": 80004,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-grad_extreme-L4d32-s80005": {
     "kind": "fault",
@@ -357,7 +589,15 @@
     "magnitude": 40.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80005
+    "seed": 80005,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "GRADIENT_EXPLOSION",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-nan_loss-L4d32-s80000": {
     "kind": "fault",
@@ -367,7 +607,15 @@
     "magnitude": -1.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80000
+    "seed": 80000,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "NAN_DETECTED",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-nan_loss-L4d32-s80001": {
     "kind": "fault",
@@ -377,7 +625,15 @@
     "magnitude": -1.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80001
+    "seed": 80001,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "NAN_DETECTED",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-nan_loss-L4d32-s80002": {
     "kind": "fault",
@@ -387,7 +643,15 @@
     "magnitude": -1.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80002
+    "seed": 80002,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "NAN_DETECTED",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-nan_loss-L4d32-s80003": {
     "kind": "fault",
@@ -397,7 +661,15 @@
     "magnitude": -1.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80003
+    "seed": 80003,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "NAN_DETECTED",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-nan_loss-L4d32-s80004": {
     "kind": "fault",
@@ -407,7 +679,15 @@
     "magnitude": -1.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80004
+    "seed": 80004,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "NAN_DETECTED",
+      "allowed_secondary_manifestations": []
+    }
   },
   "dev-nan_loss-L4d32-s80005": {
     "kind": "fault",
@@ -417,6 +697,14 @@
     "magnitude": -1.0,
     "layers": 4,
     "d_model": 32,
-    "seed": 80005
+    "seed": 80005,
+    "acceptable_window": [
+      110,
+      122
+    ],
+    "ground_truth": {
+      "primary_fault_type": "NAN_DETECTED",
+      "allowed_secondary_manifestations": []
+    }
   }
 }
