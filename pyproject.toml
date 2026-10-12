@@ -15,8 +15,15 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+# The core library (observer, storage, detectors, episodes, fusion, CLI) imports no
+# torch. Only the PyTorch adapter does, so it stays optional for users who drive the
+# library from their own instrumentation.
 torch = ["torch>=2.0"]
-dev = ["pytest>=7.4"]
+# `dev` includes torch on purpose. The test suite imports it in 38 files, so a `dev`
+# install without it left six test modules failing at collection -- which is exactly
+# what happened on the first CI run. `pip install -e ".[dev]"` must be enough to run
+# the tests; anything less is a broken onboarding path.
+dev = ["pytest>=7.4", "torch>=2.0"]
 
 [project.scripts]
 training-debugger = "training_debugger.cli.main:main"
