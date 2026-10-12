@@ -63,6 +63,28 @@ That position has consequences throughout the design:
 | Prefer abstention to a fabricated relationship | `INSUFFICIENT_EVIDENCE` is a first-class verdict, not an error |
 | Some causal claims should be impossible to make | `CAUSED_BY` and `ROOT_CAUSE_OF` **do not exist in the schema**, and a test asserts they never will |
 
+## Requirements
+
+| | |
+|---|---|
+| **Python** | 3.9 – 3.13. Every version is exercised in CI. |
+| **Core** | `numpy>=1.23`, `pyarrow>=12`, `duckdb>=0.10,<1.5` |
+| **PyTorch adapter** | `torch>=2.0` — optional, via the `torch` extra. The observer, storage, detectors, episodes, fusion and CLI import no torch. |
+| **Development** | `.[dev]` = `pytest` **and** torch, because the test suite imports it. |
+
+> **The `duckdb` upper bound is a workaround, not a preference.** duckdb 1.5.6 breaks
+> `fetch_arrow_table()` with `SystemError: <built-in function __import__> returned a result
+> with an exception set`. All 23 failures in CI were at that one call; the other 560-odd
+> tests passed and `import pyarrow` worked, so the fault is in duckdb's Arrow bridge rather
+> than in pyarrow. It was invisible on Python 3.9 because duckdb 1.5.x requires
+> **Python >= 3.10**, so 3.9 resolves to 1.4.5 and never sees it — which means anyone on
+> 3.10 or newer with an unpinned install had a broken build.
+>
+> A CI job named *latest dependencies (informational)* deliberately ignores every upper
+> bound and is allowed to fail. **While it is red the bound is still required; when it
+> turns green the bound should be removed.** See
+> [KNOWN_LIMITATIONS.md](KNOWN_LIMITATIONS.md), item 15.
+
 ## Quick start
 
 ```bash

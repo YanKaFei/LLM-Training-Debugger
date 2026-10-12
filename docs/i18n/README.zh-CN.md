@@ -58,6 +58,26 @@
 | 宁可弃权，也不编造关系 | `INSUFFICIENT_EVIDENCE` 是一等判定，不是错误 |
 | 某些因果主张应当无法做出 | `CAUSED_BY` 与 `ROOT_CAUSE_OF` **在 schema 中不存在**，且有测试断言其永不出现 |
 
+## 环境要求
+
+| | |
+|---|---|
+| **Python** | 3.9 – 3.13，每个版本都在 CI 中实测。 |
+| **核心依赖** | `numpy>=1.23`、`pyarrow>=12`、`duckdb>=0.10,<1.5` |
+| **PyTorch 适配器** | `torch>=2.0` —— 可选，通过 `torch` extra 安装。observer、storage、detectors、episodes、fusion 与 CLI 均不导入 torch。 |
+| **开发** | `.[dev]` = `pytest` **和** torch，因为测试套件会导入它。 |
+
+> **`duckdb` 的上界是权宜之计，不是偏好。** duckdb 1.5.6 会让 `fetch_arrow_table()`
+> 抛出 `SystemError: <built-in function __import__> returned a result with an exception set`。
+> CI 中的 23 个失败全部发生在这一处调用；其余约 560 个测试通过，`import pyarrow` 也正常，
+> 所以问题出在 duckdb 的 Arrow 桥接，而非 pyarrow。它在 Python 3.9 上不可见，因为
+> duckdb 1.5.x 要求 **Python >= 3.10**，3.9 只会解析到 1.4.5 —— 这意味着**任何使用
+> Python 3.10 及以上且未固定版本的人，装到的都是坏的**。
+>
+> 一个名为 *latest dependencies (informational)* 的 CI 任务刻意忽略所有上界并允许失败。
+> **它红着，说明上界仍然必要；它变绿，就说明上界该撤掉。** 见
+> [KNOWN_LIMITATIONS.md](../../KNOWN_LIMITATIONS.md) 第 15 条。
+
 ## 快速开始
 
 ```bash

@@ -66,6 +66,29 @@ Cette position a des conséquences dans toute la conception :
 | Préférer l'abstention à une relation fabriquée | `INSUFFICIENT_EVIDENCE` est un verdict de premier ordre, pas une erreur |
 | Certaines affirmations causales doivent être impossibles | `CAUSED_BY` et `ROOT_CAUSE_OF` **n'existent pas dans le schéma**, et un test garantit qu'ils n'existeront jamais |
 
+## Prérequis
+
+| | |
+|---|---|
+| **Python** | 3.9 – 3.13. Chaque version est réellement exercée en intégration continue. |
+| **Cœur** | `numpy>=1.23`, `pyarrow>=12`, `duckdb>=0.10,<1.5` |
+| **Adaptateur PyTorch** | `torch>=2.0` — facultatif, via l'extra `torch`. L'observateur, le stockage, les détecteurs, les épisodes, la fusion et la CLI n'importent pas torch. |
+| **Développement** | `.[dev]` = `pytest` **et** torch, car la suite de tests l'importe. |
+
+> **La borne supérieure sur `duckdb` est un contournement, pas une préférence.** duckdb 1.5.6
+> casse `fetch_arrow_table()` avec `SystemError: <built-in function __import__> returned a
+> result with an exception set`. Les 23 échecs en intégration continue se produisaient tous à
+> cet unique appel ; les quelque 560 autres tests passaient et `import pyarrow` fonctionnait,
+> donc la faute est dans le pont Arrow de duckdb et non dans pyarrow. Le défaut était
+> invisible sous Python 3.9 parce que duckdb 1.5.x exige **Python >= 3.10** : 3.9 se résout
+> en 1.4.5 et ne le rencontre jamais. **Quiconque utilise Python 3.10 ou plus récent avec une
+> installation non épinglée recevait donc une version cassée.**
+>
+> Une tâche d'intégration continue nommée *latest dependencies (informational)* ignore
+> délibérément toute borne supérieure et a le droit d'échouer. **Tant qu'elle est rouge, la
+> borne reste nécessaire ; quand elle passera au vert, la borne devra être retirée.** Voir
+> [KNOWN_LIMITATIONS.md](../../KNOWN_LIMITATIONS.md), point 15.
+
 ## Démarrage rapide
 
 ```bash

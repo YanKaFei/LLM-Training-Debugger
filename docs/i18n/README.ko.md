@@ -63,6 +63,27 @@
 | 조작된 관계보다 기권을 우선한다 | `INSUFFICIENT_EVIDENCE`는 오류가 아닌 일급 판정 |
 | 어떤 인과적 주장은 불가능해야 한다 | `CAUSED_BY`와 `ROOT_CAUSE_OF`는 **스키마에 존재하지 않으며**, 영원히 그러하도록 테스트가 강제 |
 
+## 요구 사항
+
+| | |
+|---|---|
+| **Python** | 3.9 – 3.13. 모든 버전을 CI에서 실제로 검증합니다. |
+| **핵심 의존성** | `numpy>=1.23`, `pyarrow>=12`, `duckdb>=0.10,<1.5` |
+| **PyTorch 어댑터** | `torch>=2.0` — 선택 사항이며 `torch` extra로 설치합니다. observer, storage, detectors, episodes, fusion, CLI는 torch를 import하지 않습니다. |
+| **개발** | `.[dev]` = `pytest` **와** torch. 테스트 스위트가 torch를 import하기 때문입니다. |
+
+> **`duckdb` 상한은 선호가 아니라 우회책입니다.** duckdb 1.5.6은 `fetch_arrow_table()`에서
+> `SystemError: <built-in function __import__> returned a result with an exception set`를
+> 발생시킵니다. CI의 23개 실패가 모두 그 한 곳에서 발생했고, 나머지 약 560개 테스트는
+> 통과했으며 `import pyarrow`도 정상이었습니다. 따라서 원인은 pyarrow가 아니라 duckdb의
+> Arrow 브리지입니다. Python 3.9에서는 보이지 않는데, duckdb 1.5.x가
+> **Python >= 3.10**을 요구하므로 3.9는 1.4.5로 해석되어 결코 만나지 않기 때문입니다.
+> 즉 **Python 3.10 이상에서 버전을 고정하지 않은 모든 사용자가 깨진 빌드를 받았습니다.**
+>
+> *latest dependencies (informational)* 라는 CI 작업은 모든 상한을 의도적으로 무시하며
+> 실패해도 되도록 되어 있습니다. **이 작업이 빨간 동안에는 상한이 필요하며, 초록이 되면
+> 상한을 제거해야 합니다.** [KNOWN_LIMITATIONS.md](../../KNOWN_LIMITATIONS.md) 15번 항목 참조.
+
 ## 빠른 시작
 
 ```bash

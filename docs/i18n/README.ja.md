@@ -63,6 +63,28 @@
 | でっち上げた関係より棄権を優先する | `INSUFFICIENT_EVIDENCE` はエラーではなく一級の判定 |
 | 一部の因果的主張は不可能であるべき | `CAUSED_BY` と `ROOT_CAUSE_OF` は**スキーマに存在せず**、永久にそうであるようテストが強制する |
 
+## 動作要件
+
+| | |
+|---|---|
+| **Python** | 3.9 – 3.13。すべてのバージョンを CI で実際に検証しています。 |
+| **コア依存** | `numpy>=1.23`、`pyarrow>=12`、`duckdb>=0.10,<1.5` |
+| **PyTorch アダプタ** | `torch>=2.0` — オプションで `torch` extra から導入します。observer、storage、detectors、episodes、fusion、CLI は torch を import しません。 |
+| **開発** | `.[dev]` = `pytest` **と** torch。テストスイートが torch を import するためです。 |
+
+> **`duckdb` の上限は好みではなく回避策です。** duckdb 1.5.6 は `fetch_arrow_table()` で
+> `SystemError: <built-in function __import__> returned a result with an exception set` を
+> 発生させます。CI の 23 件の失敗はすべてその 1 箇所で起こり、残りの約 560 件のテストは
+> 通過し `import pyarrow` も正常でした。したがって原因は pyarrow ではなく duckdb の
+> Arrow ブリッジにあります。Python 3.9 では見えません。duckdb 1.5.x が
+> **Python >= 3.10** を要求するため、3.9 は 1.4.5 に解決され決して遭遇しないからです。
+> つまり **Python 3.10 以降でバージョンを固定していない利用者は全員、壊れたビルドを
+> 受け取っていました。**
+>
+> *latest dependencies (informational)* という CI ジョブは、すべての上限を意図的に無視し、
+> 失敗を許容しています。**これが赤い間は上限が必要であり、緑になったら上限を外すべき
+> です。** [KNOWN_LIMITATIONS.md](../../KNOWN_LIMITATIONS.md) の 15 番を参照。
+
 ## クイックスタート
 
 ```bash
