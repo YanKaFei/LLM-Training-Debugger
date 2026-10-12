@@ -51,6 +51,36 @@ def _ledger() -> set:
     }
 
 
+#: Paths that define "the code". An artifact is reproducible from its revision when
+#: these are identical; evidence churn and documentation are not the code.
+SOURCE_PATHS = ("src", "tests", "pyproject.toml")
+
+
+def _source_differs(from_sha: str, to_sha: str) -> bool:
+    """Whether the *code* changed between two revisions.
+
+    Comparing revision strings is not the question. Regenerating evidence and
+    committing it moves HEAD, so a freshly regenerated artifact is immediately
+    "stale" by string comparison -- the check could never report itself satisfied,
+    which makes it noise rather than signal.
+
+    The question worth asking is whether the code that produced the evidence is the
+    code that is here now. Commits that only touch `outputs/` or markdown do not
+    change the answer.
+    """
+    if from_sha == to_sha:
+        return False
+    if not _looks_like_a_sha(from_sha):
+        return True
+    completed = subprocess.run(
+        ["git", "diff", "--quiet", from_sha, to_sha, "--", *SOURCE_PATHS],
+        cwd=str(ROOT), capture_output=True,
+    )
+    if completed.returncode not in (0, 1):
+        return True                      # cannot tell -> assume it differs
+    return completed.returncode == 1
+
+
 def _head() -> str:
     completed = subprocess.run(["git", "rev-parse", "HEAD"], cwd=str(ROOT),
                                capture_output=True, text=True)
@@ -117,7 +147,7 @@ def main(argv: List[str]) -> int:
         if note is None:
             rel = str(path.relative_to(ROOT))
             (grandfathered if rel in known_old else unknown).append(path)
-        elif note.get("code_sha") == head:
+        elif not _source_differs(str(note.get("code_sha")), head):
             current.append(path)
         else:
             stale.append((path, str(note.get("code_sha"))[:10]))
@@ -131,7 +161,7 @@ def main(argv: List[str]) -> int:
     print("  HEAD                        : {}".format(head[:10]))
     print("  artifacts with provenance   : {}".format(len(current) + len(stale)))
     print("  current                     : {}".format(len(current)))
-    print("  from an older revision      : {}".format(len(stale)))
+    print("  from a DIFFERENT source rev : {}".format(len(stale)))
     print("  no provenance, grandfathered: {}".format(len(grandfathered)))
     print("  no provenance, UNEXPECTED   : {}".format(len(unknown)))
     print("  ledger entries not seen     : {}".format(

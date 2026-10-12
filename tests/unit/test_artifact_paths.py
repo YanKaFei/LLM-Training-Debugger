@@ -142,3 +142,27 @@ def test_no_experiment_script_writes_an_artifact_with_write_text(script):
         encoding="utf-8")
     assert "results.json\").write_text" not in source
     assert 'results.json").write_text' not in source
+
+
+# ---------------------------------------------------------------------------
+# Drift comparison is about the source, not the revision string
+# ---------------------------------------------------------------------------
+
+
+def test_drift_compares_source_not_revision_strings():
+    """Committing regenerated evidence moves HEAD, so a freshly regenerated artifact
+    is immediately "stale" by string comparison. The check could never report itself
+    satisfied, which makes it noise. The question worth asking is whether the code
+    that produced the evidence is the code that is here now."""
+    import sys as _sys
+    _sys.path.insert(0, str(REPO_ROOT / "tests" / "experiments"))
+    from check_evidence_drift import _source_differs
+
+    import subprocess
+    head = subprocess.run(["git", "rev-parse", "HEAD"], cwd=str(REPO_ROOT),
+                          capture_output=True, text=True).stdout.strip()
+    if not head:
+        return
+    assert _source_differs(head, head) is False
+    # A revision that predates the scoring and provenance work changed the source.
+    assert _source_differs("9e4550cef2151b33bd89dabe45fa9480ecdde823", head) is True
