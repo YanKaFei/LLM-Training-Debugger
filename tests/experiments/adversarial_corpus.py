@@ -312,8 +312,7 @@ def main() -> int:
                     episode_rule_version=RULE_VERSION, rule_version="v0.1.5-alpha",
                 ))
 
-    (TRUTH / "adversarial_ground_truth.json").write_text(
-        json.dumps(truth, indent=2), encoding="utf-8")
+    write_artifact(TRUTH / "adversarial_ground_truth.json", truth)
     (OUT / "observable_signatures.json").write_text(
         json.dumps(signatures, indent=2), encoding="utf-8")
     payload = {

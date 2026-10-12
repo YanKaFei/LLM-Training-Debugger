@@ -315,8 +315,7 @@ def main() -> int:
                                 "attached": evidence["witness_attached"]}, indent=2,
                                default=str), encoding="utf-8")
 
-    (TRUTH / "witness_challenge_ground_truth.json").write_text(
-        json.dumps(truth, indent=2, default=str), encoding="utf-8")
+    write_artifact(TRUTH / "witness_challenge_ground_truth.json", truth)
     payload = {
         "cases": list(CASES), "runs": len(rows),
         "store": str(STORE), "ground_truth": str(TRUTH / "witness_challenge_ground_truth.json"),

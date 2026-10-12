@@ -213,8 +213,8 @@
     "gate": 0.05,
     "gate_passed": false
   },
-  "elapsed_s": 22.2,
-  "code_sha": "6c04bacdc270e9fc7e70926240d59ad06222fd80",
+  "elapsed_s": 22.4,
+  "code_sha": "c5351a277e97e750d1ef88f66724089ace6cb375",
   "code_dirty": false,
-  "generated_at": "2026-10-12T16:27:04Z"
+  "generated_at": "2026-10-12T16:32:24Z"
 }

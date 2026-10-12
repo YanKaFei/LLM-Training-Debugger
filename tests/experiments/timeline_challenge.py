@@ -267,8 +267,7 @@ def main() -> int:
                               "witness_summary": evidence["witness_summary"]})
                 truth[run_id] = entry
 
-    (TRUTH / "timeline_ground_truth.json").write_text(
-        json.dumps(truth, indent=2, default=str), encoding="utf-8")
+    write_artifact(TRUTH / "timeline_ground_truth.json", truth)
     payload = {"cases": list(CASES), "injection_step": INJECTION, "runs": len(rows),
                "store": str(STORE), "results": rows,
                "elapsed_s": round(time.perf_counter() - started, 1)}

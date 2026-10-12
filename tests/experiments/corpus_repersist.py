@@ -259,8 +259,7 @@ def main() -> int:
                     "seed": seed,
                 }
 
-    (TRUTH / "development_ground_truth.json").write_text(
-        json.dumps(truth, indent=2), encoding="utf-8")
+    write_artifact(TRUTH / "development_ground_truth.json", truth)
     payload = {
         "runs": len(rows),
         "store": str(STORE),

@@ -3264,8 +3264,8 @@
       "case": "A8Y"
     }
   ],
-  "elapsed_s": 43.6,
-  "code_sha": "6c04bacdc270e9fc7e70926240d59ad06222fd80",
-  "code_dirty": true,
-  "generated_at": "2026-10-12T16:29:42Z"
+  "elapsed_s": 43.7,
+  "code_sha": "c5351a277e97e750d1ef88f66724089ace6cb375",
+  "code_dirty": false,
+  "generated_at": "2026-10-12T16:35:07Z"
 }

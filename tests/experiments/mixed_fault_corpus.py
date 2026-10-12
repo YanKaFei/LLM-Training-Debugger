@@ -363,8 +363,7 @@ def main() -> int:
                 truth[run_id] = ground_truth(scenario, seed, layers, d_model,
                                              {"nonfinite_steps": evidence["nonfinite_steps"]})
 
-    (TRUTH / "mixed_fault_ground_truth.json").write_text(
-        json.dumps(truth, indent=2), encoding="utf-8")
+    write_artifact(TRUTH / "mixed_fault_ground_truth.json", truth)
     payload = {
         "runs": len(results),
         "store": str(STORE),
