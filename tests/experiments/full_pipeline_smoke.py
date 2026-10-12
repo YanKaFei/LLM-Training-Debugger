@@ -248,12 +248,12 @@ def main() -> int:
     #
     # This file is committed as evidence, and the README tells a reader to
     # regenerate it. Writing `ROOT` verbatim therefore embedded one machine's
-    # absolute path into a tracked artefact on every run -- observed as
-    # `/Users/<name>/Desktop/LLM-Training-Debugger/...` reappearing in
-    # `cli_command` and `store_paths` after the file had already been sanitised
-    # once. Sanitising the output is treating the symptom; the generator is the
-    # cause, and a relative path is also the more honest thing to record: it says
-    # where the store is *within the repository*, not where the repository was.
+    # absolute path into a tracked artefact on every run -- observed as a
+    # home-directory path reappearing in `cli_command` and `store_paths` after the
+    # file had already been sanitised once. Sanitising the output is treating the
+    # symptom; the generator is the cause, and a relative path is also the more
+    # honest thing to record: it says where the store is *within the repository*,
+    # not where the repository happened to be.
     text = json.dumps(summary, indent=2, default=str)
     text = text.replace(str(ROOT) + "/", "").replace(str(ROOT), ".")
     if str(ROOT) in text:
