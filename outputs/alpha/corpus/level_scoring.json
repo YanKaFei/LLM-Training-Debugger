@@ -2262,8 +2262,8 @@
   "store": "outputs/alpha/corpus/store",
   "ground_truth": "outputs/alpha/corpus/ground_truth/development_ground_truth.json",
   "scenarios": 42,
-  "elapsed_s": 3.17,
-  "code_sha": "9e4550cef2151b33bd89dabe45fa9480ecdde823",
+  "elapsed_s": 3.1,
+  "code_sha": "07e6e91cb65bf49ea6bdb6a86afca15f88e5b70e",
   "code_dirty": false,
-  "generated_at": "2026-10-12T17:02:01Z"
+  "generated_at": "2026-10-12T17:07:12Z"
 }
