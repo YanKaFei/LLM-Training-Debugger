@@ -23,12 +23,13 @@ from __future__ import annotations
 import json
 import os
 import re
+import subprocess
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 __all__ = [
     "REPO_ROOT", "repo_relative", "relativize", "write_artifact", "assert_clean",
-    "MachinePathLeak",
+    "MachinePathLeak", "code_sha", "code_is_dirty",
 ]
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -151,15 +152,65 @@ def assert_clean(payload: Any, *, where: str = "artifact") -> None:
 
 
 def write_artifact(path: Any, payload: Any, *, root: Optional[Path] = None,
-                   indent: int = 2) -> Path:
+                   indent: int = 2, provenance: bool = True) -> Path:
     """Relativise, verify, then write. The only supported way to emit evidence.
 
     A failure here is a bug in the caller, and it is better to fail than to commit
     one machine's layout as a finding.
+
+    When ``provenance`` is set, the payload records which code produced it. Evidence
+    that does not say what generated it cannot be checked for drift, and this
+    repository learned that the expensive way: artifacts committed under one revision
+    were regenerated under another, and nothing in either file revealed it.
     """
     target = Path(path)
     cleaned = relativize(payload, root=root)
+    if provenance and isinstance(cleaned, dict) and "code_sha" not in cleaned:
+        cleaned = dict(cleaned)
+        cleaned["code_sha"] = code_sha(root=root)
+        cleaned["code_dirty"] = code_is_dirty(root=root)
+        cleaned["generated_at"] = _utc_now()
     assert_clean(cleaned, where=str(target))
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(cleaned, indent=indent, default=str), encoding="utf-8")
     return target
+
+
+def _git(args: List[str], root: Optional[Path] = None) -> Optional[str]:
+    repo = Path(root) if root is not None else REPO_ROOT
+    try:
+        completed = subprocess.run(
+            ["git", *args], cwd=str(repo), capture_output=True, text=True, timeout=20,
+        )
+    except (OSError, subprocess.SubprocessError):
+        return None
+    if completed.returncode != 0:
+        return None
+    return completed.stdout.strip()
+
+
+def code_sha(*, root: Optional[Path] = None) -> str:
+    """The revision that produced an artifact, or a reason it is unknown.
+
+    ``UNKNOWN`` rather than an empty string, so a consumer can tell "not recorded"
+    apart from "recorded as nothing".
+    """
+    sha = _git(["rev-parse", "HEAD"], root=root)
+    return sha if sha else "UNKNOWN"
+
+
+def code_is_dirty(*, root: Optional[Path] = None) -> Optional[bool]:
+    """Whether the working tree had uncommitted changes when the artifact was written.
+
+    An artifact produced from a dirty tree cannot be reproduced from its ``code_sha``
+    alone, and saying so is more useful than pretending the revision is enough.
+    """
+    status = _git(["status", "--porcelain"], root=root)
+    if status is None:
+        return None
+    return bool(status.strip())
+
+
+def _utc_now() -> str:
+    from datetime import datetime, timezone
+    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
