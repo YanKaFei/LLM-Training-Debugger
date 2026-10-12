@@ -153,22 +153,43 @@ def test_drift_compares_source_not_revision_strings():
     """Committing regenerated evidence moves HEAD, so a freshly regenerated artifact
     is immediately "stale" by string comparison. The check could never report itself
     satisfied, which makes it noise. The question worth asking is whether the code
-    that produced the evidence is the code that is here now."""
+    that produced the evidence is the code that is here now.
+
+    Skipped where the history is not present. `actions/checkout` clones shallow by
+    default, so `HEAD~1` and older revisions do not exist there -- the first version of
+    this test asserted against them anyway and failed on every CI run while passing
+    locally.
+    """
+    import subprocess
     import sys as _sys
+
     _sys.path.insert(0, str(REPO_ROOT / "tests" / "experiments"))
     from check_evidence_drift import _source_differs
 
-    import subprocess
-    head = subprocess.run(["git", "rev-parse", "HEAD"], cwd=str(REPO_ROOT),
-                          capture_output=True, text=True).stdout.strip()
-    if not head:
-        return
+    def revision(rev: str) -> str:
+        return subprocess.run(["git", "rev-parse", rev], cwd=str(REPO_ROOT),
+                              capture_output=True, text=True).stdout.strip()
+
+    def present(sha: str) -> bool:
+        if not sha:
+            return False
+        return subprocess.run(["git", "cat-file", "-e", sha + "^{commit}"],
+                              cwd=str(REPO_ROOT), capture_output=True).returncode == 0
+
+    head = revision("HEAD")
+    if not present(head):
+        pytest.skip("not a git checkout")
+
     assert _source_differs(head, head) is False
-    # A revision that predates the scoring work changed src-adjacent source.
-    assert _source_differs("e6369aa", head) is True
-    # A revision that differs only in the drift checker itself must NOT count: editing
-    # a unit test or this checker cannot alter a number in outputs/, and a check that
-    # cries drift whenever somebody adds a test is a check that gets ignored.
-    prev = subprocess.run(["git", "rev-parse", "HEAD~1"], cwd=str(REPO_ROOT),
-                          capture_output=True, text=True).stdout.strip()
-    assert _source_differs(prev, head) is False
+
+    # A revision that predates the scoring work changed source that can move a number.
+    older = revision("e6369aa")
+    if present(older):
+        assert _source_differs(older, head) is True
+
+    # A revision differing only in this checker or in unit tests must NOT count:
+    # editing them cannot alter a number in outputs/, and a check that cries drift
+    # whenever somebody adds a test is a check that gets ignored.
+    prev = revision("HEAD~1")
+    if present(prev):
+        assert _source_differs(prev, head) is False
