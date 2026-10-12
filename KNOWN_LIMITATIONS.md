@@ -45,6 +45,28 @@ Everything here is measured or explicitly unmeasured. Nothing is a guess.
    linear ~25 bytes/event footprint, and a forced 484-event overflow that correctly
    surfaced as `DEGRADED` on the verdict rather than as a clean negative.
 
+## Dependencies
+
+15. **`duckdb` is bound below 1.5, and the bound is a workaround, not a
+    preference.** duckdb 1.5.6 breaks `fetch_arrow_table()` with
+    `SystemError: <built-in function __import__> returned a result with an
+    exception set`, observed on continuous integration with duckdb 1.5.6,
+    pyarrow 26.0.0 and numpy 2.5.4 on Python 3.11 and 3.12. All 23 failures were
+    at that single call in the two storage test modules; the other 560-odd tests
+    passed and `import pyarrow` worked, so the fault is in duckdb's Arrow bridge
+    rather than in pyarrow.
+
+    It was invisible locally because duckdb 1.5.x declares
+    `Requires-Python >= 3.10`, so a Python 3.9 environment resolves to 1.4.5 and
+    never sees it. **Any user on Python 3.10 or newer with an unpinned install
+    therefore had a broken build.** The mechanism inside 1.5.6 was not reproduced
+    here — 1.5 cannot be installed on Python 3.9 — so the bound rests on the
+    continuous-integration evidence above.
+
+    A CI job named *latest dependencies (informational)* deliberately ignores
+    every upper bound and is allowed to fail. While it is red, the bound is still
+    required; when it turns green, the bound should be removed.
+
 ## Measurement
 
 8. **No blind holdout has ever been run.** All quality figures are development data.
