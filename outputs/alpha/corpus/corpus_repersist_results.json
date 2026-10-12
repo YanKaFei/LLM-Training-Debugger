@@ -1,7 +1,7 @@
 {
   "runs": 42,
-  "store": "<repo>/outputs/alpha/corpus/store",
-  "ground_truth": "<repo>/outputs/alpha/corpus/ground_truth/development_ground_truth.json",
+  "store": "outputs/alpha/corpus/store",
+  "ground_truth": "outputs/alpha/corpus/ground_truth/development_ground_truth.json",
   "run_id_scheme": "{split}-{scenario}-L{layers}d{d_model}-s{seed}",
   "results": [
     {
@@ -59,7 +59,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_b17c640a08be4514"
+        "inc_2e09bcb622ef4099"
       ],
       "episode_ids": [
         "ep_8e75bfe46d44",
@@ -114,7 +114,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_0e71c656e1324199"
+        "inc_09191e389f324570"
       ],
       "episode_ids": [
         "ep_c720ffd97a35"
@@ -132,7 +132,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_94647be159784c82"
+        "inc_4e57927be2a9490e"
       ],
       "episode_ids": [
         "ep_c49b8bb0a086",
@@ -152,7 +152,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_5f7d8883c07a4ba8"
+        "inc_a6107bf84c0844c2"
       ],
       "episode_ids": [
         "ep_d5273791e70e",
@@ -171,7 +171,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_e5ae7533093c4b39"
+        "inc_1220969e0bc040e6"
       ],
       "episode_ids": [
         "ep_8de3cf5f3627",
@@ -190,7 +190,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_63acb24ec9c74269"
+        "inc_fc65f7090df04ae1"
       ],
       "episode_ids": [
         "ep_a4f3b22986da",
@@ -210,7 +210,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_b111c62dc6b64fe7"
+        "inc_0bea6b3197db495e"
       ],
       "episode_ids": [
         "ep_49c96f5361d3",
@@ -440,7 +440,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_e8ce152461f64fa5"
+        "inc_aa6b890323ca408c"
       ],
       "episode_ids": [
         "ep_268ecb71fc98"
@@ -458,7 +458,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_1b63793e85664d4d"
+        "inc_610c73ff22b949e2"
       ],
       "episode_ids": [
         "ep_c84300a47e78",
@@ -478,7 +478,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_800fc5a9edc74717"
+        "inc_018a5c6799e545ed"
       ],
       "episode_ids": [
         "ep_dc4a0c42305c",
@@ -497,7 +497,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_de4e8e07e05d476c"
+        "inc_85455a2352a440e6"
       ],
       "episode_ids": [
         "ep_971ac212e315",
@@ -516,7 +516,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_8427a3bb2e1e4a70"
+        "inc_951cee9c4aa84127"
       ],
       "episode_ids": [
         "ep_eb4415e24e94",
@@ -536,7 +536,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_797581c27cd24130"
+        "inc_558719e6238b4753"
       ],
       "episode_ids": [
         "ep_36b44bea9142",
@@ -555,7 +555,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_48232c72b2824a0d"
+        "inc_a5e39a4e7b2e4117"
       ],
       "episode_ids": [
         "ep_bb3d8195e706",
@@ -574,7 +574,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_c7cf86ccc78e4982"
+        "inc_aa33ef5dc6c54b02"
       ],
       "episode_ids": [
         "ep_bbf98da11f87",
@@ -594,7 +594,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_4686bd48325f4ea4"
+        "inc_d7e0f0eba5e7454b"
       ],
       "episode_ids": [
         "ep_7912e51c369f",
@@ -613,7 +613,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_45ddfb01140d4b73"
+        "inc_cfba73a4a8cf4d1b"
       ],
       "episode_ids": [
         "ep_2d81360cb0c5",
@@ -632,7 +632,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_0781a5965f2b47ed"
+        "inc_9ef19e56f5624b9f"
       ],
       "episode_ids": [
         "ep_2c0a1c380999",
@@ -653,7 +653,7 @@
       "relations": 0,
       "incidents": 1,
       "incident_ids": [
-        "inc_6615b7726ba441cd"
+        "inc_aaab61d7be224071"
       ],
       "episode_ids": [
         "ep_9e600954f47c",
@@ -668,15 +668,23 @@
     {
       "run_id": "dev-nan_loss-L4d32-s80000",
       "scenario": "nan_loss",
-      "episodes": 2,
-      "relations": 0,
+      "episodes": 10,
+      "relations": 10,
       "incidents": 1,
       "incident_ids": [
-        "inc_9355c4a4cea44fa5"
+        "inc_209faccc89db44fd"
       ],
       "episode_ids": [
-        "ep_fe9055e2fbff",
-        "ep_a5d0be2d228a"
+        "ep_e20950d3878d",
+        "ep_dff4d57dcd3a",
+        "ep_952b7ab59150",
+        "ep_b44a2f967ee4",
+        "ep_eace7031359c",
+        "ep_90e6357550f3",
+        "ep_1b1227d9d6bb",
+        "ep_765cda66b09e",
+        "ep_5e6f98b5f19b",
+        "ep_9888a6cfd200"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -687,15 +695,23 @@
     {
       "run_id": "dev-nan_loss-L4d32-s80001",
       "scenario": "nan_loss",
-      "episodes": 2,
-      "relations": 0,
+      "episodes": 10,
+      "relations": 10,
       "incidents": 1,
       "incident_ids": [
-        "inc_d6efe61c0c534a6d"
+        "inc_02774d6284424caa"
       ],
       "episode_ids": [
-        "ep_d4ecf3cbfe97",
-        "ep_d8d1a94fd1d3"
+        "ep_02f81cc06931",
+        "ep_241e1b4dd14c",
+        "ep_d92528405d47",
+        "ep_cd22a02a4790",
+        "ep_e5f000e5d9c8",
+        "ep_5aee36f49457",
+        "ep_16dc4be043b8",
+        "ep_bf8f14509406",
+        "ep_11613746d496",
+        "ep_d9cd29f0df90"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -706,15 +722,23 @@
     {
       "run_id": "dev-nan_loss-L4d32-s80002",
       "scenario": "nan_loss",
-      "episodes": 2,
-      "relations": 0,
+      "episodes": 10,
+      "relations": 10,
       "incidents": 1,
       "incident_ids": [
-        "inc_68e0a003fc2a4b43"
+        "inc_11fd7f3671b146f1"
       ],
       "episode_ids": [
-        "ep_1a4ab1fcca4b",
-        "ep_d342e293f91e"
+        "ep_6c666ca899b3",
+        "ep_dacb5a1ae7a3",
+        "ep_8d6fc78da1c9",
+        "ep_7d69cff0e50d",
+        "ep_0d2a66eeef48",
+        "ep_fa6f2c047300",
+        "ep_b6035035e853",
+        "ep_639c11e31ec0",
+        "ep_36564e614ba8",
+        "ep_ee251a7be425"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -725,15 +749,23 @@
     {
       "run_id": "dev-nan_loss-L4d32-s80003",
       "scenario": "nan_loss",
-      "episodes": 2,
-      "relations": 0,
+      "episodes": 10,
+      "relations": 10,
       "incidents": 1,
       "incident_ids": [
-        "inc_cdd11d7722a3470b"
+        "inc_9c3309807588467b"
       ],
       "episode_ids": [
-        "ep_62179834a5bd",
-        "ep_b10395847dec"
+        "ep_ffba2cd3f918",
+        "ep_19e04b14fa99",
+        "ep_4b59b4dfa79a",
+        "ep_4fe43b0a5846",
+        "ep_86dfb886dc95",
+        "ep_68a5ced363c7",
+        "ep_a02164dabf2a",
+        "ep_ded1ad44e04c",
+        "ep_ef2553070f77",
+        "ep_4f03b09fed0e"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -744,16 +776,24 @@
     {
       "run_id": "dev-nan_loss-L4d32-s80004",
       "scenario": "nan_loss",
-      "episodes": 3,
-      "relations": 0,
+      "episodes": 11,
+      "relations": 10,
       "incidents": 1,
       "incident_ids": [
-        "inc_db74d1715b6c4b2b"
+        "inc_6e3ea8520fe844c8"
       ],
       "episode_ids": [
         "ep_cd6d047c6996",
-        "ep_807f4dedc5cd",
-        "ep_dbba3ab3a531"
+        "ep_8abc437348cc",
+        "ep_d4aaadc8d7bf",
+        "ep_213e4b2b8b0a",
+        "ep_f71289b56fc1",
+        "ep_e1f63ef8cf57",
+        "ep_02d2e56bdbfb",
+        "ep_f9ee30500d7f",
+        "ep_dd98c083bc0a",
+        "ep_bc106d2bab4a",
+        "ep_2ebca241dd4a"
       ],
       "verdicts": [
         "NO_ANOMALY",
@@ -765,15 +805,23 @@
     {
       "run_id": "dev-nan_loss-L4d32-s80005",
       "scenario": "nan_loss",
-      "episodes": 2,
-      "relations": 0,
+      "episodes": 10,
+      "relations": 10,
       "incidents": 1,
       "incident_ids": [
-        "inc_099ac310f1d94dfd"
+        "inc_f9c298afebe04318"
       ],
       "episode_ids": [
-        "ep_cb4668285954",
-        "ep_9a36c52fc670"
+        "ep_a49638ffcd2b",
+        "ep_f2a5f96a5b74",
+        "ep_cf399eafe489",
+        "ep_669ce47955bb",
+        "ep_76d5c46589a9",
+        "ep_67cd59931174",
+        "ep_e6ba5a277274",
+        "ep_fe80eaf0249c",
+        "ep_f77e5bd00c38",
+        "ep_8fcc7789a5b1"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -782,5 +830,8 @@
       "kind": "fault"
     }
   ],
-  "elapsed_s": 66.3
+  "elapsed_s": 49.2,
+  "code_sha": "6c04bacdc270e9fc7e70926240d59ad06222fd80",
+  "code_dirty": true,
+  "generated_at": "2026-10-12T16:27:54Z"
 }

@@ -12,8 +12,8 @@
   ],
   "unsupported": {},
   "runs": 45,
-  "store": "<repo>/outputs/alpha/adversarial/v015/store",
-  "ground_truth": "<repo>/outputs/alpha/adversarial/v015/ground_truth/adversarial_ground_truth.json",
+  "store": "outputs/alpha/adversarial/v015/store",
+  "ground_truth": "outputs/alpha/adversarial/v015/ground_truth/adversarial_ground_truth.json",
   "results": [
     {
       "run_id": "adv-A1-L4d32-s95000",
@@ -3264,5 +3264,8 @@
       "case": "A8Y"
     }
   ],
-  "elapsed_s": 54.8
+  "elapsed_s": 43.6,
+  "code_sha": "6c04bacdc270e9fc7e70926240d59ad06222fd80",
+  "code_dirty": true,
+  "generated_at": "2026-10-12T16:29:42Z"
 }

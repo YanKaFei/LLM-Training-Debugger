@@ -11,8 +11,8 @@
     "C9"
   ],
   "runs": 54,
-  "store": "<repo>/outputs/v0.1.6-alpha/store",
-  "ground_truth": "<repo>/outputs/v0.1.6-alpha/ground_truth/witness_challenge_ground_truth.json",
+  "store": "outputs/v0.1.6-alpha/store",
+  "ground_truth": "outputs/v0.1.6-alpha/ground_truth/witness_challenge_ground_truth.json",
   "results": [
     {
       "run_id": "wc-C1-L4d32-s97000",
@@ -58,8 +58,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279173651000,
-          "closed_wall_time_ns": 1791619279173732000,
+          "opened_wall_time_ns": 1791822624732780000,
+          "closed_wall_time_ns": 1791822624732856000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -112,8 +112,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279173677000,
-          "closed_wall_time_ns": 1791619279173734000,
+          "opened_wall_time_ns": 1791822624732803000,
+          "closed_wall_time_ns": 1791822624732858000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -166,8 +166,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279173691000,
-          "closed_wall_time_ns": 1791619279173736000,
+          "opened_wall_time_ns": 1791822624732817000,
+          "closed_wall_time_ns": 1791822624732860000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -220,8 +220,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279173708000,
-          "closed_wall_time_ns": 1791619279173737000,
+          "opened_wall_time_ns": 1791822624732834000,
+          "closed_wall_time_ns": 1791822624732861000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -274,8 +274,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279173720000,
-          "closed_wall_time_ns": 1791619279173739000,
+          "opened_wall_time_ns": 1791822624732845000,
+          "closed_wall_time_ns": 1791822624732863000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -328,8 +328,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279173746000,
-          "closed_wall_time_ns": 1791619279173783000,
+          "opened_wall_time_ns": 1791822624732869000,
+          "closed_wall_time_ns": 1791822624732905000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -382,8 +382,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279173760000,
-          "closed_wall_time_ns": 1791619279173785000,
+          "opened_wall_time_ns": 1791822624732883000,
+          "closed_wall_time_ns": 1791822624732907000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -436,8 +436,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279173772000,
-          "closed_wall_time_ns": 1791619279173787000,
+          "opened_wall_time_ns": 1791822624732895000,
+          "closed_wall_time_ns": 1791822624732908000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -476,6 +476,7 @@
             "scope_compatible": true,
             "antecedent_onset": 44,
             "target_onset": 44,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -487,12 +488,12 @@
           "run_id": "wc-C1-L4d32-s97000",
           "source_incident_id": "ep_e53d943c9b5d",
           "target_incident_id": "ep_6189d2e18e18",
-          "relation_type": "POSSIBLE_CONSEQUENCE_OF",
+          "relation_type": "PRECEDES",
           "source_anomaly_type": "NAN_DETECTED",
           "target_anomaly_type": "NAN_DETECTED",
           "gap_steps": 0,
           "evidence": {
-            "tier": "MECHANISM",
+            "tier": "TEMPORAL",
             "gap_steps": 0,
             "propagation_delay_bound": 2,
             "antecedent_metric": "grad.global_norm",
@@ -507,11 +508,12 @@
             "scope_compatible": true,
             "antecedent_onset": 44,
             "target_onset": 44,
-            "interpretation": "a non-finite value was observed at EVERY stage of the chain -- upstream gradient, midstream parameters, downstream target -- within the propagation bound, so forward propagation through the optimizer update is observable rather than merely plausible. This is still NOT a causal identification."
+            "mechanism_linker_enabled": false,
+            "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
           "rule_version": "v0.1.5-4.0",
-          "confidence": 0.8
+          "confidence": 0.5
         },
         {
           "relation_id": "rel_85780912ae1e",
@@ -538,6 +540,7 @@
             "scope_compatible": true,
             "antecedent_onset": 44,
             "target_onset": 44,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -549,12 +552,12 @@
           "run_id": "wc-C1-L4d32-s97000",
           "source_incident_id": "ep_e53d943c9b5d",
           "target_incident_id": "ep_caaa8a3edd68",
-          "relation_type": "POSSIBLE_CONSEQUENCE_OF",
+          "relation_type": "PRECEDES",
           "source_anomaly_type": "NAN_DETECTED",
           "target_anomaly_type": "NAN_DETECTED",
           "gap_steps": 1,
           "evidence": {
-            "tier": "MECHANISM",
+            "tier": "TEMPORAL",
             "gap_steps": 1,
             "propagation_delay_bound": 2,
             "antecedent_metric": "grad.global_norm",
@@ -569,23 +572,24 @@
             "scope_compatible": true,
             "antecedent_onset": 44,
             "target_onset": 45,
-            "interpretation": "a non-finite value was observed at EVERY stage of the chain -- upstream gradient, midstream parameters, downstream target -- within the propagation bound, so forward propagation through the optimizer update is observable rather than merely plausible. This is still NOT a causal identification."
+            "mechanism_linker_enabled": false,
+            "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
           "rule_version": "v0.1.5-4.0",
-          "confidence": 0.6666666666666667
+          "confidence": 0.495
         },
         {
           "relation_id": "rel_7bf3895f0e51",
           "run_id": "wc-C1-L4d32-s97000",
           "source_incident_id": "ep_e53d943c9b5d",
           "target_incident_id": "ep_8b71440cbf6c",
-          "relation_type": "POSSIBLE_CONSEQUENCE_OF",
+          "relation_type": "PRECEDES",
           "source_anomaly_type": "NAN_DETECTED",
           "target_anomaly_type": "NAN_DETECTED",
           "gap_steps": 1,
           "evidence": {
-            "tier": "MECHANISM",
+            "tier": "TEMPORAL",
             "gap_steps": 1,
             "propagation_delay_bound": 2,
             "antecedent_metric": "grad.global_norm",
@@ -600,11 +604,12 @@
             "scope_compatible": true,
             "antecedent_onset": 44,
             "target_onset": 45,
-            "interpretation": "a non-finite value was observed at EVERY stage of the chain -- upstream gradient, midstream parameters, downstream target -- within the propagation bound, so forward propagation through the optimizer update is observable rather than merely plausible. This is still NOT a causal identification."
+            "mechanism_linker_enabled": false,
+            "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
           "rule_version": "v0.1.5-4.0",
-          "confidence": 0.6666666666666667
+          "confidence": 0.495
         },
         {
           "relation_id": "rel_788586f8c28e",
@@ -631,6 +636,7 @@
             "scope_compatible": true,
             "antecedent_onset": 44,
             "target_onset": 94,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -662,6 +668,7 @@
             "scope_compatible": true,
             "antecedent_onset": 44,
             "target_onset": 95,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -693,6 +700,7 @@
             "scope_compatible": true,
             "antecedent_onset": 44,
             "target_onset": 95,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -741,8 +749,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2852,
-            "events_emitted": 2852,
+            "events_persisted": 2204,
+            "events_emitted": 2204,
             "warnings": [],
             "warning_text": null
           },
@@ -796,8 +804,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279716687000,
-          "closed_wall_time_ns": 1791619279716763000,
+          "opened_wall_time_ns": 1791822625208095000,
+          "closed_wall_time_ns": 1791822625208182000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -850,8 +858,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279716709000,
-          "closed_wall_time_ns": 1791619279716765000,
+          "opened_wall_time_ns": 1791822625208121000,
+          "closed_wall_time_ns": 1791822625208184000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -904,8 +912,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279716723000,
-          "closed_wall_time_ns": 1791619279716767000,
+          "opened_wall_time_ns": 1791822625208135000,
+          "closed_wall_time_ns": 1791822625208186000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -958,8 +966,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279716740000,
-          "closed_wall_time_ns": 1791619279716769000,
+          "opened_wall_time_ns": 1791822625208154000,
+          "closed_wall_time_ns": 1791822625208188000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -1012,8 +1020,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279716752000,
-          "closed_wall_time_ns": 1791619279716771000,
+          "opened_wall_time_ns": 1791822625208166000,
+          "closed_wall_time_ns": 1791822625208190000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -1066,8 +1074,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279716777000,
-          "closed_wall_time_ns": 1791619279716813000,
+          "opened_wall_time_ns": 1791822625208196000,
+          "closed_wall_time_ns": 1791822625208233000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -1120,8 +1128,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279716792000,
-          "closed_wall_time_ns": 1791619279716815000,
+          "opened_wall_time_ns": 1791822625208212000,
+          "closed_wall_time_ns": 1791822625208235000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -1174,8 +1182,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279716804000,
-          "closed_wall_time_ns": 1791619279716816000,
+          "opened_wall_time_ns": 1791822625208224000,
+          "closed_wall_time_ns": 1791822625208236000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -1228,8 +1236,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279716822000,
-          "closed_wall_time_ns": 1791619279716858000,
+          "opened_wall_time_ns": 1791822625208243000,
+          "closed_wall_time_ns": 1791822625208280000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -1282,8 +1290,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279716837000,
-          "closed_wall_time_ns": 1791619279716860000,
+          "opened_wall_time_ns": 1791822625208257000,
+          "closed_wall_time_ns": 1791822625208282000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -1336,8 +1344,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619279716848000,
-          "closed_wall_time_ns": 1791619279716862000,
+          "opened_wall_time_ns": 1791822625208269000,
+          "closed_wall_time_ns": 1791822625208284000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -1376,6 +1384,7 @@
             "scope_compatible": true,
             "antecedent_onset": 16,
             "target_onset": 16,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -1387,12 +1396,12 @@
           "run_id": "wc-C1-L4d32-s97001",
           "source_incident_id": "ep_5bd7db26cb5a",
           "target_incident_id": "ep_9e60ecfa447a",
-          "relation_type": "POSSIBLE_CONSEQUENCE_OF",
+          "relation_type": "PRECEDES",
           "source_anomaly_type": "NAN_DETECTED",
           "target_anomaly_type": "NAN_DETECTED",
           "gap_steps": 0,
           "evidence": {
-            "tier": "MECHANISM",
+            "tier": "TEMPORAL",
             "gap_steps": 0,
             "propagation_delay_bound": 2,
             "antecedent_metric": "grad.global_norm",
@@ -1407,11 +1416,12 @@
             "scope_compatible": true,
             "antecedent_onset": 16,
             "target_onset": 16,
-            "interpretation": "a non-finite value was observed at EVERY stage of the chain -- upstream gradient, midstream parameters, downstream target -- within the propagation bound, so forward propagation through the optimizer update is observable rather than merely plausible. This is still NOT a causal identification."
+            "mechanism_linker_enabled": false,
+            "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
           "rule_version": "v0.1.5-4.0",
-          "confidence": 0.8
+          "confidence": 0.5
         },
         {
           "relation_id": "rel_b8adef513b22",
@@ -1438,6 +1448,7 @@
             "scope_compatible": true,
             "antecedent_onset": 16,
             "target_onset": 16,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -1449,12 +1460,12 @@
           "run_id": "wc-C1-L4d32-s97001",
           "source_incident_id": "ep_5bd7db26cb5a",
           "target_incident_id": "ep_4b5b207886e8",
-          "relation_type": "POSSIBLE_CONSEQUENCE_OF",
+          "relation_type": "PRECEDES",
           "source_anomaly_type": "NAN_DETECTED",
           "target_anomaly_type": "NAN_DETECTED",
           "gap_steps": 1,
           "evidence": {
-            "tier": "MECHANISM",
+            "tier": "TEMPORAL",
             "gap_steps": 1,
             "propagation_delay_bound": 2,
             "antecedent_metric": "grad.global_norm",
@@ -1469,23 +1480,24 @@
             "scope_compatible": true,
             "antecedent_onset": 16,
             "target_onset": 17,
-            "interpretation": "a non-finite value was observed at EVERY stage of the chain -- upstream gradient, midstream parameters, downstream target -- within the propagation bound, so forward propagation through the optimizer update is observable rather than merely plausible. This is still NOT a causal identification."
+            "mechanism_linker_enabled": false,
+            "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
           "rule_version": "v0.1.5-4.0",
-          "confidence": 0.6666666666666667
+          "confidence": 0.495
         },
         {
           "relation_id": "rel_d64946fd4924",
           "run_id": "wc-C1-L4d32-s97001",
           "source_incident_id": "ep_5bd7db26cb5a",
           "target_incident_id": "ep_99db4ca80c77",
-          "relation_type": "POSSIBLE_CONSEQUENCE_OF",
+          "relation_type": "PRECEDES",
           "source_anomaly_type": "NAN_DETECTED",
           "target_anomaly_type": "NAN_DETECTED",
           "gap_steps": 1,
           "evidence": {
-            "tier": "MECHANISM",
+            "tier": "TEMPORAL",
             "gap_steps": 1,
             "propagation_delay_bound": 2,
             "antecedent_metric": "grad.global_norm",
@@ -1500,11 +1512,12 @@
             "scope_compatible": true,
             "antecedent_onset": 16,
             "target_onset": 17,
-            "interpretation": "a non-finite value was observed at EVERY stage of the chain -- upstream gradient, midstream parameters, downstream target -- within the propagation bound, so forward propagation through the optimizer update is observable rather than merely plausible. This is still NOT a causal identification."
+            "mechanism_linker_enabled": false,
+            "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
           "rule_version": "v0.1.5-4.0",
-          "confidence": 0.6666666666666667
+          "confidence": 0.495
         },
         {
           "relation_id": "rel_f687b5d84e55",
@@ -1531,6 +1544,7 @@
             "scope_compatible": true,
             "antecedent_onset": 16,
             "target_onset": 66,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -1562,6 +1576,7 @@
             "scope_compatible": true,
             "antecedent_onset": 16,
             "target_onset": 67,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -1593,6 +1608,7 @@
             "scope_compatible": true,
             "antecedent_onset": 16,
             "target_onset": 67,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -1644,8 +1660,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2383,
-            "events_emitted": 2383,
+            "events_persisted": 1864,
+            "events_emitted": 1864,
             "warnings": [],
             "warning_text": null
           },
@@ -1699,8 +1715,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619280343259000,
-          "closed_wall_time_ns": 1791619280343325000,
+          "opened_wall_time_ns": 1791822625793055000,
+          "closed_wall_time_ns": 1791822625793142000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -1753,8 +1769,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619280343284000,
-          "closed_wall_time_ns": 1791619280343327000,
+          "opened_wall_time_ns": 1791822625793083000,
+          "closed_wall_time_ns": 1791822625793145000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -1807,8 +1823,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619280343302000,
-          "closed_wall_time_ns": 1791619280343329000,
+          "opened_wall_time_ns": 1791822625793109000,
+          "closed_wall_time_ns": 1791822625793146000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -1861,8 +1877,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619280343314000,
-          "closed_wall_time_ns": 1791619280343331000,
+          "opened_wall_time_ns": 1791822625793124000,
+          "closed_wall_time_ns": 1791822625793148000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -1915,8 +1931,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619280343337000,
-          "closed_wall_time_ns": 1791619280343374000,
+          "opened_wall_time_ns": 1791822625793155000,
+          "closed_wall_time_ns": 1791822625793201000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -1969,8 +1985,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619280343352000,
-          "closed_wall_time_ns": 1791619280343376000,
+          "opened_wall_time_ns": 1791822625793170000,
+          "closed_wall_time_ns": 1791822625793203000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -2023,8 +2039,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619280343364000,
-          "closed_wall_time_ns": 1791619280343378000,
+          "opened_wall_time_ns": 1791822625793190000,
+          "closed_wall_time_ns": 1791822625793205000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -2077,8 +2093,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2690,
-            "events_emitted": 2690,
+            "events_persisted": 2306,
+            "events_emitted": 2306,
             "warnings": [],
             "warning_text": null
           },
@@ -2132,8 +2148,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619280924704000,
-          "closed_wall_time_ns": 1791619280924742000,
+          "opened_wall_time_ns": 1791822626286164000,
+          "closed_wall_time_ns": 1791822626286198000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -2186,8 +2202,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619280924726000,
-          "closed_wall_time_ns": 1791619280924744000,
+          "opened_wall_time_ns": 1791822626286186000,
+          "closed_wall_time_ns": 1791822626286201000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -2240,8 +2256,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619280924752000,
-          "closed_wall_time_ns": 1791619280924775000,
+          "opened_wall_time_ns": 1791822626286209000,
+          "closed_wall_time_ns": 1791822626286231000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -2294,8 +2310,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619280924765000,
-          "closed_wall_time_ns": 1791619280924776000,
+          "opened_wall_time_ns": 1791822626286222000,
+          "closed_wall_time_ns": 1791822626286233000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -2348,8 +2364,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619280924783000,
-          "closed_wall_time_ns": 1791619280924806000,
+          "opened_wall_time_ns": 1791822626286240000,
+          "closed_wall_time_ns": 1791822626286261000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -2402,8 +2418,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619280924795000,
-          "closed_wall_time_ns": 1791619280924808000,
+          "opened_wall_time_ns": 1791822626286251000,
+          "closed_wall_time_ns": 1791822626286263000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -2453,8 +2469,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2957,
-            "events_emitted": 2957,
+            "events_persisted": 1997,
+            "events_emitted": 1997,
             "warnings": [],
             "warning_text": null
           },
@@ -2508,8 +2524,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619281781735000,
-          "closed_wall_time_ns": 1791619281781799000,
+          "opened_wall_time_ns": 1791822627015660000,
+          "closed_wall_time_ns": 1791822627015723000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -2562,8 +2578,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619281781757000,
-          "closed_wall_time_ns": 1791619281781802000,
+          "opened_wall_time_ns": 1791822627015682000,
+          "closed_wall_time_ns": 1791822627015726000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -2616,8 +2632,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619281781776000,
-          "closed_wall_time_ns": 1791619281781803000,
+          "opened_wall_time_ns": 1791822627015700000,
+          "closed_wall_time_ns": 1791822627015728000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -2670,8 +2686,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619281781788000,
-          "closed_wall_time_ns": 1791619281781805000,
+          "opened_wall_time_ns": 1791822627015713000,
+          "closed_wall_time_ns": 1791822627015729000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -2724,8 +2740,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619281781812000,
-          "closed_wall_time_ns": 1791619281781849000,
+          "opened_wall_time_ns": 1791822627015736000,
+          "closed_wall_time_ns": 1791822627015772000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -2778,8 +2794,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619281781827000,
-          "closed_wall_time_ns": 1791619281781851000,
+          "opened_wall_time_ns": 1791822627015750000,
+          "closed_wall_time_ns": 1791822627015774000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -2832,8 +2848,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619281781839000,
-          "closed_wall_time_ns": 1791619281781853000,
+          "opened_wall_time_ns": 1791822627015762000,
+          "closed_wall_time_ns": 1791822627015775000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -2886,8 +2902,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2928,
-            "events_emitted": 2928,
+            "events_persisted": 2448,
+            "events_emitted": 2448,
             "warnings": [],
             "warning_text": null
           },
@@ -2941,8 +2957,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619282666547000,
-          "closed_wall_time_ns": 1791619282666614000,
+          "opened_wall_time_ns": 1791822627810483000,
+          "closed_wall_time_ns": 1791822627810546000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -2995,8 +3011,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619282666572000,
-          "closed_wall_time_ns": 1791619282666616000,
+          "opened_wall_time_ns": 1791822627810506000,
+          "closed_wall_time_ns": 1791822627810549000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -3049,8 +3065,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619282666590000,
-          "closed_wall_time_ns": 1791619282666618000,
+          "opened_wall_time_ns": 1791822627810523000,
+          "closed_wall_time_ns": 1791822627810550000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -3103,8 +3119,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619282666603000,
-          "closed_wall_time_ns": 1791619282666620000,
+          "opened_wall_time_ns": 1791822627810536000,
+          "closed_wall_time_ns": 1791822627810552000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -3157,8 +3173,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619282666627000,
-          "closed_wall_time_ns": 1791619282666663000,
+          "opened_wall_time_ns": 1791822627810558000,
+          "closed_wall_time_ns": 1791822627810594000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -3211,8 +3227,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619282666642000,
-          "closed_wall_time_ns": 1791619282666665000,
+          "opened_wall_time_ns": 1791822627810573000,
+          "closed_wall_time_ns": 1791822627810596000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -3265,8 +3281,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619282666653000,
-          "closed_wall_time_ns": 1791619282666667000,
+          "opened_wall_time_ns": 1791822627810584000,
+          "closed_wall_time_ns": 1791822627810598000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -3319,8 +3335,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2928,
-            "events_emitted": 2928,
+            "events_persisted": 2448,
+            "events_emitted": 2448,
             "warnings": [],
             "warning_text": null
           },
@@ -3374,8 +3390,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619283478375000,
-          "closed_wall_time_ns": 1791619283478412000,
+          "opened_wall_time_ns": 1791822628485888000,
+          "closed_wall_time_ns": 1791822628485929000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -3428,8 +3444,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619283478399000,
-          "closed_wall_time_ns": 1791619283478415000,
+          "opened_wall_time_ns": 1791822628485915000,
+          "closed_wall_time_ns": 1791822628485931000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -3475,8 +3491,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3819,
-            "events_emitted": 3819,
+            "events_persisted": 3051,
+            "events_emitted": 3051,
             "warnings": [],
             "warning_text": null
           },
@@ -3530,8 +3546,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619284289229000,
-          "closed_wall_time_ns": 1791619284289266000,
+          "opened_wall_time_ns": 1791822629160365000,
+          "closed_wall_time_ns": 1791822629160402000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -3584,8 +3600,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619284289252000,
-          "closed_wall_time_ns": 1791619284289268000,
+          "opened_wall_time_ns": 1791822629160388000,
+          "closed_wall_time_ns": 1791822629160404000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -3631,8 +3647,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3819,
-            "events_emitted": 3819,
+            "events_persisted": 3051,
+            "events_emitted": 3051,
             "warnings": [],
             "warning_text": null
           },
@@ -3686,8 +3702,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619285103548000,
-          "closed_wall_time_ns": 1791619285103584000,
+          "opened_wall_time_ns": 1791822629837090000,
+          "closed_wall_time_ns": 1791822629837127000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -3740,8 +3756,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619285103570000,
-          "closed_wall_time_ns": 1791619285103586000,
+          "opened_wall_time_ns": 1791822629837113000,
+          "closed_wall_time_ns": 1791822629837129000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -3787,8 +3803,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3819,
-            "events_emitted": 3819,
+            "events_persisted": 3051,
+            "events_emitted": 3051,
             "warnings": [],
             "warning_text": null
           },
@@ -3842,8 +3858,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619286240291000,
-          "closed_wall_time_ns": 1791619286240333000,
+          "opened_wall_time_ns": 1791822630749783000,
+          "closed_wall_time_ns": 1791822630749819000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -3896,8 +3912,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619286240316000,
-          "closed_wall_time_ns": 1791619286240336000,
+          "opened_wall_time_ns": 1791822630749805000,
+          "closed_wall_time_ns": 1791822630749821000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -3943,8 +3959,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 4295,
-            "events_emitted": 4295,
+            "events_persisted": 3335,
+            "events_emitted": 3335,
             "warnings": [],
             "warning_text": null
           },
@@ -3998,8 +4014,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619287329564000,
-          "closed_wall_time_ns": 1791619287329606000,
+          "opened_wall_time_ns": 1791822631661234000,
+          "closed_wall_time_ns": 1791822631661272000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -4052,8 +4068,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619287329592000,
-          "closed_wall_time_ns": 1791619287329609000,
+          "opened_wall_time_ns": 1791822631661258000,
+          "closed_wall_time_ns": 1791822631661274000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -4099,8 +4115,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 4295,
-            "events_emitted": 4295,
+            "events_persisted": 3335,
+            "events_emitted": 3335,
             "warnings": [],
             "warning_text": null
           },
@@ -4154,8 +4170,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619288412600000,
-          "closed_wall_time_ns": 1791619288412637000,
+          "opened_wall_time_ns": 1791822632562192000,
+          "closed_wall_time_ns": 1791822632562230000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -4208,8 +4224,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619288412623000,
-          "closed_wall_time_ns": 1791619288412640000,
+          "opened_wall_time_ns": 1791822632562216000,
+          "closed_wall_time_ns": 1791822632562233000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -4255,8 +4271,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 4295,
-            "events_emitted": 4295,
+            "events_persisted": 3335,
+            "events_emitted": 3335,
             "warnings": [],
             "warning_text": null
           },
@@ -4326,8 +4342,8 @@
           "duration_steps": 18,
           "confirmation_delay_steps": 2,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619289171131000,
-          "closed_wall_time_ns": 1791619289171350000,
+          "opened_wall_time_ns": 1791822633151935000,
+          "closed_wall_time_ns": 1791822633152146000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -4395,8 +4411,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619289171155000,
-          "closed_wall_time_ns": 1791619289171353000,
+          "opened_wall_time_ns": 1791822633151958000,
+          "closed_wall_time_ns": 1791822633152149000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -4449,8 +4465,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619289171170000,
-          "closed_wall_time_ns": 1791619289171355000,
+          "opened_wall_time_ns": 1791822633151973000,
+          "closed_wall_time_ns": 1791822633152151000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -4513,8 +4529,8 @@
           "duration_steps": 2,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791619289171239000,
-          "closed_wall_time_ns": 1791619289171357000,
+          "opened_wall_time_ns": 1791822633152039000,
+          "closed_wall_time_ns": 1791822633152152000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -4613,8 +4629,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619289171327000,
-          "closed_wall_time_ns": 1791619289171358000,
+          "opened_wall_time_ns": 1791822633152125000,
+          "closed_wall_time_ns": 1791822633152154000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -4667,8 +4683,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619289171339000,
-          "closed_wall_time_ns": 1791619289171360000,
+          "opened_wall_time_ns": 1791822633152136000,
+          "closed_wall_time_ns": 1791822633152156000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -4721,8 +4737,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619289171367000,
-          "closed_wall_time_ns": 1791619289171390000,
+          "opened_wall_time_ns": 1791822633152163000,
+          "closed_wall_time_ns": 1791822633152185000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -4775,8 +4791,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619289171379000,
-          "closed_wall_time_ns": 1791619289171392000,
+          "opened_wall_time_ns": 1791822633152174000,
+          "closed_wall_time_ns": 1791822633152187000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -4815,6 +4831,7 @@
             "scope_compatible": true,
             "antecedent_onset": 71,
             "target_onset": 78,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -4846,6 +4863,7 @@
             "scope_compatible": true,
             "antecedent_onset": 71,
             "target_onset": 78,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -4877,6 +4895,7 @@
             "scope_compatible": true,
             "antecedent_onset": 71,
             "target_onset": 112,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -4908,6 +4927,7 @@
             "scope_compatible": true,
             "antecedent_onset": 71,
             "target_onset": 112,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -4945,8 +4965,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3282,
-            "events_emitted": 3282,
+            "events_persisted": 2580,
+            "events_emitted": 2580,
             "warnings": [],
             "warning_text": null
           },
@@ -4979,8 +4999,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3282,
-            "events_emitted": 3282,
+            "events_persisted": 2580,
+            "events_emitted": 2580,
             "warnings": [],
             "warning_text": null
           },
@@ -5023,8 +5043,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3282,
-            "events_emitted": 3282,
+            "events_persisted": 2580,
+            "events_emitted": 2580,
             "warnings": [],
             "warning_text": null
           },
@@ -5094,8 +5114,8 @@
           "duration_steps": 18,
           "confirmation_delay_steps": 2,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619289861403000,
-          "closed_wall_time_ns": 1791619289861609000,
+          "opened_wall_time_ns": 1791822633735680000,
+          "closed_wall_time_ns": 1791822633735874000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -5163,8 +5183,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619289861433000,
-          "closed_wall_time_ns": 1791619289861612000,
+          "opened_wall_time_ns": 1791822633735703000,
+          "closed_wall_time_ns": 1791822633735877000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -5217,8 +5237,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619289861448000,
-          "closed_wall_time_ns": 1791619289861614000,
+          "opened_wall_time_ns": 1791822633735718000,
+          "closed_wall_time_ns": 1791822633735879000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -5281,8 +5301,8 @@
           "duration_steps": 2,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791619289861518000,
-          "closed_wall_time_ns": 1791619289861615000,
+          "opened_wall_time_ns": 1791822633735792000,
+          "closed_wall_time_ns": 1791822633735880000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -5381,8 +5401,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619289861623000,
-          "closed_wall_time_ns": 1791619289861647000,
+          "opened_wall_time_ns": 1791822633735888000,
+          "closed_wall_time_ns": 1791822633735911000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -5435,8 +5455,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619289861636000,
-          "closed_wall_time_ns": 1791619289861649000,
+          "opened_wall_time_ns": 1791822633735900000,
+          "closed_wall_time_ns": 1791822633735913000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -5475,6 +5495,7 @@
             "scope_compatible": true,
             "antecedent_onset": 71,
             "target_onset": 112,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -5506,6 +5527,7 @@
             "scope_compatible": true,
             "antecedent_onset": 71,
             "target_onset": 112,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -5543,8 +5565,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3369,
-            "events_emitted": 3369,
+            "events_persisted": 2601,
+            "events_emitted": 2601,
             "warnings": [],
             "warning_text": null
           },
@@ -5577,8 +5599,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3369,
-            "events_emitted": 3369,
+            "events_persisted": 2601,
+            "events_emitted": 2601,
             "warnings": [],
             "warning_text": null
           },
@@ -5617,8 +5639,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3369,
-            "events_emitted": 3369,
+            "events_persisted": 2601,
+            "events_emitted": 2601,
             "warnings": [],
             "warning_text": null
           },
@@ -5672,8 +5694,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619290606839000,
-          "closed_wall_time_ns": 1791619290606981000,
+          "opened_wall_time_ns": 1791822634346559000,
+          "closed_wall_time_ns": 1791822634346696000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -5726,8 +5748,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619290606854000,
-          "closed_wall_time_ns": 1791619290606983000,
+          "opened_wall_time_ns": 1791822634346574000,
+          "closed_wall_time_ns": 1791822634346698000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -5791,8 +5813,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791619290606939000,
-          "closed_wall_time_ns": 1791619290607063000,
+          "opened_wall_time_ns": 1791822634346656000,
+          "closed_wall_time_ns": 1791822634346775000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -5924,8 +5946,8 @@
           "duration_steps": 38,
           "confirmation_delay_steps": 2,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619290606816000,
-          "closed_wall_time_ns": 1791619290607088000,
+          "opened_wall_time_ns": 1791822634346532000,
+          "closed_wall_time_ns": 1791822634346802000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -6005,8 +6027,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619290607096000,
-          "closed_wall_time_ns": 1791619290607120000,
+          "opened_wall_time_ns": 1791822634346810000,
+          "closed_wall_time_ns": 1791822634346833000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -6059,8 +6081,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619290607109000,
-          "closed_wall_time_ns": 1791619290607122000,
+          "opened_wall_time_ns": 1791822634346822000,
+          "closed_wall_time_ns": 1791822634346834000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -6099,6 +6121,7 @@
             "scope_compatible": true,
             "antecedent_onset": 83,
             "target_onset": 112,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -6130,6 +6153,7 @@
             "scope_compatible": true,
             "antecedent_onset": 83,
             "target_onset": 112,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -6167,8 +6191,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3589,
-            "events_emitted": 3589,
+            "events_persisted": 2821,
+            "events_emitted": 2821,
             "warnings": [],
             "warning_text": null
           },
@@ -6201,8 +6225,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3589,
-            "events_emitted": 3589,
+            "events_persisted": 2821,
+            "events_emitted": 2821,
             "warnings": [],
             "warning_text": null
           },
@@ -6241,8 +6265,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3589,
-            "events_emitted": 3589,
+            "events_persisted": 2821,
+            "events_emitted": 2821,
             "warnings": [],
             "warning_text": null
           },
@@ -6296,8 +6320,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619291570867000,
-          "closed_wall_time_ns": 1791619291571078000,
+          "opened_wall_time_ns": 1791822635201215000,
+          "closed_wall_time_ns": 1791822635201403000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -6350,8 +6374,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619291570883000,
-          "closed_wall_time_ns": 1791619291571081000,
+          "opened_wall_time_ns": 1791822635201230000,
+          "closed_wall_time_ns": 1791822635201405000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -6417,8 +6441,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": null,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791619291570962000,
-          "closed_wall_time_ns": 1791619291571084000,
+          "opened_wall_time_ns": 1791822635201297000,
+          "closed_wall_time_ns": 1791822635201409000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -6557,8 +6581,8 @@
           "duration_steps": 30,
           "confirmation_delay_steps": 2,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619291570829000,
-          "closed_wall_time_ns": 1791619291571169000,
+          "opened_wall_time_ns": 1791822635201191000,
+          "closed_wall_time_ns": 1791822635201484000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -6638,8 +6662,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619291571143000,
-          "closed_wall_time_ns": 1791619291571171000,
+          "opened_wall_time_ns": 1791822635201464000,
+          "closed_wall_time_ns": 1791822635201487000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -6692,8 +6716,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619291571156000,
-          "closed_wall_time_ns": 1791619291571173000,
+          "opened_wall_time_ns": 1791822635201476000,
+          "closed_wall_time_ns": 1791822635201489000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -6746,8 +6770,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619291571182000,
-          "closed_wall_time_ns": 1791619291571210000,
+          "opened_wall_time_ns": 1791822635201495000,
+          "closed_wall_time_ns": 1791822635201517000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -6800,8 +6824,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619291571194000,
-          "closed_wall_time_ns": 1791619291571212000,
+          "opened_wall_time_ns": 1791822635201507000,
+          "closed_wall_time_ns": 1791822635201519000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -6840,6 +6864,7 @@
             "scope_compatible": true,
             "antecedent_onset": 61,
             "target_onset": 90,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -6871,6 +6896,7 @@
             "scope_compatible": true,
             "antecedent_onset": 61,
             "target_onset": 90,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -6902,6 +6928,7 @@
             "scope_compatible": true,
             "antecedent_onset": 61,
             "target_onset": 112,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -6933,6 +6960,7 @@
             "scope_compatible": true,
             "antecedent_onset": 61,
             "target_onset": 112,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -6972,8 +7000,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3856,
-            "events_emitted": 3856,
+            "events_persisted": 2944,
+            "events_emitted": 2944,
             "warnings": [],
             "warning_text": null
           },
@@ -7006,8 +7034,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3856,
-            "events_emitted": 3856,
+            "events_persisted": 2944,
+            "events_emitted": 2944,
             "warnings": [],
             "warning_text": null
           },
@@ -7050,8 +7078,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3856,
-            "events_emitted": 3856,
+            "events_persisted": 2944,
+            "events_emitted": 2944,
             "warnings": [],
             "warning_text": null
           },
@@ -7120,8 +7148,8 @@
           "duration_steps": 17,
           "confirmation_delay_steps": 2,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619292497713000,
-          "closed_wall_time_ns": 1791619292497943000,
+          "opened_wall_time_ns": 1791822636000776000,
+          "closed_wall_time_ns": 1791822636000999000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -7188,8 +7216,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619292497737000,
-          "closed_wall_time_ns": 1791619292497946000,
+          "opened_wall_time_ns": 1791822636000800000,
+          "closed_wall_time_ns": 1791822636001002000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -7242,8 +7270,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619292497752000,
-          "closed_wall_time_ns": 1791619292497948000,
+          "opened_wall_time_ns": 1791822636000815000,
+          "closed_wall_time_ns": 1791822636001005000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -7309,8 +7337,8 @@
           "duration_steps": 2,
           "confirmation_delay_steps": 1,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791619292497825000,
-          "closed_wall_time_ns": 1791619292497950000,
+          "opened_wall_time_ns": 1791822636000883000,
+          "closed_wall_time_ns": 1791822636001007000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -7425,8 +7453,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619292497919000,
-          "closed_wall_time_ns": 1791619292497952000,
+          "opened_wall_time_ns": 1791822636000975000,
+          "closed_wall_time_ns": 1791822636001009000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -7479,8 +7507,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619292497932000,
-          "closed_wall_time_ns": 1791619292497953000,
+          "opened_wall_time_ns": 1791822636000987000,
+          "closed_wall_time_ns": 1791822636001011000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -7533,8 +7561,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619292497961000,
-          "closed_wall_time_ns": 1791619292497984000,
+          "opened_wall_time_ns": 1791822636001019000,
+          "closed_wall_time_ns": 1791822636001043000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -7587,8 +7615,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619292497973000,
-          "closed_wall_time_ns": 1791619292497986000,
+          "opened_wall_time_ns": 1791822636001032000,
+          "closed_wall_time_ns": 1791822636001045000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -7627,6 +7655,7 @@
             "scope_compatible": true,
             "antecedent_onset": 72,
             "target_onset": 77,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -7658,6 +7687,7 @@
             "scope_compatible": true,
             "antecedent_onset": 72,
             "target_onset": 77,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -7689,6 +7719,7 @@
             "scope_compatible": true,
             "antecedent_onset": 72,
             "target_onset": 112,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -7720,6 +7751,7 @@
             "scope_compatible": true,
             "antecedent_onset": 72,
             "target_onset": 112,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -7757,8 +7789,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3661,
-            "events_emitted": 3661,
+            "events_persisted": 2769,
+            "events_emitted": 2769,
             "warnings": [],
             "warning_text": null
           },
@@ -7791,8 +7823,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3661,
-            "events_emitted": 3661,
+            "events_persisted": 2769,
+            "events_emitted": 2769,
             "warnings": [],
             "warning_text": null
           },
@@ -7835,8 +7867,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3661,
-            "events_emitted": 3661,
+            "events_persisted": 2769,
+            "events_emitted": 2769,
             "warnings": [],
             "warning_text": null
           },
@@ -7890,8 +7922,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619293469804000,
-          "closed_wall_time_ns": 1791619293469980000,
+          "opened_wall_time_ns": 1791822636830864000,
+          "closed_wall_time_ns": 1791822636831036000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -7944,8 +7976,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619293469818000,
-          "closed_wall_time_ns": 1791619293469983000,
+          "opened_wall_time_ns": 1791822636830879000,
+          "closed_wall_time_ns": 1791822636831038000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -8009,8 +8041,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791619293469911000,
-          "closed_wall_time_ns": 1791619293470018000,
+          "opened_wall_time_ns": 1791822636830969000,
+          "closed_wall_time_ns": 1791822636831079000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -8150,8 +8182,8 @@
           "duration_steps": 34,
           "confirmation_delay_steps": 2,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619293469780000,
-          "closed_wall_time_ns": 1791619293470058000,
+          "opened_wall_time_ns": 1791822636830839000,
+          "closed_wall_time_ns": 1791822636831121000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -8233,8 +8265,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619293470066000,
-          "closed_wall_time_ns": 1791619293470090000,
+          "opened_wall_time_ns": 1791822636831129000,
+          "closed_wall_time_ns": 1791822636831157000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -8287,8 +8319,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619293470079000,
-          "closed_wall_time_ns": 1791619293470092000,
+          "opened_wall_time_ns": 1791822636831146000,
+          "closed_wall_time_ns": 1791822636831159000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -8327,6 +8359,7 @@
             "scope_compatible": true,
             "antecedent_onset": 76,
             "target_onset": 112,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -8358,6 +8391,7 @@
             "scope_compatible": true,
             "antecedent_onset": 76,
             "target_onset": 112,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -8395,8 +8429,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3971,
-            "events_emitted": 3971,
+            "events_persisted": 3011,
+            "events_emitted": 3011,
             "warnings": [],
             "warning_text": null
           },
@@ -8429,8 +8463,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3971,
-            "events_emitted": 3971,
+            "events_persisted": 3011,
+            "events_emitted": 3011,
             "warnings": [],
             "warning_text": null
           },
@@ -8469,8 +8503,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3971,
-            "events_emitted": 3971,
+            "events_persisted": 3011,
+            "events_emitted": 3011,
             "warnings": [],
             "warning_text": null
           },
@@ -8524,8 +8558,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619294126849000,
-          "closed_wall_time_ns": 1791619294126921000,
+          "opened_wall_time_ns": 1791822637410719000,
+          "closed_wall_time_ns": 1791822637410780000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -8578,8 +8612,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619294126878000,
-          "closed_wall_time_ns": 1791619294126924000,
+          "opened_wall_time_ns": 1791822637410740000,
+          "closed_wall_time_ns": 1791822637410782000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -8632,8 +8666,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619294126896000,
-          "closed_wall_time_ns": 1791619294126926000,
+          "opened_wall_time_ns": 1791822637410758000,
+          "closed_wall_time_ns": 1791822637410784000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -8686,8 +8720,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619294126909000,
-          "closed_wall_time_ns": 1791619294126927000,
+          "opened_wall_time_ns": 1791822637410770000,
+          "closed_wall_time_ns": 1791822637410785000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -8740,8 +8774,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619294126935000,
-          "closed_wall_time_ns": 1791619294126973000,
+          "opened_wall_time_ns": 1791822637410793000,
+          "closed_wall_time_ns": 1791822637410829000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -8794,8 +8828,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619294126950000,
-          "closed_wall_time_ns": 1791619294126975000,
+          "opened_wall_time_ns": 1791822637410808000,
+          "closed_wall_time_ns": 1791822637410831000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -8848,8 +8882,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619294126962000,
-          "closed_wall_time_ns": 1791619294126977000,
+          "opened_wall_time_ns": 1791822637410819000,
+          "closed_wall_time_ns": 1791822637410833000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -8902,8 +8936,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2690,
-            "events_emitted": 2690,
+            "events_persisted": 2306,
+            "events_emitted": 2306,
             "warnings": [],
             "warning_text": null
           },
@@ -8957,8 +8991,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619295197575000,
-          "closed_wall_time_ns": 1791619295197645000,
+          "opened_wall_time_ns": 1791822637947086000,
+          "closed_wall_time_ns": 1791822637947148000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -9011,8 +9045,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619295197601000,
-          "closed_wall_time_ns": 1791619295197648000,
+          "opened_wall_time_ns": 1791822637947108000,
+          "closed_wall_time_ns": 1791822637947150000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -9065,8 +9099,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619295197620000,
-          "closed_wall_time_ns": 1791619295197650000,
+          "opened_wall_time_ns": 1791822637947125000,
+          "closed_wall_time_ns": 1791822637947152000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -9119,8 +9153,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619295197633000,
-          "closed_wall_time_ns": 1791619295197652000,
+          "opened_wall_time_ns": 1791822637947137000,
+          "closed_wall_time_ns": 1791822637947154000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -9173,8 +9207,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619295197658000,
-          "closed_wall_time_ns": 1791619295197696000,
+          "opened_wall_time_ns": 1791822637947160000,
+          "closed_wall_time_ns": 1791822637947195000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -9227,8 +9261,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619295197673000,
-          "closed_wall_time_ns": 1791619295197698000,
+          "opened_wall_time_ns": 1791822637947174000,
+          "closed_wall_time_ns": 1791822637947197000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -9281,8 +9315,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619295197685000,
-          "closed_wall_time_ns": 1791619295197700000,
+          "opened_wall_time_ns": 1791822637947186000,
+          "closed_wall_time_ns": 1791822637947199000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -9335,8 +9369,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2690,
-            "events_emitted": 2690,
+            "events_persisted": 2306,
+            "events_emitted": 2306,
             "warnings": [],
             "warning_text": null
           },
@@ -9390,8 +9424,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619295925159000,
-          "closed_wall_time_ns": 1791619295925222000,
+          "opened_wall_time_ns": 1791822638514334000,
+          "closed_wall_time_ns": 1791822638514412000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -9444,8 +9478,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619295925181000,
-          "closed_wall_time_ns": 1791619295925224000,
+          "opened_wall_time_ns": 1791822638514363000,
+          "closed_wall_time_ns": 1791822638514415000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -9498,8 +9532,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619295925199000,
-          "closed_wall_time_ns": 1791619295925226000,
+          "opened_wall_time_ns": 1791822638514387000,
+          "closed_wall_time_ns": 1791822638514418000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -9552,8 +9586,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619295925211000,
-          "closed_wall_time_ns": 1791619295925228000,
+          "opened_wall_time_ns": 1791822638514399000,
+          "closed_wall_time_ns": 1791822638514420000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -9606,8 +9640,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619295925234000,
-          "closed_wall_time_ns": 1791619295925271000,
+          "opened_wall_time_ns": 1791822638514427000,
+          "closed_wall_time_ns": 1791822638514464000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -9660,8 +9694,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619295925248000,
-          "closed_wall_time_ns": 1791619295925273000,
+          "opened_wall_time_ns": 1791822638514442000,
+          "closed_wall_time_ns": 1791822638514466000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -9714,8 +9748,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619295925260000,
-          "closed_wall_time_ns": 1791619295925275000,
+          "opened_wall_time_ns": 1791822638514454000,
+          "closed_wall_time_ns": 1791822638514468000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -9768,8 +9802,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2690,
-            "events_emitted": 2690,
+            "events_persisted": 2306,
+            "events_emitted": 2306,
             "warnings": [],
             "warning_text": null
           },
@@ -9823,8 +9857,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619296729009000,
-          "closed_wall_time_ns": 1791619296729070000,
+          "opened_wall_time_ns": 1791822639245697000,
+          "closed_wall_time_ns": 1791822639245766000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -9877,8 +9911,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619296729030000,
-          "closed_wall_time_ns": 1791619296729073000,
+          "opened_wall_time_ns": 1791822639245720000,
+          "closed_wall_time_ns": 1791822639245769000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -9931,8 +9965,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619296729048000,
-          "closed_wall_time_ns": 1791619296729074000,
+          "opened_wall_time_ns": 1791822639245740000,
+          "closed_wall_time_ns": 1791822639245771000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -9985,8 +10019,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619296729060000,
-          "closed_wall_time_ns": 1791619296729076000,
+          "opened_wall_time_ns": 1791822639245752000,
+          "closed_wall_time_ns": 1791822639245772000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -10039,8 +10073,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619296729083000,
-          "closed_wall_time_ns": 1791619296729118000,
+          "opened_wall_time_ns": 1791822639245779000,
+          "closed_wall_time_ns": 1791822639245818000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -10093,8 +10127,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619296729097000,
-          "closed_wall_time_ns": 1791619296729120000,
+          "opened_wall_time_ns": 1791822639245793000,
+          "closed_wall_time_ns": 1791822639245820000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -10147,8 +10181,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619296729108000,
-          "closed_wall_time_ns": 1791619296729122000,
+          "opened_wall_time_ns": 1791822639245808000,
+          "closed_wall_time_ns": 1791822639245821000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -10201,8 +10235,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2928,
-            "events_emitted": 2928,
+            "events_persisted": 2448,
+            "events_emitted": 2448,
             "warnings": [],
             "warning_text": null
           },
@@ -10256,8 +10290,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619297517977000,
-          "closed_wall_time_ns": 1791619297518044000,
+          "opened_wall_time_ns": 1791822639973186000,
+          "closed_wall_time_ns": 1791822639973249000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -10310,8 +10344,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619297518000000,
-          "closed_wall_time_ns": 1791619297518046000,
+          "opened_wall_time_ns": 1791822639973208000,
+          "closed_wall_time_ns": 1791822639973251000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -10364,8 +10398,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619297518018000,
-          "closed_wall_time_ns": 1791619297518048000,
+          "opened_wall_time_ns": 1791822639973226000,
+          "closed_wall_time_ns": 1791822639973253000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -10418,8 +10452,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619297518030000,
-          "closed_wall_time_ns": 1791619297518050000,
+          "opened_wall_time_ns": 1791822639973239000,
+          "closed_wall_time_ns": 1791822639973255000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -10472,8 +10506,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619297518056000,
-          "closed_wall_time_ns": 1791619297518095000,
+          "opened_wall_time_ns": 1791822639973261000,
+          "closed_wall_time_ns": 1791822639973297000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -10526,8 +10560,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619297518070000,
-          "closed_wall_time_ns": 1791619297518096000,
+          "opened_wall_time_ns": 1791822639973275000,
+          "closed_wall_time_ns": 1791822639973299000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -10580,8 +10614,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619297518084000,
-          "closed_wall_time_ns": 1791619297518098000,
+          "opened_wall_time_ns": 1791822639973287000,
+          "closed_wall_time_ns": 1791822639973301000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -10634,8 +10668,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2928,
-            "events_emitted": 2928,
+            "events_persisted": 2448,
+            "events_emitted": 2448,
             "warnings": [],
             "warning_text": null
           },
@@ -10689,8 +10723,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619298320288000,
-          "closed_wall_time_ns": 1791619298320350000,
+          "opened_wall_time_ns": 1791822640678654000,
+          "closed_wall_time_ns": 1791822640678717000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -10743,8 +10777,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619298320310000,
-          "closed_wall_time_ns": 1791619298320352000,
+          "opened_wall_time_ns": 1791822640678676000,
+          "closed_wall_time_ns": 1791822640678719000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -10797,8 +10831,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619298320328000,
-          "closed_wall_time_ns": 1791619298320354000,
+          "opened_wall_time_ns": 1791822640678694000,
+          "closed_wall_time_ns": 1791822640678721000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -10851,8 +10885,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619298320340000,
-          "closed_wall_time_ns": 1791619298320356000,
+          "opened_wall_time_ns": 1791822640678707000,
+          "closed_wall_time_ns": 1791822640678722000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -10905,8 +10939,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619298320362000,
-          "closed_wall_time_ns": 1791619298320398000,
+          "opened_wall_time_ns": 1791822640678729000,
+          "closed_wall_time_ns": 1791822640678764000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -10959,8 +10993,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619298320376000,
-          "closed_wall_time_ns": 1791619298320400000,
+          "opened_wall_time_ns": 1791822640678743000,
+          "closed_wall_time_ns": 1791822640678766000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -11013,8 +11047,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619298320388000,
-          "closed_wall_time_ns": 1791619298320401000,
+          "opened_wall_time_ns": 1791822640678754000,
+          "closed_wall_time_ns": 1791822640678768000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -11067,8 +11101,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2928,
-            "events_emitted": 2928,
+            "events_persisted": 2448,
+            "events_emitted": 2448,
             "warnings": [],
             "warning_text": null
           },
@@ -11122,8 +11156,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619298918871000,
-          "closed_wall_time_ns": 1791619298918936000,
+          "opened_wall_time_ns": 1791822641210191000,
+          "closed_wall_time_ns": 1791822641210252000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -11176,8 +11210,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619298918895000,
-          "closed_wall_time_ns": 1791619298918938000,
+          "opened_wall_time_ns": 1791822641210213000,
+          "closed_wall_time_ns": 1791822641210254000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -11230,8 +11264,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619298918912000,
-          "closed_wall_time_ns": 1791619298918940000,
+          "opened_wall_time_ns": 1791822641210230000,
+          "closed_wall_time_ns": 1791822641210256000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -11284,8 +11318,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619298918925000,
-          "closed_wall_time_ns": 1791619298918942000,
+          "opened_wall_time_ns": 1791822641210242000,
+          "closed_wall_time_ns": 1791822641210258000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -11338,8 +11372,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619298918948000,
-          "closed_wall_time_ns": 1791619298918987000,
+          "opened_wall_time_ns": 1791822641210264000,
+          "closed_wall_time_ns": 1791822641210300000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -11392,8 +11426,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619298918966000,
-          "closed_wall_time_ns": 1791619298918989000,
+          "opened_wall_time_ns": 1791822641210278000,
+          "closed_wall_time_ns": 1791822641210302000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -11446,8 +11480,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619298918977000,
-          "closed_wall_time_ns": 1791619298918991000,
+          "opened_wall_time_ns": 1791822641210290000,
+          "closed_wall_time_ns": 1791822641210303000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -11500,8 +11534,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2690,
-            "events_emitted": 2690,
+            "events_persisted": 2306,
+            "events_emitted": 2306,
             "warnings": [],
             "warning_text": null
           },
@@ -11555,8 +11589,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619299524503000,
-          "closed_wall_time_ns": 1791619299524565000,
+          "opened_wall_time_ns": 1791822641739267000,
+          "closed_wall_time_ns": 1791822641739328000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -11609,8 +11643,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619299524525000,
-          "closed_wall_time_ns": 1791619299524568000,
+          "opened_wall_time_ns": 1791822641739288000,
+          "closed_wall_time_ns": 1791822641739330000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -11663,8 +11697,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619299524542000,
-          "closed_wall_time_ns": 1791619299524569000,
+          "opened_wall_time_ns": 1791822641739306000,
+          "closed_wall_time_ns": 1791822641739332000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -11717,8 +11751,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619299524555000,
-          "closed_wall_time_ns": 1791619299524571000,
+          "opened_wall_time_ns": 1791822641739318000,
+          "closed_wall_time_ns": 1791822641739333000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -11771,8 +11805,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619299524577000,
-          "closed_wall_time_ns": 1791619299524613000,
+          "opened_wall_time_ns": 1791822641739340000,
+          "closed_wall_time_ns": 1791822641739375000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -11825,8 +11859,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619299524592000,
-          "closed_wall_time_ns": 1791619299524615000,
+          "opened_wall_time_ns": 1791822641739353000,
+          "closed_wall_time_ns": 1791822641739376000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -11879,8 +11913,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619299524603000,
-          "closed_wall_time_ns": 1791619299524617000,
+          "opened_wall_time_ns": 1791822641739365000,
+          "closed_wall_time_ns": 1791822641739378000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -11933,8 +11967,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2690,
-            "events_emitted": 2690,
+            "events_persisted": 2306,
+            "events_emitted": 2306,
             "warnings": [],
             "warning_text": null
           },
@@ -11988,8 +12022,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619300115868000,
-          "closed_wall_time_ns": 1791619300115933000,
+          "opened_wall_time_ns": 1791822642272874000,
+          "closed_wall_time_ns": 1791822642272940000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -12042,8 +12076,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619300115890000,
-          "closed_wall_time_ns": 1791619300115935000,
+          "opened_wall_time_ns": 1791822642272900000,
+          "closed_wall_time_ns": 1791822642272943000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -12096,8 +12130,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619300115907000,
-          "closed_wall_time_ns": 1791619300115937000,
+          "opened_wall_time_ns": 1791822642272918000,
+          "closed_wall_time_ns": 1791822642272944000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -12150,8 +12184,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619300115920000,
-          "closed_wall_time_ns": 1791619300115939000,
+          "opened_wall_time_ns": 1791822642272930000,
+          "closed_wall_time_ns": 1791822642272946000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -12204,8 +12238,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619300115946000,
-          "closed_wall_time_ns": 1791619300115982000,
+          "opened_wall_time_ns": 1791822642272952000,
+          "closed_wall_time_ns": 1791822642272990000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -12258,8 +12292,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619300115960000,
-          "closed_wall_time_ns": 1791619300115984000,
+          "opened_wall_time_ns": 1791822642272969000,
+          "closed_wall_time_ns": 1791822642272992000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -12312,8 +12346,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619300115972000,
-          "closed_wall_time_ns": 1791619300115986000,
+          "opened_wall_time_ns": 1791822642272980000,
+          "closed_wall_time_ns": 1791822642272994000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -12366,8 +12400,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2690,
-            "events_emitted": 2690,
+            "events_persisted": 2306,
+            "events_emitted": 2306,
             "warnings": [],
             "warning_text": null
           },
@@ -12421,8 +12455,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619300917819000,
-          "closed_wall_time_ns": 1791619300917883000,
+          "opened_wall_time_ns": 1791822643052649000,
+          "closed_wall_time_ns": 1791822643052719000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -12475,8 +12509,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619300917841000,
-          "closed_wall_time_ns": 1791619300917885000,
+          "opened_wall_time_ns": 1791822643052675000,
+          "closed_wall_time_ns": 1791822643052721000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -12529,8 +12563,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619300917859000,
-          "closed_wall_time_ns": 1791619300917887000,
+          "opened_wall_time_ns": 1791822643052693000,
+          "closed_wall_time_ns": 1791822643052723000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -12583,8 +12617,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619300917872000,
-          "closed_wall_time_ns": 1791619300917889000,
+          "opened_wall_time_ns": 1791822643052709000,
+          "closed_wall_time_ns": 1791822643052725000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -12637,8 +12671,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619300917896000,
-          "closed_wall_time_ns": 1791619300917933000,
+          "opened_wall_time_ns": 1791822643052731000,
+          "closed_wall_time_ns": 1791822643052767000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -12691,8 +12725,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619300917910000,
-          "closed_wall_time_ns": 1791619300917934000,
+          "opened_wall_time_ns": 1791822643052745000,
+          "closed_wall_time_ns": 1791822643052769000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -12745,8 +12779,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619300917922000,
-          "closed_wall_time_ns": 1791619300917936000,
+          "opened_wall_time_ns": 1791822643052756000,
+          "closed_wall_time_ns": 1791822643052770000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -12799,8 +12833,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2928,
-            "events_emitted": 2928,
+            "events_persisted": 2448,
+            "events_emitted": 2448,
             "warnings": [],
             "warning_text": null
           },
@@ -12854,8 +12888,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619301745189000,
-          "closed_wall_time_ns": 1791619301745257000,
+          "opened_wall_time_ns": 1791822643772999000,
+          "closed_wall_time_ns": 1791822643773060000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -12908,8 +12942,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619301745215000,
-          "closed_wall_time_ns": 1791619301745259000,
+          "opened_wall_time_ns": 1791822643773021000,
+          "closed_wall_time_ns": 1791822643773063000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -12962,8 +12996,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619301745233000,
-          "closed_wall_time_ns": 1791619301745261000,
+          "opened_wall_time_ns": 1791822643773039000,
+          "closed_wall_time_ns": 1791822643773064000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -13016,8 +13050,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619301745245000,
-          "closed_wall_time_ns": 1791619301745263000,
+          "opened_wall_time_ns": 1791822643773050000,
+          "closed_wall_time_ns": 1791822643773066000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -13070,8 +13104,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619301745269000,
-          "closed_wall_time_ns": 1791619301745306000,
+          "opened_wall_time_ns": 1791822643773072000,
+          "closed_wall_time_ns": 1791822643773108000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -13124,8 +13158,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619301745284000,
-          "closed_wall_time_ns": 1791619301745308000,
+          "opened_wall_time_ns": 1791822643773087000,
+          "closed_wall_time_ns": 1791822643773110000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -13178,8 +13212,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619301745296000,
-          "closed_wall_time_ns": 1791619301745310000,
+          "opened_wall_time_ns": 1791822643773098000,
+          "closed_wall_time_ns": 1791822643773111000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -13232,8 +13266,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2928,
-            "events_emitted": 2928,
+            "events_persisted": 2448,
+            "events_emitted": 2448,
             "warnings": [],
             "warning_text": null
           },
@@ -13287,8 +13321,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619302646365000,
-          "closed_wall_time_ns": 1791619302646433000,
+          "opened_wall_time_ns": 1791822644498142000,
+          "closed_wall_time_ns": 1791822644498203000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -13341,8 +13375,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619302646390000,
-          "closed_wall_time_ns": 1791619302646435000,
+          "opened_wall_time_ns": 1791822644498164000,
+          "closed_wall_time_ns": 1791822644498206000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -13395,8 +13429,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619302646408000,
-          "closed_wall_time_ns": 1791619302646437000,
+          "opened_wall_time_ns": 1791822644498182000,
+          "closed_wall_time_ns": 1791822644498207000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -13449,8 +13483,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619302646421000,
-          "closed_wall_time_ns": 1791619302646439000,
+          "opened_wall_time_ns": 1791822644498194000,
+          "closed_wall_time_ns": 1791822644498209000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -13503,8 +13537,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619302646446000,
-          "closed_wall_time_ns": 1791619302646484000,
+          "opened_wall_time_ns": 1791822644498215000,
+          "closed_wall_time_ns": 1791822644498260000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -13557,8 +13591,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619302646461000,
-          "closed_wall_time_ns": 1791619302646486000,
+          "opened_wall_time_ns": 1791822644498230000,
+          "closed_wall_time_ns": 1791822644498262000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -13611,8 +13645,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619302646473000,
-          "closed_wall_time_ns": 1791619302646488000,
+          "opened_wall_time_ns": 1791822644498250000,
+          "closed_wall_time_ns": 1791822644498264000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -13665,8 +13699,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2928,
-            "events_emitted": 2928,
+            "events_persisted": 2448,
+            "events_emitted": 2448,
             "warnings": [],
             "warning_text": null
           },
@@ -13706,8 +13740,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3841,
-            "events_emitted": 3841,
+            "events_persisted": 3073,
+            "events_emitted": 3073,
             "warnings": [],
             "warning_text": null
           },
@@ -13747,8 +13781,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3841,
-            "events_emitted": 3841,
+            "events_persisted": 3073,
+            "events_emitted": 3073,
             "warnings": [],
             "warning_text": null
           },
@@ -13788,8 +13822,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3841,
-            "events_emitted": 3841,
+            "events_persisted": 3073,
+            "events_emitted": 3073,
             "warnings": [],
             "warning_text": null
           },
@@ -13829,8 +13863,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 4321,
-            "events_emitted": 4321,
+            "events_persisted": 3361,
+            "events_emitted": 3361,
             "warnings": [],
             "warning_text": null
           },
@@ -13870,8 +13904,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 4321,
-            "events_emitted": 4321,
+            "events_persisted": 3361,
+            "events_emitted": 3361,
             "warnings": [],
             "warning_text": null
           },
@@ -13911,8 +13945,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 4321,
-            "events_emitted": 4321,
+            "events_persisted": 3361,
+            "events_emitted": 3361,
             "warnings": [],
             "warning_text": null
           },
@@ -13966,8 +14000,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619308884412000,
-          "closed_wall_time_ns": 1791619308884448000,
+          "opened_wall_time_ns": 1791822649718324000,
+          "closed_wall_time_ns": 1791822649718361000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -14020,8 +14054,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619308884436000,
-          "closed_wall_time_ns": 1791619308884451000,
+          "opened_wall_time_ns": 1791822649718348000,
+          "closed_wall_time_ns": 1791822649718363000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -14074,8 +14108,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619308884459000,
-          "closed_wall_time_ns": 1791619308884482000,
+          "opened_wall_time_ns": 1791822649718379000,
+          "closed_wall_time_ns": 1791822649718402000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -14128,8 +14162,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619308884471000,
-          "closed_wall_time_ns": 1791619308884484000,
+          "opened_wall_time_ns": 1791822649718391000,
+          "closed_wall_time_ns": 1791822649718403000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -14177,8 +14211,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2814,
-            "events_emitted": 2814,
+            "events_persisted": 2046,
+            "events_emitted": 2046,
             "warnings": [],
             "warning_text": null
           },
@@ -14232,8 +14266,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619309505413000,
-          "closed_wall_time_ns": 1791619309505482000,
+          "opened_wall_time_ns": 1791822650282445000,
+          "closed_wall_time_ns": 1791822650282514000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -14286,8 +14320,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619309505437000,
-          "closed_wall_time_ns": 1791619309505484000,
+          "opened_wall_time_ns": 1791822650282472000,
+          "closed_wall_time_ns": 1791822650282517000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -14340,8 +14374,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619309505455000,
-          "closed_wall_time_ns": 1791619309505486000,
+          "opened_wall_time_ns": 1791822650282493000,
+          "closed_wall_time_ns": 1791822650282519000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -14394,8 +14428,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619309505467000,
-          "closed_wall_time_ns": 1791619309505488000,
+          "opened_wall_time_ns": 1791822650282505000,
+          "closed_wall_time_ns": 1791822650282520000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -14448,8 +14482,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619309505494000,
-          "closed_wall_time_ns": 1791619309505533000,
+          "opened_wall_time_ns": 1791822650282526000,
+          "closed_wall_time_ns": 1791822650282565000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -14502,8 +14536,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619309505509000,
-          "closed_wall_time_ns": 1791619309505535000,
+          "opened_wall_time_ns": 1791822650282541000,
+          "closed_wall_time_ns": 1791822650282567000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -14556,8 +14590,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619309505523000,
-          "closed_wall_time_ns": 1791619309505537000,
+          "opened_wall_time_ns": 1791822650282555000,
+          "closed_wall_time_ns": 1791822650282569000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -14610,8 +14644,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2630,
-            "events_emitted": 2630,
+            "events_persisted": 2246,
+            "events_emitted": 2246,
             "warnings": [],
             "warning_text": null
           },
@@ -14665,8 +14699,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619310138216000,
-          "closed_wall_time_ns": 1791619310138279000,
+          "opened_wall_time_ns": 1791822650857403000,
+          "closed_wall_time_ns": 1791822650857474000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -14719,8 +14753,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619310138239000,
-          "closed_wall_time_ns": 1791619310138282000,
+          "opened_wall_time_ns": 1791822650857430000,
+          "closed_wall_time_ns": 1791822650857477000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -14773,8 +14807,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619310138256000,
-          "closed_wall_time_ns": 1791619310138283000,
+          "opened_wall_time_ns": 1791822650857448000,
+          "closed_wall_time_ns": 1791822650857478000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -14827,8 +14861,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619310138268000,
-          "closed_wall_time_ns": 1791619310138285000,
+          "opened_wall_time_ns": 1791822650857464000,
+          "closed_wall_time_ns": 1791822650857480000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -14881,8 +14915,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619310138292000,
-          "closed_wall_time_ns": 1791619310138332000,
+          "opened_wall_time_ns": 1791822650857487000,
+          "closed_wall_time_ns": 1791822650857522000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -14935,8 +14969,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619310138310000,
-          "closed_wall_time_ns": 1791619310138334000,
+          "opened_wall_time_ns": 1791822650857501000,
+          "closed_wall_time_ns": 1791822650857524000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -14989,8 +15023,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619310138321000,
-          "closed_wall_time_ns": 1791619310138335000,
+          "opened_wall_time_ns": 1791822650857512000,
+          "closed_wall_time_ns": 1791822650857526000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -15043,8 +15077,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2630,
-            "events_emitted": 2630,
+            "events_persisted": 2246,
+            "events_emitted": 2246,
             "warnings": [],
             "warning_text": null
           },
@@ -15098,8 +15132,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619310875605000,
-          "closed_wall_time_ns": 1791619310875682000,
+          "opened_wall_time_ns": 1791822651484978000,
+          "closed_wall_time_ns": 1791822651485058000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -15152,8 +15186,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619310875627000,
-          "closed_wall_time_ns": 1791619310875684000,
+          "opened_wall_time_ns": 1791822651485000000,
+          "closed_wall_time_ns": 1791822651485060000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -15206,8 +15240,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619310875643000,
-          "closed_wall_time_ns": 1791619310875686000,
+          "opened_wall_time_ns": 1791822651485021000,
+          "closed_wall_time_ns": 1791822651485062000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -15260,8 +15294,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619310875659000,
-          "closed_wall_time_ns": 1791619310875688000,
+          "opened_wall_time_ns": 1791822651485036000,
+          "closed_wall_time_ns": 1791822651485063000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -15314,8 +15348,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619310875672000,
-          "closed_wall_time_ns": 1791619310875690000,
+          "opened_wall_time_ns": 1791822651485048000,
+          "closed_wall_time_ns": 1791822651485065000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -15368,8 +15402,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619310875696000,
-          "closed_wall_time_ns": 1791619310875732000,
+          "opened_wall_time_ns": 1791822651485071000,
+          "closed_wall_time_ns": 1791822651485106000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -15422,8 +15456,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619310875710000,
-          "closed_wall_time_ns": 1791619310875734000,
+          "opened_wall_time_ns": 1791822651485085000,
+          "closed_wall_time_ns": 1791822651485108000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -15476,8 +15510,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619310875722000,
-          "closed_wall_time_ns": 1791619310875736000,
+          "opened_wall_time_ns": 1791822651485096000,
+          "closed_wall_time_ns": 1791822651485110000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -15516,6 +15550,7 @@
             "scope_compatible": true,
             "antecedent_onset": 35,
             "target_onset": 35,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -15547,6 +15582,7 @@
             "scope_compatible": true,
             "antecedent_onset": 35,
             "target_onset": 35,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -15558,12 +15594,12 @@
           "run_id": "wc-C7-L6d48-s97000",
           "source_incident_id": "ep_c505e04878c3",
           "target_incident_id": "ep_a44e3c5b36b0",
-          "relation_type": "POSSIBLE_CONSEQUENCE_OF",
+          "relation_type": "PRECEDES",
           "source_anomaly_type": "NAN_DETECTED",
           "target_anomaly_type": "NAN_DETECTED",
           "gap_steps": 1,
           "evidence": {
-            "tier": "MECHANISM",
+            "tier": "TEMPORAL",
             "gap_steps": 1,
             "propagation_delay_bound": 2,
             "antecedent_metric": "grad.global_norm",
@@ -15578,23 +15614,24 @@
             "scope_compatible": true,
             "antecedent_onset": 35,
             "target_onset": 36,
-            "interpretation": "a non-finite value was observed at EVERY stage of the chain -- upstream gradient, midstream parameters, downstream target -- within the propagation bound, so forward propagation through the optimizer update is observable rather than merely plausible. This is still NOT a causal identification."
+            "mechanism_linker_enabled": false,
+            "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
           "rule_version": "v0.1.5-4.0",
-          "confidence": 0.6666666666666667
+          "confidence": 0.495
         },
         {
           "relation_id": "rel_df5dab0b57a6",
           "run_id": "wc-C7-L6d48-s97000",
           "source_incident_id": "ep_c505e04878c3",
           "target_incident_id": "ep_d85221640889",
-          "relation_type": "POSSIBLE_CONSEQUENCE_OF",
+          "relation_type": "PRECEDES",
           "source_anomaly_type": "NAN_DETECTED",
           "target_anomaly_type": "NAN_DETECTED",
           "gap_steps": 2,
           "evidence": {
-            "tier": "MECHANISM",
+            "tier": "TEMPORAL",
             "gap_steps": 2,
             "propagation_delay_bound": 2,
             "antecedent_metric": "grad.global_norm",
@@ -15609,23 +15646,24 @@
             "scope_compatible": true,
             "antecedent_onset": 35,
             "target_onset": 37,
-            "interpretation": "a non-finite value was observed at EVERY stage of the chain -- upstream gradient, midstream parameters, downstream target -- within the propagation bound, so forward propagation through the optimizer update is observable rather than merely plausible. This is still NOT a causal identification."
+            "mechanism_linker_enabled": false,
+            "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
           "rule_version": "v0.1.5-4.0",
-          "confidence": 0.5333333333333334
+          "confidence": 0.49
         },
         {
           "relation_id": "rel_8a2625c38979",
           "run_id": "wc-C7-L6d48-s97000",
           "source_incident_id": "ep_c505e04878c3",
           "target_incident_id": "ep_b47d75c76e1d",
-          "relation_type": "POSSIBLE_CONSEQUENCE_OF",
+          "relation_type": "PRECEDES",
           "source_anomaly_type": "NAN_DETECTED",
           "target_anomaly_type": "NAN_DETECTED",
           "gap_steps": 2,
           "evidence": {
-            "tier": "MECHANISM",
+            "tier": "TEMPORAL",
             "gap_steps": 2,
             "propagation_delay_bound": 2,
             "antecedent_metric": "grad.global_norm",
@@ -15640,11 +15678,12 @@
             "scope_compatible": true,
             "antecedent_onset": 35,
             "target_onset": 37,
-            "interpretation": "a non-finite value was observed at EVERY stage of the chain -- upstream gradient, midstream parameters, downstream target -- within the propagation bound, so forward propagation through the optimizer update is observable rather than merely plausible. This is still NOT a causal identification."
+            "mechanism_linker_enabled": false,
+            "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
           "rule_version": "v0.1.5-4.0",
-          "confidence": 0.5333333333333334
+          "confidence": 0.49
         },
         {
           "relation_id": "rel_2b6f08a8e17f",
@@ -15671,6 +15710,7 @@
             "scope_compatible": true,
             "antecedent_onset": 35,
             "target_onset": 86,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -15702,6 +15742,7 @@
             "scope_compatible": true,
             "antecedent_onset": 35,
             "target_onset": 87,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -15733,6 +15774,7 @@
             "scope_compatible": true,
             "antecedent_onset": 35,
             "target_onset": 87,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -15781,8 +15823,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2998,
-            "events_emitted": 2998,
+            "events_persisted": 2172,
+            "events_emitted": 2172,
             "warnings": [],
             "warning_text": null
           },
@@ -15836,8 +15878,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619311728734000,
-          "closed_wall_time_ns": 1791619311728798000,
+          "opened_wall_time_ns": 1791822652214741000,
+          "closed_wall_time_ns": 1791822652214806000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -15890,8 +15932,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619311728757000,
-          "closed_wall_time_ns": 1791619311728801000,
+          "opened_wall_time_ns": 1791822652214765000,
+          "closed_wall_time_ns": 1791822652214808000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -15944,8 +15986,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619311728775000,
-          "closed_wall_time_ns": 1791619311728803000,
+          "opened_wall_time_ns": 1791822652214783000,
+          "closed_wall_time_ns": 1791822652214810000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -15998,8 +16040,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619311728787000,
-          "closed_wall_time_ns": 1791619311728804000,
+          "opened_wall_time_ns": 1791822652214795000,
+          "closed_wall_time_ns": 1791822652214812000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -16052,8 +16094,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619311728811000,
-          "closed_wall_time_ns": 1791619311728848000,
+          "opened_wall_time_ns": 1791822652214818000,
+          "closed_wall_time_ns": 1791822652214859000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -16106,8 +16148,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619311728826000,
-          "closed_wall_time_ns": 1791619311728849000,
+          "opened_wall_time_ns": 1791822652214833000,
+          "closed_wall_time_ns": 1791822652214861000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -16160,8 +16202,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619311728837000,
-          "closed_wall_time_ns": 1791619311728851000,
+          "opened_wall_time_ns": 1791822652214847000,
+          "closed_wall_time_ns": 1791822652214863000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -16214,8 +16256,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2868,
-            "events_emitted": 2868,
+            "events_persisted": 2388,
+            "events_emitted": 2388,
             "warnings": [],
             "warning_text": null
           },
@@ -16269,8 +16311,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619312396917000,
-          "closed_wall_time_ns": 1791619312396953000,
+          "opened_wall_time_ns": 1791822652770889000,
+          "closed_wall_time_ns": 1791822652770929000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -16323,8 +16365,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619312396941000,
-          "closed_wall_time_ns": 1791619312396956000,
+          "opened_wall_time_ns": 1791822652770915000,
+          "closed_wall_time_ns": 1791822652770932000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -16377,8 +16419,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619312396963000,
-          "closed_wall_time_ns": 1791619312396986000,
+          "opened_wall_time_ns": 1791822652770940000,
+          "closed_wall_time_ns": 1791822652770963000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -16431,8 +16473,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619312396975000,
-          "closed_wall_time_ns": 1791619312396988000,
+          "opened_wall_time_ns": 1791822652770952000,
+          "closed_wall_time_ns": 1791822652770966000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -16480,8 +16522,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3144,
-            "events_emitted": 3144,
+            "events_persisted": 2184,
+            "events_emitted": 2184,
             "warnings": [],
             "warning_text": null
           },
@@ -16535,8 +16577,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619312872408000,
-          "closed_wall_time_ns": 1791619312872443000,
+          "opened_wall_time_ns": 1791822653152398000,
+          "closed_wall_time_ns": 1791822653152432000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -16589,8 +16631,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619312872431000,
-          "closed_wall_time_ns": 1791619312872445000,
+          "opened_wall_time_ns": 1791822653152420000,
+          "closed_wall_time_ns": 1791822653152434000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -16643,8 +16685,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619312872453000,
-          "closed_wall_time_ns": 1791619312872475000,
+          "opened_wall_time_ns": 1791822653152442000,
+          "closed_wall_time_ns": 1791822653152465000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -16697,8 +16739,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619312872465000,
-          "closed_wall_time_ns": 1791619312872477000,
+          "opened_wall_time_ns": 1791822653152454000,
+          "closed_wall_time_ns": 1791822653152467000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -16746,8 +16788,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2814,
-            "events_emitted": 2814,
+            "events_persisted": 2046,
+            "events_emitted": 2046,
             "warnings": [],
             "warning_text": null
           },
@@ -16801,8 +16843,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619313481211000,
-          "closed_wall_time_ns": 1791619313481280000,
+          "opened_wall_time_ns": 1791822653657894000,
+          "closed_wall_time_ns": 1791822653657962000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -16855,8 +16897,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619313481238000,
-          "closed_wall_time_ns": 1791619313481282000,
+          "opened_wall_time_ns": 1791822653657920000,
+          "closed_wall_time_ns": 1791822653657965000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -16909,8 +16951,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619313481256000,
-          "closed_wall_time_ns": 1791619313481284000,
+          "opened_wall_time_ns": 1791822653657938000,
+          "closed_wall_time_ns": 1791822653657967000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -16963,8 +17005,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619313481269000,
-          "closed_wall_time_ns": 1791619313481286000,
+          "opened_wall_time_ns": 1791822653657949000,
+          "closed_wall_time_ns": 1791822653657968000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -17017,8 +17059,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619313481292000,
-          "closed_wall_time_ns": 1791619313481332000,
+          "opened_wall_time_ns": 1791822653657974000,
+          "closed_wall_time_ns": 1791822653658010000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -17071,8 +17113,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619313481307000,
-          "closed_wall_time_ns": 1791619313481334000,
+          "opened_wall_time_ns": 1791822653657989000,
+          "closed_wall_time_ns": 1791822653658012000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -17125,8 +17167,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619313481319000,
-          "closed_wall_time_ns": 1791619313481336000,
+          "opened_wall_time_ns": 1791822653658000000,
+          "closed_wall_time_ns": 1791822653658014000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -17179,8 +17221,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2630,
-            "events_emitted": 2630,
+            "events_persisted": 2246,
+            "events_emitted": 2246,
             "warnings": [],
             "warning_text": null
           },
@@ -17234,8 +17276,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619314116810000,
-          "closed_wall_time_ns": 1791619314116874000,
+          "opened_wall_time_ns": 1791822654207042000,
+          "closed_wall_time_ns": 1791822654207106000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -17288,8 +17330,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619314116834000,
-          "closed_wall_time_ns": 1791619314116876000,
+          "opened_wall_time_ns": 1791822654207065000,
+          "closed_wall_time_ns": 1791822654207108000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -17342,8 +17384,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619314116851000,
-          "closed_wall_time_ns": 1791619314116878000,
+          "opened_wall_time_ns": 1791822654207083000,
+          "closed_wall_time_ns": 1791822654207110000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -17396,8 +17438,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619314116863000,
-          "closed_wall_time_ns": 1791619314116880000,
+          "opened_wall_time_ns": 1791822654207096000,
+          "closed_wall_time_ns": 1791822654207112000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -17450,8 +17492,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619314116887000,
-          "closed_wall_time_ns": 1791619314116923000,
+          "opened_wall_time_ns": 1791822654207118000,
+          "closed_wall_time_ns": 1791822654207163000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -17504,8 +17546,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619314116901000,
-          "closed_wall_time_ns": 1791619314116925000,
+          "opened_wall_time_ns": 1791822654207142000,
+          "closed_wall_time_ns": 1791822654207165000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -17558,8 +17600,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619314116913000,
-          "closed_wall_time_ns": 1791619314116927000,
+          "opened_wall_time_ns": 1791822654207154000,
+          "closed_wall_time_ns": 1791822654207167000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -17612,8 +17654,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2630,
-            "events_emitted": 2630,
+            "events_persisted": 2246,
+            "events_emitted": 2246,
             "warnings": [],
             "warning_text": null
           },
@@ -17667,8 +17709,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619314851649000,
-          "closed_wall_time_ns": 1791619314851726000,
+          "opened_wall_time_ns": 1791822654841841000,
+          "closed_wall_time_ns": 1791822654841918000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -17721,8 +17763,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619314851672000,
-          "closed_wall_time_ns": 1791619314851728000,
+          "opened_wall_time_ns": 1791822654841864000,
+          "closed_wall_time_ns": 1791822654841920000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -17775,8 +17817,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619314851688000,
-          "closed_wall_time_ns": 1791619314851730000,
+          "opened_wall_time_ns": 1791822654841881000,
+          "closed_wall_time_ns": 1791822654841922000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -17829,8 +17871,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619314851704000,
-          "closed_wall_time_ns": 1791619314851732000,
+          "opened_wall_time_ns": 1791822654841896000,
+          "closed_wall_time_ns": 1791822654841923000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -17883,8 +17925,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619314851715000,
-          "closed_wall_time_ns": 1791619314851733000,
+          "opened_wall_time_ns": 1791822654841908000,
+          "closed_wall_time_ns": 1791822654841925000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -17937,8 +17979,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619314851740000,
-          "closed_wall_time_ns": 1791619314851776000,
+          "opened_wall_time_ns": 1791822654841931000,
+          "closed_wall_time_ns": 1791822654841966000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -17991,8 +18033,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619314851754000,
-          "closed_wall_time_ns": 1791619314851778000,
+          "opened_wall_time_ns": 1791822654841945000,
+          "closed_wall_time_ns": 1791822654841968000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -18045,8 +18087,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619314851765000,
-          "closed_wall_time_ns": 1791619314851780000,
+          "opened_wall_time_ns": 1791822654841956000,
+          "closed_wall_time_ns": 1791822654841970000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -18085,6 +18127,7 @@
             "scope_compatible": true,
             "antecedent_onset": 35,
             "target_onset": 35,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -18116,6 +18159,7 @@
             "scope_compatible": true,
             "antecedent_onset": 35,
             "target_onset": 35,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -18127,12 +18171,12 @@
           "run_id": "wc-C8-L6d48-s97000",
           "source_incident_id": "ep_e5150ee32a06",
           "target_incident_id": "ep_fa9aa73477d3",
-          "relation_type": "POSSIBLE_CONSEQUENCE_OF",
+          "relation_type": "PRECEDES",
           "source_anomaly_type": "NAN_DETECTED",
           "target_anomaly_type": "NAN_DETECTED",
           "gap_steps": 1,
           "evidence": {
-            "tier": "MECHANISM",
+            "tier": "TEMPORAL",
             "gap_steps": 1,
             "propagation_delay_bound": 2,
             "antecedent_metric": "grad.global_norm",
@@ -18147,23 +18191,24 @@
             "scope_compatible": true,
             "antecedent_onset": 35,
             "target_onset": 36,
-            "interpretation": "a non-finite value was observed at EVERY stage of the chain -- upstream gradient, midstream parameters, downstream target -- within the propagation bound, so forward propagation through the optimizer update is observable rather than merely plausible. This is still NOT a causal identification."
+            "mechanism_linker_enabled": false,
+            "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
           "rule_version": "v0.1.5-4.0",
-          "confidence": 0.6666666666666667
+          "confidence": 0.495
         },
         {
           "relation_id": "rel_c3e62c93b1e1",
           "run_id": "wc-C8-L6d48-s97000",
           "source_incident_id": "ep_e5150ee32a06",
           "target_incident_id": "ep_8755c987fc43",
-          "relation_type": "POSSIBLE_CONSEQUENCE_OF",
+          "relation_type": "PRECEDES",
           "source_anomaly_type": "NAN_DETECTED",
           "target_anomaly_type": "NAN_DETECTED",
           "gap_steps": 2,
           "evidence": {
-            "tier": "MECHANISM",
+            "tier": "TEMPORAL",
             "gap_steps": 2,
             "propagation_delay_bound": 2,
             "antecedent_metric": "grad.global_norm",
@@ -18178,23 +18223,24 @@
             "scope_compatible": true,
             "antecedent_onset": 35,
             "target_onset": 37,
-            "interpretation": "a non-finite value was observed at EVERY stage of the chain -- upstream gradient, midstream parameters, downstream target -- within the propagation bound, so forward propagation through the optimizer update is observable rather than merely plausible. This is still NOT a causal identification."
+            "mechanism_linker_enabled": false,
+            "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
           "rule_version": "v0.1.5-4.0",
-          "confidence": 0.5333333333333334
+          "confidence": 0.49
         },
         {
           "relation_id": "rel_6cf890b64961",
           "run_id": "wc-C8-L6d48-s97000",
           "source_incident_id": "ep_e5150ee32a06",
           "target_incident_id": "ep_0a99bbd806e6",
-          "relation_type": "POSSIBLE_CONSEQUENCE_OF",
+          "relation_type": "PRECEDES",
           "source_anomaly_type": "NAN_DETECTED",
           "target_anomaly_type": "NAN_DETECTED",
           "gap_steps": 2,
           "evidence": {
-            "tier": "MECHANISM",
+            "tier": "TEMPORAL",
             "gap_steps": 2,
             "propagation_delay_bound": 2,
             "antecedent_metric": "grad.global_norm",
@@ -18209,11 +18255,12 @@
             "scope_compatible": true,
             "antecedent_onset": 35,
             "target_onset": 37,
-            "interpretation": "a non-finite value was observed at EVERY stage of the chain -- upstream gradient, midstream parameters, downstream target -- within the propagation bound, so forward propagation through the optimizer update is observable rather than merely plausible. This is still NOT a causal identification."
+            "mechanism_linker_enabled": false,
+            "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
           "rule_version": "v0.1.5-4.0",
-          "confidence": 0.5333333333333334
+          "confidence": 0.49
         },
         {
           "relation_id": "rel_2d2d1d6132ca",
@@ -18240,6 +18287,7 @@
             "scope_compatible": true,
             "antecedent_onset": 35,
             "target_onset": 86,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -18271,6 +18319,7 @@
             "scope_compatible": true,
             "antecedent_onset": 35,
             "target_onset": 87,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -18302,6 +18351,7 @@
             "scope_compatible": true,
             "antecedent_onset": 35,
             "target_onset": 87,
+            "mechanism_linker_enabled": false,
             "interpretation": "the observation followed an earlier anomaly within the compatibility window, but no mechanistic propagation path was observed. Order only: this asserts precedence, not consequence."
           },
           "rule_id": "link.numerics.after_primary",
@@ -18350,8 +18400,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2998,
-            "events_emitted": 2998,
+            "events_persisted": 2172,
+            "events_emitted": 2172,
             "warnings": [],
             "warning_text": null
           },
@@ -18405,8 +18455,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619315693035000,
-          "closed_wall_time_ns": 1791619315693098000,
+          "opened_wall_time_ns": 1791822655599767000,
+          "closed_wall_time_ns": 1791822655599829000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -18459,8 +18509,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619315693058000,
-          "closed_wall_time_ns": 1791619315693101000,
+          "opened_wall_time_ns": 1791822655599789000,
+          "closed_wall_time_ns": 1791822655599831000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -18513,8 +18563,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619315693075000,
-          "closed_wall_time_ns": 1791619315693102000,
+          "opened_wall_time_ns": 1791822655599806000,
+          "closed_wall_time_ns": 1791822655599833000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -18567,8 +18617,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619315693088000,
-          "closed_wall_time_ns": 1791619315693104000,
+          "opened_wall_time_ns": 1791822655599818000,
+          "closed_wall_time_ns": 1791822655599834000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -18621,8 +18671,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619315693111000,
-          "closed_wall_time_ns": 1791619315693147000,
+          "opened_wall_time_ns": 1791822655599841000,
+          "closed_wall_time_ns": 1791822655599877000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -18675,8 +18725,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619315693125000,
-          "closed_wall_time_ns": 1791619315693149000,
+          "opened_wall_time_ns": 1791822655599855000,
+          "closed_wall_time_ns": 1791822655599879000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -18729,8 +18779,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619315693136000,
-          "closed_wall_time_ns": 1791619315693150000,
+          "opened_wall_time_ns": 1791822655599867000,
+          "closed_wall_time_ns": 1791822655599880000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -18783,8 +18833,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 2868,
-            "events_emitted": 2868,
+            "events_persisted": 2388,
+            "events_emitted": 2388,
             "warnings": [],
             "warning_text": null
           },
@@ -18838,8 +18888,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619316359734000,
-          "closed_wall_time_ns": 1791619316359768000,
+          "opened_wall_time_ns": 1791822656159691000,
+          "closed_wall_time_ns": 1791822656159726000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -18892,8 +18942,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619316359756000,
-          "closed_wall_time_ns": 1791619316359770000,
+          "opened_wall_time_ns": 1791822656159714000,
+          "closed_wall_time_ns": 1791822656159729000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -18946,8 +18996,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619316359778000,
-          "closed_wall_time_ns": 1791619316359800000,
+          "opened_wall_time_ns": 1791822656159736000,
+          "closed_wall_time_ns": 1791822656159765000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -19000,8 +19050,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619316359790000,
-          "closed_wall_time_ns": 1791619316359802000,
+          "opened_wall_time_ns": 1791822656159752000,
+          "closed_wall_time_ns": 1791822656159767000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -19049,8 +19099,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3144,
-            "events_emitted": 3144,
+            "events_persisted": 2184,
+            "events_emitted": 2184,
             "warnings": [],
             "warning_text": null
           },
@@ -19104,8 +19154,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619317130468000,
-          "closed_wall_time_ns": 1791619317130506000,
+          "opened_wall_time_ns": 1791822656783543000,
+          "closed_wall_time_ns": 1791822656783581000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -19158,8 +19208,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619317130492000,
-          "closed_wall_time_ns": 1791619317130508000,
+          "opened_wall_time_ns": 1791822656783566000,
+          "closed_wall_time_ns": 1791822656783583000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -19205,8 +19255,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3819,
-            "events_emitted": 3819,
+            "events_persisted": 3051,
+            "events_emitted": 3051,
             "warnings": [],
             "warning_text": null
           },
@@ -19260,8 +19310,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619317939950000,
-          "closed_wall_time_ns": 1791619317939985000,
+          "opened_wall_time_ns": 1791822657468799000,
+          "closed_wall_time_ns": 1791822657468836000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -19314,8 +19364,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619317939973000,
-          "closed_wall_time_ns": 1791619317939988000,
+          "opened_wall_time_ns": 1791822657468822000,
+          "closed_wall_time_ns": 1791822657468838000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -19361,8 +19411,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3819,
-            "events_emitted": 3819,
+            "events_persisted": 3051,
+            "events_emitted": 3051,
             "warnings": [],
             "warning_text": null
           },
@@ -19416,8 +19466,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619318808021000,
-          "closed_wall_time_ns": 1791619318808063000,
+          "opened_wall_time_ns": 1791822658146747000,
+          "closed_wall_time_ns": 1791822658146784000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -19470,8 +19520,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619318808048000,
-          "closed_wall_time_ns": 1791619318808065000,
+          "opened_wall_time_ns": 1791822658146770000,
+          "closed_wall_time_ns": 1791822658146786000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -19517,15 +19567,15 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 3819,
-            "events_emitted": 3819,
+            "events_persisted": 3051,
+            "events_emitted": 3051,
             "warnings": [],
             "warning_text": null
           },
           "completeness_warning": null
         }
       ],
-      "detection_anomalies": 5,
+      "detection_anomalies": 2,
       "case": "C9"
     },
     {
@@ -19572,8 +19622,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619319894840000,
-          "closed_wall_time_ns": 1791619319894879000,
+          "opened_wall_time_ns": 1791822659049911000,
+          "closed_wall_time_ns": 1791822659049947000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -19626,8 +19676,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619319894865000,
-          "closed_wall_time_ns": 1791619319894882000,
+          "opened_wall_time_ns": 1791822659049933000,
+          "closed_wall_time_ns": 1791822659049949000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -19673,8 +19723,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 4295,
-            "events_emitted": 4295,
+            "events_persisted": 3335,
+            "events_emitted": 3335,
             "warnings": [],
             "warning_text": null
           },
@@ -19728,8 +19778,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619320986566000,
-          "closed_wall_time_ns": 1791619320986604000,
+          "opened_wall_time_ns": 1791822659952533000,
+          "closed_wall_time_ns": 1791822659952569000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -19782,8 +19832,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619320986591000,
-          "closed_wall_time_ns": 1791619320986607000,
+          "opened_wall_time_ns": 1791822659952556000,
+          "closed_wall_time_ns": 1791822659952572000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -19829,8 +19879,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 4295,
-            "events_emitted": 4295,
+            "events_persisted": 3335,
+            "events_emitted": 3335,
             "warnings": [],
             "warning_text": null
           },
@@ -19884,8 +19934,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619322078576000,
-          "closed_wall_time_ns": 1791619322078614000,
+          "opened_wall_time_ns": 1791822660869375000,
+          "closed_wall_time_ns": 1791822660869411000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -19938,8 +19988,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791619322078600000,
-          "closed_wall_time_ns": 1791619322078617000,
+          "opened_wall_time_ns": 1791822660869398000,
+          "closed_wall_time_ns": 1791822660869414000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -19985,8 +20035,8 @@
             "overflow_events": 0,
             "persistence_failures": 0,
             "unreadable_parts": 0,
-            "events_persisted": 4295,
-            "events_emitted": 4295,
+            "events_persisted": 3335,
+            "events_emitted": 3335,
             "warnings": [],
             "warning_text": null
           },
@@ -19997,5 +20047,8 @@
       "case": "C9"
     }
   ],
-  "elapsed_s": 45.2
+  "elapsed_s": 37.1,
+  "code_sha": "6c04bacdc270e9fc7e70926240d59ad06222fd80",
+  "code_dirty": true,
+  "generated_at": "2026-10-12T16:31:01Z"
 }

@@ -1,7 +1,7 @@
 {
   "runs": 50,
-  "store": "<repo>/outputs/alpha/mixed/v015/store",
-  "ground_truth": "<repo>/outputs/alpha/mixed/v015/ground_truth/mixed_fault_ground_truth.json",
+  "store": "outputs/alpha/mixed/v015/store",
+  "ground_truth": "outputs/alpha/mixed/v015/ground_truth/mixed_fault_ground_truth.json",
   "scenarios": [
     "M1_gradient_then_nonfinite",
     "M2_standalone_nonfinite",
@@ -133,7 +133,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_629727c82c654e1c"
+        "inc_782e73573af74bc3"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -369,7 +369,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_310caf97165a4148"
+        "inc_8f809f84de114177"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -605,7 +605,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_2e8bea9aa1eb427d"
+        "inc_193390d2c0684cfe"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -841,7 +841,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_c649c2afe9784d18"
+        "inc_85503e71451e4d6a"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -1077,7 +1077,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_409daf4a69c2416e"
+        "inc_1623fa10178c43c6"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -1313,7 +1313,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_85463b327334463a"
+        "inc_cdcb005bdc9e4003"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -1549,7 +1549,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_c1842b3110ed4733"
+        "inc_1069caf5074a426e"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -1785,7 +1785,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_ca6abdf759c24619"
+        "inc_2a854f4d9faf4192"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -2021,7 +2021,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_90f34b434d944608"
+        "inc_34017b4c5bbb407e"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -2257,7 +2257,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_e7fb1d7262614c08"
+        "inc_250c9d83066347dc"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -2413,7 +2413,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_8757e34224f4425f"
+        "inc_3e33956c93914239"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -2450,7 +2450,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_d475afa7203d4845"
+        "inc_d945e7eb9e5c451a"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -2511,7 +2511,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_367b55625a9d47e0"
+        "inc_48a16644fa104d99"
       ],
       "verdicts": [
         "NO_ANOMALY",
@@ -2549,7 +2549,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_df7073da7b17492d"
+        "inc_7132bb366077488b"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -2586,7 +2586,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_3bc307dfb68b4745"
+        "inc_562979c758e142cc"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -2636,7 +2636,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_d8a0b67c22554f23"
+        "inc_ae9b914d682c4c86"
       ],
       "verdicts": [
         "NO_ANOMALY",
@@ -2702,7 +2702,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_9c67a9c40f704625"
+        "inc_66e2a70e52c14e85"
       ],
       "verdicts": [
         "NO_ANOMALY",
@@ -2740,7 +2740,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_f5e73dc63a374f32"
+        "inc_930a81a95dbf4eaa"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT"
@@ -2801,7 +2801,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_6712aa1a5c054cd7"
+        "inc_b5e6e70b81244a39"
       ],
       "verdicts": [
         "NO_ANOMALY",
@@ -2876,7 +2876,7 @@
       ],
       "relations": [],
       "incident_ids": [
-        "inc_ee26ffae45ed4ac6"
+        "inc_9c2b41cd5e164e49"
       ],
       "verdicts": [
         "NO_ANOMALY",
@@ -2950,8 +2950,8 @@
         }
       ],
       "incident_ids": [
-        "inc_c3fb853a68f04770",
-        "inc_f47ea960dbe048d6"
+        "inc_92bbe08eb8ef4a4d",
+        "inc_638b2119e7754280"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT",
@@ -3037,8 +3037,8 @@
         }
       ],
       "incident_ids": [
-        "inc_2c6cb66036764f82",
-        "inc_6c88e8251d054a20"
+        "inc_f5fd790bf9e2412f",
+        "inc_55f9db03be364313"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT",
@@ -3124,8 +3124,8 @@
         }
       ],
       "incident_ids": [
-        "inc_56c6629c13f24e81",
-        "inc_bc8ae0db5ff341eb"
+        "inc_04ca20aa96784a51",
+        "inc_1bf12df48cc14143"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT",
@@ -3211,8 +3211,8 @@
         }
       ],
       "incident_ids": [
-        "inc_fa44a53be464480c",
-        "inc_bf45c6483118466c"
+        "inc_80de7951a3224533",
+        "inc_355567f3c14b44ca"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT",
@@ -3298,8 +3298,8 @@
         }
       ],
       "incident_ids": [
-        "inc_d7718f3d70fb4e90",
-        "inc_d736ab562a0a4926"
+        "inc_60082512014c4eff",
+        "inc_dffd851313614dfb"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT",
@@ -3387,8 +3387,8 @@
         }
       ],
       "incident_ids": [
-        "inc_59501007e3644b2a",
-        "inc_6242da2e6c54412b"
+        "inc_89b5ea279b9b498c",
+        "inc_ad8bc83c4cd94b6a"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT",
@@ -3476,8 +3476,8 @@
         }
       ],
       "incident_ids": [
-        "inc_0252a07dcf2c4401",
-        "inc_9b3f385e4cc4462b"
+        "inc_7be6236ff52b4eda",
+        "inc_e7d80c412b2345cb"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT",
@@ -3565,8 +3565,8 @@
         }
       ],
       "incident_ids": [
-        "inc_9c4b609a54e248c4",
-        "inc_349681a9d73944c6"
+        "inc_56d810594d7c4065",
+        "inc_8a75c30b7e2d46ed"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT",
@@ -3654,8 +3654,8 @@
         }
       ],
       "incident_ids": [
-        "inc_da95b44be9834d79",
-        "inc_50caf4e3092f4e7d"
+        "inc_7103c9847a8f4650",
+        "inc_f239c075bb3146be"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT",
@@ -3743,8 +3743,8 @@
         }
       ],
       "incident_ids": [
-        "inc_051579c8a2f740d8",
-        "inc_76e9334c7d9d4bb0"
+        "inc_e27b99cf20aa42f4",
+        "inc_40ec2fd8b4464020"
       ],
       "verdicts": [
         "CONFIRMED_INCIDENT",
@@ -4221,5 +4221,8 @@
       "scenario": "M5_healthy_heavy_tail"
     }
   ],
-  "elapsed_s": 78.6
+  "elapsed_s": 62.5,
+  "code_sha": "6c04bacdc270e9fc7e70926240d59ad06222fd80",
+  "code_dirty": true,
+  "generated_at": "2026-10-12T16:28:58Z"
 }

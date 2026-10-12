@@ -200,12 +200,21 @@ def code_sha(*, root: Optional[Path] = None) -> str:
 
 
 def code_is_dirty(*, root: Optional[Path] = None) -> Optional[bool]:
-    """Whether the working tree had uncommitted changes when the artifact was written.
+    """Whether the *source* differs from the committed revision.
 
-    An artifact produced from a dirty tree cannot be reproduced from its ``code_sha``
-    alone, and saying so is more useful than pretending the revision is enough.
+    Scoped to the code, not to the whole tree. The first version asked
+    ``git status --porcelain`` about everything, and every script after the first in
+    a sequence recorded ``dirty=True`` -- because the earlier scripts had rewritten
+    the artifacts those later scripts were about to rewrite. The code was identical
+    throughout; only the evidence had moved.
+
+    An artifact is reproducible from its ``code_sha`` when the source matches that
+    revision. Evidence churn is not a reason to distrust the revision, so it is not
+    reported as one.
     """
-    status = _git(["status", "--porcelain"], root=root)
+    repo = Path(root) if root is not None else REPO_ROOT
+    status = _git(["status", "--porcelain", "--", "src", "tests", "pyproject.toml"],
+                  root=repo)
     if status is None:
         return None
     return bool(status.strip())
