@@ -218,23 +218,35 @@ python examples/quickstart.py
 python tests/performance/audit_observer_cost.py      # surcharge appariée, avec intervalles de confiance
 ```
 
-**Tous les chiffres clés ne sont pas actuellement reproductibles, et cela vaut la peine de le
-dire clairement.** Les mesures du détecteur et de performance sont produites par des scripts
-dans `tests/experiments/` et `tests/performance/`, et la sortie brute est versionnée sous
-`outputs/`.
+Chaque chiffre clé est désormais produit par un script versionné, et la notation est de
+nouveau reproductible. `tests/experiments/level_scoring.py` redérive les chiffres de
+qualité depuis un store :
 
-Les **chiffres de qualité** — précision 0.947 / rappel 0.500 au niveau exécution, précision
-EPISODE 0.326, précision INCIDENT 0.720, `missed_primary_faults 18` — **ne peuvent pas être
-redérivés de ce dépôt en l'état.** Ils ont été mesurés, mais l'entrée de notation avec
-laquelle ils l'ont été n'a jamais été versionnée : aucune des deux vérités terrain ne porte le
-`primary_fault_type` que lit le scoreur, la vérité terrain de développement n'a pas
-d'`acceptable_window`, la table de correspondance des classes de défaut n'a **aucune
-intersection** avec les étiquettes de scénario réellement utilisées par les corpus, et les
-anciens artefacts de notation ne consignent ni store, ni chemin de vérité terrain, ni commande.
+```bash
+python tests/experiments/level_scoring.py development   # ou mixed, adversarial
+```
 
-`tests/experiments/level_scoring.py` note désormais depuis un store et consigne ses entrées, et
-il **échoue en mode fermé** plutôt que d'inventer les champs manquants. Les chiffres ci-dessus
-sont donc enregistrés comme mesurés mais non reproductibles, et non retirés. Voir
+**Reproduits** sur la révision gelée `9e4550c` : précision 0.9474 / rappel 0.5000 au
+niveau exécution, `missed_primary_faults` 18, précision INCIDENT 0.7200 ; pour le corpus
+mixte de 50 exécutions, précision 1.0000 / rappel 0.5000, précision INCIDENT 0.5000.
+
+**Deux valeurs ont changé**, parce que le détecteur a changé entre-temps :
+
+| Chiffre | Annoncé | Redérivé | |
+|---|---|---|---|
+| Précision EPISODE (42 exécutions) | 0.326 | **0.3960** | meilleure |
+| Précision EPISODE (50 exécutions, mixte) | 0.500 | **0.2222** | moins bonne |
+
+Le niveau EPISODE compte combien d'épisodes chaque défaut injecté a produits, et deux
+changements de la v0.1.8 le déplacent : la cadence d'observation des couches T1 réduit d'un
+facteur cinq l'émission de `param.layer.norm`, et un détecteur d'activation par module a été
+enregistré. **Aucun des deux n'a été mesuré contre la précision EPISODE au moment où il a été
+fait. Les valeurs annoncées sont remplacées ; celles redérivées sont les valeurs courantes.**
+
+Neuf chiffres étaient repris d'une entrée jamais versionnée et ne pouvaient pas être
+redérivés du tout avant l'existence de `level_scoring.py` et `evaluation_truth.py`. Les deux
+existent maintenant, et chaque artefact consigne la révision qui l'a produit (`code_sha`, et
+`code_dirty` limité à l'arbre source). Voir
 [EVIDENCE_REGENERATION_FINDINGS.md](../../outputs/v0.1.8-alpha/EVIDENCE_REGENERATION_FINDINGS.md).
 
 ## État du projet

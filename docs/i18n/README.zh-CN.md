@@ -196,17 +196,31 @@ python examples/quickstart.py
 python tests/performance/audit_observer_cost.py      # 配对开销测量，含置信区间
 ```
 
-**并非每个关键数字目前都可复现，这一点值得直说。** 检测器与性能测量由图
-`tests/experiments/` 与 `tests/performance/` 产出，原始输出已提交在 `outputs/` 下。
+每个关键数字现在都由已提交的脚本产出，评分已恢复可复现。`tests/experiments/level_scoring.py`
+可从 store 重新推导质量数字：
 
-而**质量数字** —— run 级 precision 0.947 / recall 0.500、EPISODE precision 0.326、
-INCIDENT precision 0.720、`missed_primary_faults 18` —— **在仓库当前状态下无法重新推导**。
-它们是被测量过的，但测量所用的评分输入从未入库：两份 ground truth 都不含评分器读取的
-`primary_fault_type`，开发语料的 ground truth 没有 `acceptable_window`，故障类别映射与语料
-实际使用的 scenario 标签**毫无交集**，且旧的评分产物没有记录 store、ground truth 路径或命令。
+```bash
+python tests/experiments/level_scoring.py development   # 或 mixed、adversarial
+```
 
-`tests/experiments/level_scoring.py` 现在可以从 store 评分并记录其输入，且**宁可 fail closed
-也不臆造缺失字段**。因此上述数字的状态是「已测量但不可复现」，而非撤回。详见
+**在冻结版本 `9e4550c` 上复现一致**：RUN precision 0.9474 / recall 0.5000、
+`missed_primary_faults` 18、INCIDENT precision 0.7200；50 run 混合语料
+RUN precision 1.0000 / recall 0.5000、INCIDENT precision 0.5000。
+
+**发生变化的两项**（因为期间检测器改了）：
+
+| 指标 | 原值 | 重新推导 | |
+|---|---|---|---|
+| EPISODE precision（42 run） | 0.326 | **0.3960** | 变好 |
+| EPISODE precision（50 run 混合） | 0.500 | **0.2222** | 变差 |
+
+EPISODE 层统计的是每个注入故障产生了多少 episode，v0.1.8 的两处改动会移动它：T1 层观测节奏
+把 `param.layer.norm` 发射降为五分之一，以及注册了逐模块激活检测器。**做这两处改动时都没有
+针对 episode precision 做过测量。上述原值已被取代，重新推导出的才是当前值。**
+
+曾有九个数字引自一份从未入库的输入，在 `level_scoring.py` 与 `evaluation_truth.py` 出现之前
+完全无法重新推导。现在两者都在，且每个产物都记录生成它的版本（`code_sha`，以及仅针对源码树的
+`code_dirty`），因此下一次漂移无需人工 diff 即可发现。详见
 [EVIDENCE_REGENERATION_FINDINGS.md](../../outputs/v0.1.8-alpha/EVIDENCE_REGENERATION_FINDINGS.md)。
 
 ## 项目状态

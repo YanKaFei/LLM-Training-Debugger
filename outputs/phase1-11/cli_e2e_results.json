@@ -12,8 +12,8 @@
       ],
       "relations": 0,
       "incident_ids": [
-        "inc_7ede88ea38f14391",
-        "inc_9aa019932d684c12"
+        "inc_cfc5405603f44f2e",
+        "inc_81aea2cf01854eac"
       ],
       "verdicts": [
         {
@@ -42,13 +42,13 @@
         "stderr": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py:127: RuntimeWarning: 'training_debugger.cli.main' found in sys.modules after import of package 'training_debugger.cli', but prior to execution of 'training_debugger.cli.main'; this may result in unpredictable behaviour\n  warn(RuntimeWarning(msg))\n"
       },
       "cli_incident": {
-        "command": "training-debugger --root outputs/phase1-11/store incident a1-confirmed inc_7ede88ea38f14391",
+        "command": "training-debugger --root outputs/phase1-11/store incident a1-confirmed inc_cfc5405603f44f2e",
         "exit_code": 1,
         "stdout": "",
         "stderr": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py:127: RuntimeWarning: 'training_debugger.cli.main' found in sys.modules after import of package 'training_debugger.cli', but prior to execution of 'training_debugger.cli.main'; this may result in unpredictable behaviour\n  warn(RuntimeWarning(msg))\nTraceback (most recent call last):\n  File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py\", line 197, in _run_module_as_main\n    return _run_code(code, main_globals, None,\n  File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py\", line 87, in _run_code\n    exec(code, run_globals)\n  File \"src/training_debugger/cli/main.py\", line 594, in <module>\n    raise SystemExit(main())\n  File \"src/training_debugger/cli/main.py\", line 585, in main\n    return int(args.func(args))\n  File \"src/training_debugger/cli/main.py\", line 182, in cmd_incident\n    reader, coverage, detection, incidents = _analyze(Path(args.root), args.run_id)\n  File \"src/training_debugger/cli/main.py\", line 78, in _analyze\n    by_metric, layer_series, module_paths = _series(reader, run_id)\n  File \"src/training_debugger/cli/main.py\", line 49, in _series\n    names = table.column(\"metric_name\").to_pylist()\n  File \"pyarrow/table.pxi\", line 1796, in pyarrow.lib._Tabular.column\n  File \"pyarrow/table.pxi\", line 1733, in pyarrow.lib._Tabular._ensure_integer_index\nKeyError: 'Field \"metric_name\" does not exist in schema'\n"
       },
       "cli_diagnose": {
-        "command": "training-debugger --root outputs/phase1-11/store diagnose a1-confirmed --incident-id inc_7ede88ea38f14391",
+        "command": "training-debugger --root outputs/phase1-11/store diagnose a1-confirmed --incident-id inc_cfc5405603f44f2e",
         "exit_code": 1,
         "stdout": "",
         "stderr": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py:127: RuntimeWarning: 'training_debugger.cli.main' found in sys.modules after import of package 'training_debugger.cli', but prior to execution of 'training_debugger.cli.main'; this may result in unpredictable behaviour\n  warn(RuntimeWarning(msg))\nTraceback (most recent call last):\n  File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py\", line 197, in _run_module_as_main\n    return _run_code(code, main_globals, None,\n  File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py\", line 87, in _run_code\n    exec(code, run_globals)\n  File \"src/training_debugger/cli/main.py\", line 594, in <module>\n    raise SystemExit(main())\n  File \"src/training_debugger/cli/main.py\", line 585, in main\n    return int(args.func(args))\n  File \"src/training_debugger/cli/main.py\", line 426, in cmd_diagnose\n    reader, coverage, detection, incidents = _analyze(Path(args.root), args.run_id)\n  File \"src/training_debugger/cli/main.py\", line 78, in _analyze\n    by_metric, layer_series, module_paths = _series(reader, run_id)\n  File \"src/training_debugger/cli/main.py\", line 49, in _series\n    names = table.column(\"metric_name\").to_pylist()\n  File \"pyarrow/table.pxi\", line 1796, in pyarrow.lib._Tabular.column\n  File \"pyarrow/table.pxi\", line 1733, in pyarrow.lib._Tabular._ensure_integer_index\nKeyError: 'Field \"metric_name\" does not exist in schema'\n"
@@ -204,8 +204,8 @@
   ],
   "all_matched": true,
   "cli_all_exit_zero": true,
-  "elapsed_s": 5.5771313750000004,
-  "code_sha": "e6369aa18fd114122272a6960fc2ffdb66b24d24",
-  "code_dirty": true,
-  "generated_at": "2026-10-12T16:55:32Z"
+  "elapsed_s": 5.193624958999999,
+  "code_sha": "9e4550cef2151b33bd89dabe45fa9480ecdde823",
+  "code_dirty": false,
+  "generated_at": "2026-10-12T17:01:33Z"
 }

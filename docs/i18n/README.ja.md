@@ -207,21 +207,33 @@ python examples/quickstart.py
 python tests/performance/audit_observer_cost.py      # 信頼区間付きのペア比較オーバーヘッド
 ```
 
-**すべての主要な数値が現在再現可能なわけではなく、この点は明記する価値があります。**
-検出器と性能の測定は `tests/experiments/` と `tests/performance/` のスクリプトが生成し、
-生の出力は `outputs/` 以下にコミットされています。
+すべての主要な数値は今やコミットされたスクリプトが生成し、採点も再び再現可能です。
+`tests/experiments/level_scoring.py` が store から品質数値を再導出します:
 
-一方、**品質の数値** —— 実行 precision 0.947 / recall 0.500、EPISODE precision 0.326、
-INCIDENT precision 0.720、`missed_primary_faults 18` —— は、**現在のリポジトリの状態からは
-再導出できません。** 測定はされていますが、その測定に用いた採点入力をコミットしたことが
-ありません。どちらの ground truth も採点器が読む `primary_fault_type` を持たず、開発コーパスの
-ground truth には `acceptable_window` がなく、故障クラス写像はコーパスが実際に使うシナリオ
-ラベルと**交わりを持ちません。** また旧採点成果物には store パス、ground truth パス、コマンドが
-記録されていません。
+```bash
+python tests/experiments/level_scoring.py development   # または mixed、adversarial
+```
 
-`tests/experiments/level_scoring.py` は store から採点し入力を記録するようになり、欠落した
-フィールドをでっち上げる代わりに **fail closed** します。したがって上記の数値の状態は撤回では
-なく「測定済みだが再現不能」です。[EVIDENCE_REGENERATION_FINDINGS.md](../../outputs/v0.1.8-alpha/EVIDENCE_REGENERATION_FINDINGS.md) 参照。
+**凍結リビジョン `9e4550c` で再現**: RUN precision 0.9474 / recall 0.5000、
+`missed_primary_faults` 18、INCIDENT precision 0.7200。50 実行の混合コーパスは
+RUN precision 1.0000 / recall 0.5000、INCIDENT precision 0.5000。
+
+**変化した 2 項目**（その間に検出器が変わったため）:
+
+| 数値 | 旧 | 再導出 | |
+|---|---|---|---|
+| EPISODE precision（42 実行） | 0.326 | **0.3960** | 改善 |
+| EPISODE precision（50 実行 混合） | 0.500 | **0.2222** | 悪化 |
+
+EPISODE 層は注入された故障がいくつのエピソードを生んだかを数え、v0.1.8 の 2 つの変更が
+それを動かします。T1 層の観測ケイデンスが `param.layer.norm` の送出を 5 分の 1 にし、モジュール
+別活性化検出器を登録しました。**どちらもその時点で episode precision に対して測定されていません。
+旧値は置き換えられ、再導出値が現在値です。**
+
+九つの数値が一度もコミットされていない入力から引用され、`level_scoring.py` と
+`evaluation_truth.py` が存在するまで再導出は不可能でした。今は両方あり、すべての成果物が
+自身を生成したリビジョンを記録します（`code_sha`、およびソースツリーに限定した `code_dirty`）。
+[EVIDENCE_REGENERATION_FINDINGS.md](../../outputs/v0.1.8-alpha/EVIDENCE_REGENERATION_FINDINGS.md) 参照。
 
 ## プロジェクトの状態
 

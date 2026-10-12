@@ -63,8 +63,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824046418744000,
-          "closed_wall_time_ns": 1791824046418858000,
+          "opened_wall_time_ns": 1791824409716024000,
+          "closed_wall_time_ns": 1791824409716135000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -165,8 +165,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824046418796000,
-          "closed_wall_time_ns": 1791824046418861000,
+          "opened_wall_time_ns": 1791824409716073000,
+          "closed_wall_time_ns": 1791824409716138000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -219,8 +219,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824046418812000,
-          "closed_wall_time_ns": 1791824046418863000,
+          "opened_wall_time_ns": 1791824409716089000,
+          "closed_wall_time_ns": 1791824409716140000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -273,8 +273,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824046418824000,
-          "closed_wall_time_ns": 1791824046418865000,
+          "opened_wall_time_ns": 1791824409716101000,
+          "closed_wall_time_ns": 1791824409716141000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -327,8 +327,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824046418836000,
-          "closed_wall_time_ns": 1791824046418867000,
+          "opened_wall_time_ns": 1791824409716113000,
+          "closed_wall_time_ns": 1791824409716143000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -381,8 +381,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824046418848000,
-          "closed_wall_time_ns": 1791824046418869000,
+          "opened_wall_time_ns": 1791824409716124000,
+          "closed_wall_time_ns": 1791824409716145000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -435,8 +435,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824046418877000,
-          "closed_wall_time_ns": 1791824046418908000,
+          "opened_wall_time_ns": 1791824409716153000,
+          "closed_wall_time_ns": 1791824409716185000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -489,8 +489,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824046418888000,
-          "closed_wall_time_ns": 1791824046418910000,
+          "opened_wall_time_ns": 1791824409716165000,
+          "closed_wall_time_ns": 1791824409716187000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -543,8 +543,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824046418899000,
-          "closed_wall_time_ns": 1791824046418912000,
+          "opened_wall_time_ns": 1791824409716176000,
+          "closed_wall_time_ns": 1791824409716189000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -597,8 +597,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824046418920000,
-          "closed_wall_time_ns": 1791824046418955000,
+          "opened_wall_time_ns": 1791824409716196000,
+          "closed_wall_time_ns": 1791824409716229000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -651,8 +651,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824046418931000,
-          "closed_wall_time_ns": 1791824046418957000,
+          "opened_wall_time_ns": 1791824409716208000,
+          "closed_wall_time_ns": 1791824409716231000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -705,8 +705,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824046418942000,
-          "closed_wall_time_ns": 1791824046418959000,
+          "opened_wall_time_ns": 1791824409716219000,
+          "closed_wall_time_ns": 1791824409716233000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -1256,8 +1256,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824047496107000,
-          "closed_wall_time_ns": 1791824047496226000,
+          "opened_wall_time_ns": 1791824410746939000,
+          "closed_wall_time_ns": 1791824410747063000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -1358,8 +1358,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": null,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824047496150000,
-          "closed_wall_time_ns": 1791824047496229000,
+          "opened_wall_time_ns": 1791824410746986000,
+          "closed_wall_time_ns": 1791824410747066000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -1408,8 +1408,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824047496169000,
-          "closed_wall_time_ns": 1791824047496231000,
+          "opened_wall_time_ns": 1791824410747005000,
+          "closed_wall_time_ns": 1791824410747068000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -1462,8 +1462,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824047496182000,
-          "closed_wall_time_ns": 1791824047496233000,
+          "opened_wall_time_ns": 1791824410747018000,
+          "closed_wall_time_ns": 1791824410747070000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -1516,8 +1516,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824047496194000,
-          "closed_wall_time_ns": 1791824047496234000,
+          "opened_wall_time_ns": 1791824410747030000,
+          "closed_wall_time_ns": 1791824410747071000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -1570,8 +1570,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824047496205000,
-          "closed_wall_time_ns": 1791824047496236000,
+          "opened_wall_time_ns": 1791824410747042000,
+          "closed_wall_time_ns": 1791824410747073000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -1624,8 +1624,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824047496216000,
-          "closed_wall_time_ns": 1791824047496238000,
+          "opened_wall_time_ns": 1791824410747053000,
+          "closed_wall_time_ns": 1791824410747075000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -1678,8 +1678,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824047496246000,
-          "closed_wall_time_ns": 1791824047496277000,
+          "opened_wall_time_ns": 1791824410747083000,
+          "closed_wall_time_ns": 1791824410747115000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -1732,8 +1732,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824047496257000,
-          "closed_wall_time_ns": 1791824047496279000,
+          "opened_wall_time_ns": 1791824410747095000,
+          "closed_wall_time_ns": 1791824410747116000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -1786,8 +1786,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824047496269000,
-          "closed_wall_time_ns": 1791824047496281000,
+          "opened_wall_time_ns": 1791824410747106000,
+          "closed_wall_time_ns": 1791824410747118000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -1840,8 +1840,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824047496289000,
-          "closed_wall_time_ns": 1791824047496321000,
+          "opened_wall_time_ns": 1791824410747126000,
+          "closed_wall_time_ns": 1791824410747159000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -1894,8 +1894,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824047496300000,
-          "closed_wall_time_ns": 1791824047496323000,
+          "opened_wall_time_ns": 1791824410747137000,
+          "closed_wall_time_ns": 1791824410747161000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -1948,8 +1948,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824047496311000,
-          "closed_wall_time_ns": 1791824047496325000,
+          "opened_wall_time_ns": 1791824410747149000,
+          "closed_wall_time_ns": 1791824410747163000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -2499,8 +2499,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824048517966000,
-          "closed_wall_time_ns": 1791824048518077000,
+          "opened_wall_time_ns": 1791824411748654000,
+          "closed_wall_time_ns": 1791824411748761000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -2601,8 +2601,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824048518017000,
-          "closed_wall_time_ns": 1791824048518079000,
+          "opened_wall_time_ns": 1791824411748701000,
+          "closed_wall_time_ns": 1791824411748764000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -2655,8 +2655,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824048518031000,
-          "closed_wall_time_ns": 1791824048518081000,
+          "opened_wall_time_ns": 1791824411748716000,
+          "closed_wall_time_ns": 1791824411748766000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -2709,8 +2709,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824048518043000,
-          "closed_wall_time_ns": 1791824048518083000,
+          "opened_wall_time_ns": 1791824411748728000,
+          "closed_wall_time_ns": 1791824411748768000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -2763,8 +2763,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824048518055000,
-          "closed_wall_time_ns": 1791824048518085000,
+          "opened_wall_time_ns": 1791824411748740000,
+          "closed_wall_time_ns": 1791824411748769000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -2817,8 +2817,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824048518067000,
-          "closed_wall_time_ns": 1791824048518087000,
+          "opened_wall_time_ns": 1791824411748751000,
+          "closed_wall_time_ns": 1791824411748771000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -2871,8 +2871,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824048518095000,
-          "closed_wall_time_ns": 1791824048518126000,
+          "opened_wall_time_ns": 1791824411748779000,
+          "closed_wall_time_ns": 1791824411748811000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -2925,8 +2925,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824048518106000,
-          "closed_wall_time_ns": 1791824048518128000,
+          "opened_wall_time_ns": 1791824411748791000,
+          "closed_wall_time_ns": 1791824411748813000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -2979,8 +2979,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824048518117000,
-          "closed_wall_time_ns": 1791824048518129000,
+          "opened_wall_time_ns": 1791824411748802000,
+          "closed_wall_time_ns": 1791824411748815000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -3033,8 +3033,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824048518137000,
-          "closed_wall_time_ns": 1791824048518169000,
+          "opened_wall_time_ns": 1791824411748822000,
+          "closed_wall_time_ns": 1791824411748854000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -3087,8 +3087,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824048518148000,
-          "closed_wall_time_ns": 1791824048518171000,
+          "opened_wall_time_ns": 1791824411748834000,
+          "closed_wall_time_ns": 1791824411748856000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -3141,8 +3141,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824048518159000,
-          "closed_wall_time_ns": 1791824048518173000,
+          "opened_wall_time_ns": 1791824411748845000,
+          "closed_wall_time_ns": 1791824411748858000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -3692,8 +3692,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824049512075000,
-          "closed_wall_time_ns": 1791824049512201000,
+          "opened_wall_time_ns": 1791824412730248000,
+          "closed_wall_time_ns": 1791824412730372000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -3794,8 +3794,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": null,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824049512121000,
-          "closed_wall_time_ns": 1791824049512203000,
+          "opened_wall_time_ns": 1791824412730294000,
+          "closed_wall_time_ns": 1791824412730375000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -3844,8 +3844,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824049512139000,
-          "closed_wall_time_ns": 1791824049512205000,
+          "opened_wall_time_ns": 1791824412730313000,
+          "closed_wall_time_ns": 1791824412730377000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -3898,8 +3898,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824049512153000,
-          "closed_wall_time_ns": 1791824049512207000,
+          "opened_wall_time_ns": 1791824412730327000,
+          "closed_wall_time_ns": 1791824412730379000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -3952,8 +3952,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824049512164000,
-          "closed_wall_time_ns": 1791824049512209000,
+          "opened_wall_time_ns": 1791824412730339000,
+          "closed_wall_time_ns": 1791824412730380000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -4006,8 +4006,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824049512176000,
-          "closed_wall_time_ns": 1791824049512211000,
+          "opened_wall_time_ns": 1791824412730350000,
+          "closed_wall_time_ns": 1791824412730382000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -4060,8 +4060,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824049512188000,
-          "closed_wall_time_ns": 1791824049512212000,
+          "opened_wall_time_ns": 1791824412730362000,
+          "closed_wall_time_ns": 1791824412730384000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -4114,8 +4114,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824049512221000,
-          "closed_wall_time_ns": 1791824049512252000,
+          "opened_wall_time_ns": 1791824412730392000,
+          "closed_wall_time_ns": 1791824412730425000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -4168,8 +4168,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824049512232000,
-          "closed_wall_time_ns": 1791824049512254000,
+          "opened_wall_time_ns": 1791824412730404000,
+          "closed_wall_time_ns": 1791824412730427000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -4222,8 +4222,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824049512243000,
-          "closed_wall_time_ns": 1791824049512255000,
+          "opened_wall_time_ns": 1791824412730416000,
+          "closed_wall_time_ns": 1791824412730429000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -4276,8 +4276,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824049512263000,
-          "closed_wall_time_ns": 1791824049512294000,
+          "opened_wall_time_ns": 1791824412730437000,
+          "closed_wall_time_ns": 1791824412730470000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -4330,8 +4330,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824049512274000,
-          "closed_wall_time_ns": 1791824049512296000,
+          "opened_wall_time_ns": 1791824412730448000,
+          "closed_wall_time_ns": 1791824412730471000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -4384,8 +4384,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824049512285000,
-          "closed_wall_time_ns": 1791824049512298000,
+          "opened_wall_time_ns": 1791824412730460000,
+          "closed_wall_time_ns": 1791824412730473000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -4937,8 +4937,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824050917491000,
-          "closed_wall_time_ns": 1791824050917613000,
+          "opened_wall_time_ns": 1791824414107658000,
+          "closed_wall_time_ns": 1791824414107783000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -5049,8 +5049,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": null,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824050917537000,
-          "closed_wall_time_ns": 1791824050917616000,
+          "opened_wall_time_ns": 1791824414107706000,
+          "closed_wall_time_ns": 1791824414107786000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -5099,8 +5099,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824050917555000,
-          "closed_wall_time_ns": 1791824050917618000,
+          "opened_wall_time_ns": 1791824414107725000,
+          "closed_wall_time_ns": 1791824414107788000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -5153,8 +5153,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824050917569000,
-          "closed_wall_time_ns": 1791824050917620000,
+          "opened_wall_time_ns": 1791824414107738000,
+          "closed_wall_time_ns": 1791824414107789000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -5207,8 +5207,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824050917581000,
-          "closed_wall_time_ns": 1791824050917621000,
+          "opened_wall_time_ns": 1791824414107750000,
+          "closed_wall_time_ns": 1791824414107791000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -5261,8 +5261,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824050917592000,
-          "closed_wall_time_ns": 1791824050917623000,
+          "opened_wall_time_ns": 1791824414107761000,
+          "closed_wall_time_ns": 1791824414107793000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -5315,8 +5315,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824050917604000,
-          "closed_wall_time_ns": 1791824050917625000,
+          "opened_wall_time_ns": 1791824414107772000,
+          "closed_wall_time_ns": 1791824414107795000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -5369,8 +5369,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824050917633000,
-          "closed_wall_time_ns": 1791824050917664000,
+          "opened_wall_time_ns": 1791824414107803000,
+          "closed_wall_time_ns": 1791824414107835000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -5423,8 +5423,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824050917645000,
-          "closed_wall_time_ns": 1791824050917666000,
+          "opened_wall_time_ns": 1791824414107815000,
+          "closed_wall_time_ns": 1791824414107836000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -5477,8 +5477,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824050917655000,
-          "closed_wall_time_ns": 1791824050917668000,
+          "opened_wall_time_ns": 1791824414107826000,
+          "closed_wall_time_ns": 1791824414107838000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -5531,8 +5531,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824050917675000,
-          "closed_wall_time_ns": 1791824050917708000,
+          "opened_wall_time_ns": 1791824414107846000,
+          "closed_wall_time_ns": 1791824414107879000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -5585,8 +5585,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824050917686000,
-          "closed_wall_time_ns": 1791824050917710000,
+          "opened_wall_time_ns": 1791824414107857000,
+          "closed_wall_time_ns": 1791824414107881000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -5639,8 +5639,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824050917697000,
-          "closed_wall_time_ns": 1791824050917711000,
+          "opened_wall_time_ns": 1791824414107868000,
+          "closed_wall_time_ns": 1791824414107882000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -6192,8 +6192,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824052302667000,
-          "closed_wall_time_ns": 1791824052302796000,
+          "opened_wall_time_ns": 1791824415484978000,
+          "closed_wall_time_ns": 1791824415485089000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -6304,8 +6304,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824052302725000,
-          "closed_wall_time_ns": 1791824052302798000,
+          "opened_wall_time_ns": 1791824415485029000,
+          "closed_wall_time_ns": 1791824415485091000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -6358,8 +6358,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824052302744000,
-          "closed_wall_time_ns": 1791824052302800000,
+          "opened_wall_time_ns": 1791824415485043000,
+          "closed_wall_time_ns": 1791824415485093000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -6412,8 +6412,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824052302761000,
-          "closed_wall_time_ns": 1791824052302802000,
+          "opened_wall_time_ns": 1791824415485055000,
+          "closed_wall_time_ns": 1791824415485095000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -6466,8 +6466,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824052302773000,
-          "closed_wall_time_ns": 1791824052302804000,
+          "opened_wall_time_ns": 1791824415485067000,
+          "closed_wall_time_ns": 1791824415485096000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -6520,8 +6520,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824052302785000,
-          "closed_wall_time_ns": 1791824052302806000,
+          "opened_wall_time_ns": 1791824415485079000,
+          "closed_wall_time_ns": 1791824415485098000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -6574,8 +6574,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824052302814000,
-          "closed_wall_time_ns": 1791824052302845000,
+          "opened_wall_time_ns": 1791824415485106000,
+          "closed_wall_time_ns": 1791824415485138000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -6628,8 +6628,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824052302825000,
-          "closed_wall_time_ns": 1791824052302847000,
+          "opened_wall_time_ns": 1791824415485118000,
+          "closed_wall_time_ns": 1791824415485140000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -6682,8 +6682,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824052302836000,
-          "closed_wall_time_ns": 1791824052302849000,
+          "opened_wall_time_ns": 1791824415485129000,
+          "closed_wall_time_ns": 1791824415485142000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -6736,8 +6736,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824052302856000,
-          "closed_wall_time_ns": 1791824052302889000,
+          "opened_wall_time_ns": 1791824415485150000,
+          "closed_wall_time_ns": 1791824415485183000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -6790,8 +6790,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824052302868000,
-          "closed_wall_time_ns": 1791824052302891000,
+          "opened_wall_time_ns": 1791824415485162000,
+          "closed_wall_time_ns": 1791824415485185000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -6844,8 +6844,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824052302879000,
-          "closed_wall_time_ns": 1791824052302892000,
+          "opened_wall_time_ns": 1791824415485173000,
+          "closed_wall_time_ns": 1791824415485187000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -7397,8 +7397,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824053723780000,
-          "closed_wall_time_ns": 1791824053723900000,
+          "opened_wall_time_ns": 1791824416848468000,
+          "closed_wall_time_ns": 1791824416848590000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -7509,8 +7509,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824053723838000,
-          "closed_wall_time_ns": 1791824053723903000,
+          "opened_wall_time_ns": 1791824416848528000,
+          "closed_wall_time_ns": 1791824416848592000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -7563,8 +7563,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824053723852000,
-          "closed_wall_time_ns": 1791824053723905000,
+          "opened_wall_time_ns": 1791824416848543000,
+          "closed_wall_time_ns": 1791824416848594000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -7617,8 +7617,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824053723864000,
-          "closed_wall_time_ns": 1791824053723906000,
+          "opened_wall_time_ns": 1791824416848555000,
+          "closed_wall_time_ns": 1791824416848596000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -7671,8 +7671,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824053723876000,
-          "closed_wall_time_ns": 1791824053723908000,
+          "opened_wall_time_ns": 1791824416848566000,
+          "closed_wall_time_ns": 1791824416848598000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -7725,8 +7725,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824053723890000,
-          "closed_wall_time_ns": 1791824053723910000,
+          "opened_wall_time_ns": 1791824416848578000,
+          "closed_wall_time_ns": 1791824416848599000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -7779,8 +7779,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824053723918000,
-          "closed_wall_time_ns": 1791824053723952000,
+          "opened_wall_time_ns": 1791824416848608000,
+          "closed_wall_time_ns": 1791824416848640000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -7833,8 +7833,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824053723929000,
-          "closed_wall_time_ns": 1791824053723954000,
+          "opened_wall_time_ns": 1791824416848620000,
+          "closed_wall_time_ns": 1791824416848641000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -7887,8 +7887,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824053723943000,
-          "closed_wall_time_ns": 1791824053723955000,
+          "opened_wall_time_ns": 1791824416848631000,
+          "closed_wall_time_ns": 1791824416848643000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -7941,8 +7941,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824053723963000,
-          "closed_wall_time_ns": 1791824053723996000,
+          "opened_wall_time_ns": 1791824416848651000,
+          "closed_wall_time_ns": 1791824416848683000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -7995,8 +7995,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824053723974000,
-          "closed_wall_time_ns": 1791824053723998000,
+          "opened_wall_time_ns": 1791824416848662000,
+          "closed_wall_time_ns": 1791824416848685000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -8049,8 +8049,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824053723985000,
-          "closed_wall_time_ns": 1791824053724000000,
+          "opened_wall_time_ns": 1791824416848673000,
+          "closed_wall_time_ns": 1791824416848687000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -8602,8 +8602,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824055079587000,
-          "closed_wall_time_ns": 1791824055079710000,
+          "opened_wall_time_ns": 1791824418218759000,
+          "closed_wall_time_ns": 1791824418218889000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -8714,8 +8714,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": null,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824055079634000,
-          "closed_wall_time_ns": 1791824055079713000,
+          "opened_wall_time_ns": 1791824418218812000,
+          "closed_wall_time_ns": 1791824418218892000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -8764,8 +8764,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824055079652000,
-          "closed_wall_time_ns": 1791824055079715000,
+          "opened_wall_time_ns": 1791824418218831000,
+          "closed_wall_time_ns": 1791824418218894000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -8818,8 +8818,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824055079665000,
-          "closed_wall_time_ns": 1791824055079717000,
+          "opened_wall_time_ns": 1791824418218844000,
+          "closed_wall_time_ns": 1791824418218896000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -8872,8 +8872,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824055079677000,
-          "closed_wall_time_ns": 1791824055079718000,
+          "opened_wall_time_ns": 1791824418218856000,
+          "closed_wall_time_ns": 1791824418218897000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -8926,8 +8926,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824055079688000,
-          "closed_wall_time_ns": 1791824055079720000,
+          "opened_wall_time_ns": 1791824418218868000,
+          "closed_wall_time_ns": 1791824418218899000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -8980,8 +8980,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824055079700000,
-          "closed_wall_time_ns": 1791824055079722000,
+          "opened_wall_time_ns": 1791824418218879000,
+          "closed_wall_time_ns": 1791824418218901000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -9034,8 +9034,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824055079730000,
-          "closed_wall_time_ns": 1791824055079762000,
+          "opened_wall_time_ns": 1791824418218909000,
+          "closed_wall_time_ns": 1791824418218940000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -9088,8 +9088,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824055079742000,
-          "closed_wall_time_ns": 1791824055079764000,
+          "opened_wall_time_ns": 1791824418218920000,
+          "closed_wall_time_ns": 1791824418218942000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -9142,8 +9142,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824055079753000,
-          "closed_wall_time_ns": 1791824055079766000,
+          "opened_wall_time_ns": 1791824418218931000,
+          "closed_wall_time_ns": 1791824418218944000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -9196,8 +9196,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824055079773000,
-          "closed_wall_time_ns": 1791824055079805000,
+          "opened_wall_time_ns": 1791824418218951000,
+          "closed_wall_time_ns": 1791824418218984000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -9250,8 +9250,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824055079784000,
-          "closed_wall_time_ns": 1791824055079807000,
+          "opened_wall_time_ns": 1791824418218963000,
+          "closed_wall_time_ns": 1791824418218986000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -9304,8 +9304,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824055079795000,
-          "closed_wall_time_ns": 1791824055079808000,
+          "opened_wall_time_ns": 1791824418218974000,
+          "closed_wall_time_ns": 1791824418218987000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -9846,8 +9846,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824056055045000,
-          "closed_wall_time_ns": 1791824056055114000,
+          "opened_wall_time_ns": 1791824419219473000,
+          "closed_wall_time_ns": 1791824419219535000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -9900,8 +9900,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824056055071000,
-          "closed_wall_time_ns": 1791824056055116000,
+          "opened_wall_time_ns": 1791824419219494000,
+          "closed_wall_time_ns": 1791824419219538000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -9954,8 +9954,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824056055091000,
-          "closed_wall_time_ns": 1791824056055118000,
+          "opened_wall_time_ns": 1791824419219512000,
+          "closed_wall_time_ns": 1791824419219540000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -10008,8 +10008,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824056055103000,
-          "closed_wall_time_ns": 1791824056055120000,
+          "opened_wall_time_ns": 1791824419219525000,
+          "closed_wall_time_ns": 1791824419219541000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -10062,8 +10062,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824056055127000,
-          "closed_wall_time_ns": 1791824056055162000,
+          "opened_wall_time_ns": 1791824419219548000,
+          "closed_wall_time_ns": 1791824419219583000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -10116,8 +10116,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824056055141000,
-          "closed_wall_time_ns": 1791824056055164000,
+          "opened_wall_time_ns": 1791824419219562000,
+          "closed_wall_time_ns": 1791824419219585000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -10170,8 +10170,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824056055153000,
-          "closed_wall_time_ns": 1791824056055166000,
+          "opened_wall_time_ns": 1791824419219574000,
+          "closed_wall_time_ns": 1791824419219587000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -10224,8 +10224,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824056055171000,
-          "closed_wall_time_ns": 1791824056055206000,
+          "opened_wall_time_ns": 1791824419219593000,
+          "closed_wall_time_ns": 1791824419219628000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -10278,8 +10278,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824056055185000,
-          "closed_wall_time_ns": 1791824056055209000,
+          "opened_wall_time_ns": 1791824419219606000,
+          "closed_wall_time_ns": 1791824419219630000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -10332,8 +10332,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824056055196000,
-          "closed_wall_time_ns": 1791824056055211000,
+          "opened_wall_time_ns": 1791824419219618000,
+          "closed_wall_time_ns": 1791824419219631000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -10508,8 +10508,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824057107091000,
-          "closed_wall_time_ns": 1791824057107153000,
+          "opened_wall_time_ns": 1791824420153330000,
+          "closed_wall_time_ns": 1791824420153393000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -10562,8 +10562,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824057107113000,
-          "closed_wall_time_ns": 1791824057107156000,
+          "opened_wall_time_ns": 1791824420153352000,
+          "closed_wall_time_ns": 1791824420153396000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -10616,8 +10616,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824057107131000,
-          "closed_wall_time_ns": 1791824057107158000,
+          "opened_wall_time_ns": 1791824420153370000,
+          "closed_wall_time_ns": 1791824420153397000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -10670,8 +10670,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824057107143000,
-          "closed_wall_time_ns": 1791824057107159000,
+          "opened_wall_time_ns": 1791824420153383000,
+          "closed_wall_time_ns": 1791824420153399000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -10724,8 +10724,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824057107166000,
-          "closed_wall_time_ns": 1791824057107201000,
+          "opened_wall_time_ns": 1791824420153405000,
+          "closed_wall_time_ns": 1791824420153440000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -10778,8 +10778,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824057107180000,
-          "closed_wall_time_ns": 1791824057107203000,
+          "opened_wall_time_ns": 1791824420153419000,
+          "closed_wall_time_ns": 1791824420153441000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -10832,8 +10832,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824057107192000,
-          "closed_wall_time_ns": 1791824057107205000,
+          "opened_wall_time_ns": 1791824420153431000,
+          "closed_wall_time_ns": 1791824420153443000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -10886,8 +10886,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824057107210000,
-          "closed_wall_time_ns": 1791824057107310000,
+          "opened_wall_time_ns": 1791824420153449000,
+          "closed_wall_time_ns": 1791824420153484000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -10940,8 +10940,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824057107224000,
-          "closed_wall_time_ns": 1791824057107313000,
+          "opened_wall_time_ns": 1791824420153463000,
+          "closed_wall_time_ns": 1791824420153486000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -10994,8 +10994,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824057107235000,
-          "closed_wall_time_ns": 1791824057107315000,
+          "opened_wall_time_ns": 1791824420153474000,
+          "closed_wall_time_ns": 1791824420153488000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -11170,8 +11170,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824058123601000,
-          "closed_wall_time_ns": 1791824058123891000,
+          "opened_wall_time_ns": 1791824421087190000,
+          "closed_wall_time_ns": 1791824421087253000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -11224,8 +11224,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824058123769000,
-          "closed_wall_time_ns": 1791824058123896000,
+          "opened_wall_time_ns": 1791824421087211000,
+          "closed_wall_time_ns": 1791824421087255000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -11278,8 +11278,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824058123828000,
-          "closed_wall_time_ns": 1791824058123900000,
+          "opened_wall_time_ns": 1791824421087230000,
+          "closed_wall_time_ns": 1791824421087257000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -11332,8 +11332,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824058123862000,
-          "closed_wall_time_ns": 1791824058123904000,
+          "opened_wall_time_ns": 1791824421087243000,
+          "closed_wall_time_ns": 1791824421087259000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -11386,8 +11386,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824058123920000,
-          "closed_wall_time_ns": 1791824058124014000,
+          "opened_wall_time_ns": 1791824421087265000,
+          "closed_wall_time_ns": 1791824421087300000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -11440,8 +11440,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824058123956000,
-          "closed_wall_time_ns": 1791824058124018000,
+          "opened_wall_time_ns": 1791824421087279000,
+          "closed_wall_time_ns": 1791824421087302000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -11494,8 +11494,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824058123985000,
-          "closed_wall_time_ns": 1791824058124022000,
+          "opened_wall_time_ns": 1791824421087291000,
+          "closed_wall_time_ns": 1791824421087303000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -11548,8 +11548,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824058124038000,
-          "closed_wall_time_ns": 1791824058124138000,
+          "opened_wall_time_ns": 1791824421087309000,
+          "closed_wall_time_ns": 1791824421087345000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -11602,8 +11602,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824058124079000,
-          "closed_wall_time_ns": 1791824058124142000,
+          "opened_wall_time_ns": 1791824421087323000,
+          "closed_wall_time_ns": 1791824421087346000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -11656,8 +11656,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824058124109000,
-          "closed_wall_time_ns": 1791824058124146000,
+          "opened_wall_time_ns": 1791824421087335000,
+          "closed_wall_time_ns": 1791824421087348000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -11832,8 +11832,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824059144553000,
-          "closed_wall_time_ns": 1791824059144625000,
+          "opened_wall_time_ns": 1791824422010915000,
+          "closed_wall_time_ns": 1791824422010978000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -11886,8 +11886,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824059144583000,
-          "closed_wall_time_ns": 1791824059144627000,
+          "opened_wall_time_ns": 1791824422010937000,
+          "closed_wall_time_ns": 1791824422010980000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -11940,8 +11940,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824059144602000,
-          "closed_wall_time_ns": 1791824059144629000,
+          "opened_wall_time_ns": 1791824422010955000,
+          "closed_wall_time_ns": 1791824422010982000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -11994,8 +11994,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824059144614000,
-          "closed_wall_time_ns": 1791824059144631000,
+          "opened_wall_time_ns": 1791824422010967000,
+          "closed_wall_time_ns": 1791824422010984000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -12048,8 +12048,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824059144637000,
-          "closed_wall_time_ns": 1791824059144678000,
+          "opened_wall_time_ns": 1791824422010990000,
+          "closed_wall_time_ns": 1791824422011025000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -12102,8 +12102,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824059144652000,
-          "closed_wall_time_ns": 1791824059144680000,
+          "opened_wall_time_ns": 1791824422011004000,
+          "closed_wall_time_ns": 1791824422011027000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -12156,8 +12156,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824059144664000,
-          "closed_wall_time_ns": 1791824059144682000,
+          "opened_wall_time_ns": 1791824422011016000,
+          "closed_wall_time_ns": 1791824422011028000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -12210,8 +12210,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824059144688000,
-          "closed_wall_time_ns": 1791824059144730000,
+          "opened_wall_time_ns": 1791824422011034000,
+          "closed_wall_time_ns": 1791824422011070000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -12264,8 +12264,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824059144705000,
-          "closed_wall_time_ns": 1791824059144732000,
+          "opened_wall_time_ns": 1791824422011048000,
+          "closed_wall_time_ns": 1791824422011072000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -12318,8 +12318,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824059144716000,
-          "closed_wall_time_ns": 1791824059144736000,
+          "opened_wall_time_ns": 1791824422011060000,
+          "closed_wall_time_ns": 1791824422011074000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -12494,8 +12494,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824060549075000,
-          "closed_wall_time_ns": 1791824060549137000,
+          "opened_wall_time_ns": 1791824423332333000,
+          "closed_wall_time_ns": 1791824423332396000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -12548,8 +12548,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824060549097000,
-          "closed_wall_time_ns": 1791824060549140000,
+          "opened_wall_time_ns": 1791824423332355000,
+          "closed_wall_time_ns": 1791824423332399000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -12602,8 +12602,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824060549115000,
-          "closed_wall_time_ns": 1791824060549141000,
+          "opened_wall_time_ns": 1791824423332374000,
+          "closed_wall_time_ns": 1791824423332400000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -12656,8 +12656,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824060549127000,
-          "closed_wall_time_ns": 1791824060549143000,
+          "opened_wall_time_ns": 1791824423332386000,
+          "closed_wall_time_ns": 1791824423332402000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -12710,8 +12710,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824060549149000,
-          "closed_wall_time_ns": 1791824060549184000,
+          "opened_wall_time_ns": 1791824423332409000,
+          "closed_wall_time_ns": 1791824423332444000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -12764,8 +12764,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824060549163000,
-          "closed_wall_time_ns": 1791824060549186000,
+          "opened_wall_time_ns": 1791824423332424000,
+          "closed_wall_time_ns": 1791824423332446000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -12818,8 +12818,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824060549175000,
-          "closed_wall_time_ns": 1791824060549187000,
+          "opened_wall_time_ns": 1791824423332435000,
+          "closed_wall_time_ns": 1791824423332448000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -12872,8 +12872,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824060549193000,
-          "closed_wall_time_ns": 1791824060549228000,
+          "opened_wall_time_ns": 1791824423332454000,
+          "closed_wall_time_ns": 1791824423332490000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -12926,8 +12926,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824060549207000,
-          "closed_wall_time_ns": 1791824060549230000,
+          "opened_wall_time_ns": 1791824423332468000,
+          "closed_wall_time_ns": 1791824423332491000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -12980,8 +12980,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824060549218000,
-          "closed_wall_time_ns": 1791824060549231000,
+          "opened_wall_time_ns": 1791824423332479000,
+          "closed_wall_time_ns": 1791824423332493000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -13156,8 +13156,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824061846435000,
-          "closed_wall_time_ns": 1791824061846502000,
+          "opened_wall_time_ns": 1791824424697737000,
+          "closed_wall_time_ns": 1791824424697802000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -13210,8 +13210,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824061846461000,
-          "closed_wall_time_ns": 1791824061846504000,
+          "opened_wall_time_ns": 1791824424697760000,
+          "closed_wall_time_ns": 1791824424697804000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -13264,8 +13264,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824061846479000,
-          "closed_wall_time_ns": 1791824061846506000,
+          "opened_wall_time_ns": 1791824424697778000,
+          "closed_wall_time_ns": 1791824424697806000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -13318,8 +13318,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824061846492000,
-          "closed_wall_time_ns": 1791824061846508000,
+          "opened_wall_time_ns": 1791824424697790000,
+          "closed_wall_time_ns": 1791824424697808000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -13372,8 +13372,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824061846514000,
-          "closed_wall_time_ns": 1791824061846548000,
+          "opened_wall_time_ns": 1791824424697814000,
+          "closed_wall_time_ns": 1791824424697864000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -13426,8 +13426,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824061846528000,
-          "closed_wall_time_ns": 1791824061846550000,
+          "opened_wall_time_ns": 1791824424697829000,
+          "closed_wall_time_ns": 1791824424697865000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -13480,8 +13480,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824061846539000,
-          "closed_wall_time_ns": 1791824061846552000,
+          "opened_wall_time_ns": 1791824424697851000,
+          "closed_wall_time_ns": 1791824424697867000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -13534,8 +13534,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824061846558000,
-          "closed_wall_time_ns": 1791824061846592000,
+          "opened_wall_time_ns": 1791824424697873000,
+          "closed_wall_time_ns": 1791824424697912000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -13588,8 +13588,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824061846571000,
-          "closed_wall_time_ns": 1791824061846594000,
+          "opened_wall_time_ns": 1791824424697887000,
+          "closed_wall_time_ns": 1791824424697914000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -13642,8 +13642,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824061846582000,
-          "closed_wall_time_ns": 1791824061846596000,
+          "opened_wall_time_ns": 1791824424697901000,
+          "closed_wall_time_ns": 1791824424697915000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -13818,8 +13818,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824063247081000,
-          "closed_wall_time_ns": 1791824063247184000,
+          "opened_wall_time_ns": 1791824426045253000,
+          "closed_wall_time_ns": 1791824426045315000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -13872,8 +13872,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824063247129000,
-          "closed_wall_time_ns": 1791824063247187000,
+          "opened_wall_time_ns": 1791824426045275000,
+          "closed_wall_time_ns": 1791824426045318000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -13926,8 +13926,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824063247153000,
-          "closed_wall_time_ns": 1791824063247189000,
+          "opened_wall_time_ns": 1791824426045293000,
+          "closed_wall_time_ns": 1791824426045320000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -13980,8 +13980,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824063247169000,
-          "closed_wall_time_ns": 1791824063247190000,
+          "opened_wall_time_ns": 1791824426045305000,
+          "closed_wall_time_ns": 1791824426045321000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -14034,8 +14034,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824063247218000,
-          "closed_wall_time_ns": 1791824063247293000,
+          "opened_wall_time_ns": 1791824426045328000,
+          "closed_wall_time_ns": 1791824426045364000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -14088,8 +14088,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824063247267000,
-          "closed_wall_time_ns": 1791824063247296000,
+          "opened_wall_time_ns": 1791824426045343000,
+          "closed_wall_time_ns": 1791824426045366000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -14142,8 +14142,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824063247282000,
-          "closed_wall_time_ns": 1791824063247297000,
+          "opened_wall_time_ns": 1791824426045355000,
+          "closed_wall_time_ns": 1791824426045367000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -14196,8 +14196,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824063247304000,
-          "closed_wall_time_ns": 1791824063247341000,
+          "opened_wall_time_ns": 1791824426045373000,
+          "closed_wall_time_ns": 1791824426045409000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -14250,8 +14250,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824063247318000,
-          "closed_wall_time_ns": 1791824063247343000,
+          "opened_wall_time_ns": 1791824426045387000,
+          "closed_wall_time_ns": 1791824426045411000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -14304,8 +14304,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824063247330000,
-          "closed_wall_time_ns": 1791824063247344000,
+          "opened_wall_time_ns": 1791824426045399000,
+          "closed_wall_time_ns": 1791824426045413000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -14480,8 +14480,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824064708297000,
-          "closed_wall_time_ns": 1791824064708360000,
+          "opened_wall_time_ns": 1791824427368653000,
+          "closed_wall_time_ns": 1791824427368717000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -14534,8 +14534,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824064708320000,
-          "closed_wall_time_ns": 1791824064708362000,
+          "opened_wall_time_ns": 1791824427368675000,
+          "closed_wall_time_ns": 1791824427368719000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -14588,8 +14588,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824064708338000,
-          "closed_wall_time_ns": 1791824064708364000,
+          "opened_wall_time_ns": 1791824427368693000,
+          "closed_wall_time_ns": 1791824427368721000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -14642,8 +14642,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824064708350000,
-          "closed_wall_time_ns": 1791824064708366000,
+          "opened_wall_time_ns": 1791824427368706000,
+          "closed_wall_time_ns": 1791824427368723000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -14696,8 +14696,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824064708372000,
-          "closed_wall_time_ns": 1791824064708406000,
+          "opened_wall_time_ns": 1791824427368729000,
+          "closed_wall_time_ns": 1791824427368764000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -14750,8 +14750,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824064708386000,
-          "closed_wall_time_ns": 1791824064708408000,
+          "opened_wall_time_ns": 1791824427368744000,
+          "closed_wall_time_ns": 1791824427368766000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -14804,8 +14804,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824064708398000,
-          "closed_wall_time_ns": 1791824064708410000,
+          "opened_wall_time_ns": 1791824427368755000,
+          "closed_wall_time_ns": 1791824427368768000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -14858,8 +14858,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824064708416000,
-          "closed_wall_time_ns": 1791824064708451000,
+          "opened_wall_time_ns": 1791824427368774000,
+          "closed_wall_time_ns": 1791824427368809000,
           "metadata": {
             "anomaly_kind": "norm_reduction_overflow",
             "fusion_reasons": [
@@ -14912,8 +14912,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824064708430000,
-          "closed_wall_time_ns": 1791824064708453000,
+          "opened_wall_time_ns": 1791824427368788000,
+          "closed_wall_time_ns": 1791824427368811000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -14966,8 +14966,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824064708441000,
-          "closed_wall_time_ns": 1791824064708455000,
+          "opened_wall_time_ns": 1791824427368799000,
+          "closed_wall_time_ns": 1791824427368813000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -15151,8 +15151,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824065947525000,
-          "closed_wall_time_ns": 1791824065947716000,
+          "opened_wall_time_ns": 1791824428608137000,
+          "closed_wall_time_ns": 1791824428608216000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -15256,8 +15256,8 @@
           "duration_steps": 6,
           "confirmation_delay_steps": 1,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824065947574000,
-          "closed_wall_time_ns": 1791824065947719000,
+          "opened_wall_time_ns": 1791824428608181000,
+          "closed_wall_time_ns": 1791824428608219000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -15332,8 +15332,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824067143525000,
-          "closed_wall_time_ns": 1791824067143616000,
+          "opened_wall_time_ns": 1791824429745113000,
+          "closed_wall_time_ns": 1791824429745198000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -15438,8 +15438,8 @@
           "duration_steps": 7,
           "confirmation_delay_steps": 1,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824067143574000,
-          "closed_wall_time_ns": 1791824067143619000,
+          "opened_wall_time_ns": 1791824429745158000,
+          "closed_wall_time_ns": 1791824429745201000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -15515,8 +15515,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824068354485000,
-          "closed_wall_time_ns": 1791824068354562000,
+          "opened_wall_time_ns": 1791824430886203000,
+          "closed_wall_time_ns": 1791824430886280000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -15620,8 +15620,8 @@
           "duration_steps": 6,
           "confirmation_delay_steps": 1,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824068354529000,
-          "closed_wall_time_ns": 1791824068354564000,
+          "opened_wall_time_ns": 1791824430886246000,
+          "closed_wall_time_ns": 1791824430886282000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -15678,8 +15678,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": null,
           "cross_layer_multiplicity": 0.125,
-          "opened_wall_time_ns": 1791824068354570000,
-          "closed_wall_time_ns": 1791824068354579000,
+          "opened_wall_time_ns": 1791824430886289000,
+          "closed_wall_time_ns": 1791824430886298000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -15758,8 +15758,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824069571244000,
-          "closed_wall_time_ns": 1791824069571343000,
+          "opened_wall_time_ns": 1791824432079268000,
+          "closed_wall_time_ns": 1791824432079371000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -15867,8 +15867,8 @@
           "duration_steps": 10,
           "confirmation_delay_steps": 1,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824069571288000,
-          "closed_wall_time_ns": 1791824069571345000,
+          "opened_wall_time_ns": 1791824432079315000,
+          "closed_wall_time_ns": 1791824432079374000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -15949,8 +15949,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824071300039000,
-          "closed_wall_time_ns": 1791824071300144000,
+          "opened_wall_time_ns": 1791824433727095000,
+          "closed_wall_time_ns": 1791824433727181000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -16065,8 +16065,8 @@
           "duration_steps": 7,
           "confirmation_delay_steps": 1,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824071300093000,
-          "closed_wall_time_ns": 1791824071300147000,
+          "opened_wall_time_ns": 1791824433727142000,
+          "closed_wall_time_ns": 1791824433727184000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -16126,8 +16126,8 @@
           "duration_steps": 2,
           "confirmation_delay_steps": null,
           "cross_layer_multiplicity": 0.2,
-          "opened_wall_time_ns": 1791824071300153000,
-          "closed_wall_time_ns": 1791824071300169000,
+          "opened_wall_time_ns": 1791824433727190000,
+          "closed_wall_time_ns": 1791824433727207000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -16213,8 +16213,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824073019071000,
-          "closed_wall_time_ns": 1791824073019151000,
+          "opened_wall_time_ns": 1791824435361866000,
+          "closed_wall_time_ns": 1791824435361947000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -16328,8 +16328,8 @@
           "duration_steps": 6,
           "confirmation_delay_steps": 1,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824073019117000,
-          "closed_wall_time_ns": 1791824073019153000,
+          "opened_wall_time_ns": 1791824435361913000,
+          "closed_wall_time_ns": 1791824435361950000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -16406,8 +16406,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824074830275000,
-          "closed_wall_time_ns": 1791824074830360000,
+          "opened_wall_time_ns": 1791824436992295000,
+          "closed_wall_time_ns": 1791824436992376000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -16520,8 +16520,8 @@
           "duration_steps": 6,
           "confirmation_delay_steps": 1,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824074830333000,
-          "closed_wall_time_ns": 1791824074830363000,
+          "opened_wall_time_ns": 1791824436992345000,
+          "closed_wall_time_ns": 1791824436992378000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -16577,8 +16577,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": null,
           "cross_layer_multiplicity": 0.1,
-          "opened_wall_time_ns": 1791824074830369000,
-          "closed_wall_time_ns": 1791824074830378000,
+          "opened_wall_time_ns": 1791824436992385000,
+          "closed_wall_time_ns": 1791824436992399000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -16659,8 +16659,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824076650593000,
-          "closed_wall_time_ns": 1791824076650668000,
+          "opened_wall_time_ns": 1791824438631733000,
+          "closed_wall_time_ns": 1791824438631809000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -16773,8 +16773,8 @@
           "duration_steps": 3,
           "confirmation_delay_steps": 1,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824076650640000,
-          "closed_wall_time_ns": 1791824076650670000,
+          "opened_wall_time_ns": 1791824438631780000,
+          "closed_wall_time_ns": 1791824438631812000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -16848,8 +16848,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824077588894000,
-          "closed_wall_time_ns": 1791824077589001000,
+          "opened_wall_time_ns": 1791824439473349000,
+          "closed_wall_time_ns": 1791824439473457000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -16950,8 +16950,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824077588942000,
-          "closed_wall_time_ns": 1791824077589004000,
+          "opened_wall_time_ns": 1791824439473396000,
+          "closed_wall_time_ns": 1791824439473460000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -17004,8 +17004,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824077588957000,
-          "closed_wall_time_ns": 1791824077589006000,
+          "opened_wall_time_ns": 1791824439473411000,
+          "closed_wall_time_ns": 1791824439473462000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -17058,8 +17058,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824077588969000,
-          "closed_wall_time_ns": 1791824077589008000,
+          "opened_wall_time_ns": 1791824439473423000,
+          "closed_wall_time_ns": 1791824439473463000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -17112,8 +17112,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824077588980000,
-          "closed_wall_time_ns": 1791824077589009000,
+          "opened_wall_time_ns": 1791824439473435000,
+          "closed_wall_time_ns": 1791824439473465000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -17166,8 +17166,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824077588991000,
-          "closed_wall_time_ns": 1791824077589011000,
+          "opened_wall_time_ns": 1791824439473446000,
+          "closed_wall_time_ns": 1791824439473467000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -17220,8 +17220,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824077589019000,
-          "closed_wall_time_ns": 1791824077589050000,
+          "opened_wall_time_ns": 1791824439473475000,
+          "closed_wall_time_ns": 1791824439473506000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -17274,8 +17274,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824077589031000,
-          "closed_wall_time_ns": 1791824077589052000,
+          "opened_wall_time_ns": 1791824439473486000,
+          "closed_wall_time_ns": 1791824439473508000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -17328,8 +17328,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824077589041000,
-          "closed_wall_time_ns": 1791824077589054000,
+          "opened_wall_time_ns": 1791824439473498000,
+          "closed_wall_time_ns": 1791824439473510000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -17382,8 +17382,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824077589061000,
-          "closed_wall_time_ns": 1791824077589094000,
+          "opened_wall_time_ns": 1791824439473517000,
+          "closed_wall_time_ns": 1791824439473550000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -17436,8 +17436,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824077589073000,
-          "closed_wall_time_ns": 1791824077589096000,
+          "opened_wall_time_ns": 1791824439473529000,
+          "closed_wall_time_ns": 1791824439473552000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -17490,8 +17490,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824077589084000,
-          "closed_wall_time_ns": 1791824077589097000,
+          "opened_wall_time_ns": 1791824439473540000,
+          "closed_wall_time_ns": 1791824439473553000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -18041,8 +18041,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824078642014000,
-          "closed_wall_time_ns": 1791824078642144000,
+          "opened_wall_time_ns": 1791824440443057000,
+          "closed_wall_time_ns": 1791824440443177000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -18143,8 +18143,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": null,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824078642062000,
-          "closed_wall_time_ns": 1791824078642147000,
+          "opened_wall_time_ns": 1791824440443100000,
+          "closed_wall_time_ns": 1791824440443180000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -18193,8 +18193,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824078642084000,
-          "closed_wall_time_ns": 1791824078642149000,
+          "opened_wall_time_ns": 1791824440443119000,
+          "closed_wall_time_ns": 1791824440443182000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -18247,8 +18247,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824078642099000,
-          "closed_wall_time_ns": 1791824078642151000,
+          "opened_wall_time_ns": 1791824440443132000,
+          "closed_wall_time_ns": 1791824440443184000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -18301,8 +18301,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824078642110000,
-          "closed_wall_time_ns": 1791824078642152000,
+          "opened_wall_time_ns": 1791824440443144000,
+          "closed_wall_time_ns": 1791824440443185000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -18355,8 +18355,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824078642122000,
-          "closed_wall_time_ns": 1791824078642155000,
+          "opened_wall_time_ns": 1791824440443155000,
+          "closed_wall_time_ns": 1791824440443187000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -18409,8 +18409,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824078642134000,
-          "closed_wall_time_ns": 1791824078642157000,
+          "opened_wall_time_ns": 1791824440443167000,
+          "closed_wall_time_ns": 1791824440443189000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -18463,8 +18463,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824078642167000,
-          "closed_wall_time_ns": 1791824078642201000,
+          "opened_wall_time_ns": 1791824440443197000,
+          "closed_wall_time_ns": 1791824440443228000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -18517,8 +18517,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824078642180000,
-          "closed_wall_time_ns": 1791824078642203000,
+          "opened_wall_time_ns": 1791824440443209000,
+          "closed_wall_time_ns": 1791824440443230000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -18571,8 +18571,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824078642192000,
-          "closed_wall_time_ns": 1791824078642205000,
+          "opened_wall_time_ns": 1791824440443220000,
+          "closed_wall_time_ns": 1791824440443232000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -18625,8 +18625,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824078642212000,
-          "closed_wall_time_ns": 1791824078642250000,
+          "opened_wall_time_ns": 1791824440443240000,
+          "closed_wall_time_ns": 1791824440443272000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -18679,8 +18679,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824078642224000,
-          "closed_wall_time_ns": 1791824078642253000,
+          "opened_wall_time_ns": 1791824440443251000,
+          "closed_wall_time_ns": 1791824440443274000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -18733,8 +18733,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824078642237000,
-          "closed_wall_time_ns": 1791824078642255000,
+          "opened_wall_time_ns": 1791824440443262000,
+          "closed_wall_time_ns": 1791824440443276000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -19284,8 +19284,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824079659153000,
-          "closed_wall_time_ns": 1791824079659288000,
+          "opened_wall_time_ns": 1791824441465152000,
+          "closed_wall_time_ns": 1791824441465288000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -19386,8 +19386,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824079659215000,
-          "closed_wall_time_ns": 1791824079659291000,
+          "opened_wall_time_ns": 1791824441465217000,
+          "closed_wall_time_ns": 1791824441465291000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -19440,8 +19440,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824079659239000,
-          "closed_wall_time_ns": 1791824079659293000,
+          "opened_wall_time_ns": 1791824441465233000,
+          "closed_wall_time_ns": 1791824441465293000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -19494,8 +19494,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824079659251000,
-          "closed_wall_time_ns": 1791824079659294000,
+          "opened_wall_time_ns": 1791824441465248000,
+          "closed_wall_time_ns": 1791824441465294000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -19548,8 +19548,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824079659262000,
-          "closed_wall_time_ns": 1791824079659296000,
+          "opened_wall_time_ns": 1791824441465263000,
+          "closed_wall_time_ns": 1791824441465296000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -19602,8 +19602,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824079659278000,
-          "closed_wall_time_ns": 1791824079659298000,
+          "opened_wall_time_ns": 1791824441465277000,
+          "closed_wall_time_ns": 1791824441465298000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -19656,8 +19656,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824079659314000,
-          "closed_wall_time_ns": 1791824079659359000,
+          "opened_wall_time_ns": 1791824441465307000,
+          "closed_wall_time_ns": 1791824441465343000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -19710,8 +19710,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824079659331000,
-          "closed_wall_time_ns": 1791824079659361000,
+          "opened_wall_time_ns": 1791824441465319000,
+          "closed_wall_time_ns": 1791824441465345000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -19764,8 +19764,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824079659350000,
-          "closed_wall_time_ns": 1791824079659363000,
+          "opened_wall_time_ns": 1791824441465332000,
+          "closed_wall_time_ns": 1791824441465347000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -19818,8 +19818,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824079659370000,
-          "closed_wall_time_ns": 1791824079659406000,
+          "opened_wall_time_ns": 1791824441465355000,
+          "closed_wall_time_ns": 1791824441465390000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -19872,8 +19872,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824079659382000,
-          "closed_wall_time_ns": 1791824079659408000,
+          "opened_wall_time_ns": 1791824441465367000,
+          "closed_wall_time_ns": 1791824441465392000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -19926,8 +19926,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824079659393000,
-          "closed_wall_time_ns": 1791824079659409000,
+          "opened_wall_time_ns": 1791824441465379000,
+          "closed_wall_time_ns": 1791824441465394000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -20477,8 +20477,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824080621906000,
-          "closed_wall_time_ns": 1791824080622029000,
+          "opened_wall_time_ns": 1791824442438119000,
+          "closed_wall_time_ns": 1791824442438238000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -20579,8 +20579,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": null,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824080621952000,
-          "closed_wall_time_ns": 1791824080622036000,
+          "opened_wall_time_ns": 1791824442438162000,
+          "closed_wall_time_ns": 1791824442438241000,
           "metadata": {
             "population_layers": 8,
             "fusion_reasons": [
@@ -20629,8 +20629,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824080621971000,
-          "closed_wall_time_ns": 1791824080622038000,
+          "opened_wall_time_ns": 1791824442438181000,
+          "closed_wall_time_ns": 1791824442438243000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -20683,8 +20683,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824080621984000,
-          "closed_wall_time_ns": 1791824080622039000,
+          "opened_wall_time_ns": 1791824442438193000,
+          "closed_wall_time_ns": 1791824442438244000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -20737,8 +20737,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824080621996000,
-          "closed_wall_time_ns": 1791824080622041000,
+          "opened_wall_time_ns": 1791824442438205000,
+          "closed_wall_time_ns": 1791824442438246000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -20791,8 +20791,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824080622008000,
-          "closed_wall_time_ns": 1791824080622043000,
+          "opened_wall_time_ns": 1791824442438217000,
+          "closed_wall_time_ns": 1791824442438248000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -20845,8 +20845,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824080622020000,
-          "closed_wall_time_ns": 1791824080622045000,
+          "opened_wall_time_ns": 1791824442438228000,
+          "closed_wall_time_ns": 1791824442438250000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -20899,8 +20899,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824080622053000,
-          "closed_wall_time_ns": 1791824080622087000,
+          "opened_wall_time_ns": 1791824442438258000,
+          "closed_wall_time_ns": 1791824442438289000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -20953,8 +20953,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824080622067000,
-          "closed_wall_time_ns": 1791824080622089000,
+          "opened_wall_time_ns": 1791824442438269000,
+          "closed_wall_time_ns": 1791824442438291000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -21007,8 +21007,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824080622078000,
-          "closed_wall_time_ns": 1791824080622091000,
+          "opened_wall_time_ns": 1791824442438280000,
+          "closed_wall_time_ns": 1791824442438293000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -21061,8 +21061,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824080622098000,
-          "closed_wall_time_ns": 1791824080622132000,
+          "opened_wall_time_ns": 1791824442438300000,
+          "closed_wall_time_ns": 1791824442438333000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -21115,8 +21115,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824080622109000,
-          "closed_wall_time_ns": 1791824080622134000,
+          "opened_wall_time_ns": 1791824442438312000,
+          "closed_wall_time_ns": 1791824442438335000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -21169,8 +21169,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824080622120000,
-          "closed_wall_time_ns": 1791824080622136000,
+          "opened_wall_time_ns": 1791824442438323000,
+          "closed_wall_time_ns": 1791824442438337000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -21722,8 +21722,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824081983701000,
-          "closed_wall_time_ns": 1791824081983840000,
+          "opened_wall_time_ns": 1791824443816594000,
+          "closed_wall_time_ns": 1791824443816719000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -21834,8 +21834,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": null,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824081983749000,
-          "closed_wall_time_ns": 1791824081983843000,
+          "opened_wall_time_ns": 1791824443816641000,
+          "closed_wall_time_ns": 1791824443816722000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -21884,8 +21884,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824081983777000,
-          "closed_wall_time_ns": 1791824081983845000,
+          "opened_wall_time_ns": 1791824443816660000,
+          "closed_wall_time_ns": 1791824443816724000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -21938,8 +21938,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824081983793000,
-          "closed_wall_time_ns": 1791824081983847000,
+          "opened_wall_time_ns": 1791824443816674000,
+          "closed_wall_time_ns": 1791824443816725000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -21992,8 +21992,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824081983806000,
-          "closed_wall_time_ns": 1791824081983850000,
+          "opened_wall_time_ns": 1791824443816686000,
+          "closed_wall_time_ns": 1791824443816727000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -22046,8 +22046,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824081983817000,
-          "closed_wall_time_ns": 1791824081983852000,
+          "opened_wall_time_ns": 1791824443816698000,
+          "closed_wall_time_ns": 1791824443816729000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -22100,8 +22100,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824081983828000,
-          "closed_wall_time_ns": 1791824081983854000,
+          "opened_wall_time_ns": 1791824443816709000,
+          "closed_wall_time_ns": 1791824443816731000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -22154,8 +22154,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824081983865000,
-          "closed_wall_time_ns": 1791824081983904000,
+          "opened_wall_time_ns": 1791824443816739000,
+          "closed_wall_time_ns": 1791824443816771000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -22208,8 +22208,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824081983880000,
-          "closed_wall_time_ns": 1791824081983905000,
+          "opened_wall_time_ns": 1791824443816751000,
+          "closed_wall_time_ns": 1791824443816772000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -22262,8 +22262,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824081983894000,
-          "closed_wall_time_ns": 1791824081983907000,
+          "opened_wall_time_ns": 1791824443816762000,
+          "closed_wall_time_ns": 1791824443816774000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -22316,8 +22316,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824081983915000,
-          "closed_wall_time_ns": 1791824081983947000,
+          "opened_wall_time_ns": 1791824443816782000,
+          "closed_wall_time_ns": 1791824443816814000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -22370,8 +22370,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824081983926000,
-          "closed_wall_time_ns": 1791824081983949000,
+          "opened_wall_time_ns": 1791824443816793000,
+          "closed_wall_time_ns": 1791824443816816000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -22424,8 +22424,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824081983937000,
-          "closed_wall_time_ns": 1791824081983951000,
+          "opened_wall_time_ns": 1791824443816804000,
+          "closed_wall_time_ns": 1791824443816818000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -22977,8 +22977,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824083414334000,
-          "closed_wall_time_ns": 1791824083414444000,
+          "opened_wall_time_ns": 1791824445191323000,
+          "closed_wall_time_ns": 1791824445191435000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -23089,8 +23089,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824083414384000,
-          "closed_wall_time_ns": 1791824083414446000,
+          "opened_wall_time_ns": 1791824445191374000,
+          "closed_wall_time_ns": 1791824445191437000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -23143,8 +23143,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824083414398000,
-          "closed_wall_time_ns": 1791824083414448000,
+          "opened_wall_time_ns": 1791824445191389000,
+          "closed_wall_time_ns": 1791824445191439000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -23197,8 +23197,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824083414411000,
-          "closed_wall_time_ns": 1791824083414450000,
+          "opened_wall_time_ns": 1791824445191402000,
+          "closed_wall_time_ns": 1791824445191441000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -23251,8 +23251,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824083414423000,
-          "closed_wall_time_ns": 1791824083414451000,
+          "opened_wall_time_ns": 1791824445191413000,
+          "closed_wall_time_ns": 1791824445191443000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -23305,8 +23305,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824083414434000,
-          "closed_wall_time_ns": 1791824083414453000,
+          "opened_wall_time_ns": 1791824445191424000,
+          "closed_wall_time_ns": 1791824445191444000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -23359,8 +23359,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824083414461000,
-          "closed_wall_time_ns": 1791824083414493000,
+          "opened_wall_time_ns": 1791824445191453000,
+          "closed_wall_time_ns": 1791824445191486000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -23413,8 +23413,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824083414473000,
-          "closed_wall_time_ns": 1791824083414495000,
+          "opened_wall_time_ns": 1791824445191465000,
+          "closed_wall_time_ns": 1791824445191488000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -23467,8 +23467,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824083414484000,
-          "closed_wall_time_ns": 1791824083414497000,
+          "opened_wall_time_ns": 1791824445191477000,
+          "closed_wall_time_ns": 1791824445191489000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -23521,8 +23521,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824083414505000,
-          "closed_wall_time_ns": 1791824083414537000,
+          "opened_wall_time_ns": 1791824445191497000,
+          "closed_wall_time_ns": 1791824445191531000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -23575,8 +23575,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824083414516000,
-          "closed_wall_time_ns": 1791824083414539000,
+          "opened_wall_time_ns": 1791824445191509000,
+          "closed_wall_time_ns": 1791824445191533000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -23629,8 +23629,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824083414528000,
-          "closed_wall_time_ns": 1791824083414541000,
+          "opened_wall_time_ns": 1791824445191520000,
+          "closed_wall_time_ns": 1791824445191534000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -24182,8 +24182,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824084914146000,
-          "closed_wall_time_ns": 1791824084914255000,
+          "opened_wall_time_ns": 1791824446558986000,
+          "closed_wall_time_ns": 1791824446559110000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -24294,8 +24294,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824084914195000,
-          "closed_wall_time_ns": 1791824084914258000,
+          "opened_wall_time_ns": 1791824446559049000,
+          "closed_wall_time_ns": 1791824446559112000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -24348,8 +24348,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824084914210000,
-          "closed_wall_time_ns": 1791824084914259000,
+          "opened_wall_time_ns": 1791824446559063000,
+          "closed_wall_time_ns": 1791824446559114000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -24402,8 +24402,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824084914222000,
-          "closed_wall_time_ns": 1791824084914261000,
+          "opened_wall_time_ns": 1791824446559076000,
+          "closed_wall_time_ns": 1791824446559116000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -24456,8 +24456,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824084914234000,
-          "closed_wall_time_ns": 1791824084914263000,
+          "opened_wall_time_ns": 1791824446559088000,
+          "closed_wall_time_ns": 1791824446559117000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -24510,8 +24510,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824084914245000,
-          "closed_wall_time_ns": 1791824084914265000,
+          "opened_wall_time_ns": 1791824446559099000,
+          "closed_wall_time_ns": 1791824446559119000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -24564,8 +24564,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824084914273000,
-          "closed_wall_time_ns": 1791824084914304000,
+          "opened_wall_time_ns": 1791824446559127000,
+          "closed_wall_time_ns": 1791824446559163000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -24618,8 +24618,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824084914284000,
-          "closed_wall_time_ns": 1791824084914306000,
+          "opened_wall_time_ns": 1791824446559143000,
+          "closed_wall_time_ns": 1791824446559165000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -24672,8 +24672,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824084914295000,
-          "closed_wall_time_ns": 1791824084914308000,
+          "opened_wall_time_ns": 1791824446559154000,
+          "closed_wall_time_ns": 1791824446559167000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -24726,8 +24726,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824084914316000,
-          "closed_wall_time_ns": 1791824084914348000,
+          "opened_wall_time_ns": 1791824446559174000,
+          "closed_wall_time_ns": 1791824446559207000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -24780,8 +24780,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824084914327000,
-          "closed_wall_time_ns": 1791824084914350000,
+          "opened_wall_time_ns": 1791824446559186000,
+          "closed_wall_time_ns": 1791824446559208000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -24834,8 +24834,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824084914338000,
-          "closed_wall_time_ns": 1791824084914352000,
+          "opened_wall_time_ns": 1791824446559197000,
+          "closed_wall_time_ns": 1791824446559210000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -25387,8 +25387,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 1.0,
-          "opened_wall_time_ns": 1791824086302034000,
-          "closed_wall_time_ns": 1791824086302160000,
+          "opened_wall_time_ns": 1791824447919176000,
+          "closed_wall_time_ns": 1791824447919300000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -25499,8 +25499,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": null,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824086302082000,
-          "closed_wall_time_ns": 1791824086302163000,
+          "opened_wall_time_ns": 1791824447919223000,
+          "closed_wall_time_ns": 1791824447919303000,
           "metadata": {
             "population_layers": 10,
             "fusion_reasons": [
@@ -25549,8 +25549,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824086302101000,
-          "closed_wall_time_ns": 1791824086302164000,
+          "opened_wall_time_ns": 1791824447919242000,
+          "closed_wall_time_ns": 1791824447919305000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -25603,8 +25603,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824086302115000,
-          "closed_wall_time_ns": 1791824086302166000,
+          "opened_wall_time_ns": 1791824447919255000,
+          "closed_wall_time_ns": 1791824447919307000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -25657,8 +25657,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824086302127000,
-          "closed_wall_time_ns": 1791824086302168000,
+          "opened_wall_time_ns": 1791824447919266000,
+          "closed_wall_time_ns": 1791824447919309000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -25711,8 +25711,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824086302139000,
-          "closed_wall_time_ns": 1791824086302170000,
+          "opened_wall_time_ns": 1791824447919278000,
+          "closed_wall_time_ns": 1791824447919311000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -25765,8 +25765,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824086302150000,
-          "closed_wall_time_ns": 1791824086302172000,
+          "opened_wall_time_ns": 1791824447919290000,
+          "closed_wall_time_ns": 1791824447919312000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -25819,8 +25819,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824086302180000,
-          "closed_wall_time_ns": 1791824086302211000,
+          "opened_wall_time_ns": 1791824447919320000,
+          "closed_wall_time_ns": 1791824447919352000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -25873,8 +25873,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824086302191000,
-          "closed_wall_time_ns": 1791824086302213000,
+          "opened_wall_time_ns": 1791824447919332000,
+          "closed_wall_time_ns": 1791824447919354000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -25927,8 +25927,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824086302202000,
-          "closed_wall_time_ns": 1791824086302215000,
+          "opened_wall_time_ns": 1791824447919343000,
+          "closed_wall_time_ns": 1791824447919356000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -25981,8 +25981,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824086302222000,
-          "closed_wall_time_ns": 1791824086302255000,
+          "opened_wall_time_ns": 1791824447919363000,
+          "closed_wall_time_ns": 1791824447919396000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -26035,8 +26035,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824086302233000,
-          "closed_wall_time_ns": 1791824086302257000,
+          "opened_wall_time_ns": 1791824447919375000,
+          "closed_wall_time_ns": 1791824447919398000,
           "metadata": {
             "anomaly_kind": "nan",
             "fusion_reasons": [
@@ -26089,8 +26089,8 @@
           "duration_steps": 1,
           "confirmation_delay_steps": 0,
           "cross_layer_multiplicity": 0.0,
-          "opened_wall_time_ns": 1791824086302244000,
-          "closed_wall_time_ns": 1791824086302258000,
+          "opened_wall_time_ns": 1791824447919386000,
+          "closed_wall_time_ns": 1791824447919399000,
           "metadata": {
             "anomaly_kind": "count",
             "fusion_reasons": [
@@ -26587,8 +26587,8 @@
       ]
     }
   ],
-  "elapsed_s": 41.4,
-  "code_sha": "e6369aa18fd114122272a6960fc2ffdb66b24d24",
-  "code_dirty": true,
-  "generated_at": "2026-10-12T16:54:46Z"
+  "elapsed_s": 39.7,
+  "code_sha": "9e4550cef2151b33bd89dabe45fa9480ecdde823",
+  "code_dirty": false,
+  "generated_at": "2026-10-12T17:00:48Z"
 }

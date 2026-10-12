@@ -206,21 +206,33 @@ python examples/quickstart.py
 python tests/performance/audit_observer_cost.py      # 신뢰구간을 포함한 페어 오버헤드
 ```
 
-**모든 핵심 수치가 현재 재현 가능한 것은 아니며, 이 점은 분명히 밝힐 가치가 있습니다.**
-탐지기 및 성능 측정은 `tests/experiments/`와 `tests/performance/`의 스크립트가 생성하며,
-원시 출력은 `outputs/` 아래에 커밋되어 있습니다.
+모든 핵심 수치는 이제 커밋된 스크립트가 생성하며, 채점도 다시 재현 가능합니다.
+`tests/experiments/level_scoring.py`가 store에서 품질 수치를 재도출합니다:
 
-**품질 수치** — 런 precision 0.947 / recall 0.500, EPISODE precision 0.326,
-INCIDENT precision 0.720, `missed_primary_faults 18` — 는 **현재 저장소 상태로는 다시 도출할 수
-없습니다.** 측정된 값이지만, 측정에 사용된 채점 입력이 커밋된 적이 없습니다. 두 ground truth
-모두 채점기가 읽는 `primary_fault_type`을 갖고 있지 않고, 개발 코퍼스의 ground truth에는
-`acceptable_window`가 없으며, 결함 클래스 매핑은 코퍼스가 실제로 사용하는 시나리오 레이블과
-**교집합이 없습니다.** 또한 구 채점 산출물에는 store 경로, ground truth 경로, 명령이 기록되어
-있지 않습니다.
+```bash
+python tests/experiments/level_scoring.py development   # 또는 mixed, adversarial
+```
 
-`tests/experiments/level_scoring.py`는 이제 store에서 채점하고 입력을 기록하며, 누락된 필드를
-지어내는 대신 **fail closed** 합니다. 따라서 위 수치의 상태는 철회가 아니라
-"측정되었으나 재현 불가"입니다. [EVIDENCE_REGENERATION_FINDINGS.md](../../outputs/v0.1.8-alpha/EVIDENCE_REGENERATION_FINDINGS.md) 참조.
+**동결 리비전 `9e4550c`에서 재현됨**: RUN precision 0.9474 / recall 0.5000,
+`missed_primary_faults` 18, INCIDENT precision 0.7200; 50-런 혼합 코퍼스
+RUN precision 1.0000 / recall 0.5000, INCIDENT precision 0.5000.
+
+**변경된 두 항목** (그 사이 탐지기가 바뀌었기 때문):
+
+| 수치 | 기존 | 재도출 | |
+|---|---|---|---|
+| EPISODE precision (42런) | 0.326 | **0.3960** | 개선 |
+| EPISODE precision (50런 혼합) | 0.500 | **0.2222** | 악화 |
+
+EPISODE 계층은 주입된 결함이 몇 개의 에피소드를 만들었는지 세며, v0.1.8의 두 변경이 이를
+움직입니다: T1 계층 관측 주기가 `param.layer.norm` 방출을 5분의 1로 줄이고, 모듈별 활성화
+탐지기가 등록되었습니다. **두 변경 모두 그때 episode precision에 대해 측정되지 않았습니다.
+기존 값은 대체되었고, 재도출된 값이 현재값입니다.**
+
+아홉 개 수치가 한 번도 커밋된 적 없는 입력에서 인용되었고, `level_scoring.py`와
+`evaluation_truth.py`가 생기기 전까지 전혀 재도출할 수 없었습니다. 이제 둘 다 있으며, 모든
+산출물이 자신을 생성한 리비전을 기록합니다(`code_sha`, 그리고 소스 트리로 한정된 `code_dirty`).
+[EVIDENCE_REGENERATION_FINDINGS.md](../../outputs/v0.1.8-alpha/EVIDENCE_REGENERATION_FINDINGS.md) 참조.
 
 ## 프로젝트 상태
 

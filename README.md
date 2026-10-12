@@ -209,22 +209,43 @@ python examples/quickstart.py
 python tests/performance/audit_observer_cost.py      # paired overhead, with confidence intervals
 ```
 
-**Not every headline figure is currently reproducible, and this is worth stating plainly.**
-The detector and performance measurements are produced by scripts in
-`tests/experiments/` and `tests/performance/`, and the raw output is committed under
-`outputs/`.
+Every headline figure is now produced by a committed script, and the scoring is
+reproducible again. `tests/experiments/level_scoring.py` re-derives the quality numbers
+from a store:
 
-The **quality figures** — RUN precision 0.947 / recall 0.500, EPISODE precision 0.326,
-INCIDENT precision 0.720, `missed_primary_faults 18` — **cannot be re-derived from this
-repository as it stands.** They were measured, but the scoring input they were measured with
-was never checked in: neither ground truth carries the `primary_fault_type` the scorer reads,
-the development ground truth has no `acceptable_window`, the fault-class mapping does not
-intersect the scenario labels the corpora actually use, and the old scoring artifacts record
-no store, no ground-truth path and no command.
+```bash
+python tests/experiments/level_scoring.py development   # or mixed, adversarial
+```
 
-`tests/experiments/level_scoring.py` now scores from a store and records its inputs, and it
-**fails closed** rather than inventing the missing fields. The figures above are therefore
-recorded as measured-but-not-reproducible rather than withdrawn. See
+**Reproduced** on the frozen revision `9e4550c`:
+
+| Figure | Stated | Re-derived | |
+|---|---|---|---|
+| RUN precision (42-run corpus) | 0.947 | **0.9474** | same |
+| RUN recall (42-run corpus) | 0.500 | **0.5000** | same |
+| `missed_primary_faults` | 18 | **18** | same |
+| INCIDENT precision (42-run corpus) | 0.720 | **0.7200** | same |
+| RUN precision / recall (50-run mixed) | 1.000 / 0.500 | **1.0000 / 0.5000** | same |
+| INCIDENT precision (50-run mixed) | 0.500 | **0.5000** | same |
+
+**Changed**, because the detector changed between when they were measured and now:
+
+| Figure | Stated | Re-derived | |
+|---|---|---|---|
+| EPISODE precision (42-run corpus) | 0.326 | **0.3960** | improved |
+| EPISODE precision (50-run mixed) | 0.500 | **0.2222** | worse |
+
+The EPISODE level counts how many episodes each injected fault produced, and two changes
+in v0.1.8 move it: the T1 layer observability cadence reduces `param.layer.norm` emission
+five-fold, and a per-module activation detector was registered. Neither was measured
+against the episode-precision figure when it was made. **The stated values are superseded;
+the re-derived ones are current.**
+
+Nine numbers were restated from an input that was never committed, and could not be
+re-derived at all until `tests/experiments/level_scoring.py` and `tests/evaluation_truth.py`
+existed. Both now do, and every artifact records the revision that produced it
+(`code_sha`, and `code_dirty` scoped to the source tree), so the next drift is visible
+without a manual diff. See
 [EVIDENCE_REGENERATION_FINDINGS.md](outputs/v0.1.8-alpha/EVIDENCE_REGENERATION_FINDINGS.md).
 
 ## Project status
