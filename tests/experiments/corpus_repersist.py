@@ -26,6 +26,9 @@ from typing import Any, Dict, List, Optional, Tuple
 import torch
 
 ROOT = Path(__file__).resolve().parents[2]
+if str(ROOT / "tests") not in sys.path:
+    sys.path.insert(0, str(ROOT / "tests"))
+from artifacts import write_artifact  # noqa: E402
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "tests"))
 
@@ -266,8 +269,7 @@ def main() -> int:
         "results": rows,
         "elapsed_s": round(time.perf_counter() - started, 1),
     }
-    (OUT / "corpus_repersist_results.json").write_text(
-        json.dumps(payload, indent=2, default=str), encoding="utf-8")
+    write_artifact(OUT / "corpus_repersist_results.json", payload)
     total_ep = sum(r["episodes"] for r in rows)
     total_rel = sum(r["relations"] for r in rows)
     total_inc = sum(r["incidents"] for r in rows)

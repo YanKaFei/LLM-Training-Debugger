@@ -27,6 +27,9 @@ from typing import Any, Dict, List, Tuple
 import torch
 
 ROOT = Path(__file__).resolve().parents[2]
+if str(ROOT / "tests") not in sys.path:
+    sys.path.insert(0, str(ROOT / "tests"))
+from artifacts import write_artifact  # noqa: E402
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "tests"))
 
@@ -269,8 +272,7 @@ def main() -> int:
     payload = {"cases": list(CASES), "injection_step": INJECTION, "runs": len(rows),
                "store": str(STORE), "results": rows,
                "elapsed_s": round(time.perf_counter() - started, 1)}
-    (OUT / "timeline_results.json").write_text(
-        json.dumps(payload, indent=2, default=str), encoding="utf-8")
+    write_artifact(OUT / "timeline_results.json", payload)
 
     print("")
     print("%-5s %-8s %-10s %-10s %-10s %s" % ("case", "grad1st", "nonfin1st", "inj", "paramNonfin", "relations"))

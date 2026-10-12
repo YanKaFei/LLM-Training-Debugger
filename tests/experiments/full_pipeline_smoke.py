@@ -26,6 +26,10 @@ from pathlib import Path
 from typing import Any, Dict, List
 
 ROOT = Path(__file__).resolve().parents[2]
+if str(ROOT / "tests") not in sys.path:
+    sys.path.insert(0, str(ROOT / "tests"))
+from artifacts import write_artifact  # noqa: E402
+
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "tests"))
 sys.path.insert(0, str(ROOT / "tests" / "experiments"))
@@ -243,25 +247,11 @@ def main() -> int:
         "healthy_false_incident_probe": probe,
         "elapsed_s": round(time.perf_counter() - started, 1),
     }
-    # Rewrite every absolute path under the checkout as a path relative to it,
-    # BEFORE the result is written.
-    #
-    # This file is committed as evidence, and the README tells a reader to
-    # regenerate it. Writing `ROOT` verbatim therefore embedded one machine's
-    # absolute path into a tracked artefact on every run -- observed as a
-    # home-directory path reappearing in `cli_command` and `store_paths` after the
-    # file had already been sanitised once. Sanitising the output is treating the
-    # symptom; the generator is the cause, and a relative path is also the more
-    # honest thing to record: it says where the store is *within the repository*,
-    # not where the repository happened to be.
-    text = json.dumps(summary, indent=2, default=str)
-    text = text.replace(str(ROOT) + "/", "").replace(str(ROOT), ".")
-    if str(ROOT) in text:
-        raise SystemExit(
-            "refusing to write smoke_results.json: an absolute checkout path survived "
-            "sanitisation and would be committed as evidence"
-        )
-    (OUTPUT_DIR / "smoke_results.json").write_text(text, encoding="utf-8")
+    # Written through the shared artifact writer, which relativises every path and
+    # refuses to write if a machine-specific one survives. The inline version of this
+    # lived here first; it is now one implementation used by every experiment script,
+    # because eight copies of a rule is eight chances to forget it.
+    write_artifact(OUTPUT_DIR / "smoke_results.json", summary)
     print("")
     for r in results:
         print("{:<4} {:<34} expected={:<26} actual={:<26} {}".format(

@@ -40,6 +40,9 @@ from typing import Any, Dict, List, Optional
 import torch
 
 ROOT = Path(__file__).resolve().parents[2]
+if str(ROOT / "tests") not in sys.path:
+    sys.path.insert(0, str(ROOT / "tests"))
+from artifacts import write_artifact  # noqa: E402
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "tests"))
 
@@ -426,9 +429,7 @@ def main() -> int:
         "cli_all_exit_zero": all(r["cli_verdicts"]["exit_code"] == 0 for r in results),
         "elapsed_s": time.perf_counter() - started,
     }
-    (OUTPUT_DIR / "cli_e2e_results.json").write_text(
-        json.dumps(summary, indent=2, default=str), encoding="utf-8"
-    )
+    write_artifact(OUTPUT_DIR / "cli_e2e_results.json", summary)
     print("")
     for r in results:
         print("{}  expected={:<22} observed={:<22} matched={}".format(
