@@ -178,7 +178,13 @@
       "relation_type": "PRECEDES",
       "target": "NAN_DETECTED",
       "gap": 40,
-      "run_id": "mix-M3_two_independent_faults-L4d32-s90001"
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90000"
     },
     {
       "relation_type": "PRECEDES",
@@ -257,6 +263,36 @@
       "target": "NAN_DETECTED",
       "gap": 40,
       "run_id": "mix-M3_two_independent_faults-L4d32-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90002"
     },
     {
       "relation_type": "PRECEDES",
@@ -430,7 +466,13 @@
       "relation_type": "PRECEDES",
       "target": "NAN_DETECTED",
       "gap": 40,
-      "run_id": "mix-M3_two_independent_faults-L4d32-s90004"
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90003"
     },
     {
       "relation_type": "PRECEDES",
@@ -509,6 +551,36 @@
       "target": "NAN_DETECTED",
       "gap": 40,
       "run_id": "mix-M3_two_independent_faults-L4d32-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L4d32-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90000"
     },
     {
       "relation_type": "PRECEDES",
@@ -682,6 +754,30 @@
       "relation_type": "PRECEDES",
       "target": "NAN_DETECTED",
       "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
       "run_id": "mix-M3_two_independent_faults-L6d48-s90002"
     },
     {
@@ -845,6 +941,30 @@
       "target": "NAN_DETECTED",
       "gap": 40,
       "run_id": "mix-M3_two_independent_faults-L6d48-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "mix-M3_two_independent_faults-L6d48-s90004"
     },
     {
       "relation_type": "PRECEDES",
@@ -931,7 +1051,7 @@
       "run_id": "mix-M3_two_independent_faults-L6d48-s90004"
     }
   ],
-  "order_only_count": 140,
+  "order_only_count": 160,
   "unit_accounting": {
     "runs": 50,
     "episodes_classified": 180,
@@ -942,8 +1062,8 @@
   "store": "outputs/alpha/mixed/v015/store",
   "ground_truth": "outputs/alpha/mixed/v015/ground_truth/mixed_fault_ground_truth.json",
   "scenarios": 50,
-  "elapsed_s": 4.27,
-  "code_sha": "9e4550cef2151b33bd89dabe45fa9480ecdde823",
+  "elapsed_s": 4.89,
+  "code_sha": "783906e9dbaf414f419d87d37276f4ceb225c25c",
   "code_dirty": false,
-  "generated_at": "2026-10-12T17:02:05Z"
+  "generated_at": "2026-10-12T17:25:18Z"
 }

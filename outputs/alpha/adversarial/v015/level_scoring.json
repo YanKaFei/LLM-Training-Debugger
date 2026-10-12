@@ -166,7 +166,13 @@
       "relation_type": "PRECEDES",
       "target": "NAN_DETECTED",
       "gap": 40,
-      "run_id": "adv-A3-L4d32-s95001"
+      "run_id": "adv-A3-L4d32-s95000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A3-L4d32-s95000"
     },
     {
       "relation_type": "PRECEDES",
@@ -233,6 +239,36 @@
       "target": "NAN_DETECTED",
       "gap": 40,
       "run_id": "adv-A3-L4d32-s95001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A3-L4d32-s95001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A3-L4d32-s95001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A3-L4d32-s95001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A3-L4d32-s95002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A3-L4d32-s95002"
     },
     {
       "relation_type": "PRECEDES",
@@ -382,7 +418,13 @@
       "relation_type": "PRECEDES",
       "target": "NAN_DETECTED",
       "gap": 40,
-      "run_id": "adv-A3-L4d32-s95004"
+      "run_id": "adv-A3-L4d32-s95003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A3-L4d32-s95003"
     },
     {
       "relation_type": "PRECEDES",
@@ -449,6 +491,36 @@
       "target": "NAN_DETECTED",
       "gap": 40,
       "run_id": "adv-A3-L4d32-s95004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A3-L4d32-s95004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A3-L4d32-s95004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A3-L4d32-s95004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A7-L4d32-s95000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A7-L4d32-s95000"
     },
     {
       "relation_type": "PRECEDES",
@@ -598,6 +670,30 @@
       "relation_type": "PRECEDES",
       "target": "NAN_DETECTED",
       "gap": 40,
+      "run_id": "adv-A7-L4d32-s95001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A7-L4d32-s95001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A7-L4d32-s95002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A7-L4d32-s95002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
       "run_id": "adv-A7-L4d32-s95002"
     },
     {
@@ -737,6 +833,30 @@
       "target": "NAN_DETECTED",
       "gap": 40,
       "run_id": "adv-A7-L4d32-s95003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A7-L4d32-s95003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A7-L4d32-s95003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A7-L4d32-s95004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 40,
+      "run_id": "adv-A7-L4d32-s95004"
     },
     {
       "relation_type": "PRECEDES",
@@ -811,7 +931,7 @@
       "run_id": "adv-A7-L4d32-s95004"
     }
   ],
-  "order_only_count": 120,
+  "order_only_count": 140,
   "unit_accounting": {
     "runs": 45,
     "episodes_classified": 166,
@@ -822,8 +942,8 @@
   "store": "outputs/alpha/adversarial/v015/store",
   "ground_truth": "outputs/alpha/adversarial/v015/ground_truth/adversarial_ground_truth.json",
   "scenarios": 45,
-  "elapsed_s": 2.66,
-  "code_sha": "9e4550cef2151b33bd89dabe45fa9480ecdde823",
+  "elapsed_s": 3.18,
+  "code_sha": "783906e9dbaf414f419d87d37276f4ceb225c25c",
   "code_dirty": false,
-  "generated_at": "2026-10-12T17:02:08Z"
+  "generated_at": "2026-10-12T17:25:21Z"
 }

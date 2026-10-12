@@ -454,6 +454,66 @@
       "relation_type": "PRECEDES",
       "target": "NAN_DETECTED",
       "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80000"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
       "run_id": "dev-nan_loss-L4d32-s80001"
     },
     {
@@ -809,6 +869,126 @@
       "target": "NAN_DETECTED",
       "gap": 1,
       "run_id": "dev-nan_loss-L4d32-s80001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80001"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80002"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80002"
     },
     {
       "relation_type": "PRECEDES",
@@ -1534,6 +1714,66 @@
       "relation_type": "PRECEDES",
       "target": "NAN_DETECTED",
       "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80003"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
       "run_id": "dev-nan_loss-L4d32-s80004"
     },
     {
@@ -1889,6 +2129,126 @@
       "target": "NAN_DETECTED",
       "gap": 1,
       "run_id": "dev-nan_loss-L4d32-s80004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80004"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80005"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80005"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80005"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80005"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80005"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80005"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80005"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 0,
+      "run_id": "dev-nan_loss-L4d32-s80005"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80005"
+    },
+    {
+      "relation_type": "PRECEDES",
+      "target": "NAN_DETECTED",
+      "gap": 1,
+      "run_id": "dev-nan_loss-L4d32-s80005"
     },
     {
       "relation_type": "PRECEDES",
@@ -2251,7 +2611,7 @@
       "run_id": "dev-nan_loss-L4d32-s80005"
     }
   ],
-  "order_only_count": 360,
+  "order_only_count": 420,
   "unit_accounting": {
     "runs": 42,
     "episodes_classified": 157,
@@ -2262,8 +2622,8 @@
   "store": "outputs/alpha/corpus/store",
   "ground_truth": "outputs/alpha/corpus/ground_truth/development_ground_truth.json",
   "scenarios": 42,
-  "elapsed_s": 3.1,
-  "code_sha": "07e6e91cb65bf49ea6bdb6a86afca15f88e5b70e",
+  "elapsed_s": 3.42,
+  "code_sha": "783906e9dbaf414f419d87d37276f4ceb225c25c",
   "code_dirty": false,
-  "generated_at": "2026-10-12T17:07:12Z"
+  "generated_at": "2026-10-12T17:25:53Z"
 }
