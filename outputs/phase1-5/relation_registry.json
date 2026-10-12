@@ -1,0 +1,24 @@
+{
+  "relation_rule_version": "phase1.5-1.0",
+  "relation_types": [
+    "POSSIBLE_CONSEQUENCE_OF",
+    "PRECEDES",
+    "CO_OCCURS_WITH",
+    "UNKNOWN_RELATION"
+  ],
+  "forbidden_types": [
+    "CAUSED_BY",
+    "ROOT_CAUSE_OF"
+  ],
+  "consequence_types": [
+    "NAN_DETECTED",
+    "INF_DETECTED"
+  ],
+  "primary_types": [
+    "GRADIENT_EXPLOSION",
+    "LOSS_DIVERGENCE",
+    "LOSS_SPIKE"
+  ],
+  "default_max_gap_steps": 60,
+  "note": "Attribution, not suppression. A non-finite episode with no linkable antecedent keeps the right to open its own incident."
+}

@@ -1,0 +1,452 @@
+{
+  "adv-A1-L4d32-s95000": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "the gradient norm overflows but the update is suppressed, so no value propagated; any consequence claim is fabricated",
+    "case": "A1",
+    "seed": 95000,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A1-L4d32-s95001": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "the gradient norm overflows but the update is suppressed, so no value propagated; any consequence claim is fabricated",
+    "case": "A1",
+    "seed": 95001,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A1-L4d32-s95002": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "the gradient norm overflows but the update is suppressed, so no value propagated; any consequence claim is fabricated",
+    "case": "A1",
+    "seed": 95002,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A1-L4d32-s95003": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "the gradient norm overflows but the update is suppressed, so no value propagated; any consequence claim is fabricated",
+    "case": "A1",
+    "seed": 95003,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A1-L4d32-s95004": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "the gradient norm overflows but the update is suppressed, so no value propagated; any consequence claim is fabricated",
+    "case": "A1",
+    "seed": 95004,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A2-L4d32-s95000": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "the downstream non-finite value was injected independently one step later; the gradient could not have caused it",
+    "case": "A2",
+    "seed": 95000,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A2-L4d32-s95001": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "the downstream non-finite value was injected independently one step later; the gradient could not have caused it",
+    "case": "A2",
+    "seed": 95001,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A2-L4d32-s95002": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "the downstream non-finite value was injected independently one step later; the gradient could not have caused it",
+    "case": "A2",
+    "seed": 95002,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A2-L4d32-s95003": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "the downstream non-finite value was injected independently one step later; the gradient could not have caused it",
+    "case": "A2",
+    "seed": 95003,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A2-L4d32-s95004": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "the downstream non-finite value was injected independently one step later; the gradient could not have caused it",
+    "case": "A2",
+    "seed": 95004,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A3-L4d32-s95000": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "a finite scale anomaly is not a mechanism",
+    "case": "A3",
+    "seed": 95000,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A3-L4d32-s95001": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "a finite scale anomaly is not a mechanism",
+    "case": "A3",
+    "seed": 95001,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A3-L4d32-s95002": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "a finite scale anomaly is not a mechanism",
+    "case": "A3",
+    "seed": 95002,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A3-L4d32-s95003": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "a finite scale anomaly is not a mechanism",
+    "case": "A3",
+    "seed": 95003,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A3-L4d32-s95004": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "a finite scale anomaly is not a mechanism",
+    "case": "A3",
+    "seed": 95004,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A4-L4d32-s95000": {
+    "expectation": "CONSEQUENCE",
+    "opportunity": "positive",
+    "reason": "a genuine propagation, delayed past the 2-step bound",
+    "case": "A4",
+    "seed": 95000,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A4-L4d32-s95001": {
+    "expectation": "CONSEQUENCE",
+    "opportunity": "positive",
+    "reason": "a genuine propagation, delayed past the 2-step bound",
+    "case": "A4",
+    "seed": 95001,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A4-L4d32-s95002": {
+    "expectation": "CONSEQUENCE",
+    "opportunity": "positive",
+    "reason": "a genuine propagation, delayed past the 2-step bound",
+    "case": "A4",
+    "seed": 95002,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A4-L4d32-s95003": {
+    "expectation": "CONSEQUENCE",
+    "opportunity": "positive",
+    "reason": "a genuine propagation, delayed past the 2-step bound",
+    "case": "A4",
+    "seed": 95003,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A4-L4d32-s95004": {
+    "expectation": "CONSEQUENCE",
+    "opportunity": "positive",
+    "reason": "a genuine propagation, delayed past the 2-step bound",
+    "case": "A4",
+    "seed": 95004,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A5-L4d32-s95000": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "no downstream failure occurred at all",
+    "case": "A5",
+    "seed": 95000,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A5-L4d32-s95001": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "no downstream failure occurred at all",
+    "case": "A5",
+    "seed": 95001,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A5-L4d32-s95002": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "no downstream failure occurred at all",
+    "case": "A5",
+    "seed": 95002,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A5-L4d32-s95003": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "no downstream failure occurred at all",
+    "case": "A5",
+    "seed": 95003,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A5-L4d32-s95004": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "no downstream failure occurred at all",
+    "case": "A5",
+    "seed": 95004,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A6-L4d32-s95000": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "standalone non-finite value with no antecedent",
+    "case": "A6",
+    "seed": 95000,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A6-L4d32-s95001": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "standalone non-finite value with no antecedent",
+    "case": "A6",
+    "seed": 95001,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A6-L4d32-s95002": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "standalone non-finite value with no antecedent",
+    "case": "A6",
+    "seed": 95002,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A6-L4d32-s95003": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "standalone non-finite value with no antecedent",
+    "case": "A6",
+    "seed": 95003,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A6-L4d32-s95004": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "standalone non-finite value with no antecedent",
+    "case": "A6",
+    "seed": 95004,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A7-L4d32-s95000": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "the update was skipped and a later unrelated fault followed",
+    "case": "A7",
+    "seed": 95000,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A7-L4d32-s95001": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "the update was skipped and a later unrelated fault followed",
+    "case": "A7",
+    "seed": 95001,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A7-L4d32-s95002": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "the update was skipped and a later unrelated fault followed",
+    "case": "A7",
+    "seed": 95002,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A7-L4d32-s95003": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "the update was skipped and a later unrelated fault followed",
+    "case": "A7",
+    "seed": 95003,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A7-L4d32-s95004": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "the update was skipped and a later unrelated fault followed",
+    "case": "A7",
+    "seed": 95004,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A8X-L4d32-s95000": {
+    "expectation": "CONSEQUENCE",
+    "opportunity": "positive",
+    "reason": "genuine propagation; observations identical to A8Y",
+    "case": "A8X",
+    "seed": 95000,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A8X-L4d32-s95001": {
+    "expectation": "CONSEQUENCE",
+    "opportunity": "positive",
+    "reason": "genuine propagation; observations identical to A8Y",
+    "case": "A8X",
+    "seed": 95001,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A8X-L4d32-s95002": {
+    "expectation": "CONSEQUENCE",
+    "opportunity": "positive",
+    "reason": "genuine propagation; observations identical to A8Y",
+    "case": "A8X",
+    "seed": 95002,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A8X-L4d32-s95003": {
+    "expectation": "CONSEQUENCE",
+    "opportunity": "positive",
+    "reason": "genuine propagation; observations identical to A8Y",
+    "case": "A8X",
+    "seed": 95003,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A8X-L4d32-s95004": {
+    "expectation": "CONSEQUENCE",
+    "opportunity": "positive",
+    "reason": "genuine propagation; observations identical to A8Y",
+    "case": "A8X",
+    "seed": 95004,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A8Y-L4d32-s95000": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "independent fault; observations identical to A8X",
+    "case": "A8Y",
+    "seed": 95000,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A8Y-L4d32-s95001": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "independent fault; observations identical to A8X",
+    "case": "A8Y",
+    "seed": 95001,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A8Y-L4d32-s95002": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "independent fault; observations identical to A8X",
+    "case": "A8Y",
+    "seed": 95002,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A8Y-L4d32-s95003": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "independent fault; observations identical to A8X",
+    "case": "A8Y",
+    "seed": 95003,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  },
+  "adv-A8Y-L4d32-s95004": {
+    "expectation": "INDEPENDENT",
+    "opportunity": "negative",
+    "reason": "independent fault; observations identical to A8X",
+    "case": "A8Y",
+    "seed": 95004,
+    "layers": 4,
+    "d_model": 32,
+    "injection_step": 80
+  }
+}

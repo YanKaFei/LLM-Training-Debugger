@@ -1,0 +1,4226 @@
+{
+  "results": [
+    {
+      "run_id": "H0_stable_healthy-5000",
+      "fault_type": "H0_stable_healthy",
+      "seed": 5000,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H0_stable_healthy-5001",
+      "fault_type": "H0_stable_healthy",
+      "seed": 5001,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H0_stable_healthy-5002-None",
+      "fault_type": "H0_stable_healthy",
+      "seed": 5002,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "loss.trend_slope",
+          96
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "H0_stable_healthy",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "H0_stable_healthy-5003",
+      "fault_type": "H0_stable_healthy",
+      "seed": 5003,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H0_stable_healthy-5004",
+      "fault_type": "H0_stable_healthy",
+      "seed": 5004,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H0_stable_healthy-5005-None",
+      "fault_type": "H0_stable_healthy",
+      "seed": 5005,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "loss.trend_slope",
+          135
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "H0_stable_healthy",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "H0_stable_healthy-5006",
+      "fault_type": "H0_stable_healthy",
+      "seed": 5006,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H0_stable_healthy-5007",
+      "fault_type": "H0_stable_healthy",
+      "seed": 5007,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H0_stable_healthy-5008-None",
+      "fault_type": "H0_stable_healthy",
+      "seed": 5008,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "loss.trend_slope",
+          111
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "H0_stable_healthy",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "H0_stable_healthy-5009",
+      "fault_type": "H0_stable_healthy",
+      "seed": 5009,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H0_stable_healthy-5010-None",
+      "fault_type": "H0_stable_healthy",
+      "seed": 5010,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "loss.trend_slope",
+          107
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "H0_stable_healthy",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "H0_stable_healthy-5011",
+      "fault_type": "H0_stable_healthy",
+      "seed": 5011,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H0_stable_healthy-5012",
+      "fault_type": "H0_stable_healthy",
+      "seed": 5012,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H0_stable_healthy-5013-None",
+      "fault_type": "H0_stable_healthy",
+      "seed": 5013,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "loss.trend_slope",
+          122
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "H0_stable_healthy",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "H1_heavy_tail_gradients-5000",
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 5000,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H1_heavy_tail_gradients-5001",
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 5001,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H1_heavy_tail_gradients-5002",
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 5002,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H1_heavy_tail_gradients-5003",
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 5003,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H1_heavy_tail_gradients-5004",
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 5004,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H1_heavy_tail_gradients-5005",
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 5005,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H1_heavy_tail_gradients-5006",
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 5006,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H1_heavy_tail_gradients-5007",
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 5007,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H1_heavy_tail_gradients-5008",
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 5008,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H1_heavy_tail_gradients-5009",
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 5009,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H1_heavy_tail_gradients-5010",
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 5010,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H1_heavy_tail_gradients-5011",
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 5011,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H1_heavy_tail_gradients-5012",
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 5012,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H1_heavy_tail_gradients-5013",
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 5013,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H2_noisy_healthy_loss-5000",
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 5000,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H2_noisy_healthy_loss-5001",
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 5001,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H2_noisy_healthy_loss-5002-None",
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 5002,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "H2_noisy_healthy_loss",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "H2_noisy_healthy_loss-5003",
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 5003,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H2_noisy_healthy_loss-5004",
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 5004,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H2_noisy_healthy_loss-5005",
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 5005,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H2_noisy_healthy_loss-5006",
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 5006,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H2_noisy_healthy_loss-5007",
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 5007,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H2_noisy_healthy_loss-5008",
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 5008,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H2_noisy_healthy_loss-5009",
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 5009,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H2_noisy_healthy_loss-5010",
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 5010,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H2_noisy_healthy_loss-5011",
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 5011,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H2_noisy_healthy_loss-5012-None",
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 5012,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "loss.trend_slope",
+          128
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "H2_noisy_healthy_loss",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "H2_noisy_healthy_loss-5013",
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 5013,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H3_scheduler_transition-5000",
+      "fault_type": "H3_scheduler_transition",
+      "seed": 5000,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H3_scheduler_transition-5001",
+      "fault_type": "H3_scheduler_transition",
+      "seed": 5001,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H3_scheduler_transition-5002-None",
+      "fault_type": "H3_scheduler_transition",
+      "seed": 5002,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "loss.trend_slope",
+          96
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "H3_scheduler_transition",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "H3_scheduler_transition-5003",
+      "fault_type": "H3_scheduler_transition",
+      "seed": 5003,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H3_scheduler_transition-5004",
+      "fault_type": "H3_scheduler_transition",
+      "seed": 5004,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H3_scheduler_transition-5005-None",
+      "fault_type": "H3_scheduler_transition",
+      "seed": 5005,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "loss.trend_slope",
+          135
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "H3_scheduler_transition",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "H3_scheduler_transition-5006",
+      "fault_type": "H3_scheduler_transition",
+      "seed": 5006,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H3_scheduler_transition-5007",
+      "fault_type": "H3_scheduler_transition",
+      "seed": 5007,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H3_scheduler_transition-5008-None",
+      "fault_type": "H3_scheduler_transition",
+      "seed": 5008,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "loss.trend_slope",
+          111
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "H3_scheduler_transition",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "H3_scheduler_transition-5009",
+      "fault_type": "H3_scheduler_transition",
+      "seed": 5009,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H3_scheduler_transition-5010-None",
+      "fault_type": "H3_scheduler_transition",
+      "seed": 5010,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "loss.trend_slope",
+          107
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "H3_scheduler_transition",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "H3_scheduler_transition-5011",
+      "fault_type": "H3_scheduler_transition",
+      "seed": 5011,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H3_scheduler_transition-5012",
+      "fault_type": "H3_scheduler_transition",
+      "seed": 5012,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H3_scheduler_transition-5013-None",
+      "fault_type": "H3_scheduler_transition",
+      "seed": 5013,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "loss.trend_slope",
+          122
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "H3_scheduler_transition",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "H4_gradient_clipping-5000-None",
+      "fault_type": "H4_gradient_clipping",
+      "seed": 5000,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "loss.trend_slope",
+          97
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "H4_gradient_clipping",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "H4_gradient_clipping-5001",
+      "fault_type": "H4_gradient_clipping",
+      "seed": 5001,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H4_gradient_clipping-5002",
+      "fault_type": "H4_gradient_clipping",
+      "seed": 5002,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H4_gradient_clipping-5003",
+      "fault_type": "H4_gradient_clipping",
+      "seed": 5003,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H4_gradient_clipping-5004",
+      "fault_type": "H4_gradient_clipping",
+      "seed": 5004,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H4_gradient_clipping-5005",
+      "fault_type": "H4_gradient_clipping",
+      "seed": 5005,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H4_gradient_clipping-5006",
+      "fault_type": "H4_gradient_clipping",
+      "seed": 5006,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H4_gradient_clipping-5007",
+      "fault_type": "H4_gradient_clipping",
+      "seed": 5007,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H4_gradient_clipping-5008",
+      "fault_type": "H4_gradient_clipping",
+      "seed": 5008,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H4_gradient_clipping-5009",
+      "fault_type": "H4_gradient_clipping",
+      "seed": 5009,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H4_gradient_clipping-5010",
+      "fault_type": "H4_gradient_clipping",
+      "seed": 5010,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H4_gradient_clipping-5011",
+      "fault_type": "H4_gradient_clipping",
+      "seed": 5011,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H4_gradient_clipping-5012",
+      "fault_type": "H4_gradient_clipping",
+      "seed": 5012,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "H4_gradient_clipping-5013",
+      "fault_type": "H4_gradient_clipping",
+      "seed": 5013,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F7_lr_jump_no_failure-5000",
+      "fault_type": "F7_lr_jump_no_failure",
+      "seed": 5000,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F7_lr_jump_no_failure-5001",
+      "fault_type": "F7_lr_jump_no_failure",
+      "seed": 5001,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F7_lr_jump_no_failure-5002-None",
+      "fault_type": "F7_lr_jump_no_failure",
+      "seed": 5002,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "loss.trend_slope",
+          96
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "F7_lr_jump_no_failure",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "F7_lr_jump_no_failure-5003",
+      "fault_type": "F7_lr_jump_no_failure",
+      "seed": 5003,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F7_lr_jump_no_failure-5004",
+      "fault_type": "F7_lr_jump_no_failure",
+      "seed": 5004,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F7_lr_jump_no_failure-5005-None",
+      "fault_type": "F7_lr_jump_no_failure",
+      "seed": 5005,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "loss.trend_slope",
+          135
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "F7_lr_jump_no_failure",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "F7_lr_jump_no_failure-5006",
+      "fault_type": "F7_lr_jump_no_failure",
+      "seed": 5006,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F7_lr_jump_no_failure-5007",
+      "fault_type": "F7_lr_jump_no_failure",
+      "seed": 5007,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F7_lr_jump_no_failure-5008-None",
+      "fault_type": "F7_lr_jump_no_failure",
+      "seed": 5008,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "loss.trend_slope",
+          111
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "F7_lr_jump_no_failure",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "F7_lr_jump_no_failure-5009",
+      "fault_type": "F7_lr_jump_no_failure",
+      "seed": 5009,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F7_lr_jump_no_failure-5010-None",
+      "fault_type": "F7_lr_jump_no_failure",
+      "seed": 5010,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "loss.trend_slope",
+          107
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "F7_lr_jump_no_failure",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "F7_lr_jump_no_failure-5011",
+      "fault_type": "F7_lr_jump_no_failure",
+      "seed": 5011,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F7_lr_jump_no_failure-5012",
+      "fault_type": "F7_lr_jump_no_failure",
+      "seed": 5012,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F7_lr_jump_no_failure-5013-None",
+      "fault_type": "F7_lr_jump_no_failure",
+      "seed": 5013,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": null,
+      "injected": false,
+      "acceptable_window": [],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "loss.trend_slope",
+          122
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "F7_lr_jump_no_failure",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "F1_loss_spike-5000",
+      "fault_type": "F1_loss_spike",
+      "seed": 5000,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 0.4,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F1_loss_spike-5001",
+      "fault_type": "F1_loss_spike",
+      "seed": 5001,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 0.4,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F1_loss_spike-5002-100",
+      "fault_type": "F1_loss_spike",
+      "seed": 5002,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 0.4,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fires": [
+        [
+          "loss.trend_slope",
+          96
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "F1_loss_spike",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "F1_loss_spike-5003",
+      "fault_type": "F1_loss_spike",
+      "seed": 5003,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 0.4,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F1_loss_spike-5004",
+      "fault_type": "F1_loss_spike",
+      "seed": 5004,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 0.4,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F1_loss_spike-5000",
+      "fault_type": "F1_loss_spike",
+      "seed": 5000,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 1.5,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F1_loss_spike-5001",
+      "fault_type": "F1_loss_spike",
+      "seed": 5001,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 1.5,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F1_loss_spike-5002",
+      "fault_type": "F1_loss_spike",
+      "seed": 5002,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 1.5,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F1_loss_spike-5003",
+      "fault_type": "F1_loss_spike",
+      "seed": 5003,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 1.5,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F1_loss_spike-5004",
+      "fault_type": "F1_loss_spike",
+      "seed": 5004,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 1.5,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F1_loss_spike-5000",
+      "fault_type": "F1_loss_spike",
+      "seed": 5000,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 6.0,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F1_loss_spike-5001",
+      "fault_type": "F1_loss_spike",
+      "seed": 5001,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 6.0,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F1_loss_spike-5002",
+      "fault_type": "F1_loss_spike",
+      "seed": 5002,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 6.0,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F1_loss_spike-5003",
+      "fault_type": "F1_loss_spike",
+      "seed": 5003,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 6.0,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F1_loss_spike-5004",
+      "fault_type": "F1_loss_spike",
+      "seed": 5004,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 6.0,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F2_sustained_divergence-5000",
+      "fault_type": "F2_sustained_divergence",
+      "seed": 5000,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 1.008,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F2_sustained_divergence-5001",
+      "fault_type": "F2_sustained_divergence",
+      "seed": 5001,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 1.008,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F2_sustained_divergence-5002",
+      "fault_type": "F2_sustained_divergence",
+      "seed": 5002,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 1.008,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F2_sustained_divergence-5003",
+      "fault_type": "F2_sustained_divergence",
+      "seed": 5003,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 1.008,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F2_sustained_divergence-5004",
+      "fault_type": "F2_sustained_divergence",
+      "seed": 5004,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 1.008,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F2_sustained_divergence-5000",
+      "fault_type": "F2_sustained_divergence",
+      "seed": 5000,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 1.018,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F2_sustained_divergence-5001",
+      "fault_type": "F2_sustained_divergence",
+      "seed": 5001,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 1.018,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F2_sustained_divergence-5002",
+      "fault_type": "F2_sustained_divergence",
+      "seed": 5002,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 1.018,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F2_sustained_divergence-5003",
+      "fault_type": "F2_sustained_divergence",
+      "seed": 5003,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 1.018,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F2_sustained_divergence-5004",
+      "fault_type": "F2_sustained_divergence",
+      "seed": 5004,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 1.018,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F2_sustained_divergence-5000",
+      "fault_type": "F2_sustained_divergence",
+      "seed": 5000,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 1.04,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F2_sustained_divergence-5001",
+      "fault_type": "F2_sustained_divergence",
+      "seed": 5001,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 1.04,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F2_sustained_divergence-5002",
+      "fault_type": "F2_sustained_divergence",
+      "seed": 5002,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 1.04,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F2_sustained_divergence-5003",
+      "fault_type": "F2_sustained_divergence",
+      "seed": 5003,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 1.04,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F2_sustained_divergence-5004",
+      "fault_type": "F2_sustained_divergence",
+      "seed": 5004,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 1.04,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5000",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5000,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 2.5,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5001",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5001,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 2.5,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5002",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5002,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 2.5,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5003",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5003,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 2.5,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5004",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5004,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 2.5,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5000",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5000,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 4.0,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5001",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5001,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 4.0,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5002",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5002,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 4.0,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5003",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5003,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 4.0,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5004",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5004,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 4.0,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5000",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5000,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 7.0,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5001",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5001,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 7.0,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5002",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5002,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 7.0,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5003",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5003,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 7.0,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5004",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5004,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 7.0,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5000",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5000,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 12.0,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5001",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5001,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 12.0,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5002",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5002,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 12.0,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5003",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5003,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 12.0,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5004",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5004,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 12.0,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5000",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5000,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 25.0,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5001",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5001,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 25.0,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5002",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5002,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 25.0,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5003",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5003,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 25.0,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5004",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5004,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 25.0,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5000",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5000,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 50.0,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5001",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5001,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 50.0,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5002",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5002,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 50.0,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5003",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5003,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 50.0,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F3_gradient_explosion-5004",
+      "fault_type": "F3_gradient_explosion",
+      "seed": 5004,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 50.0,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F4_nan_loss-5000",
+      "fault_type": "F4_nan_loss",
+      "seed": 5000,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F4_nan_loss-5001",
+      "fault_type": "F4_nan_loss",
+      "seed": 5001,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F4_nan_loss-5002",
+      "fault_type": "F4_nan_loss",
+      "seed": 5002,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F4_nan_loss-5003",
+      "fault_type": "F4_nan_loss",
+      "seed": 5003,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F4_nan_loss-5004",
+      "fault_type": "F4_nan_loss",
+      "seed": 5004,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F5_inf_gradient-5000",
+      "fault_type": "F5_inf_gradient",
+      "seed": 5000,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F5_inf_gradient-5001",
+      "fault_type": "F5_inf_gradient",
+      "seed": 5001,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F5_inf_gradient-5002",
+      "fault_type": "F5_inf_gradient",
+      "seed": 5002,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F5_inf_gradient-5003",
+      "fault_type": "F5_inf_gradient",
+      "seed": 5003,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F5_inf_gradient-5004",
+      "fault_type": "F5_inf_gradient",
+      "seed": 5004,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F5b_nan_gradient-5000",
+      "fault_type": "F5b_nan_gradient",
+      "seed": 5000,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F5b_nan_gradient-5001",
+      "fault_type": "F5b_nan_gradient",
+      "seed": 5001,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F5b_nan_gradient-5002",
+      "fault_type": "F5b_nan_gradient",
+      "seed": 5002,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F5b_nan_gradient-5003",
+      "fault_type": "F5b_nan_gradient",
+      "seed": 5003,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F5b_nan_gradient-5004",
+      "fault_type": "F5b_nan_gradient",
+      "seed": 5004,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F6_throughput_drop-5000",
+      "fault_type": "F6_throughput_drop",
+      "seed": 5000,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 0.006,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        151,
+        161
+      ],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F6_throughput_drop-5001-100",
+      "fault_type": "F6_throughput_drop",
+      "seed": 5001,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 0.006,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        101,
+        111
+      ],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "throughput.regression",
+          100
+        ],
+        [
+          "throughput.regression",
+          100
+        ],
+        [
+          "throughput.regression",
+          100
+        ],
+        [
+          "loss.trend_slope",
+          111
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "F6_throughput_drop",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "F6_throughput_drop-5002",
+      "fault_type": "F6_throughput_drop",
+      "seed": 5002,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 0.006,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        151,
+        161
+      ],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F6_throughput_drop-5003",
+      "fault_type": "F6_throughput_drop",
+      "seed": 5003,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": 0.006,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        101,
+        111
+      ],
+      "expected_detectors": [],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F6_throughput_drop-5004-150",
+      "fault_type": "F6_throughput_drop",
+      "seed": 5004,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": 0.006,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        151,
+        161
+      ],
+      "expected_detectors": [],
+      "fires": [
+        [
+          "loss.trend_slope",
+          95
+        ],
+        [
+          "throughput.regression",
+          150
+        ],
+        [
+          "throughput.regression",
+          150
+        ],
+        [
+          "throughput.regression",
+          150
+        ]
+      ],
+      "episodes": [],
+      "verdicts": [
+        {
+          "run_id": "F6_throughput_drop",
+          "verdict": "NO_ANOMALY",
+          "anomaly_type": null,
+          "severity": "info",
+          "confidence": 1.0,
+          "promotion_rule_id": null,
+          "promotion_rule_version": null,
+          "episodes_used": [],
+          "episodes_rejected": [],
+          "abstained_episodes": [],
+          "signals_used": [],
+          "signals_rejected": [],
+          "candidate_onset_step": null,
+          "confirmed_at_step": null,
+          "reason": "no detector produced an observation"
+        }
+      ],
+      "detector_errors": [],
+      "run_error": null
+    },
+    {
+      "run_id": "F10_mixed_anomaly-5000",
+      "fault_type": "F10_mixed_anomaly",
+      "seed": 5000,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "numerics.finiteness",
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F10_mixed_anomaly-5001",
+      "fault_type": "F10_mixed_anomaly",
+      "seed": 5001,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness",
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F10_mixed_anomaly-5002",
+      "fault_type": "F10_mixed_anomaly",
+      "seed": 5002,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "numerics.finiteness",
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F10_mixed_anomaly-5003",
+      "fault_type": "F10_mixed_anomaly",
+      "seed": 5003,
+      "split": "final",
+      "layers": 3,
+      "d_model": 64,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 150,
+      "injected": true,
+      "acceptable_window": [
+        150,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness",
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    },
+    {
+      "run_id": "F10_mixed_anomaly-5004",
+      "fault_type": "F10_mixed_anomaly",
+      "seed": 5004,
+      "split": "final",
+      "layers": 5,
+      "d_model": 40,
+      "steps": 240,
+      "magnitude": null,
+      "injection_step": 100,
+      "injected": true,
+      "acceptable_window": [
+        100,
+        110
+      ],
+      "expected_detectors": [
+        "numerics.finiteness",
+        "grad.robust_zscore"
+      ],
+      "fires": [],
+      "episodes": [],
+      "verdicts": [],
+      "detector_errors": [],
+      "run_error": "TypeError: __init__() missing 1 required positional argument: 'verdict'"
+    }
+  ],
+  "scores": {
+    "signal": {
+      "layer": "signal",
+      "true_positives": 1,
+      "false_positives": 17,
+      "false_negatives": 2,
+      "true_negatives": 18,
+      "pre_injection": 8,
+      "duplicates": 0,
+      "abstained": 0,
+      "considered": 0,
+      "precision": 0.038461538461538464,
+      "recall": 0.3333333333333333,
+      "f1": 0.06896551724137931,
+      "median_delay_steps": 10,
+      "median_onset_error_steps": null,
+      "median_confirmation_delay_steps": null,
+      "abstention_rate": null
+    },
+    "episode": {
+      "layer": "episode",
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "true_negatives": 18,
+      "pre_injection": 0,
+      "duplicates": 0,
+      "abstained": 0,
+      "considered": 21,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "median_delay_steps": null,
+      "median_onset_error_steps": null,
+      "median_confirmation_delay_steps": null,
+      "abstention_rate": 0.0
+    },
+    "incident": {
+      "layer": "incident",
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "true_negatives": 0,
+      "pre_injection": 0,
+      "duplicates": 0,
+      "abstained": 0,
+      "considered": 21,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "median_delay_steps": null,
+      "median_onset_error_steps": null,
+      "median_confirmation_delay_steps": null,
+      "abstention_rate": 0.0
+    },
+    "run": {
+      "layer": "run",
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "true_negatives": 18,
+      "pre_injection": 0,
+      "duplicates": 0,
+      "abstained": 0,
+      "considered": 21,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "median_delay_steps": null,
+      "median_onset_error_steps": null,
+      "median_confirmation_delay_steps": null,
+      "abstention_rate": 0.0,
+      "healthy_runs": 18,
+      "fault_runs": 3,
+      "healthy_run_false_incident_rate": 0.0,
+      "false_incidents_per_1k_steps": 0.0,
+      "abstention_rate_overall": 0.0
+    },
+    "_meta": {
+      "scenarios": 169,
+      "steps_observed": 5040,
+      "layers": [
+        "signal",
+        "episode",
+        "incident",
+        "run"
+      ]
+    }
+  }
+}

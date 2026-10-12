@@ -1,0 +1,786 @@
+{
+  "runs": 42,
+  "store": "<repo>/outputs/alpha/corpus/store",
+  "ground_truth": "<repo>/outputs/alpha/corpus/ground_truth/development_ground_truth.json",
+  "run_id_scheme": "{split}-{scenario}-L{layers}d{d_model}-s{seed}",
+  "results": [
+    {
+      "run_id": "dev-healthy-L4d32-s80000",
+      "scenario": "healthy",
+      "episodes": 1,
+      "relations": 0,
+      "incidents": 0,
+      "incident_ids": [],
+      "episode_ids": [
+        "ep_64bc340a6f24"
+      ],
+      "verdicts": [
+        "NO_ANOMALY"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "healthy"
+    },
+    {
+      "run_id": "dev-healthy-L4d32-s80001",
+      "scenario": "healthy",
+      "episodes": 3,
+      "relations": 0,
+      "incidents": 0,
+      "incident_ids": [],
+      "episode_ids": [
+        "ep_18563c84c59c",
+        "ep_824eccd72ae8",
+        "ep_7f650b996a51"
+      ],
+      "verdicts": [
+        "NO_ANOMALY"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "healthy"
+    },
+    {
+      "run_id": "dev-healthy-L4d32-s80002",
+      "scenario": "healthy",
+      "episodes": 0,
+      "relations": 0,
+      "incidents": 0,
+      "incident_ids": [],
+      "episode_ids": [],
+      "verdicts": [
+        "NO_ANOMALY"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "healthy"
+    },
+    {
+      "run_id": "dev-healthy-L4d32-s80003",
+      "scenario": "healthy",
+      "episodes": 4,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_b17c640a08be4514"
+      ],
+      "episode_ids": [
+        "ep_8e75bfe46d44",
+        "ep_a8fed010399d",
+        "ep_f7d4972cf960",
+        "ep_5bd5551a2e51"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "healthy"
+    },
+    {
+      "run_id": "dev-healthy-L4d32-s80004",
+      "scenario": "healthy",
+      "episodes": 3,
+      "relations": 0,
+      "incidents": 0,
+      "incident_ids": [],
+      "episode_ids": [
+        "ep_5d142b1fbf79",
+        "ep_d9a9eb4c4ea0",
+        "ep_8cff1e2b5975"
+      ],
+      "verdicts": [
+        "NO_ANOMALY"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "healthy"
+    },
+    {
+      "run_id": "dev-healthy-L4d32-s80005",
+      "scenario": "healthy",
+      "episodes": 1,
+      "relations": 0,
+      "incidents": 0,
+      "incident_ids": [],
+      "episode_ids": [
+        "ep_0a68ffab17f1"
+      ],
+      "verdicts": [
+        "NO_ANOMALY"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "healthy"
+    },
+    {
+      "run_id": "dev-loss_spike-L4d32-s80000",
+      "scenario": "loss_spike",
+      "episodes": 1,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_0e71c656e1324199"
+      ],
+      "episode_ids": [
+        "ep_c720ffd97a35"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-loss_spike-L4d32-s80001",
+      "scenario": "loss_spike",
+      "episodes": 3,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_94647be159784c82"
+      ],
+      "episode_ids": [
+        "ep_c49b8bb0a086",
+        "ep_395f841c6d3b",
+        "ep_999037b21bcb"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-loss_spike-L4d32-s80002",
+      "scenario": "loss_spike",
+      "episodes": 2,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_5f7d8883c07a4ba8"
+      ],
+      "episode_ids": [
+        "ep_d5273791e70e",
+        "ep_dd27fb1827a7"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-loss_spike-L4d32-s80003",
+      "scenario": "loss_spike",
+      "episodes": 2,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_e5ae7533093c4b39"
+      ],
+      "episode_ids": [
+        "ep_8de3cf5f3627",
+        "ep_e330f3979846"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-loss_spike-L4d32-s80004",
+      "scenario": "loss_spike",
+      "episodes": 3,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_63acb24ec9c74269"
+      ],
+      "episode_ids": [
+        "ep_a4f3b22986da",
+        "ep_7ed5e066f6fa",
+        "ep_07b686972d50"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-loss_spike-L4d32-s80005",
+      "scenario": "loss_spike",
+      "episodes": 2,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_b111c62dc6b64fe7"
+      ],
+      "episode_ids": [
+        "ep_49c96f5361d3",
+        "ep_8ebe79cddcb8"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_small-L4d32-s80000",
+      "scenario": "grad_small",
+      "episodes": 1,
+      "relations": 0,
+      "incidents": 0,
+      "incident_ids": [],
+      "episode_ids": [
+        "ep_296bdf3774c2"
+      ],
+      "verdicts": [
+        "NO_ANOMALY"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_small-L4d32-s80001",
+      "scenario": "grad_small",
+      "episodes": 4,
+      "relations": 0,
+      "incidents": 0,
+      "incident_ids": [],
+      "episode_ids": [
+        "ep_cb0cbbafbd80",
+        "ep_ec46442c9caf",
+        "ep_7370d872b695",
+        "ep_f07e43e8dce3"
+      ],
+      "verdicts": [
+        "NO_ANOMALY"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_small-L4d32-s80002",
+      "scenario": "grad_small",
+      "episodes": 1,
+      "relations": 0,
+      "incidents": 0,
+      "incident_ids": [],
+      "episode_ids": [
+        "ep_c06b5f034434"
+      ],
+      "verdicts": [
+        "NO_ANOMALY"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_small-L4d32-s80003",
+      "scenario": "grad_small",
+      "episodes": 4,
+      "relations": 0,
+      "incidents": 0,
+      "incident_ids": [],
+      "episode_ids": [
+        "ep_2b93b9bd59cb",
+        "ep_fa2e91ff8300",
+        "ep_b17fbb2ee2f2",
+        "ep_3682bba89e87"
+      ],
+      "verdicts": [
+        "NO_ANOMALY"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_small-L4d32-s80004",
+      "scenario": "grad_small",
+      "episodes": 5,
+      "relations": 0,
+      "incidents": 0,
+      "incident_ids": [],
+      "episode_ids": [
+        "ep_cd9cd205cc86",
+        "ep_365853273262",
+        "ep_ce1506e710b6",
+        "ep_ba412facf632",
+        "ep_c8d5417dd47a"
+      ],
+      "verdicts": [
+        "NO_ANOMALY"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_small-L4d32-s80005",
+      "scenario": "grad_small",
+      "episodes": 1,
+      "relations": 0,
+      "incidents": 0,
+      "incident_ids": [],
+      "episode_ids": [
+        "ep_aafabd4bc559"
+      ],
+      "verdicts": [
+        "NO_ANOMALY"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_mid-L4d32-s80000",
+      "scenario": "grad_mid",
+      "episodes": 2,
+      "relations": 0,
+      "incidents": 0,
+      "incident_ids": [],
+      "episode_ids": [
+        "ep_cc9dc15211e5",
+        "ep_d60bc2798b48"
+      ],
+      "verdicts": [
+        "NO_ANOMALY"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_mid-L4d32-s80001",
+      "scenario": "grad_mid",
+      "episodes": 3,
+      "relations": 0,
+      "incidents": 0,
+      "incident_ids": [],
+      "episode_ids": [
+        "ep_f9336dfd1866",
+        "ep_3cf0d81ffd48",
+        "ep_d0785ea6bcf9"
+      ],
+      "verdicts": [
+        "NO_ANOMALY"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_mid-L4d32-s80002",
+      "scenario": "grad_mid",
+      "episodes": 1,
+      "relations": 0,
+      "incidents": 0,
+      "incident_ids": [],
+      "episode_ids": [
+        "ep_8a9eaf42b13b"
+      ],
+      "verdicts": [
+        "NO_ANOMALY"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_mid-L4d32-s80003",
+      "scenario": "grad_mid",
+      "episodes": 3,
+      "relations": 0,
+      "incidents": 0,
+      "incident_ids": [],
+      "episode_ids": [
+        "ep_c6c3f5bcddb7",
+        "ep_b28b78e5d4b7",
+        "ep_0815721eec53"
+      ],
+      "verdicts": [
+        "NO_ANOMALY"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_mid-L4d32-s80004",
+      "scenario": "grad_mid",
+      "episodes": 5,
+      "relations": 0,
+      "incidents": 0,
+      "incident_ids": [],
+      "episode_ids": [
+        "ep_9ffbc63cbba4",
+        "ep_cb9183dc909a",
+        "ep_5f5923c394f7",
+        "ep_cdf26b93db72",
+        "ep_ded93db8ff22"
+      ],
+      "verdicts": [
+        "NO_ANOMALY"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_mid-L4d32-s80005",
+      "scenario": "grad_mid",
+      "episodes": 1,
+      "relations": 0,
+      "incidents": 0,
+      "incident_ids": [],
+      "episode_ids": [
+        "ep_44fa85be5dd5"
+      ],
+      "verdicts": [
+        "NO_ANOMALY"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_large-L4d32-s80000",
+      "scenario": "grad_large",
+      "episodes": 1,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_e8ce152461f64fa5"
+      ],
+      "episode_ids": [
+        "ep_268ecb71fc98"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_large-L4d32-s80001",
+      "scenario": "grad_large",
+      "episodes": 3,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_1b63793e85664d4d"
+      ],
+      "episode_ids": [
+        "ep_c84300a47e78",
+        "ep_68755002d381",
+        "ep_3fd01a22b015"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_large-L4d32-s80002",
+      "scenario": "grad_large",
+      "episodes": 2,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_800fc5a9edc74717"
+      ],
+      "episode_ids": [
+        "ep_dc4a0c42305c",
+        "ep_6e801d627174"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_large-L4d32-s80003",
+      "scenario": "grad_large",
+      "episodes": 2,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_de4e8e07e05d476c"
+      ],
+      "episode_ids": [
+        "ep_971ac212e315",
+        "ep_7058291b4970"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_large-L4d32-s80004",
+      "scenario": "grad_large",
+      "episodes": 3,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_8427a3bb2e1e4a70"
+      ],
+      "episode_ids": [
+        "ep_eb4415e24e94",
+        "ep_78b4701f74fe",
+        "ep_50d577f549f5"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_large-L4d32-s80005",
+      "scenario": "grad_large",
+      "episodes": 2,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_797581c27cd24130"
+      ],
+      "episode_ids": [
+        "ep_36b44bea9142",
+        "ep_23eb965dbef4"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_extreme-L4d32-s80000",
+      "scenario": "grad_extreme",
+      "episodes": 2,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_48232c72b2824a0d"
+      ],
+      "episode_ids": [
+        "ep_bb3d8195e706",
+        "ep_7fd024e17946"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_extreme-L4d32-s80001",
+      "scenario": "grad_extreme",
+      "episodes": 3,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_c7cf86ccc78e4982"
+      ],
+      "episode_ids": [
+        "ep_bbf98da11f87",
+        "ep_ab3eb099f722",
+        "ep_3778fccb949a"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_extreme-L4d32-s80002",
+      "scenario": "grad_extreme",
+      "episodes": 2,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_4686bd48325f4ea4"
+      ],
+      "episode_ids": [
+        "ep_7912e51c369f",
+        "ep_36cef5c45166"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_extreme-L4d32-s80003",
+      "scenario": "grad_extreme",
+      "episodes": 2,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_45ddfb01140d4b73"
+      ],
+      "episode_ids": [
+        "ep_2d81360cb0c5",
+        "ep_6cc8c65e8dda"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_extreme-L4d32-s80004",
+      "scenario": "grad_extreme",
+      "episodes": 4,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_0781a5965f2b47ed"
+      ],
+      "episode_ids": [
+        "ep_2c0a1c380999",
+        "ep_4386dc297469",
+        "ep_a0fa4dce0112",
+        "ep_31b62ecb4fa8"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-grad_extreme-L4d32-s80005",
+      "scenario": "grad_extreme",
+      "episodes": 2,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_6615b7726ba441cd"
+      ],
+      "episode_ids": [
+        "ep_9e600954f47c",
+        "ep_d5c82c116f12"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-nan_loss-L4d32-s80000",
+      "scenario": "nan_loss",
+      "episodes": 2,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_9355c4a4cea44fa5"
+      ],
+      "episode_ids": [
+        "ep_fe9055e2fbff",
+        "ep_a5d0be2d228a"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-nan_loss-L4d32-s80001",
+      "scenario": "nan_loss",
+      "episodes": 2,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_d6efe61c0c534a6d"
+      ],
+      "episode_ids": [
+        "ep_d4ecf3cbfe97",
+        "ep_d8d1a94fd1d3"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-nan_loss-L4d32-s80002",
+      "scenario": "nan_loss",
+      "episodes": 2,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_68e0a003fc2a4b43"
+      ],
+      "episode_ids": [
+        "ep_1a4ab1fcca4b",
+        "ep_d342e293f91e"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-nan_loss-L4d32-s80003",
+      "scenario": "nan_loss",
+      "episodes": 2,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_cdd11d7722a3470b"
+      ],
+      "episode_ids": [
+        "ep_62179834a5bd",
+        "ep_b10395847dec"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-nan_loss-L4d32-s80004",
+      "scenario": "nan_loss",
+      "episodes": 3,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_db74d1715b6c4b2b"
+      ],
+      "episode_ids": [
+        "ep_cd6d047c6996",
+        "ep_807f4dedc5cd",
+        "ep_dbba3ab3a531"
+      ],
+      "verdicts": [
+        "NO_ANOMALY",
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    },
+    {
+      "run_id": "dev-nan_loss-L4d32-s80005",
+      "scenario": "nan_loss",
+      "episodes": 2,
+      "relations": 0,
+      "incidents": 1,
+      "incident_ids": [
+        "inc_099ac310f1d94dfd"
+      ],
+      "episode_ids": [
+        "ep_cb4668285954",
+        "ep_9a36c52fc670"
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "data_quality": "COMPLETE",
+      "kind": "fault"
+    }
+  ],
+  "elapsed_s": 66.3
+}

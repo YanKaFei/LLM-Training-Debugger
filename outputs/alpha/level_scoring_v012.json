@@ -1,0 +1,95 @@
+{
+  "status": "VALID",
+  "validity": {
+    "status": "VALID",
+    "valid": true,
+    "issues": []
+  },
+  "levels": {
+    "SIGNAL": {
+      "level": "SIGNAL",
+      "eligible_population": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": null,
+      "abstained": 0,
+      "precision": null,
+      "recall": null,
+      "abstention_rate": null,
+      "recall_denominator": "NOT ESTIMABLE",
+      "precision_denominator": "NOT ESTIMABLE",
+      "notes": [
+        "no independent per-observation truth exists in this corpus, so signal-level precision/recall are NOT ESTIMABLE rather than assumed"
+      ]
+    },
+    "EPISODE": {
+      "level": "EPISODE",
+      "eligible_population": 97,
+      "tp": 29,
+      "fp": 60,
+      "fn": 0,
+      "tn": 8,
+      "abstained": 0,
+      "precision": 0.3258426966292135,
+      "recall": null,
+      "abstention_rate": 0.0,
+      "recall_denominator": "NOT ESTIMABLE",
+      "precision_denominator": "all episodes observed",
+      "notes": [
+        "episode-level recall is NOT ESTIMABLE: ground truth names the injected fault, not the number of episodes it should yield. A missed fault appears here as an extra episode (a precision error), not as a missing one. Use RUN-level recall for 'was the fault found'."
+      ]
+    },
+    "INCIDENT": {
+      "level": "INCIDENT",
+      "eligible_population": 25,
+      "tp": 18,
+      "fp": 7,
+      "fn": 0,
+      "tn": null,
+      "abstained": 0,
+      "precision": 0.72,
+      "recall": 1.0,
+      "abstention_rate": 0.0,
+      "recall_denominator": "injected runs whose primary fault was confirmed",
+      "precision_denominator": "all confirmed incidents",
+      "notes": []
+    },
+    "RUN": {
+      "level": "RUN",
+      "eligible_population": 42,
+      "tp": 18,
+      "fp": 1,
+      "fn": 18,
+      "tn": 5,
+      "abstained": 12,
+      "precision": 0.9473684210526315,
+      "recall": 0.5,
+      "abstention_rate": 0.2857142857142857,
+      "recall_denominator": "eligible injected runs",
+      "precision_denominator": "all runs that opened an incident",
+      "notes": []
+    },
+    "RELATION": {
+      "level": "RELATION",
+      "eligible_population": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": null,
+      "abstained": 0,
+      "precision": null,
+      "recall": null,
+      "abstention_rate": null,
+      "recall_denominator": "expected relations (allowed secondary in window)",
+      "precision_denominator": "all persisted relations",
+      "notes": []
+    }
+  },
+  "unit_accounting": {
+    "runs": 42,
+    "episodes_classified": 97,
+    "runs_with_more_than_one_episode": 32,
+    "explanation": "The v0.1.1 scoreboard's 97 records were EPISODES, not runs. A run may hold several episodes, so the same injected fault can appear in more than one classification record. Episode counts must never be read as run counts."
+  }
+}

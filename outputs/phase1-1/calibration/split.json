@@ -1,0 +1,14 @@
+{
+  "method": "seed % 3 == 0 -> holdout",
+  "calibration_seeds": [
+    1000,
+    1001,
+    1003,
+    1004
+  ],
+  "holdout_seeds": [
+    1002,
+    1005
+  ],
+  "note": "No threshold was tuned on either split. The Phase 1 detector defaults predate this corpus; the split exists to prevent a future tuning pass from consuming the holdout."
+}

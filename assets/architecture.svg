@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620" role="img" aria-label="Architecture">
+  <defs>
+    <marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#58a6ff"/>
+    </marker>
+    <marker id="ar2" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#d29922"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="620" fill="#0d1117"/>
+  <text x="40" y="52" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#e6edf3">Architecture</text>
+  <text x="40" y="78" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#8b949e">Observation never blocks training. Only OBSERVED evidence can be promoted to an incident.</text>
+
+  <!-- training -->
+  <rect x="40" y="110" width="250" height="150" rx="12" fill="#161b22" stroke="#30363d"/>
+  <text x="62" y="142" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#79c0ff">your training loop</text>
+  <text x="62" y="172" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#8b949e">optimizer.step()</text>
+  <text x="62" y="194" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#8b949e">loss.backward()</text>
+  <text x="62" y="216" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#8b949e">model(**batch)</text>
+  <text x="62" y="244" font-family="-apple-system,sans-serif" font-size="12" fill="#484f58">untouched, fail-open</text>
+
+  <!-- observer -->
+  <rect x="360" y="110" width="250" height="150" rx="12" fill="#161b22" stroke="#1f6feb"/>
+  <text x="382" y="142" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#79c0ff">Observer</text>
+  <text x="382" y="170" font-family="-apple-system,sans-serif" font-size="12" fill="#8b949e">bounded priority queue P0-P3</text>
+  <text x="382" y="192" font-family="-apple-system,sans-serif" font-size="12" fill="#8b949e">accounting identity</text>
+  <text x="382" y="214" font-family="-apple-system,sans-serif" font-size="12" fill="#8b949e">emit() never raises</text>
+  <text x="382" y="242" font-family="-apple-system,sans-serif" font-size="12" fill="#3fb950">emitted = written + dropped</text>
+
+  <!-- storage -->
+  <rect x="680" y="110" width="230" height="150" rx="12" fill="#161b22" stroke="#30363d"/>
+  <text x="702" y="142" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#79c0ff">Parquet</text>
+  <text x="702" y="170" font-family="-apple-system,sans-serif" font-size="12" fill="#8b949e">telemetry truth</text>
+  <text x="702" y="196" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#8b949e">&#8595; DuckDB</text>
+  <text x="702" y="222" font-family="-apple-system,sans-serif" font-size="12" fill="#8b949e">~10 bytes / event</text>
+
+  <rect x="950" y="110" width="210" height="150" rx="12" fill="#161b22" stroke="#30363d"/>
+  <text x="972" y="142" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#79c0ff">Stores</text>
+  <text x="972" y="170" font-family="-apple-system,sans-serif" font-size="12" fill="#8b949e">EpisodeStore</text>
+  <text x="972" y="192" font-family="-apple-system,sans-serif" font-size="12" fill="#8b949e">IncidentStore</text>
+  <text x="972" y="214" font-family="-apple-system,sans-serif" font-size="12" fill="#484f58">episode / incident truth</text>
+  <text x="972" y="242" font-family="-apple-system,sans-serif" font-size="12" fill="#484f58">Trackio = presentation</text>
+
+  <line x1="290" y1="185" x2="356" y2="185" stroke="#58a6ff" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="610" y1="185" x2="676" y2="185" stroke="#58a6ff" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="910" y1="185" x2="946" y2="185" stroke="#58a6ff" stroke-width="1.6" marker-end="url(#ar)"/>
+
+  <!-- detection ladder -->
+  <text x="40" y="320" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" font-weight="600" fill="#e6edf3">Four scoring layers, each with its own denominator</text>
+
+  <g font-family="-apple-system,sans-serif" font-size="13">
+    <rect x="40" y="344" width="264" height="86" rx="10" fill="#161b22" stroke="#30363d"/>
+    <text x="62" y="374" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#79c0ff">SIGNAL</text>
+    <text x="62" y="400" fill="#8b949e">per metric observation</text>
+    <text x="62" y="420" fill="#484f58">baseline + threshold</text>
+
+    <rect x="320" y="344" width="264" height="86" rx="10" fill="#161b22" stroke="#30363d"/>
+    <text x="342" y="374" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#79c0ff">EPISODE</text>
+    <text x="342" y="400" fill="#8b949e">NORMAL / SUSPECT / CONFIRMED</text>
+    <text x="342" y="420" fill="#484f58">state machine per metric</text>
+
+    <rect x="600" y="344" width="264" height="86" rx="10" fill="#161b22" stroke="#1f6feb"/>
+    <text x="622" y="374" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#79c0ff">INCIDENT</text>
+    <text x="622" y="400" fill="#8b949e">multiplicity + recovery</text>
+    <text x="622" y="420" fill="#484f58">fusion over episodes</text>
+
+    <rect x="880" y="344" width="280" height="86" rx="10" fill="#161b22" stroke="#30363d"/>
+    <text x="902" y="374" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#79c0ff">RUN / RELATION</text>
+    <text x="902" y="400" fill="#8b949e">run-level verdict, ordering</text>
+    <text x="902" y="420" fill="#484f58">never CAUSED_BY</text>
+  </g>
+
+  <!-- abstention branch -->
+  <rect x="40" y="466" width="1120" height="118" rx="12" fill="#161b22" stroke="#d29922" stroke-opacity="0.6"/>
+  <text x="64" y="498" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#e3b341">ABSTENTION IS A FIRST-CLASS OUTCOME</text>
+  <text x="64" y="526" font-family="-apple-system,sans-serif" font-size="13" fill="#8b949e">INSUFFICIENT_EVIDENCE &#183; CANDIDATE_ONLY &#183; NO_ANOMALY &#183; and an evidence-completeness field on every verdict,</text>
+  <text x="64" y="550" font-family="-apple-system,sans-serif" font-size="13" fill="#8b949e">so an incomplete stream can never be read as a healthy run. Causal types (CAUSED_BY, ROOT_CAUSE_OF) do not exist</text>
+  <text x="64" y="574" font-family="-apple-system,sans-serif" font-size="13" fill="#8b949e">in the schema, and a test asserts they never will.</text>
+</svg>

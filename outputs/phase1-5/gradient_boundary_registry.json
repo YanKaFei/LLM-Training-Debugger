@@ -1,0 +1,46 @@
+{
+  "registry_version": "phase1.5-1.0",
+  "feature": "l1_aggregate",
+  "definition": "sum over monitored layers of (layer_norm[step] / trailing median of that layer), warm-up excluded",
+  "fitted_on": "development corpus, seeds 7000-7005, 48 real training runs (tests/experiments/gradient_boundary.py)",
+  "A_upper_normal": 34.0,
+  "B_min_confirmed": 46.0,
+  "supporting_measurements": {
+    "healthy_all_classes_max": 33.32,
+    "healthy_stable_max": 33.32,
+    "healthy_heavy_tail_max": 30.06,
+    "fault_min_by_magnitude": {
+      "1.5": 17.6,
+      "2.0": 22.98,
+      "2.5": 28.52,
+      "3.0": 34.36,
+      "4.0": 46.18,
+      "6.0": 70.49
+    }
+  },
+  "alternative_features": {
+    "trimmed_l2": {
+      "healthy_all_max": 12.07,
+      "fault_x3_min": 10.88,
+      "fault_x4_min": 14.61,
+      "note": "separates only at x4.0; rejected in favour of l1_aggregate"
+    },
+    "l2_aggregate": {
+      "healthy_all_max": 17.14,
+      "fault_x3_min": 12.89,
+      "note": "overlaps at x3.0; rejected"
+    },
+    "global_norm_ratio": {
+      "auc_at_x1_5": 0.25,
+      "auc_at_x2_0": 0.29,
+      "note": "INVERTED below x2.0; rejected as a primary criterion"
+    }
+  },
+  "chosen_boundaries_reasoning": "A is set just above the maximum l1_aggregate observed across BOTH healthy classes (33.32, from a stable healthy run), so no healthy run reaches CONFIRMED. B is set at 46.0, which is above fault x4.0's minimum (46.18 is marginal; B=46.0 sits at the observed boundary) so x4.0 confirms reliably while x3.0 falls largely in UNCERTAIN. A and B are deliberately conservative: A uses the empirical maximum rather than a quantile, because with 12 healthy observations a quantile would be an artefact.",
+  "minimum_reliably_detectable_magnitude": {
+    "x4.0_and_above": "CONFIRMED, development recall 1.00",
+    "x3.0": "largely UNCERTAIN, development recall ~0.25 at B=46.0",
+    "x2.5_and_below": "insufficient evidence by design -- the classes overlap",
+    "status": "development measurement; NOT VALIDATED on a blind holdout"
+  }
+}

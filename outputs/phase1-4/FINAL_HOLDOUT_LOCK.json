@@ -1,0 +1,16 @@
+{
+  "phase": "1.4",
+  "status": "NOT_FROZEN",
+  "reason": "The R10.2 pre-holdout smoke corpus was not run and the R2.4 / R4 / R5 / R6 / R7 changes were not implemented, so there was nothing worth freezing. Freezing a code base with known-unimplemented detector work and then burning a holdout on it would have destroyed a genuine holdout for no measurement value.",
+  "code_sha": "NOT COMPUTED",
+  "detector_registry_sha": "NOT COMPUTED",
+  "fusion_rule_registry_sha": "NOT COMPUTED",
+  "config_sha": "NOT COMPUTED",
+  "final_holdout_manifest_sha": "NOT COMPUTED",
+  "invalidated_runs": [
+    {"phase": "1.3", "manifest_sha256": "da8f06b55f09bd29", "defect": "EpisodeEngine never accumulated closed episodes; 0 episodes on all 169 runs"},
+    {"phase": "1.3", "manifest_sha256": "ddd195ed4ce9e89c", "defect": "IncidentVerdict.verdict had no default; 148 of 169 runs crashed"},
+    {"phase": "1.3", "manifest_sha256": "ddd195ed4ce9e89c", "defect": "fuse() matched state == CONFIRMED while closed confirmed episodes carry CLOSED; 0 incidents"}
+  ],
+  "note": "Phase 1.3's reported final holdout (sha256 3206a54ed46a80e4...) remains INVALID as an untouched evaluation, for the reason recorded in outputs/phase1-3/invalidated_first_run/README.md. Phase 1.4 does not repair it and does not claim a new one."
+}

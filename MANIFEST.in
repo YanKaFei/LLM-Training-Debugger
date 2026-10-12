@@ -1,0 +1,27 @@
+# Ship the source tree, the tests, the example and the audit documentation, because
+# REPRODUCIBILITY.md instructs a reader to re-run the experiments and the tests from
+# the distribution.
+include README.md QUICKSTART.md ARCHITECTURE.md CAPABILITIES.md KNOWN_LIMITATIONS.md
+include EVALUATION_REPORT.md REPRODUCIBILITY.md CHANGELOG.md RELEASE_NOTES.md
+include CONTRIBUTING.md SECURITY.md LICENSE pyproject.toml MANIFEST.in
+recursive-include src/training_debugger *.py
+recursive-include tests *.py
+recursive-include examples *.py
+
+# Never ship build artefacts, caches, local data or credentials.
+global-exclude *.py[cod] __pycache__ *.so
+prune */__pycache__
+prune .venv
+prune .tools
+prune dist
+prune build
+prune outputs
+exclude *.egg-info
+recursive-exclude * *.egg-info
+recursive-exclude * .DS_Store
+
+# Generated at runtime by tests/experiments/restart_smoke.py; they embed the local
+# absolute checkout path and must never be shipped.
+exclude tests/experiments/restart_worker.py
+exclude tests/experiments/restart_continue.py
+exclude tests/experiments/restart_smoke.json

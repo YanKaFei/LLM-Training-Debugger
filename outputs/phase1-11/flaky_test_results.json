@@ -1,0 +1,6 @@
+{
+  "status": "UNRESOLVED",
+  "isolated": "3/3 PASS",
+  "full_suite_failures": 1,
+  "fix": "not attempted; brief forbids sleep-based or assertion-weakening repair"
+}

@@ -1,0 +1,27 @@
+{
+  "cpu_count": 12,
+  "git_commit_sha": null,
+  "git_dirty": false,
+  "machine": "arm64",
+  "os": {
+    "release": "27.0.0",
+    "system": "Darwin",
+    "version": "Darwin Kernel Version 27.0.0: Tue Aug 11 21:20:40 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6020"
+  },
+  "packages": {
+    "duckdb": "1.4.5",
+    "numpy": "2.0.2",
+    "pyarrow": "21.0.0"
+  },
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "processor": "arm",
+  "python_implementation": "CPython",
+  "python_version": "3.9.6",
+  "torch": {
+    "cuda_available": false,
+    "cuda_version": null,
+    "mps_available": true,
+    "num_threads": 8,
+    "torch_version": "2.8.0"
+  }
+}

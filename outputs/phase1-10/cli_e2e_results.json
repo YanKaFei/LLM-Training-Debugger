@@ -1,0 +1,13 @@
+{
+  "status": "PARTIAL",
+  "exit_code": 0,
+  "source": "outputs/phase1-3/store/runs/F1_loss_spike/episodes/episodes",
+  "observed": [
+    "NO_ANOMALY"
+  ],
+  "not_observed": [
+    "CONFIRMED_INCIDENT",
+    "CANDIDATE_ONLY",
+    "INSUFFICIENT_EVIDENCE"
+  ]
+}

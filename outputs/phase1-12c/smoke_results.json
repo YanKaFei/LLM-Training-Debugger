@@ -1,0 +1,217 @@
+{
+  "scenarios_executed": 8,
+  "scenarios_passed": 8,
+  "scenarios_failed": 0,
+  "real_training": 3,
+  "event_driven": 5,
+  "results": [
+    {
+      "scenario_id": "S1",
+      "source_type": "REAL_PYTORCH_TRAINING",
+      "run_id": "s1-healthy",
+      "expected_verdict": "CONFIRMED_INCIDENT",
+      "actual_verdict": "CONFIRMED_INCIDENT",
+      "all_verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "episode_count": 5,
+      "incident_count": 1,
+      "relation_count": 0,
+      "cli_command": "training-debugger --root <repo>/outputs/phase1-12c/store verdicts s1-healthy",
+      "cli_exit_code": 0,
+      "store_paths": [
+        "<repo>/outputs/phase1-12c/store/runs/s1-healthy"
+      ],
+      "passed": true,
+      "failed_assertions": [],
+      "well_formed": true,
+      "observed_healthy_verdict": "CONFIRMED_INCIDENT",
+      "detector_quality_note": "a healthy run produced CONFIRMED_INCIDENT -- a false incident, counted in the probe below, not an engineering failure"
+    },
+    {
+      "scenario_id": "S2",
+      "source_type": "REAL_PYTORCH_TRAINING",
+      "run_id": "s2-confirmed",
+      "expected_verdict": "CONFIRMED_INCIDENT",
+      "actual_verdict": "CONFIRMED_INCIDENT",
+      "all_verdicts": [
+        "CONFIRMED_INCIDENT",
+        "CONFIRMED_INCIDENT"
+      ],
+      "episode_count": 7,
+      "incident_count": 3,
+      "relation_count": 0,
+      "cli_command": "training-debugger --root <repo>/outputs/phase1-12c/store verdicts s2-confirmed",
+      "cli_exit_code": 0,
+      "store_paths": [
+        "<repo>/outputs/phase1-12c/store/runs/s2-confirmed"
+      ],
+      "passed": true,
+      "failed_assertions": []
+    },
+    {
+      "scenario_id": "S3",
+      "source_type": "EVENT_DRIVEN_PIPELINE_INTEGRATION",
+      "run_id": "s3-uncertain",
+      "expected_verdict": "INSUFFICIENT_EVIDENCE",
+      "actual_verdict": "INSUFFICIENT_EVIDENCE",
+      "all_verdicts": [
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "episode_count": 1,
+      "incident_count": 0,
+      "relation_count": 0,
+      "cli_command": "training-debugger --root <repo>/outputs/phase1-12c/store verdicts s3-uncertain",
+      "cli_exit_code": 0,
+      "store_paths": [
+        "<repo>/outputs/phase1-12c/store/runs/s3-uncertain"
+      ],
+      "passed": true,
+      "failed_assertions": []
+    },
+    {
+      "scenario_id": "S4",
+      "source_type": "REAL_PYTORCH_TRAINING",
+      "run_id": "s4-standalone-nan",
+      "expected_verdict": "CONFIRMED_INCIDENT",
+      "actual_verdict": "CONFIRMED_INCIDENT",
+      "all_verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "episode_count": 2,
+      "incident_count": 2,
+      "relation_count": 0,
+      "cli_command": "training-debugger --root <repo>/outputs/phase1-12c/store verdicts s4-standalone-nan",
+      "cli_exit_code": 0,
+      "store_paths": [
+        "<repo>/outputs/phase1-12c/store/runs/s4-standalone-nan"
+      ],
+      "passed": true,
+      "failed_assertions": []
+    },
+    {
+      "scenario_id": "S5",
+      "source_type": "EVENT_DRIVEN_PIPELINE_INTEGRATION",
+      "run_id": "s5-linked",
+      "expected_verdict": "CONFIRMED_INCIDENT",
+      "actual_verdict": "CONFIRMED_INCIDENT",
+      "all_verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "episode_count": 2,
+      "incident_count": 0,
+      "relation_count": 1,
+      "cli_command": "training-debugger --root <repo>/outputs/phase1-12c/store verdicts s5-linked",
+      "cli_exit_code": 0,
+      "store_paths": [
+        "<repo>/outputs/phase1-12c/store/runs/s5-linked"
+      ],
+      "passed": true,
+      "failed_assertions": [],
+      "relation_linked_episode": [
+        "s5-nan"
+      ],
+      "has_proven_cause_claim": false
+    },
+    {
+      "scenario_id": "S6",
+      "source_type": "EVENT_DRIVEN_PIPELINE_INTEGRATION",
+      "run_id": "s6-candidate",
+      "expected_verdict": "CANDIDATE_ONLY",
+      "actual_verdict": "CANDIDATE_ONLY",
+      "all_verdicts": [
+        "CANDIDATE_ONLY"
+      ],
+      "episode_count": 1,
+      "incident_count": 0,
+      "relation_count": 0,
+      "cli_command": "training-debugger --root <repo>/outputs/phase1-12c/store verdicts s6-candidate",
+      "cli_exit_code": 0,
+      "store_paths": [
+        "<repo>/outputs/phase1-12c/store/runs/s6-candidate"
+      ],
+      "passed": true,
+      "failed_assertions": []
+    },
+    {
+      "scenario_id": "S7",
+      "source_type": "EVENT_DRIVEN_PIPELINE_INTEGRATION",
+      "run_id": "s7-abstain",
+      "expected_verdict": "INSUFFICIENT_EVIDENCE",
+      "actual_verdict": "INSUFFICIENT_EVIDENCE",
+      "all_verdicts": [
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "episode_count": 1,
+      "incident_count": 0,
+      "relation_count": 0,
+      "cli_command": "training-debugger --root <repo>/outputs/phase1-12c/store verdicts s7-abstain",
+      "cli_exit_code": 0,
+      "store_paths": [
+        "<repo>/outputs/phase1-12c/store/runs/s7-abstain"
+      ],
+      "passed": true,
+      "failed_assertions": []
+    },
+    {
+      "scenario_id": "S8",
+      "source_type": "EVENT_DRIVEN_PIPELINE_INTEGRATION",
+      "run_id": "s8-restart",
+      "expected_verdict": "SAME_EPISODE_AND_BASELINE_RESTORED",
+      "actual_verdict": "RESTORED",
+      "episode_count": null,
+      "incident_count": null,
+      "relation_count": null,
+      "cli_command": null,
+      "cli_exit_code": null,
+      "store_paths": [
+        "<repo>/outputs/phase1-12c/store"
+      ],
+      "passed": true,
+      "failed_assertions": [],
+      "detail": {
+        "exit_code": 0,
+        "stdout": "{'restored': 1, 'episode_count': 1, 'episode_id': 'ep_685aaeac88ba', 'onset': 80, 'signal_count': 4, 'outcome': 'CONFIRMED_ANOMALY', 'baseline_count': 4, 'baseline_refs': {'grad.layer_norm:0': 1.0, 'grad.layer_norm:1': 1.0, 'grad.layer_norm:2': 1.0, 'grad.layer_norm:3': 1.0}}\n",
+        "stderr": "",
+        "result": {
+          "restored": 1,
+          "episode_count": 1,
+          "episode_id": "ep_685aaeac88ba",
+          "onset": 80,
+          "signal_count": 4,
+          "outcome": "CONFIRMED_ANOMALY",
+          "baseline_count": 4,
+          "baseline_refs": {
+            "grad.layer_norm:0": 1.0,
+            "grad.layer_norm:1": 1.0,
+            "grad.layer_norm:2": 1.0,
+            "grad.layer_norm:3": 1.0
+          }
+        }
+      }
+    }
+  ],
+  "healthy_false_incident_probe": {
+    "seeds": 13,
+    "false_incidents": 1,
+    "per_seed": {
+      "62001": "NO_ANOMALY",
+      "62002": "NO_ANOMALY",
+      "62003": "NO_ANOMALY",
+      "62004": "NO_ANOMALY",
+      "62005": "NO_ANOMALY",
+      "62006": "NO_ANOMALY",
+      "62007": "NO_ANOMALY",
+      "62008": "NO_ANOMALY",
+      "62009": "NO_ANOMALY",
+      "62010": "NO_ANOMALY",
+      "62011": "NO_ANOMALY",
+      "62012": "NO_ANOMALY",
+      "61001": "CONFIRMED_INCIDENT"
+    },
+    "false_incident_rate": 0.0769,
+    "gate": 0.05,
+    "gate_passed": false
+  },
+  "elapsed_s": 22.5
+}

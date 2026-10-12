@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "training-debugger"
+version = "0.1.7a1"
+description = "Training observability, incident detection and earliest-abnormal-evidence analysis for LLM training"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+dependencies = [
+    "numpy>=1.23",
+    "pyarrow>=12",
+    "duckdb>=0.10",
+]
+
+[project.optional-dependencies]
+torch = ["torch>=2.0"]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+training-debugger = "training_debugger.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+# A build artefact must not be shipped inside the distribution.
+exclude = ["*.egg-info", "*.tests", "*.tests.*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q --strict-markers"
+markers = [
+    "slow: long-running benchmarks and 1M-event storage tests",
+    "torch: requires PyTorch to be installed",
+    "performance: performance gate measurements",
+]
+filterwarnings = ["error::DeprecationWarning:training_debugger.*"]

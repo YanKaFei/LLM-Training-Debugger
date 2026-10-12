@@ -1,0 +1,78 @@
+{
+  "1": {
+    "cooldown_on": {
+      "observations": 1,
+      "episodes": 1,
+      "incidents": 0,
+      "verdicts": 1,
+      "detector_ms": 183.69,
+      "episode_ms": 0.07
+    },
+    "cooldown_off": {
+      "observations": 1,
+      "episodes": 1,
+      "incidents": 0,
+      "verdicts": 1,
+      "detector_ms": 181.77,
+      "episode_ms": 0.04
+    },
+    "spike_steps": 1
+  },
+  "20": {
+    "cooldown_on": {
+      "observations": 1,
+      "episodes": 1,
+      "incidents": 0,
+      "verdicts": 1,
+      "detector_ms": 184.72,
+      "episode_ms": 0.03
+    },
+    "cooldown_off": {
+      "observations": 20,
+      "episodes": 1,
+      "incidents": 0,
+      "verdicts": 1,
+      "detector_ms": 177.87,
+      "episode_ms": 0.13
+    },
+    "spike_steps": 20
+  },
+  "100": {
+    "cooldown_on": {
+      "observations": 2,
+      "episodes": 2,
+      "incidents": 0,
+      "verdicts": 1,
+      "detector_ms": 181.43,
+      "episode_ms": 0.05
+    },
+    "cooldown_off": {
+      "observations": 89,
+      "episodes": 1,
+      "incidents": 0,
+      "verdicts": 1,
+      "detector_ms": 184.49,
+      "episode_ms": 0.49
+    },
+    "spike_steps": 100
+  },
+  "1000": {
+    "cooldown_on": {
+      "observations": 2,
+      "episodes": 2,
+      "incidents": 0,
+      "verdicts": 1,
+      "detector_ms": 180.78,
+      "episode_ms": 0.05
+    },
+    "cooldown_off": {
+      "observations": 89,
+      "episodes": 1,
+      "incidents": 0,
+      "verdicts": 1,
+      "detector_ms": 181.68,
+      "episode_ms": 0.45
+    },
+    "spike_steps": 1000
+  }
+}

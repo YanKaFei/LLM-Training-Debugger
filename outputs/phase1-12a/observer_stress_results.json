@@ -1,0 +1,16 @@
+{
+  "isolated": {
+    "repetitions": 30,
+    "passes": 30,
+    "failures": 0,
+    "path": "tests/unit/test_observer.py::test_accounting_identity_holds_under_queue_overflow"
+  },
+  "full_suite": {
+    "repetitions": 5,
+    "passes": 5,
+    "failures": 0
+  },
+  "note": "an earlier run in this phase targeted tests/fault_injection/test_observer_faults.py, which does not contain the test; those 30 results were collection errors, not failures, and are discarded",
+  "fix": "none applied; race not identified",
+  "status": "NO_FAILURE_OBSERVED"
+}

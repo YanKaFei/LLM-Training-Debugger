@@ -1,0 +1,154 @@
+{
+  "steps": 120,
+  "repeats": 7,
+  "raw": {
+    "off": [
+      {
+        "total_s": 0.37910462499999964,
+        "median_ms": 3.1481875000001214,
+        "p95_ms": 3.3729999999998483,
+        "witness_records": 0
+      },
+      {
+        "total_s": 0.37788737500000025,
+        "median_ms": 3.138229499999756,
+        "p95_ms": 3.27891700000027,
+        "witness_records": 0
+      },
+      {
+        "total_s": 0.3782889169999999,
+        "median_ms": 3.148958000000146,
+        "p95_ms": 3.2704580000002537,
+        "witness_records": 0
+      },
+      {
+        "total_s": 0.36456537499999975,
+        "median_ms": 3.025395999999958,
+        "p95_ms": 3.1840839999999204,
+        "witness_records": 0
+      },
+      {
+        "total_s": 0.3704089590000006,
+        "median_ms": 3.0725414999999145,
+        "p95_ms": 3.2677909999998533,
+        "witness_records": 0
+      },
+      {
+        "total_s": 0.3671228329999998,
+        "median_ms": 3.0354374999999045,
+        "p95_ms": 3.222250000000315,
+        "witness_records": 0
+      },
+      {
+        "total_s": 0.367479874999999,
+        "median_ms": 3.0277500000002178,
+        "p95_ms": 3.242000000000189,
+        "witness_records": 0
+      }
+    ],
+    "on": [
+      {
+        "total_s": 0.3828572910000001,
+        "median_ms": 3.176958000000063,
+        "p95_ms": 3.3510419999998042,
+        "witness_records": 120
+      },
+      {
+        "total_s": 0.3860487500000005,
+        "median_ms": 3.210479000000266,
+        "p95_ms": 3.379583000000075,
+        "witness_records": 120
+      },
+      {
+        "total_s": 0.3401969169999992,
+        "median_ms": 2.790041499999951,
+        "p95_ms": 3.1158750000006563,
+        "witness_records": 120
+      },
+      {
+        "total_s": 0.5121942500000003,
+        "median_ms": 3.214375499999811,
+        "p95_ms": 10.177333000000566,
+        "witness_records": 120
+      },
+      {
+        "total_s": 0.3715379590000003,
+        "median_ms": 3.069166500000442,
+        "p95_ms": 3.2994579999998663,
+        "witness_records": 120
+      },
+      {
+        "total_s": 0.3658375420000004,
+        "median_ms": 3.034333,
+        "p95_ms": 3.17279199999998,
+        "witness_records": 120
+      },
+      {
+        "total_s": 0.3657424169999999,
+        "median_ms": 3.043937499998428,
+        "p95_ms": 3.1952080000010596,
+        "witness_records": 120
+      }
+    ]
+  },
+  "total_s": {
+    "off": {
+      "median": 0.3704089590000006,
+      "min": 0.36456537499999975,
+      "max": 0.37910462499999964,
+      "stderr": 0.0023227936274219816
+    },
+    "on": {
+      "median": 0.3715379590000003,
+      "min": 0.3401969169999992,
+      "max": 0.5121942500000003,
+      "stderr": 0.021262004068398465
+    },
+    "delta": 0.0011289999999997136,
+    "delta_pct": 0.30479824328431315,
+    "paired_stderr": 0.02138850596091707
+  },
+  "median_ms": {
+    "off": {
+      "median": 3.0725414999999145,
+      "min": 3.025395999999958,
+      "max": 3.148958000000146,
+      "stderr": 0.022016335443109752
+    },
+    "on": {
+      "median": 3.069166500000442,
+      "min": 2.790041499999951,
+      "max": 3.214375499999811,
+      "stderr": 0.05606127755961307
+    },
+    "delta": -0.00337499999947255,
+    "delta_pct": -0.10984391909670362,
+    "paired_stderr": 0.06022944353021623
+  },
+  "p95_ms": {
+    "off": {
+      "median": 3.2677909999998533,
+      "min": 3.1840839999999204,
+      "max": 3.3729999999998483,
+      "stderr": 0.02223271454454863
+    },
+    "on": {
+      "median": 3.2994579999998663,
+      "min": 3.1158750000006563,
+      "max": 10.177333000000566,
+      "stderr": 0.9899647442986415
+    },
+    "delta": 0.03166700000001299,
+    "delta_pct": 0.9690644230311672,
+    "paired_stderr": 0.990214364948466
+  },
+  "witness_event_volume": {
+    "records_off": 0,
+    "records_on": 120
+  },
+  "targets": {
+    "core_observer_overhead_pct": 3.0,
+    "t1_total_overhead_pct": 8.0
+  },
+  "note": "This measures the witness increment only. It does NOT re-measure, and must not be read as resolving, the separate standing finding that observer overhead exceeds the <3% core target at the largest workload."
+}

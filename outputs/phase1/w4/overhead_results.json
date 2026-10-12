@@ -1,0 +1,274 @@
+{
+  "results": {
+    "off": {
+      "mode": "off",
+      "repeats": 3,
+      "warmup_steps": 20,
+      "measured_steps": 120,
+      "median_step_s": 0.005565479000000373,
+      "median_step_s_per_repeat": [
+        0.0055015420000001924,
+        0.005658187999999953,
+        0.005565479000000373
+      ],
+      "p95_step_s": 0.0065666669999999705,
+      "tokens_per_sec": 5707.998031680143,
+      "heap_peak_bytes": 32067,
+      "device_delta_bytes": 0,
+      "stats": null
+    },
+    "observer_only": {
+      "mode": "observer_only",
+      "repeats": 3,
+      "warmup_steps": 20,
+      "measured_steps": 120,
+      "median_step_s": 0.008255354000000104,
+      "median_step_s_per_repeat": [
+        0.00742799999999999,
+        0.008255354000000104,
+        0.00892929149999988
+      ],
+      "p95_step_s": 0.018758749999999935,
+      "tokens_per_sec": 3199.059178022815,
+      "heap_peak_bytes": 113939,
+      "device_delta_bytes": 0,
+      "stats": {
+        "observer": {
+          "started": 1,
+          "closed": 0,
+          "emitted_total": 1680,
+          "written_total": 1680,
+          "flush_count": 1,
+          "observer_internal_errors_total": 0,
+          "events_dropped_total": 0,
+          "queue_overflow_total": 0,
+          "writer_failures_total": 0,
+          "sampled_out_total": 0,
+          "validation_failures_total": 0,
+          "emergency_writes_total": 0,
+          "emergency_buffer_depth": 0,
+          "emit_time_total_ns": 179108054,
+          "writer_time_total_ns": 196292,
+          "last_error": null
+        },
+        "identity": {
+          "emitted": 1680,
+          "sampled_out": 0,
+          "validation_failures": 0,
+          "written": 1680,
+          "dropped": 0,
+          "expected_accounted": 1680,
+          "accounted": 1680,
+          "unaccounted": 0,
+          "in_flight": 0,
+          "queue_depth": 0
+        },
+        "collector": null
+      }
+    },
+    "core": {
+      "mode": "core",
+      "repeats": 3,
+      "warmup_steps": 20,
+      "measured_steps": 120,
+      "median_step_s": 0.007713833499999545,
+      "median_step_s_per_repeat": [
+        0.007713833499999545,
+        0.007438229499999949,
+        0.007823562500000492
+      ],
+      "p95_step_s": 0.008541832999998888,
+      "tokens_per_sec": 4127.524779498261,
+      "heap_peak_bytes": 126426,
+      "device_delta_bytes": 0,
+      "stats": {
+        "observer": {
+          "started": 1,
+          "closed": 0,
+          "emitted_total": 1960,
+          "written_total": 1960,
+          "flush_count": 1,
+          "observer_internal_errors_total": 0,
+          "events_dropped_total": 0,
+          "queue_overflow_total": 0,
+          "writer_failures_total": 0,
+          "sampled_out_total": 0,
+          "validation_failures_total": 0,
+          "emergency_writes_total": 0,
+          "emergency_buffer_depth": 0,
+          "emit_time_total_ns": 151149050,
+          "writer_time_total_ns": 60456,
+          "last_error": null
+        },
+        "identity": {
+          "emitted": 1960,
+          "sampled_out": 0,
+          "validation_failures": 0,
+          "written": 1960,
+          "dropped": 0,
+          "expected_accounted": 1960,
+          "accounted": 1960,
+          "unaccounted": 0,
+          "in_flight": 0,
+          "queue_depth": 0
+        },
+        "collector": null
+      }
+    },
+    "core_layers": {
+      "mode": "core_layers",
+      "repeats": 3,
+      "warmup_steps": 20,
+      "measured_steps": 120,
+      "median_step_s": 0.008106729499999688,
+      "median_step_s_per_repeat": [
+        0.007867978999999359,
+        0.008106729499999688,
+        0.010244478999998918
+      ],
+      "p95_step_s": 0.01565954199999986,
+      "tokens_per_sec": 3369.259306614119,
+      "heap_peak_bytes": 130367,
+      "device_delta_bytes": 0,
+      "stats": {
+        "observer": {
+          "started": 1,
+          "closed": 0,
+          "emitted_total": 2240,
+          "written_total": 2240,
+          "flush_count": 1,
+          "observer_internal_errors_total": 0,
+          "events_dropped_total": 0,
+          "queue_overflow_total": 0,
+          "writer_failures_total": 0,
+          "sampled_out_total": 0,
+          "validation_failures_total": 0,
+          "emergency_writes_total": 0,
+          "emergency_buffer_depth": 0,
+          "emit_time_total_ns": 221246364,
+          "writer_time_total_ns": 104792,
+          "last_error": null
+        },
+        "identity": {
+          "emitted": 2240,
+          "sampled_out": 0,
+          "validation_failures": 0,
+          "written": 2240,
+          "dropped": 0,
+          "expected_accounted": 2240,
+          "accounted": 2240,
+          "unaccounted": 0,
+          "in_flight": 0,
+          "queue_depth": 0
+        },
+        "collector": {
+          "steps_considered": 140,
+          "steps_collected": 14,
+          "events_emitted": 224,
+          "cadence": 10,
+          "layers_selected": 8,
+          "layers_in_model": 8,
+          "top_k": 8,
+          "param_norms_enabled": true
+        }
+      }
+    },
+    "shipping": {
+      "mode": "shipping",
+      "repeats": 3,
+      "warmup_steps": 20,
+      "measured_steps": 120,
+      "median_step_s": 0.007329853999999969,
+      "median_step_s_per_repeat": [
+        0.007329853999999969,
+        0.007092791500001638,
+        0.00739650050000229
+      ],
+      "p95_step_s": 0.010525125000000912,
+      "tokens_per_sec": 4196.233663263307,
+      "heap_peak_bytes": 103698,
+      "device_delta_bytes": 0,
+      "stats": {
+        "observer": {
+          "started": 1,
+          "closed": 0,
+          "emitted_total": 1862,
+          "written_total": 1456,
+          "flush_count": 1,
+          "observer_internal_errors_total": 0,
+          "events_dropped_total": 0,
+          "queue_overflow_total": 0,
+          "writer_failures_total": 0,
+          "sampled_out_total": 406,
+          "validation_failures_total": 0,
+          "emergency_writes_total": 0,
+          "emergency_buffer_depth": 0,
+          "emit_time_total_ns": 155197372,
+          "writer_time_total_ns": 138707,
+          "last_error": null
+        },
+        "identity": {
+          "emitted": 1862,
+          "sampled_out": 406,
+          "validation_failures": 0,
+          "written": 1456,
+          "dropped": 0,
+          "expected_accounted": 1456,
+          "accounted": 1456,
+          "unaccounted": 0,
+          "in_flight": 0,
+          "queue_depth": 0
+        },
+        "collector": {
+          "steps_considered": 140,
+          "steps_collected": 14,
+          "events_emitted": 224,
+          "cadence": 10,
+          "layers_selected": 8,
+          "layers_in_model": 8,
+          "top_k": 8,
+          "param_norms_enabled": true
+        }
+      }
+    }
+  },
+  "environment": {
+    "python_version": "3.9.6",
+    "python_implementation": "CPython",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "cpu_count": 12,
+    "os": {
+      "system": "Darwin",
+      "release": "27.0.0",
+      "version": "Darwin Kernel Version 27.0.0: Tue Aug 11 21:20:40 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6020"
+    },
+    "git_commit_sha": null,
+    "git_dirty": null,
+    "packages": {
+      "numpy": "2.0.2",
+      "pyarrow": "21.0.0",
+      "duckdb": "1.4.5"
+    },
+    "torch": {
+      "torch_version": "2.8.0",
+      "cuda_available": false,
+      "cuda_version": null,
+      "mps_available": true,
+      "num_threads": 8
+    },
+    "extra": {
+      "benchmark": "observer_overhead",
+      "warmup_steps": 20,
+      "measured_steps": 120,
+      "repeats": 3,
+      "layer_cadence": 10,
+      "model_layers": 4,
+      "batch": [
+        4,
+        8
+      ]
+    }
+  }
+}

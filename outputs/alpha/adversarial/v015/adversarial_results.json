@@ -1,0 +1,3268 @@
+{
+  "cases": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8X",
+    "A8Y"
+  ],
+  "unsupported": {},
+  "runs": 45,
+  "store": "<repo>/outputs/alpha/adversarial/v015/store",
+  "ground_truth": "<repo>/outputs/alpha/adversarial/v015/ground_truth/adversarial_ground_truth.json",
+  "results": [
+    {
+      "run_id": "adv-A1-L4d32-s95000",
+      "episodes": [
+        {
+          "episode_id": "ep_08d92fcc0ac3",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [],
+      "case": "A1"
+    },
+    {
+      "run_id": "adv-A1-L4d32-s95001",
+      "episodes": [
+        {
+          "episode_id": "ep_247d6363771b",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [],
+      "case": "A1"
+    },
+    {
+      "run_id": "adv-A1-L4d32-s95002",
+      "episodes": [
+        {
+          "episode_id": "ep_e11ba59d7ab3",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [],
+      "case": "A1"
+    },
+    {
+      "run_id": "adv-A1-L4d32-s95003",
+      "episodes": [
+        {
+          "episode_id": "ep_2395a2c03fa0",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_9af1d7136053",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.layer_norm",
+          "candidate_onset_step": 125,
+          "confirmed_at_step": null,
+          "outcome": "NOT_ANOMALY",
+          "affected_layers": [
+            1
+          ]
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "NO_ANOMALY",
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [],
+      "case": "A1"
+    },
+    {
+      "run_id": "adv-A1-L4d32-s95004",
+      "episodes": [
+        {
+          "episode_id": "ep_67e87fe1d289",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_3f0ab13d1308",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.layer_norm",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": null,
+          "outcome": "NOT_ANOMALY",
+          "affected_layers": [
+            1
+          ]
+        },
+        {
+          "episode_id": "ep_32917cef5436",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.layer_norm",
+          "candidate_onset_step": 127,
+          "confirmed_at_step": null,
+          "outcome": "NOT_ANOMALY",
+          "affected_layers": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "NO_ANOMALY",
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [],
+      "case": "A1"
+    },
+    {
+      "run_id": "adv-A2-L4d32-s95000",
+      "episodes": [
+        {
+          "episode_id": "ep_fb3473e799a0",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_ca566d8f2ed0",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_f3daf0440391",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81
+      ],
+      "case": "A2"
+    },
+    {
+      "run_id": "adv-A2-L4d32-s95001",
+      "episodes": [
+        {
+          "episode_id": "ep_e8555bd2f96f",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_463cd7ed47fe",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_cb729fb3c0d9",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81
+      ],
+      "case": "A2"
+    },
+    {
+      "run_id": "adv-A2-L4d32-s95002",
+      "episodes": [
+        {
+          "episode_id": "ep_b62073ac7023",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_cf52a49a3e1f",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_eae10176e112",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81
+      ],
+      "case": "A2"
+    },
+    {
+      "run_id": "adv-A2-L4d32-s95003",
+      "episodes": [
+        {
+          "episode_id": "ep_b710a72b137d",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_6ace367d899b",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_8450c3b8615e",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81
+      ],
+      "case": "A2"
+    },
+    {
+      "run_id": "adv-A2-L4d32-s95004",
+      "episodes": [
+        {
+          "episode_id": "ep_1c0aa51531d3",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_2619aa911fdc",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_249cef195f0d",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_324f85db62c9",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.layer_norm",
+          "candidate_onset_step": 82,
+          "confirmed_at_step": null,
+          "outcome": "NOT_ANOMALY",
+          "affected_layers": [
+            1
+          ]
+        },
+        {
+          "episode_id": "ep_302bc68647e7",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.layer_norm",
+          "candidate_onset_step": 127,
+          "confirmed_at_step": null,
+          "outcome": "NOT_ANOMALY",
+          "affected_layers": [
+            0,
+            1
+          ]
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "NO_ANOMALY",
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81
+      ],
+      "case": "A2"
+    },
+    {
+      "run_id": "adv-A3-L4d32-s95000",
+      "episodes": [
+        {
+          "episode_id": "ep_8039bdf0cd6d",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "episode_id": "ep_952fac7cc044",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_0f2887cf4341",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "rel_36634be21c60",
+          "relation_type": "PRECEDES",
+          "source": "ep_8039bdf0cd6d",
+          "target": "ep_952fac7cc044",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        },
+        {
+          "relation_id": "rel_6031e4559d64",
+          "relation_type": "PRECEDES",
+          "source": "ep_8039bdf0cd6d",
+          "target": "ep_0f2887cf4341",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        }
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT",
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        120
+      ],
+      "case": "A3"
+    },
+    {
+      "run_id": "adv-A3-L4d32-s95001",
+      "episodes": [
+        {
+          "episode_id": "ep_3aaf8ece099f",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "episode_id": "ep_d9dee054fdc9",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_a9107640a984",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "rel_4a37c68ae808",
+          "relation_type": "PRECEDES",
+          "source": "ep_3aaf8ece099f",
+          "target": "ep_d9dee054fdc9",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        },
+        {
+          "relation_id": "rel_32d65ea34fb8",
+          "relation_type": "PRECEDES",
+          "source": "ep_3aaf8ece099f",
+          "target": "ep_a9107640a984",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        }
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT",
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        120
+      ],
+      "case": "A3"
+    },
+    {
+      "run_id": "adv-A3-L4d32-s95002",
+      "episodes": [
+        {
+          "episode_id": "ep_54d3cab18f99",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "episode_id": "ep_d041a8b2ec76",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_bcd9850a9c84",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_a6e1c485be32",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.layer_norm",
+          "candidate_onset_step": 133,
+          "confirmed_at_step": null,
+          "outcome": "NOT_ANOMALY",
+          "affected_layers": [
+            6
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "rel_9d384e1d7015",
+          "relation_type": "PRECEDES",
+          "source": "ep_54d3cab18f99",
+          "target": "ep_d041a8b2ec76",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        },
+        {
+          "relation_id": "rel_bb5c4dacb4e0",
+          "relation_type": "PRECEDES",
+          "source": "ep_54d3cab18f99",
+          "target": "ep_bcd9850a9c84",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        }
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT",
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        120
+      ],
+      "case": "A3"
+    },
+    {
+      "run_id": "adv-A3-L4d32-s95003",
+      "episodes": [
+        {
+          "episode_id": "ep_69343c528e4b",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "episode_id": "ep_a0316e2c67f7",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_01358afdfd60",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "rel_9ed26d6d8c59",
+          "relation_type": "PRECEDES",
+          "source": "ep_69343c528e4b",
+          "target": "ep_a0316e2c67f7",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        },
+        {
+          "relation_id": "rel_7f0bcd34c9d1",
+          "relation_type": "PRECEDES",
+          "source": "ep_69343c528e4b",
+          "target": "ep_01358afdfd60",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        }
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT",
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        120
+      ],
+      "case": "A3"
+    },
+    {
+      "run_id": "adv-A3-L4d32-s95004",
+      "episodes": [
+        {
+          "episode_id": "ep_a2f98478c50d",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "episode_id": "ep_503705230306",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_728afec1f4ef",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_a113e7209e5d",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.layer_norm",
+          "candidate_onset_step": 133,
+          "confirmed_at_step": null,
+          "outcome": "NOT_ANOMALY",
+          "affected_layers": [
+            6
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "rel_d433f8ea5824",
+          "relation_type": "PRECEDES",
+          "source": "ep_a2f98478c50d",
+          "target": "ep_503705230306",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        },
+        {
+          "relation_id": "rel_02d7c2fe59ea",
+          "relation_type": "PRECEDES",
+          "source": "ep_a2f98478c50d",
+          "target": "ep_728afec1f4ef",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        }
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT",
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        120
+      ],
+      "case": "A3"
+    },
+    {
+      "run_id": "adv-A4-L4d32-s95000",
+      "episodes": [
+        {
+          "episode_id": "ep_4afba9698873",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_d9dde11162ad",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_ce28cf33da2e",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_b182da0520bf",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_30408b7b1f69",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 130,
+          "confirmed_at_step": 130,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_f40be7d874f9",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_f123da570238",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160
+      ],
+      "case": "A4"
+    },
+    {
+      "run_id": "adv-A4-L4d32-s95001",
+      "episodes": [
+        {
+          "episode_id": "ep_d7659780346d",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_fd555d131e6c",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_608b41aea0ec",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_87f25361744e",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_e8bb242708f5",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 130,
+          "confirmed_at_step": 130,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_348ebd1475a7",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_2d482e5516a6",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160
+      ],
+      "case": "A4"
+    },
+    {
+      "run_id": "adv-A4-L4d32-s95002",
+      "episodes": [
+        {
+          "episode_id": "ep_1dbece9d5c65",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_3316366561a9",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_a110ab8ed418",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_93389d42f1dd",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_24f9ba664bf6",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 130,
+          "confirmed_at_step": 130,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_5cf8930a68fa",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_6c2be8d169a9",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160
+      ],
+      "case": "A4"
+    },
+    {
+      "run_id": "adv-A4-L4d32-s95003",
+      "episodes": [
+        {
+          "episode_id": "ep_e7538fd64441",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_699e8acdbcbb",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_5a95ef99b606",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_292cc80c8793",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_58ad259f8a47",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 130,
+          "confirmed_at_step": 130,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_3dd372ef8e5c",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_38badadf3b06",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160
+      ],
+      "case": "A4"
+    },
+    {
+      "run_id": "adv-A4-L4d32-s95004",
+      "episodes": [
+        {
+          "episode_id": "ep_19189a475056",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_e8cafa58d3ab",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_b19949671022",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_95b15b973696",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_d4d26cda5a63",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 130,
+          "confirmed_at_step": 130,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_1b868b5386b5",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_e9ab9a7376fd",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160
+      ],
+      "case": "A4"
+    },
+    {
+      "run_id": "adv-A5-L4d32-s95000",
+      "episodes": [
+        {
+          "episode_id": "ep_8a05fc07099b",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [],
+      "case": "A5"
+    },
+    {
+      "run_id": "adv-A5-L4d32-s95001",
+      "episodes": [
+        {
+          "episode_id": "ep_96f66cfa942f",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [],
+      "case": "A5"
+    },
+    {
+      "run_id": "adv-A5-L4d32-s95002",
+      "episodes": [
+        {
+          "episode_id": "ep_f831cd3d3c20",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "episode_id": "ep_d41174565127",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.layer_norm",
+          "candidate_onset_step": 132,
+          "confirmed_at_step": null,
+          "outcome": "NOT_ANOMALY",
+          "affected_layers": [
+            6
+          ]
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [],
+      "case": "A5"
+    },
+    {
+      "run_id": "adv-A5-L4d32-s95003",
+      "episodes": [
+        {
+          "episode_id": "ep_285eb7702508",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [],
+      "case": "A5"
+    },
+    {
+      "run_id": "adv-A5-L4d32-s95004",
+      "episodes": [
+        {
+          "episode_id": "ep_aeced03855e8",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "episode_id": "ep_970b52ad17e5",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.layer_norm",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": null,
+          "outcome": "NOT_ANOMALY",
+          "affected_layers": [
+            6
+          ]
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [],
+      "case": "A5"
+    },
+    {
+      "run_id": "adv-A6-L4d32-s95000",
+      "episodes": [
+        {
+          "episode_id": "ep_49bf8fce2a2e",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_06367977dba2",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        80
+      ],
+      "case": "A6"
+    },
+    {
+      "run_id": "adv-A6-L4d32-s95001",
+      "episodes": [
+        {
+          "episode_id": "ep_2e578562bbe3",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_9b5b9573b6a3",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        80
+      ],
+      "case": "A6"
+    },
+    {
+      "run_id": "adv-A6-L4d32-s95002",
+      "episodes": [
+        {
+          "episode_id": "ep_096245139c3c",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_7f2965e32634",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        80
+      ],
+      "case": "A6"
+    },
+    {
+      "run_id": "adv-A6-L4d32-s95003",
+      "episodes": [
+        {
+          "episode_id": "ep_ecacf88fdbb1",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_7f45ea22a50c",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_64ee946008d1",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.layer_norm",
+          "candidate_onset_step": 125,
+          "confirmed_at_step": null,
+          "outcome": "NOT_ANOMALY",
+          "affected_layers": [
+            1
+          ]
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "NO_ANOMALY",
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        80
+      ],
+      "case": "A6"
+    },
+    {
+      "run_id": "adv-A6-L4d32-s95004",
+      "episodes": [
+        {
+          "episode_id": "ep_52f8dfbf9e37",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_f1090260a05a",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_8c452645e6e8",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.layer_norm",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": null,
+          "outcome": "NOT_ANOMALY",
+          "affected_layers": [
+            1
+          ]
+        },
+        {
+          "episode_id": "ep_fe2754611aca",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.layer_norm",
+          "candidate_onset_step": 127,
+          "confirmed_at_step": null,
+          "outcome": "NOT_ANOMALY",
+          "affected_layers": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "NO_ANOMALY",
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        80
+      ],
+      "case": "A6"
+    },
+    {
+      "run_id": "adv-A7-L4d32-s95000",
+      "episodes": [
+        {
+          "episode_id": "ep_8e72771bcc26",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "episode_id": "ep_7766a9272e68",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_68949ba97f1d",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "rel_7c20d9f3408e",
+          "relation_type": "PRECEDES",
+          "source": "ep_8e72771bcc26",
+          "target": "ep_7766a9272e68",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        },
+        {
+          "relation_id": "rel_85b1cb1d1a1f",
+          "relation_type": "PRECEDES",
+          "source": "ep_8e72771bcc26",
+          "target": "ep_68949ba97f1d",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        }
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT",
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        120
+      ],
+      "case": "A7"
+    },
+    {
+      "run_id": "adv-A7-L4d32-s95001",
+      "episodes": [
+        {
+          "episode_id": "ep_38022e0bdd61",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "episode_id": "ep_10faa37a4770",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_4ac89b7e03b5",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "rel_17105399dfeb",
+          "relation_type": "PRECEDES",
+          "source": "ep_38022e0bdd61",
+          "target": "ep_10faa37a4770",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        },
+        {
+          "relation_id": "rel_39a1013e6422",
+          "relation_type": "PRECEDES",
+          "source": "ep_38022e0bdd61",
+          "target": "ep_4ac89b7e03b5",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        }
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT",
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        120
+      ],
+      "case": "A7"
+    },
+    {
+      "run_id": "adv-A7-L4d32-s95002",
+      "episodes": [
+        {
+          "episode_id": "ep_ebf9f4101f62",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "episode_id": "ep_e2846fbca281",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_e5e1ecd752ca",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_81f584bd1e3a",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.layer_norm",
+          "candidate_onset_step": 133,
+          "confirmed_at_step": null,
+          "outcome": "NOT_ANOMALY",
+          "affected_layers": [
+            6
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "rel_15fa760b478b",
+          "relation_type": "PRECEDES",
+          "source": "ep_ebf9f4101f62",
+          "target": "ep_e2846fbca281",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        },
+        {
+          "relation_id": "rel_5bae924f7f8e",
+          "relation_type": "PRECEDES",
+          "source": "ep_ebf9f4101f62",
+          "target": "ep_e5e1ecd752ca",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        }
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT",
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        120
+      ],
+      "case": "A7"
+    },
+    {
+      "run_id": "adv-A7-L4d32-s95003",
+      "episodes": [
+        {
+          "episode_id": "ep_0cb78a2622ee",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "episode_id": "ep_7022b4140b9e",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_cb533dc30378",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "rel_ba559da730c3",
+          "relation_type": "PRECEDES",
+          "source": "ep_0cb78a2622ee",
+          "target": "ep_7022b4140b9e",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        },
+        {
+          "relation_id": "rel_e1eef390556e",
+          "relation_type": "PRECEDES",
+          "source": "ep_0cb78a2622ee",
+          "target": "ep_cb533dc30378",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        }
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT",
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        120
+      ],
+      "case": "A7"
+    },
+    {
+      "run_id": "adv-A7-L4d32-s95004",
+      "episodes": [
+        {
+          "episode_id": "ep_0bcdb6f86fe6",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "episode_id": "ep_1b799f511482",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_3d3a7d3abe58",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 120,
+          "confirmed_at_step": 120,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_0b8962d60eba",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.layer_norm",
+          "candidate_onset_step": 133,
+          "confirmed_at_step": null,
+          "outcome": "NOT_ANOMALY",
+          "affected_layers": [
+            6
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "rel_8c65d19bb710",
+          "relation_type": "PRECEDES",
+          "source": "ep_0bcdb6f86fe6",
+          "target": "ep_1b799f511482",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        },
+        {
+          "relation_id": "rel_bdb98275634f",
+          "relation_type": "PRECEDES",
+          "source": "ep_0bcdb6f86fe6",
+          "target": "ep_3d3a7d3abe58",
+          "gap_steps": 40,
+          "tier": "TEMPORAL",
+          "antecedent_metric": "grad.global_norm",
+          "antecedent_is_nonfinite": false
+        }
+      ],
+      "verdicts": [
+        "CONFIRMED_INCIDENT",
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        120
+      ],
+      "case": "A7"
+    },
+    {
+      "run_id": "adv-A8X-L4d32-s95000",
+      "episodes": [
+        {
+          "episode_id": "ep_1ac33f9a9feb",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_8349666d34d8",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_1987b8f16eeb",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_254dc3c5129e",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_65d5abaeeeb4",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 130,
+          "confirmed_at_step": 130,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_5831e9c2b51d",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_07fc05fdd764",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160
+      ],
+      "case": "A8X"
+    },
+    {
+      "run_id": "adv-A8X-L4d32-s95001",
+      "episodes": [
+        {
+          "episode_id": "ep_c9cab4d63dcb",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_6aa3c685d2cf",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_a5f754d66db9",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_1f9fdea56e3e",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_aef5970988c5",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 130,
+          "confirmed_at_step": 130,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_ee9a375f2869",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_6cd37f0b7bb7",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160
+      ],
+      "case": "A8X"
+    },
+    {
+      "run_id": "adv-A8X-L4d32-s95002",
+      "episodes": [
+        {
+          "episode_id": "ep_e6f7e13ab8df",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_7fd0884a82f1",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_986493fcd44c",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_9916ea9eed0b",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_e465b027070a",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 130,
+          "confirmed_at_step": 130,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_31b4eb62411c",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_e71db0533346",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160
+      ],
+      "case": "A8X"
+    },
+    {
+      "run_id": "adv-A8X-L4d32-s95003",
+      "episodes": [
+        {
+          "episode_id": "ep_e8a2e657e5f6",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_fc8319952da0",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_1e77b29ed067",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_c12a60bf0c71",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_8881bc6148d7",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 130,
+          "confirmed_at_step": 130,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_2411f6296805",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_26c2f4f25ec7",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160
+      ],
+      "case": "A8X"
+    },
+    {
+      "run_id": "adv-A8X-L4d32-s95004",
+      "episodes": [
+        {
+          "episode_id": "ep_e75ded872e59",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_43d99ac43dc2",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_8721c7f24bb2",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_93cd35b275ce",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_a0f52e662499",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "param.global_norm",
+          "candidate_onset_step": 130,
+          "confirmed_at_step": 130,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_64f8f44f266a",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_a8e4b0c15ada",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 131,
+          "confirmed_at_step": 131,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160
+      ],
+      "case": "A8X"
+    },
+    {
+      "run_id": "adv-A8Y-L4d32-s95000",
+      "episodes": [
+        {
+          "episode_id": "ep_4f5bd56f2e92",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_65dfc0176f27",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_e44cf9dba1c6",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81
+      ],
+      "case": "A8Y"
+    },
+    {
+      "run_id": "adv-A8Y-L4d32-s95001",
+      "episodes": [
+        {
+          "episode_id": "ep_5ff41890d1d5",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_2a0cdce4b7c7",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_9f93cf188234",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81
+      ],
+      "case": "A8Y"
+    },
+    {
+      "run_id": "adv-A8Y-L4d32-s95002",
+      "episodes": [
+        {
+          "episode_id": "ep_f1e49837c7d0",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_ab8f7abe93ed",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_0462504a7abb",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81
+      ],
+      "case": "A8Y"
+    },
+    {
+      "run_id": "adv-A8Y-L4d32-s95003",
+      "episodes": [
+        {
+          "episode_id": "ep_c2a5024f70b7",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_e92128cf2913",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_4fd70e29d0f3",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81
+      ],
+      "case": "A8Y"
+    },
+    {
+      "run_id": "adv-A8Y-L4d32-s95004",
+      "episodes": [
+        {
+          "episode_id": "ep_61ef8fa41eb3",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "grad.global_norm",
+          "candidate_onset_step": 80,
+          "confirmed_at_step": 80,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_08bb5e885192",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_f64cf37b1b59",
+          "anomaly_type": "NAN_DETECTED",
+          "metric_name": "train.loss_nonfinite_count",
+          "candidate_onset_step": 81,
+          "confirmed_at_step": 81,
+          "outcome": "CONFIRMED_ANOMALY",
+          "affected_layers": []
+        },
+        {
+          "episode_id": "ep_3c680fe37e82",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.layer_norm",
+          "candidate_onset_step": 82,
+          "confirmed_at_step": null,
+          "outcome": "NOT_ANOMALY",
+          "affected_layers": [
+            1
+          ]
+        },
+        {
+          "episode_id": "ep_ca6780ae9641",
+          "anomaly_type": "GRADIENT_EXPLOSION",
+          "metric_name": "grad.layer_norm",
+          "candidate_onset_step": 127,
+          "confirmed_at_step": null,
+          "outcome": "NOT_ANOMALY",
+          "affected_layers": [
+            0,
+            1
+          ]
+        }
+      ],
+      "relations": [],
+      "verdicts": [
+        "NO_ANOMALY",
+        "CONFIRMED_INCIDENT"
+      ],
+      "nonfinite_steps": [
+        81
+      ],
+      "case": "A8Y"
+    }
+  ],
+  "elapsed_s": 54.8
+}

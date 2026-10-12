@@ -1,0 +1,422 @@
+{
+  "dev-healthy-L4d32-s80000": {
+    "kind": "healthy",
+    "scenario": "healthy",
+    "injected": false,
+    "injection_step": null,
+    "magnitude": null,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80000
+  },
+  "dev-healthy-L4d32-s80001": {
+    "kind": "healthy",
+    "scenario": "healthy",
+    "injected": false,
+    "injection_step": null,
+    "magnitude": null,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80001
+  },
+  "dev-healthy-L4d32-s80002": {
+    "kind": "healthy",
+    "scenario": "healthy",
+    "injected": false,
+    "injection_step": null,
+    "magnitude": null,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80002
+  },
+  "dev-healthy-L4d32-s80003": {
+    "kind": "healthy",
+    "scenario": "healthy",
+    "injected": false,
+    "injection_step": null,
+    "magnitude": null,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80003
+  },
+  "dev-healthy-L4d32-s80004": {
+    "kind": "healthy",
+    "scenario": "healthy",
+    "injected": false,
+    "injection_step": null,
+    "magnitude": null,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80004
+  },
+  "dev-healthy-L4d32-s80005": {
+    "kind": "healthy",
+    "scenario": "healthy",
+    "injected": false,
+    "injection_step": null,
+    "magnitude": null,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80005
+  },
+  "dev-loss_spike-L4d32-s80000": {
+    "kind": "fault",
+    "scenario": "loss_spike",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 20.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80000
+  },
+  "dev-loss_spike-L4d32-s80001": {
+    "kind": "fault",
+    "scenario": "loss_spike",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 20.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80001
+  },
+  "dev-loss_spike-L4d32-s80002": {
+    "kind": "fault",
+    "scenario": "loss_spike",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 20.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80002
+  },
+  "dev-loss_spike-L4d32-s80003": {
+    "kind": "fault",
+    "scenario": "loss_spike",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 20.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80003
+  },
+  "dev-loss_spike-L4d32-s80004": {
+    "kind": "fault",
+    "scenario": "loss_spike",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 20.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80004
+  },
+  "dev-loss_spike-L4d32-s80005": {
+    "kind": "fault",
+    "scenario": "loss_spike",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 20.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80005
+  },
+  "dev-grad_small-L4d32-s80000": {
+    "kind": "fault",
+    "scenario": "grad_small",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 2.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80000
+  },
+  "dev-grad_small-L4d32-s80001": {
+    "kind": "fault",
+    "scenario": "grad_small",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 2.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80001
+  },
+  "dev-grad_small-L4d32-s80002": {
+    "kind": "fault",
+    "scenario": "grad_small",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 2.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80002
+  },
+  "dev-grad_small-L4d32-s80003": {
+    "kind": "fault",
+    "scenario": "grad_small",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 2.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80003
+  },
+  "dev-grad_small-L4d32-s80004": {
+    "kind": "fault",
+    "scenario": "grad_small",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 2.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80004
+  },
+  "dev-grad_small-L4d32-s80005": {
+    "kind": "fault",
+    "scenario": "grad_small",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 2.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80005
+  },
+  "dev-grad_mid-L4d32-s80000": {
+    "kind": "fault",
+    "scenario": "grad_mid",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 5.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80000
+  },
+  "dev-grad_mid-L4d32-s80001": {
+    "kind": "fault",
+    "scenario": "grad_mid",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 5.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80001
+  },
+  "dev-grad_mid-L4d32-s80002": {
+    "kind": "fault",
+    "scenario": "grad_mid",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 5.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80002
+  },
+  "dev-grad_mid-L4d32-s80003": {
+    "kind": "fault",
+    "scenario": "grad_mid",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 5.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80003
+  },
+  "dev-grad_mid-L4d32-s80004": {
+    "kind": "fault",
+    "scenario": "grad_mid",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 5.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80004
+  },
+  "dev-grad_mid-L4d32-s80005": {
+    "kind": "fault",
+    "scenario": "grad_mid",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 5.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80005
+  },
+  "dev-grad_large-L4d32-s80000": {
+    "kind": "fault",
+    "scenario": "grad_large",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 20.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80000
+  },
+  "dev-grad_large-L4d32-s80001": {
+    "kind": "fault",
+    "scenario": "grad_large",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 20.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80001
+  },
+  "dev-grad_large-L4d32-s80002": {
+    "kind": "fault",
+    "scenario": "grad_large",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 20.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80002
+  },
+  "dev-grad_large-L4d32-s80003": {
+    "kind": "fault",
+    "scenario": "grad_large",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 20.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80003
+  },
+  "dev-grad_large-L4d32-s80004": {
+    "kind": "fault",
+    "scenario": "grad_large",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 20.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80004
+  },
+  "dev-grad_large-L4d32-s80005": {
+    "kind": "fault",
+    "scenario": "grad_large",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 20.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80005
+  },
+  "dev-grad_extreme-L4d32-s80000": {
+    "kind": "fault",
+    "scenario": "grad_extreme",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 40.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80000
+  },
+  "dev-grad_extreme-L4d32-s80001": {
+    "kind": "fault",
+    "scenario": "grad_extreme",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 40.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80001
+  },
+  "dev-grad_extreme-L4d32-s80002": {
+    "kind": "fault",
+    "scenario": "grad_extreme",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 40.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80002
+  },
+  "dev-grad_extreme-L4d32-s80003": {
+    "kind": "fault",
+    "scenario": "grad_extreme",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 40.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80003
+  },
+  "dev-grad_extreme-L4d32-s80004": {
+    "kind": "fault",
+    "scenario": "grad_extreme",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 40.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80004
+  },
+  "dev-grad_extreme-L4d32-s80005": {
+    "kind": "fault",
+    "scenario": "grad_extreme",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": 40.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80005
+  },
+  "dev-nan_loss-L4d32-s80000": {
+    "kind": "fault",
+    "scenario": "nan_loss",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": -1.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80000
+  },
+  "dev-nan_loss-L4d32-s80001": {
+    "kind": "fault",
+    "scenario": "nan_loss",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": -1.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80001
+  },
+  "dev-nan_loss-L4d32-s80002": {
+    "kind": "fault",
+    "scenario": "nan_loss",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": -1.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80002
+  },
+  "dev-nan_loss-L4d32-s80003": {
+    "kind": "fault",
+    "scenario": "nan_loss",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": -1.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80003
+  },
+  "dev-nan_loss-L4d32-s80004": {
+    "kind": "fault",
+    "scenario": "nan_loss",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": -1.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80004
+  },
+  "dev-nan_loss-L4d32-s80005": {
+    "kind": "fault",
+    "scenario": "nan_loss",
+    "injected": true,
+    "injection_step": 110,
+    "magnitude": -1.0,
+    "layers": 4,
+    "d_model": 32,
+    "seed": 80005
+  }
+}

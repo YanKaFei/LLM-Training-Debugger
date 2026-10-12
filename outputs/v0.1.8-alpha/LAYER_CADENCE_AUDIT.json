@@ -1,0 +1,126 @@
+{
+  "steps": 120,
+  "repeats": 7,
+  "timing": {
+    "1": {
+      "median_step_s": 0.004392979000000352,
+      "events": 3842,
+      "events_per_step": 38.42,
+      "emit_us": 20.93058537220198
+    },
+    "5": {
+      "median_step_s": 0.004359854500000093,
+      "events": 3074,
+      "events_per_step": 30.74,
+      "emit_us": 21.54800357839948
+    }
+  },
+  "detection": {
+    "1": {
+      "runs": 9,
+      "fired": 6,
+      "incidents": 9,
+      "median_latency": 0,
+      "signature": [
+        [
+          "B_grad_explosion_4_11000",
+          90,
+          1
+        ],
+        [
+          "B_grad_explosion_4_11001",
+          90,
+          1
+        ],
+        [
+          "B_grad_explosion_4_11002",
+          90,
+          1
+        ],
+        [
+          "B_loss_spike_4_11000",
+          90,
+          1
+        ],
+        [
+          "B_loss_spike_4_11001",
+          90,
+          1
+        ],
+        [
+          "B_loss_spike_4_11002",
+          90,
+          1
+        ],
+        [
+          "B_nonfinite_grad_4_11000",
+          null,
+          1
+        ],
+        [
+          "B_nonfinite_grad_4_11001",
+          null,
+          1
+        ],
+        [
+          "B_nonfinite_grad_4_11002",
+          null,
+          1
+        ]
+      ]
+    },
+    "5": {
+      "runs": 9,
+      "fired": 6,
+      "incidents": 3,
+      "median_latency": 0,
+      "signature": [
+        [
+          "B_grad_explosion_4_11000",
+          90,
+          0
+        ],
+        [
+          "B_grad_explosion_4_11001",
+          90,
+          0
+        ],
+        [
+          "B_grad_explosion_4_11002",
+          90,
+          0
+        ],
+        [
+          "B_loss_spike_4_11000",
+          90,
+          0
+        ],
+        [
+          "B_loss_spike_4_11001",
+          90,
+          0
+        ],
+        [
+          "B_loss_spike_4_11002",
+          90,
+          0
+        ],
+        [
+          "B_nonfinite_grad_4_11000",
+          null,
+          1
+        ],
+        [
+          "B_nonfinite_grad_4_11001",
+          null,
+          1
+        ],
+        [
+          "B_nonfinite_grad_4_11002",
+          null,
+          1
+        ]
+      ]
+    }
+  }
+}

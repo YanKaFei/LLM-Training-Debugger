@@ -1,0 +1,7 @@
+{
+  "status": "UNRESOLVED",
+  "isolated_30_of_30_pass": "Phase 1.12A measurement",
+  "root_cause": "not identified",
+  "resource_boundary_tests": "not added",
+  "note": "cooldown_suppresses_evidence=False multiplies evidence volume; queue boundedness and drop accounting were not re-measured"
+}

@@ -1,0 +1,18 @@
+{
+  "layer": "episode",
+  "true_positives": 29,
+  "false_positives": 52,
+  "false_negatives": 56,
+  "true_negatives": 84,
+  "pre_injection": 0,
+  "duplicates": 4,
+  "abstained": 14,
+  "considered": 169,
+  "precision": 0.35802469135802467,
+  "recall": 0.3411764705882353,
+  "f1": 0.3493975903614458,
+  "median_delay_steps": 0,
+  "median_onset_error_steps": 0,
+  "median_confirmation_delay_steps": 0,
+  "abstention_rate": 0.08284023668639054
+}

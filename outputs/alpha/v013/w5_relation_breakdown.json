@@ -1,0 +1,29 @@
+{
+  "M1_gradient_then_nonfinite": {
+    "runs": 10,
+    "consequence_claims": 10,
+    "order_only": 10,
+    "antecedent_observable": 10,
+    "claim_supported": 10
+  },
+  "M2_standalone_nonfinite": {
+    "runs": 10,
+    "consequence_claims": 0,
+    "order_only": 0
+  },
+  "M3_two_independent_faults": {
+    "runs": 10,
+    "consequence_claims": 0,
+    "order_only": 10
+  },
+  "M4_gradient_plus_loss_noise": {
+    "runs": 10,
+    "consequence_claims": 0,
+    "order_only": 0
+  },
+  "M5_healthy_heavy_tail": {
+    "runs": 10,
+    "consequence_claims": 0,
+    "order_only": 0
+  }
+}

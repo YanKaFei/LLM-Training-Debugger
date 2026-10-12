@@ -1,0 +1,15 @@
+{
+  "eligible_fault_runs": 36,
+  "claims_made": 24,
+  "correct_claims": 24,
+  "false_claims": 0,
+  "abstained": 12,
+  "precision": 1.0,
+  "coverage": 0.6666666666666666,
+  "median_onset_error": 0.0,
+  "p90_onset_error": 0,
+  "median_confirmation_delay": 0.0,
+  "denominator": "eligible injected runs with a resolvable primary",
+  "pre_injection_confirmed_incidents": 0,
+  "corpus_caveat": "this corpus has 6 scenarios of which 4 are strong faults (x20/x40/NaN/loss-spike); precision 1.0 and coverage 0.667 are corpus-specific and MUST NOT be read as general detector quality"
+}

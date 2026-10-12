@@ -1,0 +1,33 @@
+[K0] healthy A done (100 runs)
+[K0] healthy B done (200 runs)
+[K0] fault A x1.5 done (1/2 configs, 220 rows)
+[K0] fault A x2.0 done (1/2 configs, 240 rows)
+[K0] fault A x2.5 done (1/2 configs, 260 rows)
+[K0] fault A x3.0 done (1/2 configs, 280 rows)
+[K0] fault A x4.0 done (1/2 configs, 300 rows)
+[K0] fault A x5.0 done (1/2 configs, 320 rows)
+[K0] fault A x7.0 done (1/2 configs, 340 rows)
+[K0] fault A x10.0 done (1/2 configs, 360 rows)
+[K0] fault A x12.0 done (1/2 configs, 380 rows)
+[K0] fault A x20.0 done (1/2 configs, 400 rows)
+[K0] fault A x25.0 done (1/2 configs, 420 rows)
+[K0] fault A x40.0 done (1/2 configs, 440 rows)
+[K0] fault B x1.5 done (2/2 configs, 460 rows)
+[K0] fault B x2.0 done (2/2 configs, 480 rows)
+[K0] fault B x2.5 done (2/2 configs, 500 rows)
+[K0] fault B x3.0 done (2/2 configs, 520 rows)
+[K0] fault B x4.0 done (2/2 configs, 540 rows)
+[K0] fault B x5.0 done (2/2 configs, 560 rows)
+[K0] fault B x7.0 done (2/2 configs, 580 rows)
+[K0] fault B x10.0 done (2/2 configs, 600 rows)
+[K0] fault B x12.0 done (2/2 configs, 620 rows)
+[K0] fault B x20.0 done (2/2 configs, 640 rows)
+[K0] fault B x25.0 done (2/2 configs, 660 rows)
+[K0] fault B x40.0 done (2/2 configs, 680 rows)
+[K0] 680 runs collected, 610 with a marginal detector fire
+
+healthy peak aggregate: n=144 p50=2.81 p99=31.07 max=75.31
+chosen A=8.165 B=16.33  precision=0.964 recall=0.457 healthy_confirmed=0.056
+qualifying operating points: 0
+monotonicity: monotone=False inversions=4 largest_drop=0.175 rank_corr=0.748
+elapsed 989s

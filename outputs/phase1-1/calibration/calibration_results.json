@@ -1,0 +1,2275 @@
+{
+  "ground_truth": [
+    {
+      "fault_type": "H0_healthy",
+      "seed": 1000,
+      "split": "calibration",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "H0_healthy",
+      "seed": 1001,
+      "split": "calibration",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "H0_healthy",
+      "seed": 1002,
+      "split": "holdout",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "H0_healthy",
+      "seed": 1003,
+      "split": "calibration",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "H0_healthy",
+      "seed": 1004,
+      "split": "calibration",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "H0_healthy",
+      "seed": 1005,
+      "split": "holdout",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 1000,
+      "split": "calibration",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 1001,
+      "split": "calibration",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 1002,
+      "split": "holdout",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 1003,
+      "split": "calibration",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 1004,
+      "split": "calibration",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 1005,
+      "split": "holdout",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 1000,
+      "split": "calibration",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 1001,
+      "split": "calibration",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 1002,
+      "split": "holdout",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 1003,
+      "split": "calibration",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 1004,
+      "split": "calibration",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 1005,
+      "split": "holdout",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "F1_isolated_loss_spike",
+      "seed": 1000,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ]
+    },
+    {
+      "fault_type": "F1_isolated_loss_spike",
+      "seed": 1001,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ]
+    },
+    {
+      "fault_type": "F1_isolated_loss_spike",
+      "seed": 1002,
+      "split": "holdout",
+      "injection_step": 120,
+      "injection_scope": "loss",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ]
+    },
+    {
+      "fault_type": "F1_isolated_loss_spike",
+      "seed": 1003,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ]
+    },
+    {
+      "fault_type": "F1_isolated_loss_spike",
+      "seed": 1004,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ]
+    },
+    {
+      "fault_type": "F1_isolated_loss_spike",
+      "seed": 1005,
+      "split": "holdout",
+      "injection_step": 120,
+      "injection_scope": "loss",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ]
+    },
+    {
+      "fault_type": "F2_sustained_divergence",
+      "seed": 1000,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "loss.trend_slope",
+        "loss.robust_zscore"
+      ]
+    },
+    {
+      "fault_type": "F2_sustained_divergence",
+      "seed": 1001,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "loss.trend_slope",
+        "loss.robust_zscore"
+      ]
+    },
+    {
+      "fault_type": "F2_sustained_divergence",
+      "seed": 1002,
+      "split": "holdout",
+      "injection_step": 120,
+      "injection_scope": "loss",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "loss.trend_slope",
+        "loss.robust_zscore"
+      ]
+    },
+    {
+      "fault_type": "F2_sustained_divergence",
+      "seed": 1003,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "loss.trend_slope",
+        "loss.robust_zscore"
+      ]
+    },
+    {
+      "fault_type": "F2_sustained_divergence",
+      "seed": 1004,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "loss.trend_slope",
+        "loss.robust_zscore"
+      ]
+    },
+    {
+      "fault_type": "F2_sustained_divergence",
+      "seed": 1005,
+      "split": "holdout",
+      "injection_step": 120,
+      "injection_scope": "loss",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "loss.trend_slope",
+        "loss.robust_zscore"
+      ]
+    },
+    {
+      "fault_type": "F3_gradient_explosion",
+      "seed": 1000,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "all_gradients",
+      "affected_layers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ]
+    },
+    {
+      "fault_type": "F3_gradient_explosion",
+      "seed": 1001,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "all_gradients",
+      "affected_layers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ]
+    },
+    {
+      "fault_type": "F3_gradient_explosion",
+      "seed": 1002,
+      "split": "holdout",
+      "injection_step": 120,
+      "injection_scope": "all_gradients",
+      "affected_layers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ]
+    },
+    {
+      "fault_type": "F3_gradient_explosion",
+      "seed": 1003,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "all_gradients",
+      "affected_layers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ]
+    },
+    {
+      "fault_type": "F3_gradient_explosion",
+      "seed": 1004,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "all_gradients",
+      "affected_layers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ]
+    },
+    {
+      "fault_type": "F3_gradient_explosion",
+      "seed": 1005,
+      "split": "holdout",
+      "injection_step": 120,
+      "injection_scope": "all_gradients",
+      "affected_layers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ]
+    },
+    {
+      "fault_type": "F4_nan_loss",
+      "seed": 1000,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss_or_gradient",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ]
+    },
+    {
+      "fault_type": "F4_nan_loss",
+      "seed": 1001,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss_or_gradient",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ]
+    },
+    {
+      "fault_type": "F4_nan_loss",
+      "seed": 1002,
+      "split": "holdout",
+      "injection_step": 120,
+      "injection_scope": "loss_or_gradient",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ]
+    },
+    {
+      "fault_type": "F4_nan_loss",
+      "seed": 1003,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss_or_gradient",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ]
+    },
+    {
+      "fault_type": "F4_nan_loss",
+      "seed": 1004,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss_or_gradient",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ]
+    },
+    {
+      "fault_type": "F4_nan_loss",
+      "seed": 1005,
+      "split": "holdout",
+      "injection_step": 120,
+      "injection_scope": "loss_or_gradient",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ]
+    },
+    {
+      "fault_type": "F5_inf_gradient",
+      "seed": 1000,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss_or_gradient",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ]
+    },
+    {
+      "fault_type": "F5_inf_gradient",
+      "seed": 1001,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss_or_gradient",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ]
+    },
+    {
+      "fault_type": "F5_inf_gradient",
+      "seed": 1002,
+      "split": "holdout",
+      "injection_step": 120,
+      "injection_scope": "loss_or_gradient",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ]
+    },
+    {
+      "fault_type": "F5_inf_gradient",
+      "seed": 1003,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss_or_gradient",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ]
+    },
+    {
+      "fault_type": "F5_inf_gradient",
+      "seed": 1004,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss_or_gradient",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ]
+    },
+    {
+      "fault_type": "F5_inf_gradient",
+      "seed": 1005,
+      "split": "holdout",
+      "injection_step": 120,
+      "injection_scope": "loss_or_gradient",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "numerics.finiteness"
+      ]
+    },
+    {
+      "fault_type": "F6_throughput_degradation",
+      "seed": 1000,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "throughput.regression"
+      ]
+    },
+    {
+      "fault_type": "F6_throughput_degradation",
+      "seed": 1001,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "throughput.regression"
+      ]
+    },
+    {
+      "fault_type": "F6_throughput_degradation",
+      "seed": 1002,
+      "split": "holdout",
+      "injection_step": 120,
+      "injection_scope": "loss",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "throughput.regression"
+      ]
+    },
+    {
+      "fault_type": "F6_throughput_degradation",
+      "seed": 1003,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "throughput.regression"
+      ]
+    },
+    {
+      "fault_type": "F6_throughput_degradation",
+      "seed": 1004,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "loss",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "throughput.regression"
+      ]
+    },
+    {
+      "fault_type": "F6_throughput_degradation",
+      "seed": 1005,
+      "split": "holdout",
+      "injection_step": 120,
+      "injection_scope": "loss",
+      "affected_layers": [],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "throughput.regression"
+      ]
+    },
+    {
+      "fault_type": "F7_lr_discontinuity_no_failure",
+      "seed": 1000,
+      "split": "calibration",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "F7_lr_discontinuity_no_failure",
+      "seed": 1001,
+      "split": "calibration",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "F7_lr_discontinuity_no_failure",
+      "seed": 1002,
+      "split": "holdout",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "F7_lr_discontinuity_no_failure",
+      "seed": 1003,
+      "split": "calibration",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "F7_lr_discontinuity_no_failure",
+      "seed": 1004,
+      "split": "calibration",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "F7_lr_discontinuity_no_failure",
+      "seed": 1005,
+      "split": "holdout",
+      "injection_step": null,
+      "injection_scope": "none",
+      "affected_layers": [],
+      "expected_symptom_window": [],
+      "expected_detectors": []
+    },
+    {
+      "fault_type": "F10_mixed_anomaly",
+      "seed": 1000,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "all_gradients",
+      "affected_layers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore",
+        "numerics.finiteness"
+      ]
+    },
+    {
+      "fault_type": "F10_mixed_anomaly",
+      "seed": 1001,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "all_gradients",
+      "affected_layers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore",
+        "numerics.finiteness"
+      ]
+    },
+    {
+      "fault_type": "F10_mixed_anomaly",
+      "seed": 1002,
+      "split": "holdout",
+      "injection_step": 120,
+      "injection_scope": "all_gradients",
+      "affected_layers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore",
+        "numerics.finiteness"
+      ]
+    },
+    {
+      "fault_type": "F10_mixed_anomaly",
+      "seed": 1003,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "all_gradients",
+      "affected_layers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore",
+        "numerics.finiteness"
+      ]
+    },
+    {
+      "fault_type": "F10_mixed_anomaly",
+      "seed": 1004,
+      "split": "calibration",
+      "injection_step": 120,
+      "injection_scope": "all_gradients",
+      "affected_layers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore",
+        "numerics.finiteness"
+      ]
+    },
+    {
+      "fault_type": "F10_mixed_anomaly",
+      "seed": 1005,
+      "split": "holdout",
+      "injection_step": 120,
+      "injection_scope": "all_gradients",
+      "affected_layers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "expected_symptom_window": [
+        118,
+        160
+      ],
+      "expected_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore",
+        "numerics.finiteness"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "fault_type": "H0_healthy",
+      "seed": 1000,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 134
+      },
+      "detector_errors": [],
+      "anomaly_count": 1
+    },
+    {
+      "fault_type": "H0_healthy",
+      "seed": 1001,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 100
+      },
+      "detector_errors": [],
+      "anomaly_count": 2
+    },
+    {
+      "fault_type": "H0_healthy",
+      "seed": 1002,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 61
+      },
+      "detector_errors": [],
+      "anomaly_count": 4
+    },
+    {
+      "fault_type": "H0_healthy",
+      "seed": 1003,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 98
+      },
+      "detector_errors": [],
+      "anomaly_count": 3
+    },
+    {
+      "fault_type": "H0_healthy",
+      "seed": 1004,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 64
+      },
+      "detector_errors": [],
+      "anomaly_count": 2
+    },
+    {
+      "fault_type": "H0_healthy",
+      "seed": 1005,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 74
+      },
+      "detector_errors": [],
+      "anomaly_count": 3
+    },
+    {
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 1000,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 51,
+        "loss.robust_zscore": 186
+      },
+      "detector_errors": [],
+      "anomaly_count": 4
+    },
+    {
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 1001,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 76
+      },
+      "detector_errors": [],
+      "anomaly_count": 1
+    },
+    {
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 1002,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 51
+      },
+      "detector_errors": [],
+      "anomaly_count": 5
+    },
+    {
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 1003,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 119
+      },
+      "detector_errors": [],
+      "anomaly_count": 2
+    },
+    {
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 1004,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 51
+      },
+      "detector_errors": [],
+      "anomaly_count": 2
+    },
+    {
+      "fault_type": "H1_heavy_tail_gradients",
+      "seed": 1005,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 102
+      },
+      "detector_errors": [],
+      "anomaly_count": 3
+    },
+    {
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 1000,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 89
+      },
+      "detector_errors": [],
+      "anomaly_count": 1
+    },
+    {
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 1001,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 56
+      },
+      "detector_errors": [],
+      "anomaly_count": 3
+    },
+    {
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 1002,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 50
+      },
+      "detector_errors": [],
+      "anomaly_count": 2
+    },
+    {
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 1003,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 127
+      },
+      "detector_errors": [],
+      "anomaly_count": 1
+    },
+    {
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 1004,
+      "split": "calibration",
+      "fired_detectors": [],
+      "onsets": {},
+      "detector_errors": [],
+      "anomaly_count": 0
+    },
+    {
+      "fault_type": "H2_noisy_healthy_loss",
+      "seed": 1005,
+      "split": "holdout",
+      "fired_detectors": [],
+      "onsets": {},
+      "detector_errors": [],
+      "anomaly_count": 0
+    },
+    {
+      "fault_type": "F1_isolated_loss_spike",
+      "seed": 1000,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore"
+      ],
+      "onsets": {
+        "loss.robust_zscore": 120,
+        "grad.robust_zscore": 134
+      },
+      "detector_errors": [],
+      "anomaly_count": 2
+    },
+    {
+      "fault_type": "F1_isolated_loss_spike",
+      "seed": 1001,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 100,
+        "loss.robust_zscore": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 3
+    },
+    {
+      "fault_type": "F1_isolated_loss_spike",
+      "seed": 1002,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 61,
+        "loss.robust_zscore": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 5
+    },
+    {
+      "fault_type": "F1_isolated_loss_spike",
+      "seed": 1003,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 98,
+        "loss.robust_zscore": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 4
+    },
+    {
+      "fault_type": "F1_isolated_loss_spike",
+      "seed": 1004,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 64,
+        "loss.robust_zscore": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 3
+    },
+    {
+      "fault_type": "F1_isolated_loss_spike",
+      "seed": 1005,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 74,
+        "loss.robust_zscore": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 4
+    },
+    {
+      "fault_type": "F2_sustained_divergence",
+      "seed": 1000,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore"
+      ],
+      "onsets": {
+        "loss.robust_zscore": 123,
+        "grad.robust_zscore": 134
+      },
+      "detector_errors": [],
+      "anomaly_count": 5
+    },
+    {
+      "fault_type": "F2_sustained_divergence",
+      "seed": 1001,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 100,
+        "loss.robust_zscore": 123
+      },
+      "detector_errors": [],
+      "anomaly_count": 9
+    },
+    {
+      "fault_type": "F2_sustained_divergence",
+      "seed": 1002,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 61,
+        "loss.robust_zscore": 122
+      },
+      "detector_errors": [],
+      "anomaly_count": 7
+    },
+    {
+      "fault_type": "F2_sustained_divergence",
+      "seed": 1003,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 98,
+        "loss.robust_zscore": 122
+      },
+      "detector_errors": [],
+      "anomaly_count": 5
+    },
+    {
+      "fault_type": "F2_sustained_divergence",
+      "seed": 1004,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 64,
+        "loss.robust_zscore": 122
+      },
+      "detector_errors": [],
+      "anomaly_count": 6
+    },
+    {
+      "fault_type": "F2_sustained_divergence",
+      "seed": 1005,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore",
+        "loss.trend_slope",
+        "throughput.regression"
+      ],
+      "onsets": {
+        "throughput.regression": 73,
+        "grad.robust_zscore": 74,
+        "loss.trend_slope": 93,
+        "loss.robust_zscore": 122
+      },
+      "detector_errors": [],
+      "anomaly_count": 9
+    },
+    {
+      "fault_type": "F3_gradient_explosion",
+      "seed": 1000,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 120,
+        "loss.robust_zscore": 122
+      },
+      "detector_errors": [],
+      "anomaly_count": 10
+    },
+    {
+      "fault_type": "F3_gradient_explosion",
+      "seed": 1001,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore",
+        "numerics.finiteness"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 100,
+        "loss.robust_zscore": 122,
+        "numerics.finiteness": 135
+      },
+      "detector_errors": [],
+      "anomaly_count": 141
+    },
+    {
+      "fault_type": "F3_gradient_explosion",
+      "seed": 1002,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 61,
+        "loss.robust_zscore": 122
+      },
+      "detector_errors": [],
+      "anomaly_count": 14
+    },
+    {
+      "fault_type": "F3_gradient_explosion",
+      "seed": 1003,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 98,
+        "loss.robust_zscore": 123
+      },
+      "detector_errors": [],
+      "anomaly_count": 10
+    },
+    {
+      "fault_type": "F3_gradient_explosion",
+      "seed": 1004,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore",
+        "numerics.finiteness"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 64,
+        "loss.robust_zscore": 122,
+        "numerics.finiteness": 136
+      },
+      "detector_errors": [],
+      "anomaly_count": 142
+    },
+    {
+      "fault_type": "F3_gradient_explosion",
+      "seed": 1005,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.robust_zscore",
+        "loss.trend_slope"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 74,
+        "loss.trend_slope": 93,
+        "loss.robust_zscore": 121
+      },
+      "detector_errors": [],
+      "anomaly_count": 11
+    },
+    {
+      "fault_type": "F4_nan_loss",
+      "seed": 1000,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "numerics.finiteness"
+      ],
+      "onsets": {
+        "numerics.finiteness": 120,
+        "grad.robust_zscore": 144
+      },
+      "detector_errors": [],
+      "anomaly_count": 3
+    },
+    {
+      "fault_type": "F4_nan_loss",
+      "seed": 1001,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "numerics.finiteness"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 100,
+        "numerics.finiteness": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 4
+    },
+    {
+      "fault_type": "F4_nan_loss",
+      "seed": 1002,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "numerics.finiteness"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 61,
+        "numerics.finiteness": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 6
+    },
+    {
+      "fault_type": "F4_nan_loss",
+      "seed": 1003,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "numerics.finiteness"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 98,
+        "numerics.finiteness": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 5
+    },
+    {
+      "fault_type": "F4_nan_loss",
+      "seed": 1004,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "numerics.finiteness"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 64,
+        "numerics.finiteness": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 4
+    },
+    {
+      "fault_type": "F4_nan_loss",
+      "seed": 1005,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "numerics.finiteness"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 74,
+        "numerics.finiteness": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 5
+    },
+    {
+      "fault_type": "F5_inf_gradient",
+      "seed": 1000,
+      "split": "calibration",
+      "fired_detectors": [
+        "numerics.finiteness"
+      ],
+      "onsets": {
+        "numerics.finiteness": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 162
+    },
+    {
+      "fault_type": "F5_inf_gradient",
+      "seed": 1001,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "numerics.finiteness",
+        "throughput.regression"
+      ],
+      "onsets": {
+        "throughput.regression": 77,
+        "grad.robust_zscore": 100,
+        "numerics.finiteness": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 167
+    },
+    {
+      "fault_type": "F5_inf_gradient",
+      "seed": 1002,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "numerics.finiteness"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 61,
+        "numerics.finiteness": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 166
+    },
+    {
+      "fault_type": "F5_inf_gradient",
+      "seed": 1003,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "numerics.finiteness"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 98,
+        "numerics.finiteness": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 165
+    },
+    {
+      "fault_type": "F5_inf_gradient",
+      "seed": 1004,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "numerics.finiteness"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 64,
+        "numerics.finiteness": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 164
+    },
+    {
+      "fault_type": "F5_inf_gradient",
+      "seed": 1005,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "numerics.finiteness"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 74,
+        "numerics.finiteness": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 165
+    },
+    {
+      "fault_type": "F6_throughput_degradation",
+      "seed": 1000,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "throughput.regression"
+      ],
+      "onsets": {
+        "throughput.regression": 120,
+        "grad.robust_zscore": 134
+      },
+      "detector_errors": [],
+      "anomaly_count": 4
+    },
+    {
+      "fault_type": "F6_throughput_degradation",
+      "seed": 1001,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "throughput.regression"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 100,
+        "throughput.regression": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 5
+    },
+    {
+      "fault_type": "F6_throughput_degradation",
+      "seed": 1002,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "throughput.regression"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 61,
+        "throughput.regression": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 7
+    },
+    {
+      "fault_type": "F6_throughput_degradation",
+      "seed": 1003,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "throughput.regression"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 98,
+        "throughput.regression": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 6
+    },
+    {
+      "fault_type": "F6_throughput_degradation",
+      "seed": 1004,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "throughput.regression"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 64,
+        "throughput.regression": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 5
+    },
+    {
+      "fault_type": "F6_throughput_degradation",
+      "seed": 1005,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "throughput.regression"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 74,
+        "throughput.regression": 120
+      },
+      "detector_errors": [],
+      "anomaly_count": 6
+    },
+    {
+      "fault_type": "F7_lr_discontinuity_no_failure",
+      "seed": 1000,
+      "split": "calibration",
+      "fired_detectors": [],
+      "onsets": {},
+      "detector_errors": [],
+      "anomaly_count": 0
+    },
+    {
+      "fault_type": "F7_lr_discontinuity_no_failure",
+      "seed": 1001,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "throughput.regression"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 100,
+        "throughput.regression": 166
+      },
+      "detector_errors": [],
+      "anomaly_count": 5
+    },
+    {
+      "fault_type": "F7_lr_discontinuity_no_failure",
+      "seed": 1002,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 61
+      },
+      "detector_errors": [],
+      "anomaly_count": 4
+    },
+    {
+      "fault_type": "F7_lr_discontinuity_no_failure",
+      "seed": 1003,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 98
+      },
+      "detector_errors": [],
+      "anomaly_count": 3
+    },
+    {
+      "fault_type": "F7_lr_discontinuity_no_failure",
+      "seed": 1004,
+      "split": "calibration",
+      "fired_detectors": [
+        "grad.robust_zscore"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 64
+      },
+      "detector_errors": [],
+      "anomaly_count": 2
+    },
+    {
+      "fault_type": "F7_lr_discontinuity_no_failure",
+      "seed": 1005,
+      "split": "holdout",
+      "fired_detectors": [
+        "grad.robust_zscore",
+        "loss.trend_slope"
+      ],
+      "onsets": {
+        "grad.robust_zscore": 74,
+        "loss.trend_slope": 93
+      },
+      "detector_errors": [],
+      "anomaly_count": 4
+    },
+    {
+      "fault_type": "F10_mixed_anomaly",
+      "seed": 1000,
+      "split": "calibration",
+      "fired_detectors": [],
+      "onsets": {},
+      "detector_errors": [],
+      "anomaly_count": 0,
+      "run_error": "AttributeError: 'float' object has no attribute 'detach'"
+    },
+    {
+      "fault_type": "F10_mixed_anomaly",
+      "seed": 1001,
+      "split": "calibration",
+      "fired_detectors": [],
+      "onsets": {},
+      "detector_errors": [],
+      "anomaly_count": 0,
+      "run_error": "AttributeError: 'float' object has no attribute 'detach'"
+    },
+    {
+      "fault_type": "F10_mixed_anomaly",
+      "seed": 1002,
+      "split": "holdout",
+      "fired_detectors": [],
+      "onsets": {},
+      "detector_errors": [],
+      "anomaly_count": 0,
+      "run_error": "AttributeError: 'float' object has no attribute 'detach'"
+    },
+    {
+      "fault_type": "F10_mixed_anomaly",
+      "seed": 1003,
+      "split": "calibration",
+      "fired_detectors": [],
+      "onsets": {},
+      "detector_errors": [],
+      "anomaly_count": 0,
+      "run_error": "AttributeError: 'float' object has no attribute 'detach'"
+    },
+    {
+      "fault_type": "F10_mixed_anomaly",
+      "seed": 1004,
+      "split": "calibration",
+      "fired_detectors": [],
+      "onsets": {},
+      "detector_errors": [],
+      "anomaly_count": 0,
+      "run_error": "AttributeError: 'float' object has no attribute 'detach'"
+    },
+    {
+      "fault_type": "F10_mixed_anomaly",
+      "seed": 1005,
+      "split": "holdout",
+      "fired_detectors": [],
+      "onsets": {},
+      "detector_errors": [],
+      "anomaly_count": 0,
+      "run_error": "AttributeError: 'float' object has no attribute 'detach'"
+    }
+  ],
+  "scores": {
+    "calibration": {
+      "grad.robust_zscore": {
+        "tp": 4,
+        "fp": 33,
+        "tn": 3,
+        "fn": 4,
+        "precision": 0.10810810810810811,
+        "recall": 0.5,
+        "f1": 0.17777777777777778,
+        "median_delay_steps": -19.0,
+        "false_positives_per_1k_steps": 3.75,
+        "recall_ci95": [
+          0.2152125268244419,
+          0.7847874731755581
+        ],
+        "precision_ci95": [
+          0.04285120520506268,
+          0.24708846415167166
+        ],
+        "runs": 44,
+        "note": "confidence interval not meaningful below 20 positives"
+      },
+      "loss.robust_zscore": {
+        "tp": 8,
+        "fp": 5,
+        "tn": 27,
+        "fn": 4,
+        "precision": 0.6153846153846154,
+        "recall": 0.6666666666666666,
+        "f1": 0.64,
+        "median_delay_steps": 3.0,
+        "false_positives_per_1k_steps": 0.5681818181818181,
+        "recall_ci95": [
+          0.3906175873976139,
+          0.8618821601026386
+        ],
+        "precision_ci95": [
+          0.3552248097226855,
+          0.8229055341876319
+        ],
+        "runs": 44,
+        "note": "confidence interval not meaningful below 20 positives"
+      },
+      "loss.trend_slope": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 40,
+        "fn": 4,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "median_delay_steps": null,
+        "false_positives_per_1k_steps": 0.0,
+        "recall_ci95": [
+          0.0,
+          0.48990002040399916
+        ],
+        "precision_ci95": null,
+        "runs": 44,
+        "note": "confidence interval not meaningful below 20 positives"
+      },
+      "numerics.finiteness": {
+        "tp": 8,
+        "fp": 2,
+        "tn": 30,
+        "fn": 4,
+        "precision": 0.8,
+        "recall": 0.6666666666666666,
+        "f1": 0.7272727272727272,
+        "median_delay_steps": 2.0,
+        "false_positives_per_1k_steps": 0.22727272727272727,
+        "recall_ci95": [
+          0.3906175873976139,
+          0.8618821601026386
+        ],
+        "precision_ci95": [
+          0.49015684672072346,
+          0.9433190520193067
+        ],
+        "runs": 44,
+        "note": "confidence interval not meaningful below 20 positives"
+      },
+      "throughput.regression": {
+        "tp": 4,
+        "fp": 2,
+        "tn": 38,
+        "fn": 0,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "median_delay_steps": 2.0,
+        "false_positives_per_1k_steps": 0.22727272727272727,
+        "recall_ci95": [
+          0.5100999795960008,
+          1.0
+        ],
+        "precision_ci95": [
+          0.2999883213415286,
+          0.903230667440783
+        ],
+        "runs": 44,
+        "note": "confidence interval not meaningful below 20 positives"
+      },
+      "__system__": {
+        "tp": 24,
+        "fp": 14,
+        "tn": 2,
+        "fn": 4,
+        "precision": 0.631578947368421,
+        "recall": 0.8571428571428571,
+        "false_positives_per_1k_steps": 1.590909090909091,
+        "healthy_runs_with_a_false_alarm": 14,
+        "healthy_runs": 16,
+        "runs": 44
+      }
+    },
+    "holdout": {
+      "grad.robust_zscore": {
+        "tp": 2,
+        "fp": 17,
+        "tn": 1,
+        "fn": 2,
+        "precision": 0.10526315789473684,
+        "recall": 0.5,
+        "f1": 0.17391304347826086,
+        "median_delay_steps": -50.5,
+        "false_positives_per_1k_steps": 3.8636363636363638,
+        "recall_ci95": [
+          0.15003570882017145,
+          0.8499642911798285
+        ],
+        "precision_ci95": [
+          0.029357941395096582,
+          0.31394550494841694
+        ],
+        "runs": 22,
+        "note": "confidence interval not meaningful below 20 positives"
+      },
+      "loss.robust_zscore": {
+        "tp": 4,
+        "fp": 2,
+        "tn": 14,
+        "fn": 2,
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1": 0.6666666666666666,
+        "median_delay_steps": 3.0,
+        "false_positives_per_1k_steps": 0.45454545454545453,
+        "recall_ci95": [
+          0.2999883213415286,
+          0.903230667440783
+        ],
+        "precision_ci95": [
+          0.2999883213415286,
+          0.903230667440783
+        ],
+        "runs": 22,
+        "note": "confidence interval not meaningful below 20 positives"
+      },
+      "loss.trend_slope": {
+        "tp": 1,
+        "fp": 2,
+        "tn": 18,
+        "fn": 1,
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "f1": 0.4,
+        "median_delay_steps": -25,
+        "false_positives_per_1k_steps": 0.45454545454545453,
+        "recall_ci95": [
+          0.09452865480086611,
+          0.905471345199134
+        ],
+        "precision_ci95": [
+          0.061490315276160515,
+          0.7923450448735121
+        ],
+        "runs": 22,
+        "note": "confidence interval not meaningful below 20 positives"
+      },
+      "numerics.finiteness": {
+        "tp": 4,
+        "fp": 0,
+        "tn": 16,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "median_delay_steps": 2.0,
+        "false_positives_per_1k_steps": 0.0,
+        "recall_ci95": [
+          0.2999883213415286,
+          0.903230667440783
+        ],
+        "precision_ci95": [
+          0.5100999795960008,
+          1.0
+        ],
+        "runs": 22,
+        "note": "confidence interval not meaningful below 20 positives"
+      },
+      "throughput.regression": {
+        "tp": 2,
+        "fp": 1,
+        "tn": 19,
+        "fn": 0,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "median_delay_steps": 2.0,
+        "false_positives_per_1k_steps": 0.22727272727272727,
+        "recall_ci95": [
+          0.3423719528896193,
+          1.0
+        ],
+        "precision_ci95": [
+          0.20765495512648788,
+          0.9385096847238393
+        ],
+        "runs": 22,
+        "note": "confidence interval not meaningful below 20 positives"
+      },
+      "__system__": {
+        "tp": 12,
+        "fp": 7,
+        "tn": 1,
+        "fn": 2,
+        "precision": 0.631578947368421,
+        "recall": 0.8571428571428571,
+        "false_positives_per_1k_steps": 1.590909090909091,
+        "healthy_runs_with_a_false_alarm": 7,
+        "healthy_runs": 8,
+        "runs": 22
+      }
+    },
+    "all": {
+      "grad.robust_zscore": {
+        "tp": 6,
+        "fp": 50,
+        "tn": 4,
+        "fn": 6,
+        "precision": 0.10714285714285714,
+        "recall": 0.5,
+        "f1": 0.17647058823529413,
+        "median_delay_steps": -32.0,
+        "false_positives_per_1k_steps": 3.787878787878788,
+        "recall_ci95": [
+          0.2537781703934222,
+          0.7462218296065778
+        ],
+        "precision_ci95": [
+          0.05003867458119088,
+          0.214686867516614
+        ],
+        "runs": 66,
+        "note": "confidence interval not meaningful below 20 positives"
+      },
+      "loss.robust_zscore": {
+        "tp": 12,
+        "fp": 7,
+        "tn": 41,
+        "fn": 6,
+        "precision": 0.631578947368421,
+        "recall": 0.6666666666666666,
+        "f1": 0.6486486486486486,
+        "median_delay_steps": 3.0,
+        "false_positives_per_1k_steps": 0.5303030303030304,
+        "recall_ci95": [
+          0.4374906934425036,
+          0.8372144563633714
+        ],
+        "precision_ci95": [
+          0.41039157498156714,
+          0.8085072762372616
+        ],
+        "runs": 66,
+        "note": "confidence interval not meaningful below 20 positives"
+      },
+      "loss.trend_slope": {
+        "tp": 1,
+        "fp": 2,
+        "tn": 58,
+        "fn": 5,
+        "precision": 0.3333333333333333,
+        "recall": 0.16666666666666666,
+        "f1": 0.2222222222222222,
+        "median_delay_steps": -25,
+        "false_positives_per_1k_steps": 0.15151515151515152,
+        "recall_ci95": [
+          0.030052585871730285,
+          0.563509436563646
+        ],
+        "precision_ci95": [
+          0.061490315276160515,
+          0.7923450448735121
+        ],
+        "runs": 66,
+        "note": "confidence interval not meaningful below 20 positives"
+      },
+      "numerics.finiteness": {
+        "tp": 12,
+        "fp": 2,
+        "tn": 46,
+        "fn": 6,
+        "precision": 0.8571428571428571,
+        "recall": 0.6666666666666666,
+        "f1": 0.75,
+        "median_delay_steps": 2.0,
+        "false_positives_per_1k_steps": 0.15151515151515152,
+        "recall_ci95": [
+          0.4374906934425036,
+          0.8372144563633714
+        ],
+        "precision_ci95": [
+          0.600580922361363,
+          0.9599069262620787
+        ],
+        "runs": 66,
+        "note": "confidence interval not meaningful below 20 positives"
+      },
+      "throughput.regression": {
+        "tp": 6,
+        "fp": 3,
+        "tn": 57,
+        "fn": 0,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "median_delay_steps": 2.0,
+        "false_positives_per_1k_steps": 0.22727272727272727,
+        "recall_ci95": [
+          0.6096569663469354,
+          1.0
+        ],
+        "precision_ci95": [
+          0.35419734749908977,
+          0.8794184013172571
+        ],
+        "runs": 66,
+        "note": "confidence interval not meaningful below 20 positives"
+      },
+      "__system__": {
+        "tp": 36,
+        "fp": 21,
+        "tn": 3,
+        "fn": 6,
+        "precision": 0.631578947368421,
+        "recall": 0.8571428571428571,
+        "false_positives_per_1k_steps": 1.590909090909091,
+        "healthy_runs_with_a_false_alarm": 21,
+        "healthy_runs": 24,
+        "runs": 66
+      }
+    }
+  },
+  "environment": {
+    "python_version": "3.9.6",
+    "python_implementation": "CPython",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "cpu_count": 12,
+    "os": {
+      "system": "Darwin",
+      "release": "27.0.0",
+      "version": "Darwin Kernel Version 27.0.0: Tue Aug 11 21:20:40 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6020"
+    },
+    "git_commit_sha": null,
+    "git_dirty": null,
+    "packages": {
+      "numpy": "2.0.2",
+      "pyarrow": "21.0.0",
+      "duckdb": "1.4.5"
+    },
+    "torch": {
+      "torch_version": "2.8.0",
+      "cuda_available": false,
+      "cuda_version": null,
+      "mps_available": true,
+      "num_threads": 8
+    },
+    "extra": {
+      "calibration": {
+        "runs": 66,
+        "steps_per_run": 200,
+        "injection_step": 120,
+        "layers": 4,
+        "classes": [
+          "H0_healthy",
+          "H1_heavy_tail_gradients",
+          "H2_noisy_healthy_loss",
+          "F1_isolated_loss_spike",
+          "F2_sustained_divergence",
+          "F3_gradient_explosion",
+          "F4_nan_loss",
+          "F5_inf_gradient",
+          "F6_throughput_degradation",
+          "F7_lr_discontinuity_no_failure",
+          "F10_mixed_anomaly"
+        ],
+        "seeds_per_class": 6
+      }
+    }
+  }
+}

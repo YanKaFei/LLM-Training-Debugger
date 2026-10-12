@@ -1,0 +1,92 @@
+{
+  "ORIGINAL_50": {
+    "A_CURRENT": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": null,
+      "recall": null,
+      "false_assoc": null
+    },
+    "C_WITH_WITNESS": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": null,
+      "recall": null,
+      "false_assoc": null
+    },
+    "B_EARLY_EVIDENCE": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": null,
+      "recall": null,
+      "false_assoc": null,
+      "note": "NOT IMPLEMENTED - early-evidence lane was not built; identical to A by construction"
+    }
+  },
+  "ADVERSARIAL_45": {
+    "A_CURRENT": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 10,
+      "tn": 35,
+      "precision": null,
+      "recall": 0.0,
+      "false_assoc": 0.0
+    },
+    "C_WITH_WITNESS": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 10,
+      "tn": 35,
+      "precision": null,
+      "recall": 0.0,
+      "false_assoc": 0.0
+    },
+    "B_EARLY_EVIDENCE": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 10,
+      "tn": 35,
+      "precision": null,
+      "recall": 0.0,
+      "false_assoc": 0.0,
+      "note": "NOT IMPLEMENTED - early-evidence lane was not built; identical to A by construction"
+    }
+  },
+  "TIMELINE_32": {
+    "A_CURRENT": {
+      "tp": 0,
+      "fp": 16,
+      "fn": 8,
+      "tn": 8,
+      "precision": 0.0,
+      "recall": 0.0,
+      "false_assoc": 0.6666666666666666
+    },
+    "C_WITH_WITNESS": {
+      "tp": 0,
+      "fp": 16,
+      "fn": 8,
+      "tn": 8,
+      "precision": 0.0,
+      "recall": 0.0,
+      "false_assoc": 0.6666666666666666
+    },
+    "B_EARLY_EVIDENCE": {
+      "tp": 0,
+      "fp": 16,
+      "fn": 8,
+      "tn": 8,
+      "precision": 0.0,
+      "recall": 0.0,
+      "false_assoc": 0.6666666666666666,
+      "note": "NOT IMPLEMENTED - early-evidence lane was not built; identical to A by construction"
+    }
+  }
+}

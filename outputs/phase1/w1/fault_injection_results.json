@@ -1,0 +1,400 @@
+{
+  "results": [
+    {
+      "name": "writer_crash",
+      "description": "Writer raises IOError on every batch",
+      "writer": "crashing",
+      "training_completed": true,
+      "arithmetic_correct": true,
+      "error": null,
+      "final_loss": 1.4794007467765604,
+      "losses_all_finite": true,
+      "counters": {
+        "emitted_total": 182,
+        "written_total": 0,
+        "events_dropped_total": 162,
+        "queue_overflow_total": 98,
+        "writer_failures_total": 3,
+        "observer_internal_errors_total": 0,
+        "validation_failures_total": 0,
+        "emergency_writes_total": 0
+      },
+      "queue": {
+        "accepted": 84,
+        "evicted": 20,
+        "rejected": 98,
+        "emergency_sink_failures": 0,
+        "depth": 0,
+        "max_depth": 64,
+        "evicted_by_priority": {
+          "P2": 20
+        },
+        "rejected_by_priority": {
+          "P2": 40,
+          "P1": 58
+        }
+      },
+      "writer_disabled": true,
+      "delivered_to_writer": 0
+    },
+    {
+      "name": "disk_full",
+      "description": "Writer raises OSError(ENOSPC, 'No space left on device')",
+      "writer": "disk-full",
+      "training_completed": true,
+      "arithmetic_correct": true,
+      "error": null,
+      "final_loss": 1.4794007467765604,
+      "losses_all_finite": true,
+      "counters": {
+        "emitted_total": 182,
+        "written_total": 0,
+        "events_dropped_total": 162,
+        "queue_overflow_total": 98,
+        "writer_failures_total": 3,
+        "observer_internal_errors_total": 0,
+        "validation_failures_total": 0,
+        "emergency_writes_total": 0
+      },
+      "queue": {
+        "accepted": 84,
+        "evicted": 20,
+        "rejected": 98,
+        "emergency_sink_failures": 0,
+        "depth": 0,
+        "max_depth": 64,
+        "evicted_by_priority": {
+          "P2": 20
+        },
+        "rejected_by_priority": {
+          "P2": 40,
+          "P1": 58
+        }
+      },
+      "writer_disabled": true,
+      "delivered_to_writer": 0
+    },
+    {
+      "name": "permission_denied",
+      "description": "Writer raises OSError(EACCES, 'Permission denied')",
+      "writer": "permission-denied",
+      "training_completed": true,
+      "arithmetic_correct": true,
+      "error": null,
+      "final_loss": 1.4794007467765604,
+      "losses_all_finite": true,
+      "counters": {
+        "emitted_total": 182,
+        "written_total": 0,
+        "events_dropped_total": 162,
+        "queue_overflow_total": 98,
+        "writer_failures_total": 3,
+        "observer_internal_errors_total": 0,
+        "validation_failures_total": 0,
+        "emergency_writes_total": 0
+      },
+      "queue": {
+        "accepted": 84,
+        "evicted": 20,
+        "rejected": 98,
+        "emergency_sink_failures": 0,
+        "depth": 0,
+        "max_depth": 64,
+        "evicted_by_priority": {
+          "P2": 20
+        },
+        "rejected_by_priority": {
+          "P2": 40,
+          "P1": 58
+        }
+      },
+      "writer_disabled": true,
+      "delivered_to_writer": 0
+    },
+    {
+      "name": "serialization_failure",
+      "description": "Writer raises TypeError from a non-serialisable payload",
+      "writer": "serialization-bomb",
+      "training_completed": true,
+      "arithmetic_correct": true,
+      "error": null,
+      "final_loss": 1.4794007467765604,
+      "losses_all_finite": true,
+      "counters": {
+        "emitted_total": 182,
+        "written_total": 0,
+        "events_dropped_total": 162,
+        "queue_overflow_total": 98,
+        "writer_failures_total": 4,
+        "observer_internal_errors_total": 0,
+        "validation_failures_total": 0,
+        "emergency_writes_total": 0
+      },
+      "queue": {
+        "accepted": 84,
+        "evicted": 20,
+        "rejected": 98,
+        "emergency_sink_failures": 0,
+        "depth": 0,
+        "max_depth": 64,
+        "evicted_by_priority": {
+          "P2": 20
+        },
+        "rejected_by_priority": {
+          "P2": 40,
+          "P1": 58
+        }
+      },
+      "writer_disabled": true,
+      "delivered_to_writer": 0
+    },
+    {
+      "name": "flush_and_close_crash",
+      "description": "Writer works but flush() and close() raise",
+      "writer": "exploding-close",
+      "training_completed": true,
+      "arithmetic_correct": true,
+      "error": null,
+      "final_loss": 1.4794007467765604,
+      "losses_all_finite": true,
+      "counters": {
+        "emitted_total": 182,
+        "written_total": 64,
+        "events_dropped_total": 98,
+        "queue_overflow_total": 98,
+        "writer_failures_total": 2,
+        "observer_internal_errors_total": 0,
+        "validation_failures_total": 0,
+        "emergency_writes_total": 0
+      },
+      "queue": {
+        "accepted": 84,
+        "evicted": 20,
+        "rejected": 98,
+        "emergency_sink_failures": 0,
+        "depth": 0,
+        "max_depth": 64,
+        "evicted_by_priority": {
+          "P2": 20
+        },
+        "rejected_by_priority": {
+          "P2": 40,
+          "P1": 58
+        }
+      },
+      "writer_disabled": true,
+      "delivered_to_writer": 0
+    },
+    {
+      "name": "transient_failure_then_recovery",
+      "description": "Writer fails the first 2 batches, then works",
+      "writer": "flaky",
+      "training_completed": true,
+      "arithmetic_correct": true,
+      "error": null,
+      "final_loss": 1.4794007467765604,
+      "losses_all_finite": true,
+      "counters": {
+        "emitted_total": 182,
+        "written_total": 48,
+        "events_dropped_total": 114,
+        "queue_overflow_total": 98,
+        "writer_failures_total": 2,
+        "observer_internal_errors_total": 0,
+        "validation_failures_total": 0,
+        "emergency_writes_total": 0
+      },
+      "queue": {
+        "accepted": 84,
+        "evicted": 20,
+        "rejected": 98,
+        "emergency_sink_failures": 0,
+        "depth": 0,
+        "max_depth": 64,
+        "evicted_by_priority": {
+          "P2": 20
+        },
+        "rejected_by_priority": {
+          "P2": 40,
+          "P1": 58
+        }
+      },
+      "writer_disabled": false,
+      "delivered_to_writer": 48
+    },
+    {
+      "name": "queue_overflow_slow_consumer",
+      "description": "Writer blocks 200 ms per batch; queue capped at 64",
+      "writer": "slow",
+      "training_completed": true,
+      "arithmetic_correct": true,
+      "error": null,
+      "final_loss": 1.4794007467765604,
+      "losses_all_finite": true,
+      "counters": {
+        "emitted_total": 182,
+        "written_total": 64,
+        "events_dropped_total": 98,
+        "queue_overflow_total": 98,
+        "writer_failures_total": 0,
+        "observer_internal_errors_total": 0,
+        "validation_failures_total": 0,
+        "emergency_writes_total": 0
+      },
+      "queue": {
+        "accepted": 84,
+        "evicted": 20,
+        "rejected": 98,
+        "emergency_sink_failures": 0,
+        "depth": 0,
+        "max_depth": 64,
+        "evicted_by_priority": {
+          "P2": 20
+        },
+        "rejected_by_priority": {
+          "P2": 40,
+          "P1": 58
+        }
+      },
+      "writer_disabled": false,
+      "delivered_to_writer": 64
+    },
+    {
+      "name": "writer_disabled_after_breaker",
+      "description": "Circuit breaker trips after 2 consecutive failures",
+      "writer": "failing",
+      "training_completed": true,
+      "arithmetic_correct": true,
+      "error": null,
+      "final_loss": 1.4794007467765604,
+      "losses_all_finite": true,
+      "counters": {
+        "emitted_total": 182,
+        "written_total": 0,
+        "events_dropped_total": 160,
+        "queue_overflow_total": 88,
+        "writer_failures_total": 3,
+        "observer_internal_errors_total": 0,
+        "validation_failures_total": 0,
+        "emergency_writes_total": 0
+      },
+      "queue": {
+        "accepted": 94,
+        "evicted": 22,
+        "rejected": 88,
+        "emergency_sink_failures": 0,
+        "depth": 0,
+        "max_depth": 64,
+        "evicted_by_priority": {
+          "P2": 22
+        },
+        "rejected_by_priority": {
+          "P2": 38,
+          "P1": 50
+        }
+      },
+      "writer_disabled": true,
+      "delivered_to_writer": 0
+    },
+    {
+      "name": "null_writer",
+      "description": "No destination configured at all",
+      "writer": "null",
+      "training_completed": true,
+      "arithmetic_correct": true,
+      "error": null,
+      "final_loss": 1.4794007467765604,
+      "losses_all_finite": true,
+      "counters": {
+        "emitted_total": 182,
+        "written_total": 107,
+        "events_dropped_total": 55,
+        "queue_overflow_total": 55,
+        "writer_failures_total": 0,
+        "observer_internal_errors_total": 0,
+        "validation_failures_total": 0,
+        "emergency_writes_total": 0
+      },
+      "queue": {
+        "accepted": 127,
+        "evicted": 20,
+        "rejected": 55,
+        "emergency_sink_failures": 0,
+        "depth": 0,
+        "max_depth": 64,
+        "evicted_by_priority": {
+          "P2": 20
+        },
+        "rejected_by_priority": {
+          "P2": 26,
+          "P1": 29
+        }
+      },
+      "writer_disabled": false,
+      "delivered_to_writer": 0
+    },
+    {
+      "name": "healthy_memory_writer_DEFAULT_CONFIG",
+      "description": "Control case: a working destination with production defaults",
+      "writer": "memory",
+      "training_completed": true,
+      "arithmetic_correct": true,
+      "error": null,
+      "final_loss": 1.4794007467765604,
+      "losses_all_finite": true,
+      "counters": {
+        "emitted_total": 182,
+        "written_total": 182,
+        "events_dropped_total": 0,
+        "queue_overflow_total": 0,
+        "writer_failures_total": 0,
+        "observer_internal_errors_total": 0,
+        "validation_failures_total": 0,
+        "emergency_writes_total": 0
+      },
+      "queue": {
+        "accepted": 182,
+        "evicted": 0,
+        "rejected": 0,
+        "emergency_sink_failures": 0,
+        "depth": 0,
+        "max_depth": 182,
+        "evicted_by_priority": {},
+        "rejected_by_priority": {}
+      },
+      "writer_disabled": false,
+      "delivered_to_writer": 182
+    }
+  ],
+  "environment": {
+    "python_version": "3.9.6",
+    "python_implementation": "CPython",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "cpu_count": 12,
+    "os": {
+      "system": "Darwin",
+      "release": "27.0.0",
+      "version": "Darwin Kernel Version 27.0.0: Tue Aug 11 21:20:40 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6020"
+    },
+    "git_commit_sha": null,
+    "git_dirty": null,
+    "packages": {
+      "numpy": "2.0.2",
+      "pyarrow": "21.0.0",
+      "duckdb": "1.4.5"
+    },
+    "torch": {
+      "torch_version": "2.8.0",
+      "cuda_available": false,
+      "cuda_version": null,
+      "mps_available": true,
+      "num_threads": 8
+    },
+    "extra": {
+      "fault_injection_steps": 30,
+      "layers": 2
+    }
+  }
+}

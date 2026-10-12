@@ -1,0 +1,364 @@
+{
+  "rule_version": "v0.1.3-2.0",
+  "single_fault_42run": {
+    "status": "VALID",
+    "missed_primary_faults": 18,
+    "validity": {
+      "status": "VALID",
+      "valid": true,
+      "issues": []
+    },
+    "levels": {
+      "SIGNAL": {
+        "level": "SIGNAL",
+        "eligible_population": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": null,
+        "abstained": 0,
+        "precision": null,
+        "recall": null,
+        "abstention_rate": null,
+        "recall_denominator": "NOT ESTIMABLE",
+        "precision_denominator": "NOT ESTIMABLE",
+        "notes": [
+          "no independent per-observation truth exists in this corpus, so signal-level precision/recall are NOT ESTIMABLE rather than assumed"
+        ]
+      },
+      "EPISODE": {
+        "level": "EPISODE",
+        "eligible_population": 97,
+        "tp": 29,
+        "fp": 60,
+        "fn": 0,
+        "tn": 8,
+        "abstained": 0,
+        "precision": 0.3258426966292135,
+        "recall": null,
+        "abstention_rate": 0.0,
+        "recall_denominator": "NOT ESTIMABLE",
+        "precision_denominator": "all episodes observed",
+        "notes": [
+          "episode-level recall is NOT ESTIMABLE: ground truth names the injected fault, not the number of episodes it should yield. A missed fault appears here as an extra episode (a precision error), not as a missing one. Use RUN-level recall for 'was the fault found'."
+        ]
+      },
+      "INCIDENT": {
+        "level": "INCIDENT",
+        "eligible_population": 25,
+        "tp": 18,
+        "fp": 7,
+        "fn": 0,
+        "tn": null,
+        "abstained": 0,
+        "precision": 0.72,
+        "recall": null,
+        "abstention_rate": 0.0,
+        "recall_denominator": "NOT ESTIMABLE",
+        "precision_denominator": "confirmed incidents",
+        "notes": [
+          "incident-level recall is NOT ESTIMABLE: there is no independent truth for how many incidents a fault should produce. `missed_primary_faults` reports the misses explicitly and always equals RUN-level fn."
+        ]
+      },
+      "RUN": {
+        "level": "RUN",
+        "eligible_population": 42,
+        "tp": 18,
+        "fp": 1,
+        "fn": 18,
+        "tn": 5,
+        "abstained": 12,
+        "precision": 0.9473684210526315,
+        "recall": 0.5,
+        "abstention_rate": 0.2857142857142857,
+        "recall_denominator": "eligible injected runs",
+        "precision_denominator": "all runs that opened an incident",
+        "notes": []
+      },
+      "RELATION": {
+        "level": "RELATION",
+        "eligible_population": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": null,
+        "abstained": 0,
+        "precision": null,
+        "recall": null,
+        "abstention_rate": null,
+        "recall_denominator": "expected relations (allowed secondary in window)",
+        "precision_denominator": "all persisted relations",
+        "notes": []
+      }
+    },
+    "order_only_relations": [],
+    "order_only_count": 0,
+    "unit_accounting": {
+      "runs": 42,
+      "episodes_classified": 97,
+      "runs_with_more_than_one_episode": 32,
+      "explanation": "The v0.1.1 scoreboard's 97 records were EPISODES, not runs. A run may hold several episodes, so the same injected fault can appear in more than one classification record. Episode counts must never be read as run counts."
+    }
+  },
+  "mixed_fault_50run": {
+    "status": "VALID",
+    "missed_primary_faults": 20,
+    "validity": {
+      "status": "VALID",
+      "valid": true,
+      "issues": []
+    },
+    "levels": {
+      "SIGNAL": {
+        "level": "SIGNAL",
+        "eligible_population": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": null,
+        "abstained": 0,
+        "precision": null,
+        "recall": null,
+        "abstention_rate": null,
+        "recall_denominator": "NOT ESTIMABLE",
+        "precision_denominator": "NOT ESTIMABLE",
+        "notes": [
+          "no independent per-observation truth exists in this corpus, so signal-level precision/recall are NOT ESTIMABLE rather than assumed"
+        ]
+      },
+      "EPISODE": {
+        "level": "EPISODE",
+        "eligible_population": 100,
+        "tp": 30,
+        "fp": 30,
+        "fn": 0,
+        "tn": 40,
+        "abstained": 0,
+        "precision": 0.5,
+        "recall": null,
+        "abstention_rate": 0.0,
+        "recall_denominator": "NOT ESTIMABLE",
+        "precision_denominator": "all episodes observed",
+        "notes": [
+          "episode-level recall is NOT ESTIMABLE: ground truth names the injected fault, not the number of episodes it should yield. A missed fault appears here as an extra episode (a precision error), not as a missing one. Use RUN-level recall for 'was the fault found'.",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match",
+          "secondary manifestation, not a primary match"
+        ]
+      },
+      "INCIDENT": {
+        "level": "INCIDENT",
+        "eligible_population": 40,
+        "tp": 20,
+        "fp": 20,
+        "fn": 0,
+        "tn": null,
+        "abstained": 0,
+        "precision": 0.5,
+        "recall": null,
+        "abstention_rate": 0.0,
+        "recall_denominator": "NOT ESTIMABLE",
+        "precision_denominator": "confirmed incidents",
+        "notes": [
+          "incident-level recall is NOT ESTIMABLE: there is no independent truth for how many incidents a fault should produce. `missed_primary_faults` reports the misses explicitly and always equals RUN-level fn."
+        ]
+      },
+      "RUN": {
+        "level": "RUN",
+        "eligible_population": 50,
+        "tp": 20,
+        "fp": 0,
+        "fn": 20,
+        "tn": 10,
+        "abstained": 10,
+        "precision": 1.0,
+        "recall": 0.5,
+        "abstention_rate": 0.2,
+        "recall_denominator": "eligible injected runs",
+        "precision_denominator": "all runs that opened an incident",
+        "notes": []
+      },
+      "RELATION": {
+        "level": "RELATION",
+        "eligible_population": 10,
+        "tp": 10,
+        "fp": 0,
+        "fn": 0,
+        "tn": null,
+        "abstained": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "abstention_rate": 0.0,
+        "recall_denominator": "expected relations (allowed secondary in window)",
+        "precision_denominator": "all persisted relations",
+        "notes": []
+      }
+    },
+    "order_only_relations": [
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 51,
+        "run_id": "mix-M1_gradient_then_nonfinite-L4d32-s90000"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 51,
+        "run_id": "mix-M1_gradient_then_nonfinite-L4d32-s90001"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 51,
+        "run_id": "mix-M1_gradient_then_nonfinite-L4d32-s90002"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 51,
+        "run_id": "mix-M1_gradient_then_nonfinite-L4d32-s90003"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 51,
+        "run_id": "mix-M1_gradient_then_nonfinite-L4d32-s90004"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 51,
+        "run_id": "mix-M1_gradient_then_nonfinite-L6d48-s90000"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 51,
+        "run_id": "mix-M1_gradient_then_nonfinite-L6d48-s90001"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 51,
+        "run_id": "mix-M1_gradient_then_nonfinite-L6d48-s90002"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 51,
+        "run_id": "mix-M1_gradient_then_nonfinite-L6d48-s90003"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 51,
+        "run_id": "mix-M1_gradient_then_nonfinite-L6d48-s90004"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 40,
+        "run_id": "mix-M3_two_independent_faults-L4d32-s90000"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 40,
+        "run_id": "mix-M3_two_independent_faults-L4d32-s90001"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 40,
+        "run_id": "mix-M3_two_independent_faults-L4d32-s90002"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 40,
+        "run_id": "mix-M3_two_independent_faults-L4d32-s90003"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 40,
+        "run_id": "mix-M3_two_independent_faults-L4d32-s90004"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 40,
+        "run_id": "mix-M3_two_independent_faults-L6d48-s90000"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 40,
+        "run_id": "mix-M3_two_independent_faults-L6d48-s90001"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 40,
+        "run_id": "mix-M3_two_independent_faults-L6d48-s90002"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 40,
+        "run_id": "mix-M3_two_independent_faults-L6d48-s90003"
+      },
+      {
+        "relation_type": "PRECEDES",
+        "target": "NAN_DETECTED",
+        "gap": 40,
+        "run_id": "mix-M3_two_independent_faults-L6d48-s90004"
+      }
+    ],
+    "order_only_count": 20,
+    "unit_accounting": {
+      "runs": 50,
+      "episodes_classified": 100,
+      "runs_with_more_than_one_episode": 26,
+      "explanation": "The v0.1.1 scoreboard's 97 records were EPISODES, not runs. A run may hold several episodes, so the same injected fault can appear in more than one classification record. Episode counts must never be read as run counts."
+    }
+  }
+}

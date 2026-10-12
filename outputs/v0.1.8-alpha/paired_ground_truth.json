@@ -1,0 +1,110 @@
+{
+  "A_grad_explosion_4_11000|B_grad_explosion_4_11000": {
+    "pair": "grad_explosion",
+    "fault": "grad",
+    "seed": 11000,
+    "run_a": "A_grad_explosion_4_11000",
+    "run_b": "B_grad_explosion_4_11000",
+    "injection_step": 90,
+    "true_divergence_step": 90
+  },
+  "A_grad_explosion_4_11001|B_grad_explosion_4_11001": {
+    "pair": "grad_explosion",
+    "fault": "grad",
+    "seed": 11001,
+    "run_a": "A_grad_explosion_4_11001",
+    "run_b": "B_grad_explosion_4_11001",
+    "injection_step": 90,
+    "true_divergence_step": 90
+  },
+  "A_grad_explosion_4_11002|B_grad_explosion_4_11002": {
+    "pair": "grad_explosion",
+    "fault": "grad",
+    "seed": 11002,
+    "run_a": "A_grad_explosion_4_11002",
+    "run_b": "B_grad_explosion_4_11002",
+    "injection_step": 90,
+    "true_divergence_step": 90
+  },
+  "A_loss_spike_4_11000|B_loss_spike_4_11000": {
+    "pair": "loss_spike",
+    "fault": "loss",
+    "seed": 11000,
+    "run_a": "A_loss_spike_4_11000",
+    "run_b": "B_loss_spike_4_11000",
+    "injection_step": 90,
+    "true_divergence_step": 90
+  },
+  "A_loss_spike_4_11001|B_loss_spike_4_11001": {
+    "pair": "loss_spike",
+    "fault": "loss",
+    "seed": 11001,
+    "run_a": "A_loss_spike_4_11001",
+    "run_b": "B_loss_spike_4_11001",
+    "injection_step": 90,
+    "true_divergence_step": 90
+  },
+  "A_loss_spike_4_11002|B_loss_spike_4_11002": {
+    "pair": "loss_spike",
+    "fault": "loss",
+    "seed": 11002,
+    "run_a": "A_loss_spike_4_11002",
+    "run_b": "B_loss_spike_4_11002",
+    "injection_step": 90,
+    "true_divergence_step": 90
+  },
+  "A_nonfinite_grad_4_11000|B_nonfinite_grad_4_11000": {
+    "pair": "nonfinite_grad",
+    "fault": "nonfinite",
+    "seed": 11000,
+    "run_a": "A_nonfinite_grad_4_11000",
+    "run_b": "B_nonfinite_grad_4_11000",
+    "injection_step": 90,
+    "true_divergence_step": 90
+  },
+  "A_nonfinite_grad_4_11001|B_nonfinite_grad_4_11001": {
+    "pair": "nonfinite_grad",
+    "fault": "nonfinite",
+    "seed": 11001,
+    "run_a": "A_nonfinite_grad_4_11001",
+    "run_b": "B_nonfinite_grad_4_11001",
+    "injection_step": 90,
+    "true_divergence_step": 90
+  },
+  "A_nonfinite_grad_4_11002|B_nonfinite_grad_4_11002": {
+    "pair": "nonfinite_grad",
+    "fault": "nonfinite",
+    "seed": 11002,
+    "run_a": "A_nonfinite_grad_4_11002",
+    "run_b": "B_nonfinite_grad_4_11002",
+    "injection_step": 90,
+    "true_divergence_step": 90
+  },
+  "A_clean_control_4_11000|B_clean_control_4_11000": {
+    "pair": "clean_control",
+    "fault": "none",
+    "seed": 11000,
+    "run_a": "A_clean_control_4_11000",
+    "run_b": "B_clean_control_4_11000",
+    "injection_step": null,
+    "true_divergence_step": null
+  },
+  "A_clean_control_4_11001|B_clean_control_4_11001": {
+    "pair": "clean_control",
+    "fault": "none",
+    "seed": 11001,
+    "run_a": "A_clean_control_4_11001",
+    "run_b": "B_clean_control_4_11001",
+    "injection_step": null,
+    "true_divergence_step": null
+  },
+  "A_clean_control_4_11002|B_clean_control_4_11002": {
+    "pair": "clean_control",
+    "fault": "none",
+    "seed": 11002,
+    "run_a": "A_clean_control_4_11002",
+    "run_b": "B_clean_control_4_11002",
+    "injection_step": null,
+    "true_divergence_step": null
+  }
+}

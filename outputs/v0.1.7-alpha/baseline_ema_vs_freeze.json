@@ -1,0 +1,51 @@
+{
+  "config": {
+    "alpha": 0.97,
+    "z_thres": 2.5,
+    "warmup": 25
+  },
+  "shapes": {
+    "sustained_x5": {
+      "freeze": {
+        "first_ready_step": 21,
+        "max_ratio": 5.0,
+        "final_ratio": 5.0,
+        "n_scored": 179
+      },
+      "ema_clipped": {
+        "first_ready_step": 25,
+        "max_ratio": 5.0,
+        "final_ratio": 5.0,
+        "n_scored": 175
+      }
+    },
+    "benign_recurring_then_growth": {
+      "freeze": {
+        "first_ready_step": 21,
+        "max_ratio": 2.2,
+        "final_ratio": 2.2,
+        "n_scored": 179
+      },
+      "ema_clipped": {
+        "first_ready_step": 25,
+        "max_ratio": 2.194544090383669,
+        "final_ratio": 2.1882903392056456,
+        "n_scored": 175
+      }
+    },
+    "late_level_rise": {
+      "freeze": {
+        "first_ready_step": 21,
+        "max_ratio": 4.0,
+        "final_ratio": 4.0,
+        "n_scored": 179
+      },
+      "ema_clipped": {
+        "first_ready_step": 25,
+        "max_ratio": 4.0,
+        "final_ratio": 4.0,
+        "n_scored": 175
+      }
+    }
+  }
+}

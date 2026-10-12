@@ -1,0 +1,71 @@
+{
+  "fusion_rule_version": "phase1.3-1.0",
+  "verdicts": [
+    "CONFIRMED_INCIDENT",
+    "CANDIDATE_ONLY",
+    "INSUFFICIENT_EVIDENCE",
+    "NO_ANOMALY"
+  ],
+  "promotable_episode_states": [
+    "CONFIRMED"
+  ],
+  "rules": [
+    {
+      "rule_id": "promote.numerics.certain",
+      "version": "phase1.3-1.0",
+      "description": "A confirmed episode whose observations are CERTAIN (a measured non-finite value) opens an incident alone.",
+      "anomaly_types": [
+        "NAN_DETECTED",
+        "INF_DETECTED"
+      ],
+      "min_confirmed_episodes": 1,
+      "accepted_classes": [
+        "CERTAIN"
+      ],
+      "allow_concordant_weak": false,
+      "min_weak_episodes": 3,
+      "severity": "error"
+    },
+    {
+      "rule_id": "promote.strong.single",
+      "version": "phase1.3-1.0",
+      "description": "One confirmed episode with STRONG evidence (aggregate signal departed, or cross-layer multiplicity at or above the measured threshold) opens an incident.",
+      "anomaly_types": [
+        "NAN_DETECTED",
+        "INF_DETECTED",
+        "GRADIENT_EXPLOSION",
+        "LOSS_SPIKE",
+        "LOSS_DIVERGENCE",
+        "THROUGHPUT_REGRESSION"
+      ],
+      "min_confirmed_episodes": 1,
+      "accepted_classes": [
+        "CERTAIN",
+        "STRONG"
+      ],
+      "allow_concordant_weak": false,
+      "min_weak_episodes": 3,
+      "severity": "warn"
+    },
+    {
+      "rule_id": "promote.concordant.weak",
+      "version": "phase1.3-1.0",
+      "description": "Three or more concordant confirmed WEAK episodes of the same anomaly type promote jointly. A single WEAK episode never promotes.",
+      "anomaly_types": [
+        "GRADIENT_EXPLOSION",
+        "LOSS_SPIKE",
+        "LOSS_DIVERGENCE",
+        "THROUGHPUT_REGRESSION"
+      ],
+      "min_confirmed_episodes": 3,
+      "accepted_classes": [],
+      "allow_concordant_weak": true,
+      "min_weak_episodes": 3,
+      "severity": "warn"
+    }
+  ],
+  "promotion_disabled_types": [
+    "LOSS_SPIKE"
+  ],
+  "note": "Deterministic. No learned component, no language model. Evaluated in order; the first matching rule promotes."
+}

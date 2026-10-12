@@ -1,0 +1,442 @@
+{
+  "runs": 54,
+  "configurations": {
+    "WITNESS_DISABLED": {
+      "true_positive": 4,
+      "false_positive": 0,
+      "false_negative": 20,
+      "true_negative": 30,
+      "not_applicable": 0,
+      "positive_cases": 24,
+      "negative_cases": 30,
+      "precision": 1.0,
+      "recall": 0.16666666666666666,
+      "positive_coverage": 0.16666666666666666,
+      "negative_rejection_rate": 1.0,
+      "false_association_rate": 0.0,
+      "true_abstention_rate": 0.2,
+      "order_only_on_positive": 4,
+      "order_only_on_negative": 6,
+      "failures": [
+        {
+          "run_id": "wc-C1-L4d32-s97002",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C1",
+          "observed": [],
+          "expected": "real parameter corruption at the update, then a downstream NaN"
+        },
+        {
+          "run_id": "wc-C1-L6d48-s97000",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C1",
+          "observed": [],
+          "expected": "real parameter corruption at the update, then a downstream NaN"
+        },
+        {
+          "run_id": "wc-C1-L6d48-s97001",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C1",
+          "observed": [],
+          "expected": "real parameter corruption at the update, then a downstream NaN"
+        },
+        {
+          "run_id": "wc-C1-L6d48-s97002",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C1",
+          "observed": [],
+          "expected": "real parameter corruption at the update, then a downstream NaN"
+        },
+        {
+          "run_id": "wc-C4-L4d32-s97000",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C4",
+          "observed": [],
+          "expected": "the parameters stayed finite through the update, but the next forward pass genuinely overflowed"
+        },
+        {
+          "run_id": "wc-C4-L4d32-s97001",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C4",
+          "observed": [],
+          "expected": "the parameters stayed finite through the update, but the next forward pass genuinely overflowed"
+        },
+        {
+          "run_id": "wc-C4-L4d32-s97002",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C4",
+          "observed": [],
+          "expected": "the parameters stayed finite through the update, but the next forward pass genuinely overflowed"
+        },
+        {
+          "run_id": "wc-C4-L6d48-s97000",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C4",
+          "observed": [],
+          "expected": "the parameters stayed finite through the update, but the next forward pass genuinely overflowed"
+        },
+        {
+          "run_id": "wc-C4-L6d48-s97001",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C4",
+          "observed": [],
+          "expected": "the parameters stayed finite through the update, but the next forward pass genuinely overflowed"
+        },
+        {
+          "run_id": "wc-C4-L6d48-s97002",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C4",
+          "observed": [],
+          "expected": "the parameters stayed finite through the update, but the next forward pass genuinely overflowed"
+        },
+        {
+          "run_id": "wc-C7-L4d32-s97000",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C7",
+          "observed": [],
+          "expected": "gradient accumulation: a real propagation on the optimizer step"
+        },
+        {
+          "run_id": "wc-C7-L4d32-s97001",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C7",
+          "observed": [],
+          "expected": "gradient accumulation: a real propagation on the optimizer step"
+        },
+        {
+          "run_id": "wc-C7-L4d32-s97002",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C7",
+          "observed": [],
+          "expected": "gradient accumulation: a real propagation on the optimizer step"
+        },
+        {
+          "run_id": "wc-C7-L6d48-s97001",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C7",
+          "observed": [],
+          "expected": "gradient accumulation: a real propagation on the optimizer step"
+        },
+        {
+          "run_id": "wc-C7-L6d48-s97002",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C7",
+          "observed": [],
+          "expected": "gradient accumulation: a real propagation on the optimizer step"
+        },
+        {
+          "run_id": "wc-C8-L4d32-s97000",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C8",
+          "observed": [],
+          "expected": "a real propagation whose manifestation is delayed past the window"
+        },
+        {
+          "run_id": "wc-C8-L4d32-s97001",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C8",
+          "observed": [],
+          "expected": "a real propagation whose manifestation is delayed past the window"
+        },
+        {
+          "run_id": "wc-C8-L4d32-s97002",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C8",
+          "observed": [],
+          "expected": "a real propagation whose manifestation is delayed past the window"
+        },
+        {
+          "run_id": "wc-C8-L6d48-s97001",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C8",
+          "observed": [],
+          "expected": "a real propagation whose manifestation is delayed past the window"
+        },
+        {
+          "run_id": "wc-C8-L6d48-s97002",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C8",
+          "observed": [],
+          "expected": "a real propagation whose manifestation is delayed past the window"
+        }
+      ],
+      "per_case": {
+        "C1": {
+          "runs": 6,
+          "consequence_claims": 6,
+          "order_only": 10,
+          "opportunity": "positive"
+        },
+        "C2": {
+          "runs": 6,
+          "consequence_claims": 0,
+          "order_only": 0,
+          "opportunity": "negative"
+        },
+        "C3": {
+          "runs": 6,
+          "consequence_claims": 0,
+          "order_only": 18,
+          "opportunity": "negative"
+        },
+        "C4": {
+          "runs": 6,
+          "consequence_claims": 0,
+          "order_only": 0,
+          "opportunity": "positive"
+        },
+        "C5": {
+          "runs": 6,
+          "consequence_claims": 0,
+          "order_only": 0,
+          "opportunity": "negative"
+        },
+        "C6": {
+          "runs": 6,
+          "consequence_claims": 0,
+          "order_only": 0,
+          "opportunity": "negative"
+        },
+        "C7": {
+          "runs": 6,
+          "consequence_claims": 3,
+          "order_only": 5,
+          "opportunity": "positive"
+        },
+        "C8": {
+          "runs": 6,
+          "consequence_claims": 3,
+          "order_only": 5,
+          "opportunity": "positive"
+        },
+        "C9": {
+          "runs": 6,
+          "consequence_claims": 0,
+          "order_only": 0,
+          "opportunity": "negative"
+        }
+      }
+    },
+    "WITNESS_ENABLED": {
+      "true_positive": 4,
+      "false_positive": 0,
+      "false_negative": 20,
+      "true_negative": 30,
+      "not_applicable": 0,
+      "positive_cases": 24,
+      "negative_cases": 30,
+      "precision": 1.0,
+      "recall": 0.16666666666666666,
+      "positive_coverage": 0.16666666666666666,
+      "negative_rejection_rate": 1.0,
+      "false_association_rate": 0.0,
+      "true_abstention_rate": 0.2,
+      "order_only_on_positive": 4,
+      "order_only_on_negative": 6,
+      "failures": [
+        {
+          "run_id": "wc-C1-L4d32-s97002",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C1",
+          "observed": [],
+          "expected": "real parameter corruption at the update, then a downstream NaN"
+        },
+        {
+          "run_id": "wc-C1-L6d48-s97000",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C1",
+          "observed": [],
+          "expected": "real parameter corruption at the update, then a downstream NaN"
+        },
+        {
+          "run_id": "wc-C1-L6d48-s97001",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C1",
+          "observed": [],
+          "expected": "real parameter corruption at the update, then a downstream NaN"
+        },
+        {
+          "run_id": "wc-C1-L6d48-s97002",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C1",
+          "observed": [],
+          "expected": "real parameter corruption at the update, then a downstream NaN"
+        },
+        {
+          "run_id": "wc-C4-L4d32-s97000",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C4",
+          "observed": [],
+          "expected": "the parameters stayed finite through the update, but the next forward pass genuinely overflowed"
+        },
+        {
+          "run_id": "wc-C4-L4d32-s97001",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C4",
+          "observed": [],
+          "expected": "the parameters stayed finite through the update, but the next forward pass genuinely overflowed"
+        },
+        {
+          "run_id": "wc-C4-L4d32-s97002",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C4",
+          "observed": [],
+          "expected": "the parameters stayed finite through the update, but the next forward pass genuinely overflowed"
+        },
+        {
+          "run_id": "wc-C4-L6d48-s97000",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C4",
+          "observed": [],
+          "expected": "the parameters stayed finite through the update, but the next forward pass genuinely overflowed"
+        },
+        {
+          "run_id": "wc-C4-L6d48-s97001",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C4",
+          "observed": [],
+          "expected": "the parameters stayed finite through the update, but the next forward pass genuinely overflowed"
+        },
+        {
+          "run_id": "wc-C4-L6d48-s97002",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C4",
+          "observed": [],
+          "expected": "the parameters stayed finite through the update, but the next forward pass genuinely overflowed"
+        },
+        {
+          "run_id": "wc-C7-L4d32-s97000",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C7",
+          "observed": [],
+          "expected": "gradient accumulation: a real propagation on the optimizer step"
+        },
+        {
+          "run_id": "wc-C7-L4d32-s97001",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C7",
+          "observed": [],
+          "expected": "gradient accumulation: a real propagation on the optimizer step"
+        },
+        {
+          "run_id": "wc-C7-L4d32-s97002",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C7",
+          "observed": [],
+          "expected": "gradient accumulation: a real propagation on the optimizer step"
+        },
+        {
+          "run_id": "wc-C7-L6d48-s97001",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C7",
+          "observed": [],
+          "expected": "gradient accumulation: a real propagation on the optimizer step"
+        },
+        {
+          "run_id": "wc-C7-L6d48-s97002",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C7",
+          "observed": [],
+          "expected": "gradient accumulation: a real propagation on the optimizer step"
+        },
+        {
+          "run_id": "wc-C8-L4d32-s97000",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C8",
+          "observed": [],
+          "expected": "a real propagation whose manifestation is delayed past the window"
+        },
+        {
+          "run_id": "wc-C8-L4d32-s97001",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C8",
+          "observed": [],
+          "expected": "a real propagation whose manifestation is delayed past the window"
+        },
+        {
+          "run_id": "wc-C8-L4d32-s97002",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C8",
+          "observed": [],
+          "expected": "a real propagation whose manifestation is delayed past the window"
+        },
+        {
+          "run_id": "wc-C8-L6d48-s97001",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C8",
+          "observed": [],
+          "expected": "a real propagation whose manifestation is delayed past the window"
+        },
+        {
+          "run_id": "wc-C8-L6d48-s97002",
+          "class": "MISSED_CONSEQUENCE",
+          "case": "C8",
+          "observed": [],
+          "expected": "a real propagation whose manifestation is delayed past the window"
+        }
+      ],
+      "per_case": {
+        "C1": {
+          "runs": 6,
+          "consequence_claims": 6,
+          "order_only": 10,
+          "opportunity": "positive"
+        },
+        "C2": {
+          "runs": 6,
+          "consequence_claims": 0,
+          "order_only": 0,
+          "opportunity": "negative"
+        },
+        "C3": {
+          "runs": 6,
+          "consequence_claims": 0,
+          "order_only": 18,
+          "opportunity": "negative"
+        },
+        "C4": {
+          "runs": 6,
+          "consequence_claims": 0,
+          "order_only": 0,
+          "opportunity": "positive"
+        },
+        "C5": {
+          "runs": 6,
+          "consequence_claims": 0,
+          "order_only": 0,
+          "opportunity": "negative"
+        },
+        "C6": {
+          "runs": 6,
+          "consequence_claims": 0,
+          "order_only": 0,
+          "opportunity": "negative"
+        },
+        "C7": {
+          "runs": 6,
+          "consequence_claims": 3,
+          "order_only": 5,
+          "opportunity": "positive"
+        },
+        "C8": {
+          "runs": 6,
+          "consequence_claims": 3,
+          "order_only": 5,
+          "opportunity": "positive"
+        },
+        "C9": {
+          "runs": 6,
+          "consequence_claims": 0,
+          "order_only": 0,
+          "opportunity": "negative"
+        }
+      }
+    }
+  },
+  "paired_difference": {
+    "recovered_true": 0,
+    "new_false": 0,
+    "lost_true": 0,
+    "correctly_rejected_delta": 0,
+    "abstention_delta": 0
+  }
+}

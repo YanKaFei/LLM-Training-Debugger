@@ -1,0 +1,4 @@
+{
+  "status": "NOT_RUN",
+  "reason": "J6 development targets not met; smoke is gated on J6 per the brief"
+}

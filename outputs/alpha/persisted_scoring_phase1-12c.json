@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "PRIMARY_TRUE_POSITIVE": 0,
+    "SECONDARY_TRUE_MANIFESTATION": 0,
+    "UNRELATED_FALSE_POSITIVE": 7,
+    "DUPLICATE_TOP_LEVEL_INCIDENT": 5,
+    "CORRECT_ABSTENTION": 6,
+    "MISSED_PRIMARY": 0
+  },
+  "total_observations": 18,
+  "primary_precision": 0.0,
+  "primary_recall": null,
+  "secondary_precision": 0.0,
+  "secondary_recall": null,
+  "duplicate_top_level_incident_rate": 0.2777777777777778,
+  "duplicate_top_level_incidents": 5,
+  "relation_precision": 0.0,
+  "relation_recall": null,
+  "primary_runs": 6,
+  "primary_runs_found": 0,
+  "misclassification_rate": 0.6666666666666666,
+  "note": "A SECONDARY_TRUE_MANIFESTATION is a correct observation of a real consequence. A DUPLICATE_TOP_LEVEL_INCIDENT observes the same thing but claims it as an independent root cause, and is an error. They are deliberately different classes."
+}

@@ -1,0 +1,103 @@
+{
+  "rows": [
+    {
+      "workload": "tiny (4L, d32)",
+      "n_layers": 4,
+      "d_model": 32,
+      "baseline_median_ms": 4.662770999999566,
+      "baseline_p95_ms": 4.91104199999981,
+      "modes": {
+        "core": {
+          "median_ms": 5.1373749999994445,
+          "added_ms": 0.47460399999987857,
+          "relative_pct": 10.178582649671682,
+          "p95_ms": 5.590792000000455
+        },
+        "core_layers": {
+          "median_ms": 5.176437499999409,
+          "added_ms": 0.513666499999843,
+          "relative_pct": 11.016335565265608,
+          "p95_ms": 6.488834000000665
+        }
+      }
+    },
+    {
+      "workload": "medium (8L, d128)",
+      "n_layers": 8,
+      "d_model": 128,
+      "baseline_median_ms": 18.393937500000845,
+      "baseline_p95_ms": 19.123000000000445,
+      "modes": {
+        "core": {
+          "median_ms": 19.08791650000019,
+          "added_ms": 0.6939789999993451,
+          "relative_pct": 3.7728680985205756,
+          "p95_ms": 20.546542000001722
+        },
+        "core_layers": {
+          "median_ms": 19.347395499998754,
+          "added_ms": 0.9534579999979087,
+          "relative_pct": 5.1835448500239005,
+          "p95_ms": 22.418666999996617
+        }
+      }
+    },
+    {
+      "workload": "large (12L, d256)",
+      "n_layers": 12,
+      "d_model": 256,
+      "baseline_median_ms": 44.76068750000195,
+      "baseline_p95_ms": 47.767082999996546,
+      "modes": {
+        "core": {
+          "median_ms": 44.80868749999445,
+          "added_ms": 0.04799999999249849,
+          "relative_pct": 0.10723695875425594,
+          "p95_ms": 48.94808400000272
+        },
+        "core_layers": {
+          "median_ms": 44.955041499996184,
+          "added_ms": 0.19435399999423453,
+          "relative_pct": 0.43420691425757496,
+          "p95_ms": 54.18129199999555
+        }
+      }
+    }
+  ],
+  "environment": {
+    "python_version": "3.9.6",
+    "python_implementation": "CPython",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "cpu_count": 12,
+    "os": {
+      "system": "Darwin",
+      "release": "27.0.0",
+      "version": "Darwin Kernel Version 27.0.0: Tue Aug 11 21:20:40 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6020"
+    },
+    "git_commit_sha": null,
+    "git_dirty": null,
+    "packages": {
+      "numpy": "2.0.2",
+      "pyarrow": "21.0.0",
+      "duckdb": "1.4.5"
+    },
+    "torch": {
+      "torch_version": "2.8.0",
+      "cuda_available": false,
+      "cuda_version": null,
+      "mps_available": true,
+      "num_threads": 8
+    },
+    "extra": {
+      "benchmark": "overhead_scaling",
+      "warmup": 60,
+      "measured": 60,
+      "repeats": 5,
+      "batch": 4,
+      "seq": 16,
+      "layer_cadence": 10
+    }
+  }
+}

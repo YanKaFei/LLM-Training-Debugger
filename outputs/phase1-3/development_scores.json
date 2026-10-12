@@ -1,0 +1,93 @@
+{
+  "scores": {
+    "signal": {
+      "layer": "signal",
+      "true_positives": 77,
+      "false_positives": 817,
+      "false_negatives": 8,
+      "true_negatives": 84,
+      "pre_injection": 87,
+      "duplicates": 335,
+      "abstained": 0,
+      "considered": 0,
+      "precision": 0.07849133537206932,
+      "recall": 0.9058823529411765,
+      "f1": 0.14446529080675422,
+      "median_delay_steps": 0,
+      "median_onset_error_steps": null,
+      "median_confirmation_delay_steps": null,
+      "abstention_rate": null
+    },
+    "episode": {
+      "layer": "episode",
+      "true_positives": 29,
+      "false_positives": 52,
+      "false_negatives": 56,
+      "true_negatives": 84,
+      "pre_injection": 0,
+      "duplicates": 4,
+      "abstained": 14,
+      "considered": 169,
+      "precision": 0.35802469135802467,
+      "recall": 0.3411764705882353,
+      "f1": 0.3493975903614458,
+      "median_delay_steps": 0,
+      "median_onset_error_steps": 0,
+      "median_confirmation_delay_steps": 0,
+      "abstention_rate": 0.08284023668639054
+    },
+    "incident": {
+      "layer": "incident",
+      "true_positives": 33,
+      "false_positives": 27,
+      "false_negatives": 42,
+      "true_negatives": 0,
+      "pre_injection": 0,
+      "duplicates": 0,
+      "abstained": 2,
+      "considered": 224,
+      "precision": 0.55,
+      "recall": 0.44,
+      "f1": 0.48888888888888893,
+      "median_delay_steps": null,
+      "median_onset_error_steps": null,
+      "median_confirmation_delay_steps": null,
+      "abstention_rate": 0.008928571428571428
+    },
+    "run": {
+      "layer": "run",
+      "true_positives": 43,
+      "false_positives": 2,
+      "false_negatives": 42,
+      "true_negatives": 82,
+      "pre_injection": 0,
+      "duplicates": 0,
+      "abstained": 0,
+      "considered": 169,
+      "precision": 0.9555555555555556,
+      "recall": 0.5058823529411764,
+      "f1": 0.6615384615384614,
+      "median_delay_steps": null,
+      "median_onset_error_steps": null,
+      "median_confirmation_delay_steps": null,
+      "abstention_rate": 0.0,
+      "healthy_runs": 84,
+      "fault_runs": 85,
+      "healthy_run_false_incident_rate": 0.023809523809523808,
+      "false_incidents_per_1k_steps": 0.05917159763313609,
+      "abstention_rate_overall": 0.0
+    },
+    "_meta": {
+      "scenarios": 169,
+      "steps_observed": 33800,
+      "layers": [
+        "signal",
+        "episode",
+        "incident",
+        "run"
+      ]
+    }
+  },
+  "elapsed_s": 272.687381583,
+  "manifest_sha256": "a1d27fa6609c128c237323d742b3c47caf9f08a0b88045bf119a94077cba9bbd"
+}

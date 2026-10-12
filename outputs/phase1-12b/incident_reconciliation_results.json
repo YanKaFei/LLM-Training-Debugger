@@ -1,0 +1,15 @@
+{
+  "B0": {
+    "status": "COMPLETE",
+    "reason_codes": 6,
+    "dedup_key": "(step, layer)",
+    "source_event_identity": false
+  },
+  "B1": {
+    "status": "COMPLETE",
+    "reconciliation_cases": 3
+  },
+  "B5": {
+    "status": "NOT_STARTED"
+  }
+}

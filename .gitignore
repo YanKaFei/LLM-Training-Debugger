@@ -1,0 +1,68 @@
+# This is a dedicated project checkout: only LLM-Training-Debugger source lives here.
+# `git add -A` is safe from this directory.
+
+# Build artefacts
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments and toolchains
+.venv/
+.venv*/
+venv/
+ENV/
+.tools/
+
+# Local experiment output.
+# The published audit trail under outputs/ (markdown + JSON) IS tracked deliberately;
+# generated stores, parquet and database files are not.
+outputs/**/store/
+outputs/**/runs/
+**/*.parquet
+*.duckdb
+*.db
+
+# Training data and model artefacts
+data/
+datasets/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Credentials
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets.yaml
+secrets.yml
+
+# Generated at runtime by tests/experiments/restart_smoke.py (they embed the local path)
+tests/experiments/restart_worker.py
+tests/experiments/restart_continue.py
+tests/experiments/restart_smoke.json
+
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/
+
+# --- public repository hygiene -------------------------------------------------
+# Binary caches: regenerable, large, and not evidence.
+*.pkl
+*.pickle
+.venv312/
+.tools/
+.DS_Store

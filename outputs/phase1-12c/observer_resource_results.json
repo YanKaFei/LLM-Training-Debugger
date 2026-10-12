@@ -1,0 +1,126 @@
+{
+  "observer_layer": {
+    "cooldown_on": {
+      "events_persisted": 3722,
+      "emitted": null,
+      "dropped": null,
+      "written": null,
+      "overflow": null
+    },
+    "cooldown_off": {
+      "events_persisted": 3722,
+      "emitted": null,
+      "dropped": null,
+      "written": null,
+      "overflow": null
+    },
+    "raw_event_load_unchanged": true
+  },
+  "detector_layer": {
+    "1": {
+      "cooldown_on": {
+        "observations": 1,
+        "episodes": 1,
+        "incidents": 0,
+        "verdicts": 1,
+        "detector_ms": 183.69,
+        "episode_ms": 0.07
+      },
+      "cooldown_off": {
+        "observations": 1,
+        "episodes": 1,
+        "incidents": 0,
+        "verdicts": 1,
+        "detector_ms": 181.77,
+        "episode_ms": 0.04
+      },
+      "spike_steps": 1
+    },
+    "20": {
+      "cooldown_on": {
+        "observations": 1,
+        "episodes": 1,
+        "incidents": 0,
+        "verdicts": 1,
+        "detector_ms": 184.72,
+        "episode_ms": 0.03
+      },
+      "cooldown_off": {
+        "observations": 20,
+        "episodes": 1,
+        "incidents": 0,
+        "verdicts": 1,
+        "detector_ms": 177.87,
+        "episode_ms": 0.13
+      },
+      "spike_steps": 20
+    },
+    "100": {
+      "cooldown_on": {
+        "observations": 2,
+        "episodes": 2,
+        "incidents": 0,
+        "verdicts": 1,
+        "detector_ms": 181.43,
+        "episode_ms": 0.05
+      },
+      "cooldown_off": {
+        "observations": 89,
+        "episodes": 1,
+        "incidents": 0,
+        "verdicts": 1,
+        "detector_ms": 184.49,
+        "episode_ms": 0.49
+      },
+      "spike_steps": 100
+    },
+    "1000": {
+      "cooldown_on": {
+        "observations": 2,
+        "episodes": 2,
+        "incidents": 0,
+        "verdicts": 1,
+        "detector_ms": 180.78,
+        "episode_ms": 0.05
+      },
+      "cooldown_off": {
+        "observations": 89,
+        "episodes": 1,
+        "incidents": 0,
+        "verdicts": 1,
+        "detector_ms": 181.68,
+        "episode_ms": 0.45
+      },
+      "spike_steps": 1000
+    }
+  },
+  "queue_stress": {
+    "capacity": 64,
+    "offered": 4999,
+    "accepted": 64,
+    "refused_or_evicted": 4935,
+    "size_after_load": 64,
+    "bounded": true,
+    "drained": 64,
+    "drained_equals_size": true,
+    "accounting_ok": true,
+    "queue_stats": {
+      "accepted": 64,
+      "evicted": 0,
+      "rejected": 4935,
+      "emergency_sink_failures": 0,
+      "depth": 64,
+      "max_depth": 64
+    }
+  },
+  "priority_policy": {
+    "capacity": 4,
+    "size_before_p0": 4,
+    "p0_accepted": true,
+    "size_after_p0": 4,
+    "bounded": true,
+    "p0_survived": true
+  },
+  "conclusion": "The cooldown lives inside the detector, which runs offline over already-persisted events, so the observer's raw-event load is unchanged. The volume increase is confined to detector-side evidence.",
+  "elapsed_s": 4.4
+}

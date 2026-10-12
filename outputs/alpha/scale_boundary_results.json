@@ -1,0 +1,87 @@
+{
+  "observer_scale": [
+    {
+      "steps": 100,
+      "events_persisted": 3102,
+      "emitted": 3102,
+      "written": 3102,
+      "dropped": 0,
+      "overflow": 0,
+      "wall_s": 0.64,
+      "rss_delta_mb": 24.2,
+      "disk_bytes": 75409,
+      "bytes_per_event": 24.31
+    },
+    {
+      "steps": 500,
+      "events_persisted": 15502,
+      "emitted": 15502,
+      "written": 15502,
+      "dropped": 0,
+      "overflow": 0,
+      "wall_s": 3.49,
+      "rss_delta_mb": 43.9,
+      "disk_bytes": 388840,
+      "bytes_per_event": 25.08
+    },
+    {
+      "steps": 2000,
+      "events_persisted": 62002,
+      "emitted": 62002,
+      "written": 62002,
+      "dropped": 0,
+      "overflow": 0,
+      "wall_s": 12.94,
+      "rss_delta_mb": 134.6,
+      "disk_bytes": 1624314,
+      "bytes_per_event": 26.2
+    }
+  ],
+  "fault_volume": [
+    {
+      "spike_width": 1,
+      "observations": 1,
+      "episodes": 1,
+      "verdicts": 1,
+      "incidents": 0,
+      "ms": 207.4
+    },
+    {
+      "spike_width": 20,
+      "observations": 20,
+      "episodes": 1,
+      "verdicts": 1,
+      "incidents": 0,
+      "ms": 199.4
+    },
+    {
+      "spike_width": 100,
+      "observations": 89,
+      "episodes": 1,
+      "verdicts": 1,
+      "incidents": 0,
+      "ms": 214.7
+    },
+    {
+      "spike_width": 1000,
+      "observations": 89,
+      "episodes": 1,
+      "verdicts": 1,
+      "incidents": 0,
+      "ms": 205.6
+    }
+  ],
+  "fail_open_visibility": {
+    "offered": 500,
+    "accepted": 16,
+    "refused": 484,
+    "queue_capacity": 16,
+    "quality_status": "DEGRADED",
+    "quality_dropped": 484,
+    "verdict": "NO_ANOMALY",
+    "completeness_warning_present": true,
+    "warning": "evidence is DEGRADED (484 dropped), so a negative verdict is a statement about the events that arrived, NOT that the run was healthy.",
+    "masks_loss": false
+  },
+  "elapsed_s": 19.8
+}

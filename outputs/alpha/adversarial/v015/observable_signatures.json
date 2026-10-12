@@ -1,0 +1,2256 @@
+{
+  "adv-A1-L4d32-s95000": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": []
+  },
+  "adv-A1-L4d32-s95001": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": []
+  },
+  "adv-A1-L4d32-s95002": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": []
+  },
+  "adv-A1-L4d32-s95003": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.layer_norm",
+        "candidate_onset_step": 125,
+        "affected_layers": [
+          1
+        ]
+      }
+    ],
+    "nonfinite_steps": []
+  },
+  "adv-A1-L4d32-s95004": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.layer_norm",
+        "candidate_onset_step": 81,
+        "affected_layers": [
+          1
+        ]
+      },
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.layer_norm",
+        "candidate_onset_step": 127,
+        "affected_layers": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "nonfinite_steps": []
+  },
+  "adv-A2-L4d32-s95000": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      81
+    ]
+  },
+  "adv-A2-L4d32-s95001": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      81
+    ]
+  },
+  "adv-A2-L4d32-s95002": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      81
+    ]
+  },
+  "adv-A2-L4d32-s95003": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      81
+    ]
+  },
+  "adv-A2-L4d32-s95004": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.layer_norm",
+        "candidate_onset_step": 82,
+        "affected_layers": [
+          1
+        ]
+      },
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.layer_norm",
+        "candidate_onset_step": 127,
+        "affected_layers": [
+          0,
+          1
+        ]
+      }
+    ],
+    "nonfinite_steps": [
+      81
+    ]
+  },
+  "adv-A3-L4d32-s95000": {
+    "episodes": [
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      120
+    ]
+  },
+  "adv-A3-L4d32-s95001": {
+    "episodes": [
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      120
+    ]
+  },
+  "adv-A3-L4d32-s95002": {
+    "episodes": [
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.layer_norm",
+        "candidate_onset_step": 133,
+        "affected_layers": [
+          6
+        ]
+      }
+    ],
+    "nonfinite_steps": [
+      120
+    ]
+  },
+  "adv-A3-L4d32-s95003": {
+    "episodes": [
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      120
+    ]
+  },
+  "adv-A3-L4d32-s95004": {
+    "episodes": [
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.layer_norm",
+        "candidate_onset_step": 133,
+        "affected_layers": [
+          6
+        ]
+      }
+    ],
+    "nonfinite_steps": [
+      120
+    ]
+  },
+  "adv-A4-L4d32-s95000": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 130,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160
+    ]
+  },
+  "adv-A4-L4d32-s95001": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 130,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160
+    ]
+  },
+  "adv-A4-L4d32-s95002": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 130,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160
+    ]
+  },
+  "adv-A4-L4d32-s95003": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 130,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160
+    ]
+  },
+  "adv-A4-L4d32-s95004": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 130,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160
+    ]
+  },
+  "adv-A5-L4d32-s95000": {
+    "episodes": [
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ],
+    "nonfinite_steps": []
+  },
+  "adv-A5-L4d32-s95001": {
+    "episodes": [
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ],
+    "nonfinite_steps": []
+  },
+  "adv-A5-L4d32-s95002": {
+    "episodes": [
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.layer_norm",
+        "candidate_onset_step": 132,
+        "affected_layers": [
+          6
+        ]
+      }
+    ],
+    "nonfinite_steps": []
+  },
+  "adv-A5-L4d32-s95003": {
+    "episodes": [
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ],
+    "nonfinite_steps": []
+  },
+  "adv-A5-L4d32-s95004": {
+    "episodes": [
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.layer_norm",
+        "candidate_onset_step": 131,
+        "affected_layers": [
+          6
+        ]
+      }
+    ],
+    "nonfinite_steps": []
+  },
+  "adv-A6-L4d32-s95000": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      80
+    ]
+  },
+  "adv-A6-L4d32-s95001": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      80
+    ]
+  },
+  "adv-A6-L4d32-s95002": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      80
+    ]
+  },
+  "adv-A6-L4d32-s95003": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.layer_norm",
+        "candidate_onset_step": 125,
+        "affected_layers": [
+          1
+        ]
+      }
+    ],
+    "nonfinite_steps": [
+      80
+    ]
+  },
+  "adv-A6-L4d32-s95004": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.layer_norm",
+        "candidate_onset_step": 81,
+        "affected_layers": [
+          1
+        ]
+      },
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.layer_norm",
+        "candidate_onset_step": 127,
+        "affected_layers": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "nonfinite_steps": [
+      80
+    ]
+  },
+  "adv-A7-L4d32-s95000": {
+    "episodes": [
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      120
+    ]
+  },
+  "adv-A7-L4d32-s95001": {
+    "episodes": [
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      120
+    ]
+  },
+  "adv-A7-L4d32-s95002": {
+    "episodes": [
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.layer_norm",
+        "candidate_onset_step": 133,
+        "affected_layers": [
+          6
+        ]
+      }
+    ],
+    "nonfinite_steps": [
+      120
+    ]
+  },
+  "adv-A7-L4d32-s95003": {
+    "episodes": [
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      120
+    ]
+  },
+  "adv-A7-L4d32-s95004": {
+    "episodes": [
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 120,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.layer_norm",
+        "candidate_onset_step": 133,
+        "affected_layers": [
+          6
+        ]
+      }
+    ],
+    "nonfinite_steps": [
+      120
+    ]
+  },
+  "adv-A8X-L4d32-s95000": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 130,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160
+    ]
+  },
+  "adv-A8X-L4d32-s95001": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 130,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160
+    ]
+  },
+  "adv-A8X-L4d32-s95002": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 130,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160
+    ]
+  },
+  "adv-A8X-L4d32-s95003": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 130,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160
+    ]
+  },
+  "adv-A8X-L4d32-s95004": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "param.global_norm",
+        "candidate_onset_step": 130,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 131,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160
+    ]
+  },
+  "adv-A8Y-L4d32-s95000": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      81
+    ]
+  },
+  "adv-A8Y-L4d32-s95001": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      81
+    ]
+  },
+  "adv-A8Y-L4d32-s95002": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      81
+    ]
+  },
+  "adv-A8Y-L4d32-s95003": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      }
+    ],
+    "nonfinite_steps": [
+      81
+    ]
+  },
+  "adv-A8Y-L4d32-s95004": {
+    "episodes": [
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "grad.global_norm",
+        "candidate_onset_step": 80,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "NAN_DETECTED",
+        "metric_name": "train.loss_nonfinite_count",
+        "candidate_onset_step": 81,
+        "affected_layers": []
+      },
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.layer_norm",
+        "candidate_onset_step": 82,
+        "affected_layers": [
+          1
+        ]
+      },
+      {
+        "anomaly_type": "GRADIENT_EXPLOSION",
+        "metric_name": "grad.layer_norm",
+        "candidate_onset_step": 127,
+        "affected_layers": [
+          0,
+          1
+        ]
+      }
+    ],
+    "nonfinite_steps": [
+      81
+    ]
+  }
+}

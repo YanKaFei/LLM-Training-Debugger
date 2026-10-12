@@ -1,0 +1,164 @@
+{
+  "registry_version": "phase1.3-1.0",
+  "generated_by": "training_debugger.registry",
+  "enabled_detector_ids": [
+    "numerics.finiteness",
+    "grad.robust_zscore",
+    "loss.robust_zscore"
+  ],
+  "capability_states": [
+    "IMPLEMENTED",
+    "EXPERIMENTAL",
+    "VALIDATED",
+    "UNSUPPORTED"
+  ],
+  "anomaly_type_capability": {
+    "NAN_DETECTED": "EXPERIMENTAL",
+    "INF_DETECTED": "EXPERIMENTAL",
+    "GRADIENT_EXPLOSION": "EXPERIMENTAL",
+    "LOSS_SPIKE": "EXPERIMENTAL",
+    "LOSS_DIVERGENCE": "UNSUPPORTED",
+    "THROUGHPUT_REGRESSION": "UNSUPPORTED"
+  },
+  "validation_gate": {
+    "episode_precision": 0.8,
+    "episode_recall": 0.8
+  },
+  "validated_capabilities": [],
+  "detectors": [
+    {
+      "detector_id": "numerics.finiteness",
+      "version": "1.0",
+      "status": "ENABLED",
+      "supported_anomaly_types": [
+        "NAN_DETECTED",
+        "INF_DETECTED"
+      ],
+      "minimum_history": 0,
+      "candidate_rule": "any metric value is NaN or Inf",
+      "confirmation_rule": "CERTAIN: confirms on first observation (no persistence required, because a measured non-finite value cannot be a statistical accident)",
+      "recovery_rule": "20 steps without a non-finite observation",
+      "known_failure_modes": [
+        "A persistent non-finite condition previously produced one finding per step; now collapses to one episode by contiguity.",
+        "A non-finite value in a metric that is not emitted (sampled out) is invisible."
+      ],
+      "quality_metrics": {
+        "phase1.2_holdout_precision": 0.478,
+        "phase1.2_holdout_recall": 1.0,
+        "phase1.2_post_fault_false_positives": 24,
+        "note": "precision was 0.026 before the episode model and cooldown; see E6_NUMERICS_REPORT.md for the episode-level figure"
+      },
+      "capability": {
+        "NAN_DETECTED": "EXPERIMENTAL",
+        "INF_DETECTED": "EXPERIMENTAL"
+      },
+      "disabled_reason": null
+    },
+    {
+      "detector_id": "grad.robust_zscore",
+      "version": "2.0",
+      "status": "ENABLED",
+      "supported_anomaly_types": [
+        "GRADIENT_EXPLOSION"
+      ],
+      "minimum_history": 50,
+      "candidate_rule": "value > min(median(window) * 3.0, quantile(window, 0.995) * 1.5), window excluding warm-up",
+      "confirmation_rule": "aggregate series departed, OR cross-layer multiplicity >= 40%, OR peaking >= 8x, OR 2 observations within 5 steps",
+      "recovery_rule": "12 steps without a breach",
+      "known_failure_modes": [
+        "Healthy heavy-tailed gradients: measured 1.25 FP/1k on the H1 class.",
+        "Detection boundary between x2 (recall 0.75) and x3 (recall 1.00); not sharp.",
+        "A lone layer excursion clears its own envelope easily; mitigated by WEAK classification but present in raw output."
+      ],
+      "quality_metrics": {
+        "phase1.2_holdout_precision": 0.063,
+        "phase1.2_holdout_recall": 0.78,
+        "envelope_quantile": 0.995,
+        "envelope_factor": 1.5,
+        "median_multiple": 3.0
+      },
+      "capability": {
+        "GRADIENT_EXPLOSION": "EXPERIMENTAL"
+      },
+      "disabled_reason": null
+    },
+    {
+      "detector_id": "loss.robust_zscore",
+      "version": "1.0",
+      "status": "ENABLED",
+      "supported_anomaly_types": [
+        "LOSS_SPIKE"
+      ],
+      "minimum_history": 50,
+      "candidate_rule": "detrended robust z-score above spike_z, or value >= relative_factor * window median",
+      "confirmation_rule": "2 observations within 6 steps, or peak ratio >= 6x",
+      "recovery_rule": "12 steps without a breach",
+      "known_failure_modes": [
+        "A real but benign loss spike (a large batch) is indistinguishable from a fault.",
+        "Cannot distinguish a data-caused spike from an optimisation-caused one.",
+        "Post-fault duplicates under sustained divergence."
+      ],
+      "quality_metrics": {
+        "phase1.2_holdout_precision": 0.7,
+        "phase1.2_holdout_recall": 1.0
+      },
+      "capability": {
+        "LOSS_SPIKE": "EXPERIMENTAL"
+      },
+      "disabled_reason": null
+    },
+    {
+      "detector_id": "loss.trend_slope",
+      "version": "1.0",
+      "status": "DISABLED",
+      "supported_anomaly_types": [
+        "LOSS_DIVERGENCE"
+      ],
+      "minimum_history": 50,
+      "candidate_rule": "OLS slope over a trailing window",
+      "confirmation_rule": "n/a -- disabled",
+      "recovery_rule": "n/a -- disabled",
+      "known_failure_modes": [
+        "Fires only BEFORE faults: 16 pre-injection false positives.",
+        "Never fires inside the acceptable window: recall 0.000 across a magnitude sweep of sustained divergence (1.006, 1.012, 1.03).",
+        "A brief positive slope is not divergence; the criterion has no persistence requirement and no baseline normalisation."
+      ],
+      "quality_metrics": {
+        "phase1.2_holdout_precision": 0.0,
+        "phase1.2_holdout_recall": 0.0,
+        "phase1.2_pre_injection_false_positives": 16
+      },
+      "capability": {
+        "LOSS_DIVERGENCE": "UNSUPPORTED"
+      },
+      "disabled_reason": "Measured precision 0.000 and recall 0.000 on the Phase 1.2 holdout. It does not detect the fault it exists for and pollutes default system metrics. LOSS_DIVERGENCE is therefore declared UNSUPPORTED until a persistence-gated, baseline-normalised implementation is validated."
+    },
+    {
+      "detector_id": "throughput.regression",
+      "version": "1.0",
+      "status": "DISABLED",
+      "supported_anomaly_types": [
+        "THROUGHPUT_REGRESSION"
+      ],
+      "minimum_history": 100,
+      "candidate_rule": "step time above a trailing baseline by throughput_drop_ratio for throughput_consecutive steps",
+      "confirmation_rule": "n/a -- disabled",
+      "recovery_rule": "n/a -- disabled",
+      "known_failure_modes": [
+        "Recall 0.250 on the Phase 1.2 holdout.",
+        "9 pre-injection false positives: it alarms during warm-up.",
+        "Compares raw step time without normalising for tokens, batch size, sequence length or gradient accumulation."
+      ],
+      "quality_metrics": {
+        "phase1.2_holdout_precision": 0.1,
+        "phase1.2_holdout_recall": 0.25,
+        "phase1.2_pre_injection_false_positives": 9
+      },
+      "capability": {
+        "THROUGHPUT_REGRESSION": "UNSUPPORTED"
+      },
+      "disabled_reason": "Recall 0.250 with 9 pre-injection false positives. Not usable as a default incident source. THROUGHPUT_REGRESSION is declared UNSUPPORTED in this build."
+    }
+  ],
+  "note": "A DISABLED detector is not deleted: historical incidents that reference its detector_id must still resolve, and its measured failure must remain auditable. UNSUPPORTED means no enabled detector can reliably produce that anomaly type in this build."
+}

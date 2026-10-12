@@ -1,0 +1,4971 @@
+[
+  {
+    "fault_type": "H0_stable_healthy",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H0_stable_healthy",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H0_stable_healthy",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H0_stable_healthy",
+    "seed": 3003,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H0_stable_healthy",
+    "seed": 3004,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H0_stable_healthy",
+    "seed": 3005,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H0_stable_healthy",
+    "seed": 3006,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H0_stable_healthy",
+    "seed": 3007,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 3003,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 3004,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 3005,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 3006,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 3007,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 3003,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 3004,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 3005,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 3006,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 3007,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H3_scheduler_transition",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H3_scheduler_transition",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H3_scheduler_transition",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H3_scheduler_transition",
+    "seed": 3003,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H3_scheduler_transition",
+    "seed": 3004,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H3_scheduler_transition",
+    "seed": 3005,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H3_scheduler_transition",
+    "seed": 3006,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H3_scheduler_transition",
+    "seed": 3007,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H4_gradient_clipping",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H4_gradient_clipping",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H4_gradient_clipping",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H4_gradient_clipping",
+    "seed": 3003,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H4_gradient_clipping",
+    "seed": 3004,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H4_gradient_clipping",
+    "seed": 3005,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H4_gradient_clipping",
+    "seed": 3006,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H4_gradient_clipping",
+    "seed": 3007,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F7_lr_jump_no_failure",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F7_lr_jump_no_failure",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F7_lr_jump_no_failure",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F7_lr_jump_no_failure",
+    "seed": 3003,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F7_lr_jump_no_failure",
+    "seed": 3004,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F7_lr_jump_no_failure",
+    "seed": 3005,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F7_lr_jump_no_failure",
+    "seed": 3006,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F7_lr_jump_no_failure",
+    "seed": 3007,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": 2.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": 2.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": 2.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": 3.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": 3.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": 3.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": 5.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": 5.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": 5.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": 10.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": 10.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": 10.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": 20.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": 20.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": 20.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": 40.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": 40.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": 40.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F1_loss_spike",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": 0.5,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F1_loss_spike",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": 0.5,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F1_loss_spike",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": 0.5,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F1_loss_spike",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": 2.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F1_loss_spike",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": 2.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F1_loss_spike",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": 2.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F1_loss_spike",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": 8.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F1_loss_spike",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": 8.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F1_loss_spike",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": 8.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": 1.006,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": 1.006,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": 1.006,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": 1.012,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": 1.012,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": 1.012,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": 1.03,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": 1.03,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": 1.03,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F4_nan_loss",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F4_nan_loss",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F4_nan_loss",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F4_nan_loss",
+    "seed": 3003,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F5_inf_gradient",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F5_inf_gradient",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F5_inf_gradient",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F5_inf_gradient",
+    "seed": 3003,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F5b_nan_gradient",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F5b_nan_gradient",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F5b_nan_gradient",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F5b_nan_gradient",
+    "seed": 3003,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F6_throughput_drop",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": 0.004,
+    "injection_step": 120,
+    "expected_detectors": [
+      "throughput.regression"
+    ],
+    "effect_lag": 1,
+    "note": "",
+    "expected_effect_start": 121,
+    "acceptable_detection_window": [
+      121,
+      131
+    ],
+    "recovery_window": [
+      132,
+      171
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F6_throughput_drop",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": 0.004,
+    "injection_step": 120,
+    "expected_detectors": [
+      "throughput.regression"
+    ],
+    "effect_lag": 1,
+    "note": "",
+    "expected_effect_start": 121,
+    "acceptable_detection_window": [
+      121,
+      131
+    ],
+    "recovery_window": [
+      132,
+      171
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F6_throughput_drop",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": 0.004,
+    "injection_step": 120,
+    "expected_detectors": [
+      "throughput.regression"
+    ],
+    "effect_lag": 1,
+    "note": "",
+    "expected_effect_start": 121,
+    "acceptable_detection_window": [
+      121,
+      131
+    ],
+    "recovery_window": [
+      132,
+      171
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F6_throughput_drop",
+    "seed": 3003,
+    "split": "calibration",
+    "magnitude": 0.004,
+    "injection_step": 120,
+    "expected_detectors": [
+      "throughput.regression"
+    ],
+    "effect_lag": 1,
+    "note": "",
+    "expected_effect_start": 121,
+    "acceptable_detection_window": [
+      121,
+      131
+    ],
+    "recovery_window": [
+      132,
+      171
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F10_mixed_anomaly",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore",
+      "loss.robust_zscore",
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F10_mixed_anomaly",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore",
+      "loss.robust_zscore",
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F10_mixed_anomaly",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore",
+      "loss.robust_zscore",
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F10_mixed_anomaly",
+    "seed": 3003,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore",
+      "loss.robust_zscore",
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A1_single_huge_harmless_batch",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A1_single_huge_harmless_batch",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A1_single_huge_harmless_batch",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A1_single_huge_harmless_batch",
+    "seed": 3003,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A1_single_huge_harmless_batch",
+    "seed": 3004,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A1_single_huge_harmless_batch",
+    "seed": 3005,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A1_single_huge_harmless_batch",
+    "seed": 3006,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A1_single_huge_harmless_batch",
+    "seed": 3007,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A2_loss_spike_stable_gradients",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A2_loss_spike_stable_gradients",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A2_loss_spike_stable_gradients",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A2_loss_spike_stable_gradients",
+    "seed": 3003,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A2_loss_spike_stable_gradients",
+    "seed": 3004,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A2_loss_spike_stable_gradients",
+    "seed": 3005,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A2_loss_spike_stable_gradients",
+    "seed": 3006,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A2_loss_spike_stable_gradients",
+    "seed": 3007,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A3_gradient_spike_no_loss_consequence",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A3_gradient_spike_no_loss_consequence",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A3_gradient_spike_no_loss_consequence",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A3_gradient_spike_no_loss_consequence",
+    "seed": 3003,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A3_gradient_spike_no_loss_consequence",
+    "seed": 3004,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A3_gradient_spike_no_loss_consequence",
+    "seed": 3005,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A3_gradient_spike_no_loss_consequence",
+    "seed": 3006,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A3_gradient_spike_no_loss_consequence",
+    "seed": 3007,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A4_nan_that_recovers",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A4_nan_that_recovers",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A4_nan_that_recovers",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A4_nan_that_recovers",
+    "seed": 3003,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A5_inf_one_layer_only",
+    "seed": 3000,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A5_inf_one_layer_only",
+    "seed": 3001,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A5_inf_one_layer_only",
+    "seed": 3002,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A5_inf_one_layer_only",
+    "seed": 3003,
+    "split": "calibration",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H0_stable_healthy",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H0_stable_healthy",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H0_stable_healthy",
+    "seed": 4002,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H0_stable_healthy",
+    "seed": 4003,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H0_stable_healthy",
+    "seed": 4004,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 4002,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 4003,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 4004,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 4002,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 4003,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 4004,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H3_scheduler_transition",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H3_scheduler_transition",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H3_scheduler_transition",
+    "seed": 4002,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H3_scheduler_transition",
+    "seed": 4003,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H3_scheduler_transition",
+    "seed": 4004,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H4_gradient_clipping",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H4_gradient_clipping",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H4_gradient_clipping",
+    "seed": 4002,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H4_gradient_clipping",
+    "seed": 4003,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "H4_gradient_clipping",
+    "seed": 4004,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F7_lr_jump_no_failure",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F7_lr_jump_no_failure",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F7_lr_jump_no_failure",
+    "seed": 4002,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F7_lr_jump_no_failure",
+    "seed": 4003,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F7_lr_jump_no_failure",
+    "seed": 4004,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": 2.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": 2.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": 3.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": 3.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": 5.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": 5.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": 10.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": 10.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": 20.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": 20.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": 40.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": 40.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F1_loss_spike",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": 0.5,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F1_loss_spike",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": 0.5,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F1_loss_spike",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": 2.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F1_loss_spike",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": 2.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F1_loss_spike",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": 8.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F1_loss_spike",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": 8.0,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": 1.006,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": 1.006,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": 1.012,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": 1.012,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": 1.03,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": 1.03,
+    "injection_step": 120,
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F4_nan_loss",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F4_nan_loss",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F4_nan_loss",
+    "seed": 4002,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F5_inf_gradient",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F5_inf_gradient",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F5_inf_gradient",
+    "seed": 4002,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F5b_nan_gradient",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F5b_nan_gradient",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F5b_nan_gradient",
+    "seed": 4002,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F6_throughput_drop",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": 0.004,
+    "injection_step": 120,
+    "expected_detectors": [
+      "throughput.regression"
+    ],
+    "effect_lag": 1,
+    "note": "",
+    "expected_effect_start": 121,
+    "acceptable_detection_window": [
+      121,
+      131
+    ],
+    "recovery_window": [
+      132,
+      171
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F6_throughput_drop",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": 0.004,
+    "injection_step": 120,
+    "expected_detectors": [
+      "throughput.regression"
+    ],
+    "effect_lag": 1,
+    "note": "",
+    "expected_effect_start": 121,
+    "acceptable_detection_window": [
+      121,
+      131
+    ],
+    "recovery_window": [
+      132,
+      171
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F6_throughput_drop",
+    "seed": 4002,
+    "split": "holdout",
+    "magnitude": 0.004,
+    "injection_step": 120,
+    "expected_detectors": [
+      "throughput.regression"
+    ],
+    "effect_lag": 1,
+    "note": "",
+    "expected_effect_start": 121,
+    "acceptable_detection_window": [
+      121,
+      131
+    ],
+    "recovery_window": [
+      132,
+      171
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F10_mixed_anomaly",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore",
+      "loss.robust_zscore",
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F10_mixed_anomaly",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore",
+      "loss.robust_zscore",
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "F10_mixed_anomaly",
+    "seed": 4002,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "grad.robust_zscore",
+      "loss.robust_zscore",
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A1_single_huge_harmless_batch",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A1_single_huge_harmless_batch",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A1_single_huge_harmless_batch",
+    "seed": 4002,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A1_single_huge_harmless_batch",
+    "seed": 4003,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A1_single_huge_harmless_batch",
+    "seed": 4004,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A2_loss_spike_stable_gradients",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A2_loss_spike_stable_gradients",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A2_loss_spike_stable_gradients",
+    "seed": 4002,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A2_loss_spike_stable_gradients",
+    "seed": 4003,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A2_loss_spike_stable_gradients",
+    "seed": 4004,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A3_gradient_spike_no_loss_consequence",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A3_gradient_spike_no_loss_consequence",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A3_gradient_spike_no_loss_consequence",
+    "seed": 4002,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A3_gradient_spike_no_loss_consequence",
+    "seed": 4003,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A3_gradient_spike_no_loss_consequence",
+    "seed": 4004,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": null,
+    "expected_detectors": [],
+    "effect_lag": 0,
+    "note": "healthy control: any fire is a false positive",
+    "expected_effect_start": null,
+    "acceptable_detection_window": [],
+    "recovery_window": [],
+    "pre_fault_window": [
+      1,
+      200
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A4_nan_that_recovers",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A4_nan_that_recovers",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A4_nan_that_recovers",
+    "seed": 4002,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A5_inf_one_layer_only",
+    "seed": 4000,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A5_inf_one_layer_only",
+    "seed": 4001,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  },
+  {
+    "fault_type": "A5_inf_one_layer_only",
+    "seed": 4002,
+    "split": "holdout",
+    "magnitude": null,
+    "injection_step": 120,
+    "expected_detectors": [
+      "numerics.finiteness"
+    ],
+    "effect_lag": 0,
+    "note": "",
+    "expected_effect_start": 120,
+    "acceptable_detection_window": [
+      120,
+      130
+    ],
+    "recovery_window": [
+      131,
+      170
+    ],
+    "pre_fault_window": [
+      1,
+      119
+    ],
+    "total_steps": 200
+  }
+]

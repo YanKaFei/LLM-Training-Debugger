@@ -1,0 +1,24 @@
+{
+  "detector_config": {
+    "window": 200,
+    "warmup_steps": 50,
+    "min_samples": 20,
+    "spike_z": 6.0,
+    "detrend": true,
+    "relative_factor": 2.0,
+    "grad_absolute_guard": null,
+    "grad_envelope_quantile": 0.995,
+    "grad_envelope_factor": 1.5,
+    "grad_median_multiple": 3.0,
+    "baseline_excludes_warmup": true,
+    "throughput_drop_ratio": 0.25,
+    "throughput_consecutive": 10,
+    "throughput_baseline_window": 100,
+    "divergence_window": 100,
+    "divergence_min_points": 30,
+    "cooldown_steps": 50
+  },
+  "rule_version": "phase1.2-1.1",
+  "fitted_on": "seeds 2000-2029 distribution study (disjoint from both splits)",
+  "holdout_consulted_during_fitting": false
+}

@@ -1,0 +1,6 @@
+{
+  "status": "NOT_INVESTIGATED",
+  "observed": "passes 3/3 isolated, failed once in a full-suite run",
+  "hypothesis": "queue-overflow timing",
+  "fix": "not attempted; brief forbids sleep-based or weakened-assertion fixes"
+}

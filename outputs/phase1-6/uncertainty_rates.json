@@ -1,0 +1,17 @@
+{
+  "healthy": {
+    "NORMAL": 146,
+    "UNCERTAIN": 1,
+    "CONFIRMED": 1
+  },
+  "fault": {
+    "unbanded": 110,
+    "NORMAL": 107,
+    "UNCERTAIN": 11,
+    "CONFIRMED": 29
+  },
+  "runs": {
+    "healthy": 84,
+    "fault": 85
+  }
+}

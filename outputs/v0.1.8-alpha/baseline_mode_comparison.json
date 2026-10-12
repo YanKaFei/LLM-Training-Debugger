@@ -1,0 +1,42 @@
+{
+  "readiness": {
+    "frozen_first_ratio_step": 70,
+    "ema_first_ratio_step": 26,
+    "baseline_floor": 50,
+    "frozen_minimum_history": 20,
+    "ema_warmup": 25
+  },
+  "paired": {
+    "frozen": {
+      "fault_runs": 9,
+      "runs_with_a_gradient_fire": 6,
+      "median_latency_vs_injection": 0,
+      "latencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "clean_runs": 3,
+      "clean_runs_with_incident": 0
+    },
+    "ema": {
+      "fault_runs": 9,
+      "runs_with_a_gradient_fire": 6,
+      "median_latency_vs_injection": 0,
+      "latencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "clean_runs": 3,
+      "clean_runs_with_incident": 0
+    }
+  },
+  "healthy": {}
+}

@@ -1,0 +1,180 @@
+{
+  "ORIGINAL_50": {
+    "true_positive": 0,
+    "false_positive": 0,
+    "false_negative": 10,
+    "true_negative": 40,
+    "not_applicable": 0,
+    "positive_cases": 10,
+    "negative_cases": 40,
+    "precision": null,
+    "recall": 0.0,
+    "positive_coverage": 0.0,
+    "negative_rejection_rate": 1.0,
+    "false_association_rate": 0.0,
+    "true_abstention_rate": 0.25,
+    "order_only_on_positive": 0,
+    "order_only_on_negative": 10,
+    "failures": [
+      {
+        "run_id": "mix-M1_gradient_then_nonfinite-L4d32-s90000",
+        "class": "MISSED_CONSEQUENCE",
+        "case": null,
+        "observed": [],
+        "expected": null
+      },
+      {
+        "run_id": "mix-M1_gradient_then_nonfinite-L4d32-s90001",
+        "class": "MISSED_CONSEQUENCE",
+        "case": null,
+        "observed": [],
+        "expected": null
+      },
+      {
+        "run_id": "mix-M1_gradient_then_nonfinite-L4d32-s90002",
+        "class": "MISSED_CONSEQUENCE",
+        "case": null,
+        "observed": [],
+        "expected": null
+      },
+      {
+        "run_id": "mix-M1_gradient_then_nonfinite-L4d32-s90003",
+        "class": "MISSED_CONSEQUENCE",
+        "case": null,
+        "observed": [],
+        "expected": null
+      },
+      {
+        "run_id": "mix-M1_gradient_then_nonfinite-L4d32-s90004",
+        "class": "MISSED_CONSEQUENCE",
+        "case": null,
+        "observed": [],
+        "expected": null
+      },
+      {
+        "run_id": "mix-M1_gradient_then_nonfinite-L6d48-s90000",
+        "class": "MISSED_CONSEQUENCE",
+        "case": null,
+        "observed": [],
+        "expected": null
+      },
+      {
+        "run_id": "mix-M1_gradient_then_nonfinite-L6d48-s90001",
+        "class": "MISSED_CONSEQUENCE",
+        "case": null,
+        "observed": [],
+        "expected": null
+      },
+      {
+        "run_id": "mix-M1_gradient_then_nonfinite-L6d48-s90002",
+        "class": "MISSED_CONSEQUENCE",
+        "case": null,
+        "observed": [],
+        "expected": null
+      },
+      {
+        "run_id": "mix-M1_gradient_then_nonfinite-L6d48-s90003",
+        "class": "MISSED_CONSEQUENCE",
+        "case": null,
+        "observed": [],
+        "expected": null
+      },
+      {
+        "run_id": "mix-M1_gradient_then_nonfinite-L6d48-s90004",
+        "class": "MISSED_CONSEQUENCE",
+        "case": null,
+        "observed": [],
+        "expected": null
+      }
+    ]
+  },
+  "ADVERSARIAL_45": {
+    "true_positive": 0,
+    "false_positive": 0,
+    "false_negative": 10,
+    "true_negative": 35,
+    "not_applicable": 0,
+    "positive_cases": 10,
+    "negative_cases": 35,
+    "precision": null,
+    "recall": 0.0,
+    "positive_coverage": 0.0,
+    "negative_rejection_rate": 1.0,
+    "false_association_rate": 0.0,
+    "true_abstention_rate": 0.2857142857142857,
+    "order_only_on_positive": 0,
+    "order_only_on_negative": 10,
+    "failures": [
+      {
+        "run_id": "adv-A4-L4d32-s95000",
+        "class": "MISSED_CONSEQUENCE",
+        "case": "A4",
+        "observed": [],
+        "expected": "a genuine propagation, delayed past the 2-step bound"
+      },
+      {
+        "run_id": "adv-A4-L4d32-s95001",
+        "class": "MISSED_CONSEQUENCE",
+        "case": "A4",
+        "observed": [],
+        "expected": "a genuine propagation, delayed past the 2-step bound"
+      },
+      {
+        "run_id": "adv-A4-L4d32-s95002",
+        "class": "MISSED_CONSEQUENCE",
+        "case": "A4",
+        "observed": [],
+        "expected": "a genuine propagation, delayed past the 2-step bound"
+      },
+      {
+        "run_id": "adv-A4-L4d32-s95003",
+        "class": "MISSED_CONSEQUENCE",
+        "case": "A4",
+        "observed": [],
+        "expected": "a genuine propagation, delayed past the 2-step bound"
+      },
+      {
+        "run_id": "adv-A4-L4d32-s95004",
+        "class": "MISSED_CONSEQUENCE",
+        "case": "A4",
+        "observed": [],
+        "expected": "a genuine propagation, delayed past the 2-step bound"
+      },
+      {
+        "run_id": "adv-A8X-L4d32-s95000",
+        "class": "MISSED_CONSEQUENCE",
+        "case": "A8X",
+        "observed": [],
+        "expected": "genuine propagation; observations identical to A8Y"
+      },
+      {
+        "run_id": "adv-A8X-L4d32-s95001",
+        "class": "MISSED_CONSEQUENCE",
+        "case": "A8X",
+        "observed": [],
+        "expected": "genuine propagation; observations identical to A8Y"
+      },
+      {
+        "run_id": "adv-A8X-L4d32-s95002",
+        "class": "MISSED_CONSEQUENCE",
+        "case": "A8X",
+        "observed": [],
+        "expected": "genuine propagation; observations identical to A8Y"
+      },
+      {
+        "run_id": "adv-A8X-L4d32-s95003",
+        "class": "MISSED_CONSEQUENCE",
+        "case": "A8X",
+        "observed": [],
+        "expected": "genuine propagation; observations identical to A8Y"
+      },
+      {
+        "run_id": "adv-A8X-L4d32-s95004",
+        "class": "MISSED_CONSEQUENCE",
+        "case": "A8X",
+        "observed": [],
+        "expected": "genuine propagation; observations identical to A8Y"
+      }
+    ]
+  }
+}

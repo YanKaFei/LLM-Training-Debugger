@@ -1,0 +1,26 @@
+{
+  "frozen_at": "phase1.2 D0",
+  "vcs": "no git repository (project is not under version control)",
+  "python": "3.9.6",
+  "torch": "2.8.0",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "rule_version_at_freeze": "phase1.1-1.0",
+  "detector_versions_at_freeze": {
+    "grad.robust_zscore": "1.0",
+    "loss.robust_zscore": "1.0",
+    "loss.trend_slope": "1.0",
+    "numerics.finiteness": "1.0",
+    "throughput.regression": "1.0"
+  },
+  "thresholds_at_freeze": {
+    "window": 200, "warmup_steps": 50, "min_samples": 20,
+    "spike_z": 6.0, "detrend": true, "relative_factor": 2.0,
+    "grad_peak_factor": 3.0, "grad_z_min_peak_factor": 1.5,
+    "grad_absolute_guard": null, "cooldown_steps": 50,
+    "throughput_drop_ratio": 0.25, "throughput_consecutive": 10,
+    "throughput_baseline_window": 100,
+    "divergence_window": 100, "divergence_min_points": 30
+  },
+  "calibration_seeds_at_freeze": [1000, 1001, 1002, 1003, 1004, 1005],
+  "note": "No detector was modified before the four failures were reproduced. The freeze was recorded first; see D0_REPRODUCTION_REPORT.md."
+}

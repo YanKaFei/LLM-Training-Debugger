@@ -1,0 +1,3302 @@
+{
+  "detector_config": {
+    "baseline_excludes_warmup": true,
+    "cooldown_steps": 50,
+    "detrend": true,
+    "divergence_min_points": 30,
+    "divergence_window": 100,
+    "grad_absolute_guard": null,
+    "grad_envelope_factor": 1.5,
+    "grad_envelope_quantile": 0.995,
+    "grad_median_multiple": 3.0,
+    "gradient_agg_confirm_at": 11.5,
+    "gradient_agg_min_layers": 2,
+    "gradient_agg_normal_below": 8.5,
+    "gradient_band_enabled": true,
+    "min_samples": 20,
+    "relative_factor": 2.0,
+    "spike_z": 6.0,
+    "throughput_baseline_window": 100,
+    "throughput_consecutive": 10,
+    "throughput_drop_ratio": 0.25,
+    "warmup_steps": 50,
+    "window": 200
+  },
+  "detector_registry": {
+    "anomaly_type_capability": {
+      "GRADIENT_EXPLOSION": "EXPERIMENTAL",
+      "INF_DETECTED": "EXPERIMENTAL",
+      "LOSS_DIVERGENCE": "UNSUPPORTED",
+      "LOSS_SPIKE": "EXPERIMENTAL",
+      "NAN_DETECTED": "EXPERIMENTAL",
+      "THROUGHPUT_REGRESSION": "UNSUPPORTED"
+    },
+    "capability_states": [
+      "IMPLEMENTED",
+      "EXPERIMENTAL",
+      "VALIDATED",
+      "UNSUPPORTED"
+    ],
+    "detectors": [
+      {
+        "candidate_rule": "any metric value is NaN or Inf",
+        "capability": {
+          "INF_DETECTED": "EXPERIMENTAL",
+          "NAN_DETECTED": "EXPERIMENTAL"
+        },
+        "confirmation_rule": "CERTAIN: confirms on first observation (no persistence required, because a measured non-finite value cannot be a statistical accident)",
+        "detector_id": "numerics.finiteness",
+        "disabled_reason": null,
+        "known_failure_modes": [
+          "A persistent non-finite condition previously produced one finding per step; now collapses to one episode by contiguity.",
+          "A non-finite value in a metric that is not emitted (sampled out) is invisible."
+        ],
+        "minimum_history": 0,
+        "quality_metrics": {
+          "note": "precision was 0.026 before the episode model and cooldown; see E6_NUMERICS_REPORT.md for the episode-level figure",
+          "phase1.2_holdout_precision": 0.478,
+          "phase1.2_holdout_recall": 1.0,
+          "phase1.2_post_fault_false_positives": 24
+        },
+        "recovery_rule": "20 steps without a non-finite observation",
+        "status": "ENABLED",
+        "supported_anomaly_types": [
+          "NAN_DETECTED",
+          "INF_DETECTED"
+        ],
+        "version": "1.0"
+      },
+      {
+        "candidate_rule": "value > min(median(window) * 3.0, quantile(window, 0.995) * 1.5), window excluding warm-up",
+        "capability": {
+          "GRADIENT_EXPLOSION": "EXPERIMENTAL"
+        },
+        "confirmation_rule": "aggregate series departed, OR cross-layer multiplicity >= 40%, OR peaking >= 8x, OR 2 observations within 5 steps",
+        "detector_id": "grad.robust_zscore",
+        "disabled_reason": null,
+        "known_failure_modes": [
+          "Healthy heavy-tailed gradients: measured 1.25 FP/1k on the H1 class.",
+          "Detection boundary between x2 (recall 0.75) and x3 (recall 1.00); not sharp.",
+          "A lone layer excursion clears its own envelope easily; mitigated by WEAK classification but present in raw output."
+        ],
+        "minimum_history": 50,
+        "quality_metrics": {
+          "envelope_factor": 1.5,
+          "envelope_quantile": 0.995,
+          "median_multiple": 3.0,
+          "phase1.2_holdout_precision": 0.063,
+          "phase1.2_holdout_recall": 0.78
+        },
+        "recovery_rule": "12 steps without a breach",
+        "status": "ENABLED",
+        "supported_anomaly_types": [
+          "GRADIENT_EXPLOSION"
+        ],
+        "version": "2.0"
+      },
+      {
+        "candidate_rule": "detrended robust z-score above spike_z, or value >= relative_factor * window median",
+        "capability": {
+          "LOSS_SPIKE": "EXPERIMENTAL"
+        },
+        "confirmation_rule": "2 observations within 6 steps, or peak ratio >= 6x",
+        "detector_id": "loss.robust_zscore",
+        "disabled_reason": null,
+        "known_failure_modes": [
+          "A real but benign loss spike (a large batch) is indistinguishable from a fault.",
+          "Cannot distinguish a data-caused spike from an optimisation-caused one.",
+          "Post-fault duplicates under sustained divergence."
+        ],
+        "minimum_history": 50,
+        "quality_metrics": {
+          "phase1.2_holdout_precision": 0.7,
+          "phase1.2_holdout_recall": 1.0
+        },
+        "recovery_rule": "12 steps without a breach",
+        "status": "ENABLED",
+        "supported_anomaly_types": [
+          "LOSS_SPIKE"
+        ],
+        "version": "1.0"
+      },
+      {
+        "candidate_rule": "OLS slope over a trailing window",
+        "capability": {
+          "LOSS_DIVERGENCE": "UNSUPPORTED"
+        },
+        "confirmation_rule": "n/a -- disabled",
+        "detector_id": "loss.trend_slope",
+        "disabled_reason": "Measured precision 0.000 and recall 0.000 on the Phase 1.2 holdout. It does not detect the fault it exists for and pollutes default system metrics. LOSS_DIVERGENCE is therefore declared UNSUPPORTED until a persistence-gated, baseline-normalised implementation is validated.",
+        "known_failure_modes": [
+          "Fires only BEFORE faults: 16 pre-injection false positives.",
+          "Never fires inside the acceptable window: recall 0.000 across a magnitude sweep of sustained divergence (1.006, 1.012, 1.03).",
+          "A brief positive slope is not divergence; the criterion has no persistence requirement and no baseline normalisation."
+        ],
+        "minimum_history": 50,
+        "quality_metrics": {
+          "phase1.2_holdout_precision": 0.0,
+          "phase1.2_holdout_recall": 0.0,
+          "phase1.2_pre_injection_false_positives": 16
+        },
+        "recovery_rule": "n/a -- disabled",
+        "status": "DISABLED",
+        "supported_anomaly_types": [
+          "LOSS_DIVERGENCE"
+        ],
+        "version": "1.0"
+      },
+      {
+        "candidate_rule": "step time above a trailing baseline by throughput_drop_ratio for throughput_consecutive steps",
+        "capability": {
+          "THROUGHPUT_REGRESSION": "UNSUPPORTED"
+        },
+        "confirmation_rule": "n/a -- disabled",
+        "detector_id": "throughput.regression",
+        "disabled_reason": "Recall 0.250 with 9 pre-injection false positives. Not usable as a default incident source. THROUGHPUT_REGRESSION is declared UNSUPPORTED in this build.",
+        "known_failure_modes": [
+          "Recall 0.250 on the Phase 1.2 holdout.",
+          "9 pre-injection false positives: it alarms during warm-up.",
+          "Compares raw step time without normalising for tokens, batch size, sequence length or gradient accumulation."
+        ],
+        "minimum_history": 100,
+        "quality_metrics": {
+          "phase1.2_holdout_precision": 0.1,
+          "phase1.2_holdout_recall": 0.25,
+          "phase1.2_pre_injection_false_positives": 9
+        },
+        "recovery_rule": "n/a -- disabled",
+        "status": "DISABLED",
+        "supported_anomaly_types": [
+          "THROUGHPUT_REGRESSION"
+        ],
+        "version": "1.0"
+      }
+    ],
+    "enabled_detector_ids": [
+      "numerics.finiteness",
+      "grad.robust_zscore",
+      "loss.robust_zscore"
+    ],
+    "generated_by": "training_debugger.registry",
+    "note": "A DISABLED detector is not deleted: historical incidents that reference its detector_id must still resolve, and its measured failure must remain auditable. UNSUPPORTED means no enabled detector can reliably produce that anomaly type in this build.",
+    "registry_version": "phase1.3-1.0",
+    "validated_capabilities": [],
+    "validation_gate": {
+      "episode_precision": 0.8,
+      "episode_recall": 0.8
+    }
+  },
+  "environment": {
+    "cpu_count": 12,
+    "git_commit_sha": null,
+    "git_dirty": null,
+    "machine": "arm64",
+    "os": {
+      "release": "27.0.0",
+      "system": "Darwin",
+      "version": "Darwin Kernel Version 27.0.0: Tue Aug 11 21:20:40 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6020"
+    },
+    "packages": {
+      "duckdb": "1.4.5",
+      "numpy": "2.0.2",
+      "pyarrow": "21.0.0"
+    },
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "processor": "arm",
+    "python_implementation": "CPython",
+    "python_version": "3.9.6",
+    "torch": {
+      "cuda_available": false,
+      "cuda_version": null,
+      "mps_available": true,
+      "num_threads": 8,
+      "torch_version": "2.8.0"
+    }
+  },
+  "frozen_before_first_run": true,
+  "fusion_rule_version": "phase1.3-1.0",
+  "fusion_rules": {
+    "fusion_rule_version": "phase1.3-1.0",
+    "note": "Deterministic. No learned component, no language model. Evaluated in order; the first matching rule promotes.",
+    "promotable_episode_states": [
+      "CONFIRMED"
+    ],
+    "promotion_disabled_types": [
+      "LOSS_SPIKE"
+    ],
+    "rules": [
+      {
+        "accepted_classes": [
+          "CERTAIN"
+        ],
+        "allow_concordant_weak": false,
+        "anomaly_types": [
+          "NAN_DETECTED",
+          "INF_DETECTED"
+        ],
+        "description": "A confirmed episode whose observations are CERTAIN (a measured non-finite value) opens an incident alone.",
+        "min_confirmed_episodes": 1,
+        "min_weak_episodes": 3,
+        "rule_id": "promote.numerics.certain",
+        "severity": "error",
+        "version": "phase1.3-1.0"
+      },
+      {
+        "accepted_classes": [
+          "CERTAIN",
+          "STRONG"
+        ],
+        "allow_concordant_weak": false,
+        "anomaly_types": [
+          "NAN_DETECTED",
+          "INF_DETECTED",
+          "GRADIENT_EXPLOSION",
+          "LOSS_SPIKE",
+          "LOSS_DIVERGENCE",
+          "THROUGHPUT_REGRESSION"
+        ],
+        "description": "One confirmed episode with STRONG evidence (aggregate signal departed, or cross-layer multiplicity at or above the measured threshold) opens an incident.",
+        "min_confirmed_episodes": 1,
+        "min_weak_episodes": 3,
+        "rule_id": "promote.strong.single",
+        "severity": "warn",
+        "version": "phase1.3-1.0"
+      },
+      {
+        "accepted_classes": [],
+        "allow_concordant_weak": true,
+        "anomaly_types": [
+          "GRADIENT_EXPLOSION",
+          "LOSS_SPIKE",
+          "LOSS_DIVERGENCE",
+          "THROUGHPUT_REGRESSION"
+        ],
+        "description": "Three or more concordant confirmed WEAK episodes of the same anomaly type promote jointly. A single WEAK episode never promotes.",
+        "min_confirmed_episodes": 3,
+        "min_weak_episodes": 3,
+        "rule_id": "promote.concordant.weak",
+        "severity": "warn",
+        "version": "phase1.3-1.0"
+      }
+    ],
+    "verdicts": [
+      "CONFIRMED_INCIDENT",
+      "CANDIDATE_ONLY",
+      "INSUFFICIENT_EVIDENCE",
+      "NO_ANOMALY"
+    ]
+  },
+  "phase": "1.3",
+  "scenarios": [
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H0_stable_healthy",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H0_stable_healthy",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H0_stable_healthy",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H0_stable_healthy",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H0_stable_healthy",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H0_stable_healthy",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3005,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H0_stable_healthy",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3006,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H0_stable_healthy",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3007,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H0_stable_healthy",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3008,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H0_stable_healthy",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3009,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H0_stable_healthy",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3010,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H0_stable_healthy",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3011,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H0_stable_healthy",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3012,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H0_stable_healthy",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3013,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H1_heavy_tail_gradients",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H1_heavy_tail_gradients",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H1_heavy_tail_gradients",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H1_heavy_tail_gradients",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H1_heavy_tail_gradients",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H1_heavy_tail_gradients",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3005,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H1_heavy_tail_gradients",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3006,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H1_heavy_tail_gradients",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3007,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H1_heavy_tail_gradients",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3008,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H1_heavy_tail_gradients",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3009,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H1_heavy_tail_gradients",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3010,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H1_heavy_tail_gradients",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3011,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H1_heavy_tail_gradients",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3012,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H1_heavy_tail_gradients",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3013,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H2_noisy_healthy_loss",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H2_noisy_healthy_loss",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H2_noisy_healthy_loss",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H2_noisy_healthy_loss",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H2_noisy_healthy_loss",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H2_noisy_healthy_loss",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3005,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H2_noisy_healthy_loss",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3006,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H2_noisy_healthy_loss",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3007,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H2_noisy_healthy_loss",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3008,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H2_noisy_healthy_loss",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3009,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H2_noisy_healthy_loss",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3010,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H2_noisy_healthy_loss",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3011,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H2_noisy_healthy_loss",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3012,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H2_noisy_healthy_loss",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3013,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H3_scheduler_transition",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H3_scheduler_transition",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H3_scheduler_transition",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H3_scheduler_transition",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H3_scheduler_transition",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H3_scheduler_transition",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3005,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H3_scheduler_transition",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3006,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H3_scheduler_transition",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3007,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H3_scheduler_transition",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3008,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H3_scheduler_transition",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3009,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H3_scheduler_transition",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3010,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H3_scheduler_transition",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3011,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H3_scheduler_transition",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3012,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H3_scheduler_transition",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3013,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H4_gradient_clipping",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H4_gradient_clipping",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H4_gradient_clipping",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H4_gradient_clipping",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H4_gradient_clipping",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H4_gradient_clipping",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3005,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H4_gradient_clipping",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3006,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H4_gradient_clipping",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3007,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H4_gradient_clipping",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3008,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H4_gradient_clipping",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3009,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H4_gradient_clipping",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3010,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H4_gradient_clipping",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3011,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H4_gradient_clipping",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3012,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "H4_gradient_clipping",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3013,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "F7_lr_jump_no_failure",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "benign LR discontinuity",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "F7_lr_jump_no_failure",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "benign LR discontinuity",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "F7_lr_jump_no_failure",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "benign LR discontinuity",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "F7_lr_jump_no_failure",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "benign LR discontinuity",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "F7_lr_jump_no_failure",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "benign LR discontinuity",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "F7_lr_jump_no_failure",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "benign LR discontinuity",
+      "seed": 3005,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "F7_lr_jump_no_failure",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "benign LR discontinuity",
+      "seed": 3006,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "F7_lr_jump_no_failure",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "benign LR discontinuity",
+      "seed": 3007,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "F7_lr_jump_no_failure",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "benign LR discontinuity",
+      "seed": 3008,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "F7_lr_jump_no_failure",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "benign LR discontinuity",
+      "seed": 3009,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "F7_lr_jump_no_failure",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "benign LR discontinuity",
+      "seed": 3010,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "F7_lr_jump_no_failure",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "benign LR discontinuity",
+      "seed": 3011,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "F7_lr_jump_no_failure",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 4,
+      "magnitude": null,
+      "note": "benign LR discontinuity",
+      "seed": 3012,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [],
+      "fault_type": "F7_lr_jump_no_failure",
+      "healthy": true,
+      "injection_step": null,
+      "layers": 6,
+      "magnitude": null,
+      "note": "benign LR discontinuity",
+      "seed": 3013,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fault_type": "F1_loss_spike",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 0.4,
+      "note": "",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fault_type": "F1_loss_spike",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 0.4,
+      "note": "",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fault_type": "F1_loss_spike",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 0.4,
+      "note": "",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fault_type": "F1_loss_spike",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 0.4,
+      "note": "",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fault_type": "F1_loss_spike",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 0.4,
+      "note": "",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fault_type": "F1_loss_spike",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 1.5,
+      "note": "",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fault_type": "F1_loss_spike",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 1.5,
+      "note": "",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fault_type": "F1_loss_spike",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 1.5,
+      "note": "",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fault_type": "F1_loss_spike",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 1.5,
+      "note": "",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fault_type": "F1_loss_spike",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 1.5,
+      "note": "",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fault_type": "F1_loss_spike",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 6.0,
+      "note": "",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fault_type": "F1_loss_spike",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 6.0,
+      "note": "",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fault_type": "F1_loss_spike",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 6.0,
+      "note": "",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fault_type": "F1_loss_spike",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 6.0,
+      "note": "",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.robust_zscore"
+      ],
+      "fault_type": "F1_loss_spike",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 6.0,
+      "note": "",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fault_type": "F2_sustained_divergence",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 1.008,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fault_type": "F2_sustained_divergence",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 1.008,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fault_type": "F2_sustained_divergence",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 1.008,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fault_type": "F2_sustained_divergence",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 1.008,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fault_type": "F2_sustained_divergence",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 1.008,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fault_type": "F2_sustained_divergence",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 1.018,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fault_type": "F2_sustained_divergence",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 1.018,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fault_type": "F2_sustained_divergence",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 1.018,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fault_type": "F2_sustained_divergence",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 1.018,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fault_type": "F2_sustained_divergence",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 1.018,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fault_type": "F2_sustained_divergence",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 1.04,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fault_type": "F2_sustained_divergence",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 1.04,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fault_type": "F2_sustained_divergence",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 1.04,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fault_type": "F2_sustained_divergence",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 1.04,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "loss.trend_slope"
+      ],
+      "fault_type": "F2_sustained_divergence",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 1.04,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 2.5,
+      "note": "",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 2.5,
+      "note": "",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 2.5,
+      "note": "",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 2.5,
+      "note": "",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 2.5,
+      "note": "",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 4.0,
+      "note": "",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 4.0,
+      "note": "",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 4.0,
+      "note": "",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 4.0,
+      "note": "",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 4.0,
+      "note": "",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 7.0,
+      "note": "",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 7.0,
+      "note": "",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 7.0,
+      "note": "",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 7.0,
+      "note": "",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 7.0,
+      "note": "",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 12.0,
+      "note": "",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 12.0,
+      "note": "",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 12.0,
+      "note": "",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 12.0,
+      "note": "",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 12.0,
+      "note": "",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 25.0,
+      "note": "",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 25.0,
+      "note": "",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 25.0,
+      "note": "",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 25.0,
+      "note": "",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 25.0,
+      "note": "",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 50.0,
+      "note": "",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 50.0,
+      "note": "",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 50.0,
+      "note": "",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 50.0,
+      "note": "",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F3_gradient_explosion",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 50.0,
+      "note": "",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fault_type": "F4_nan_loss",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fault_type": "F4_nan_loss",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fault_type": "F4_nan_loss",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fault_type": "F4_nan_loss",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fault_type": "F4_nan_loss",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fault_type": "F5_inf_gradient",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fault_type": "F5_inf_gradient",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fault_type": "F5_inf_gradient",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fault_type": "F5_inf_gradient",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fault_type": "F5_inf_gradient",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fault_type": "F5b_nan_gradient",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fault_type": "F5b_nan_gradient",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fault_type": "F5b_nan_gradient",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fault_type": "F5b_nan_gradient",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness"
+      ],
+      "fault_type": "F5b_nan_gradient",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        121,
+        131
+      ],
+      "d_model": 48,
+      "effect_lag": 1,
+      "expected_detectors": [],
+      "fault_type": "F6_throughput_drop",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 0.006,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        121,
+        131
+      ],
+      "d_model": 32,
+      "effect_lag": 1,
+      "expected_detectors": [],
+      "fault_type": "F6_throughput_drop",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 0.006,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        121,
+        131
+      ],
+      "d_model": 48,
+      "effect_lag": 1,
+      "expected_detectors": [],
+      "fault_type": "F6_throughput_drop",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 0.006,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        121,
+        131
+      ],
+      "d_model": 32,
+      "effect_lag": 1,
+      "expected_detectors": [],
+      "fault_type": "F6_throughput_drop",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": 0.006,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        121,
+        131
+      ],
+      "d_model": 48,
+      "effect_lag": 1,
+      "expected_detectors": [],
+      "fault_type": "F6_throughput_drop",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": 0.006,
+      "note": "detector DISABLED: expect no incident",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness",
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F10_mixed_anomaly",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3000,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness",
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F10_mixed_anomaly",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3001,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness",
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F10_mixed_anomaly",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3002,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 48,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness",
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F10_mixed_anomaly",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 6,
+      "magnitude": null,
+      "note": "",
+      "seed": 3003,
+      "split": "development",
+      "steps": 200
+    },
+    {
+      "acceptable_window": [
+        120,
+        130
+      ],
+      "d_model": 32,
+      "effect_lag": 0,
+      "expected_detectors": [
+        "numerics.finiteness",
+        "grad.robust_zscore"
+      ],
+      "fault_type": "F10_mixed_anomaly",
+      "healthy": false,
+      "injection_step": 120,
+      "layers": 4,
+      "magnitude": null,
+      "note": "",
+      "seed": 3004,
+      "split": "development",
+      "steps": 200
+    }
+  ],
+  "source_hashes": {
+    "src/training_debugger/detectors/base.py": "074243f9e2d90bcca5455211380183d7e1f0dae3db95bef2573a18d9dc48ee1d",
+    "src/training_debugger/detectors/gradient.py": "4a4a23f59ce3ef9de85f2de64058aa80e36d40907870762aec23fec50acc094e",
+    "src/training_debugger/detectors/loss.py": "a3cfaf4b4b839703fdd9e7ee3c3fcbc555a4cc709edc788d1f4a1d211e0326f5",
+    "src/training_debugger/detectors/runner.py": "6b5d20fc308f8b727422ae21f496a02442279108a1b697f0b7eff2a701bcb2ab",
+    "src/training_debugger/detectors/throughput.py": "b93a56eb31b51bce030793e29b236e4bb3a1cea4b21c907227ba174b0bfb934a",
+    "src/training_debugger/episodes/engine.py": "92f95d6dd21a46062286b56b2d91e951cd7cd69d09a4aa67d7504a2d3059d172",
+    "src/training_debugger/episodes/model.py": "51dca3fdf463c139182f6337190f323a0d178cac1e321e9aee4705e43186a83f",
+    "src/training_debugger/fusion/rules.py": "eaa12e5706c210013268586b1d5e13f1bb19b56d987b9620d011ed2efca764b4",
+    "src/training_debugger/registry.py": "f4b19aa4ed17e039ddf143b7ad26b85b4aacd76cc0bdf03bef7489cebcd19b28"
+  },
+  "split": "development",
+  "splits": {
+    "development": {
+      "configs": [
+        {
+          "d_model": 32,
+          "layers": 4
+        },
+        {
+          "d_model": 48,
+          "layers": 6
+        }
+      ],
+      "injection_steps": [
+        120
+      ],
+      "seed_range": [
+        3000,
+        4039
+      ],
+      "steps": 200
+    },
+    "final": {
+      "configs": [
+        {
+          "d_model": 40,
+          "layers": 5
+        },
+        {
+          "d_model": 64,
+          "layers": 3
+        }
+      ],
+      "injection_steps": [
+        100,
+        150
+      ],
+      "seed_range": [
+        5000,
+        5199
+      ],
+      "steps": 240
+    }
+  }
+}

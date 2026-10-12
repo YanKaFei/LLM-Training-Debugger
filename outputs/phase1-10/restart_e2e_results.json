@@ -1,0 +1,20 @@
+{
+  "P0": {
+    "status": "PASS",
+    "tests": "5/5",
+    "cross_process": true
+  },
+  "P1": {
+    "status": "PARTIAL",
+    "exit_code": 0,
+    "verdicts_observed": [
+      "NO_ANOMALY"
+    ],
+    "verdicts_required": [
+      "CONFIRMED_INCIDENT",
+      "CANDIDATE_ONLY",
+      "INSUFFICIENT_EVIDENCE",
+      "NO_ANOMALY"
+    ]
+  }
+}

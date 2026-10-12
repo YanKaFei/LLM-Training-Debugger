@@ -1,0 +1,117 @@
+{
+  "write": {
+    "events": 1000000,
+    "seconds": 27.537222209,
+    "events_per_second": 36314.48344390996,
+    "files": 10,
+    "disk_bytes": 10063091,
+    "disk_mb": 9.596911430358887,
+    "bytes_per_event": 10.063091,
+    "peak_rss_mb": 448.859375,
+    "batches": 20,
+    "chunk_generation_share": 0.24807052037250726,
+    "rows_per_file_config": 100000,
+    "compression": "zstd"
+  },
+  "queries": {
+    "coverage": {
+      "run_id": "bench-1m",
+      "files_total": 10,
+      "files_readable": 10,
+      "files_skipped": 0,
+      "skipped_paths": [],
+      "step_min": 1,
+      "step_max": 100000,
+      "event_types": [
+        "GRADIENT_METRIC",
+        "LOSS",
+        "LR_CHANGE",
+        "STEP_END"
+      ],
+      "row_count": 1000000,
+      "ranks": [
+        0
+      ]
+    },
+    "query_series_full_run": {
+      "median_s": 0.09549141699999808,
+      "rows": 100000
+    },
+    "query_metrics_step_range": {
+      "median_s": 0.013403415999999169,
+      "rows": 1
+    },
+    "query_incident_window": {
+      "median_s": 0.012750457999999298,
+      "rows": 510
+    },
+    "query_events_by_rank": {
+      "median_s": 0.05825566600000087,
+      "rows": 10000
+    },
+    "query_events_by_layer": {
+      "median_s": 0.04452674999999928,
+      "rows": 75000
+    },
+    "query_event_type_counts": {
+      "median_s": 0.0021744589999990183,
+      "rows": 4
+    },
+    "query_series_by_layer": {
+      "median_s": 0.6920272499999989,
+      "layers": 8,
+      "rows": 600000
+    },
+    "query_metrics_limited": {
+      "median_s": 0.026546959000000925,
+      "rows": 1000
+    }
+  },
+  "observer": {
+    "events": 200000,
+    "emit_seconds": 7.884252915999998,
+    "emit_events_per_second": 25367.01982176748,
+    "total_seconds": 10.016675916,
+    "written": 199998,
+    "dropped": 0,
+    "queue_overflow": 0,
+    "writer_failures": 0,
+    "internal_errors": 0,
+    "validation_failures": 0,
+    "max_queue_depth": 50000,
+    "emit_time_total_ns": 2955570161,
+    "us_per_event": 14.777850805,
+    "peak_rss_mb": 1449.421875
+  },
+  "environment": {
+    "python_version": "3.9.6",
+    "python_implementation": "CPython",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "cpu_count": 12,
+    "os": {
+      "system": "Darwin",
+      "release": "27.0.0",
+      "version": "Darwin Kernel Version 27.0.0: Tue Aug 11 21:20:40 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T6020"
+    },
+    "git_commit_sha": null,
+    "git_dirty": null,
+    "packages": {
+      "numpy": "2.0.2",
+      "pyarrow": "21.0.0",
+      "duckdb": "1.4.5"
+    },
+    "torch": {
+      "torch_version": "2.8.0",
+      "cuda_available": false,
+      "cuda_version": null,
+      "mps_available": true,
+      "num_threads": 8
+    },
+    "extra": {
+      "benchmark": "storage",
+      "events": 1000000
+    }
+  }
+}

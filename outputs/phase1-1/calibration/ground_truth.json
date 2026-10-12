@@ -1,0 +1,950 @@
+[
+  {
+    "fault_type": "H0_healthy",
+    "seed": 1000,
+    "split": "calibration",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "H0_healthy",
+    "seed": 1001,
+    "split": "calibration",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "H0_healthy",
+    "seed": 1002,
+    "split": "holdout",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "H0_healthy",
+    "seed": 1003,
+    "split": "calibration",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "H0_healthy",
+    "seed": 1004,
+    "split": "calibration",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "H0_healthy",
+    "seed": 1005,
+    "split": "holdout",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 1000,
+    "split": "calibration",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 1001,
+    "split": "calibration",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 1002,
+    "split": "holdout",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 1003,
+    "split": "calibration",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 1004,
+    "split": "calibration",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "H1_heavy_tail_gradients",
+    "seed": 1005,
+    "split": "holdout",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 1000,
+    "split": "calibration",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 1001,
+    "split": "calibration",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 1002,
+    "split": "holdout",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 1003,
+    "split": "calibration",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 1004,
+    "split": "calibration",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "H2_noisy_healthy_loss",
+    "seed": 1005,
+    "split": "holdout",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "F1_isolated_loss_spike",
+    "seed": 1000,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ]
+  },
+  {
+    "fault_type": "F1_isolated_loss_spike",
+    "seed": 1001,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ]
+  },
+  {
+    "fault_type": "F1_isolated_loss_spike",
+    "seed": 1002,
+    "split": "holdout",
+    "injection_step": 120,
+    "injection_scope": "loss",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ]
+  },
+  {
+    "fault_type": "F1_isolated_loss_spike",
+    "seed": 1003,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ]
+  },
+  {
+    "fault_type": "F1_isolated_loss_spike",
+    "seed": 1004,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ]
+  },
+  {
+    "fault_type": "F1_isolated_loss_spike",
+    "seed": 1005,
+    "split": "holdout",
+    "injection_step": 120,
+    "injection_scope": "loss",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "loss.robust_zscore"
+    ]
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 1000,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ]
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 1001,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ]
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 1002,
+    "split": "holdout",
+    "injection_step": 120,
+    "injection_scope": "loss",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ]
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 1003,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ]
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 1004,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ]
+  },
+  {
+    "fault_type": "F2_sustained_divergence",
+    "seed": 1005,
+    "split": "holdout",
+    "injection_step": 120,
+    "injection_scope": "loss",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "loss.trend_slope",
+      "loss.robust_zscore"
+    ]
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 1000,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "all_gradients",
+    "affected_layers": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ]
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 1001,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "all_gradients",
+    "affected_layers": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ]
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 1002,
+    "split": "holdout",
+    "injection_step": 120,
+    "injection_scope": "all_gradients",
+    "affected_layers": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ]
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 1003,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "all_gradients",
+    "affected_layers": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ]
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 1004,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "all_gradients",
+    "affected_layers": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ]
+  },
+  {
+    "fault_type": "F3_gradient_explosion",
+    "seed": 1005,
+    "split": "holdout",
+    "injection_step": 120,
+    "injection_scope": "all_gradients",
+    "affected_layers": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "grad.robust_zscore"
+    ]
+  },
+  {
+    "fault_type": "F4_nan_loss",
+    "seed": 1000,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss_or_gradient",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "numerics.finiteness"
+    ]
+  },
+  {
+    "fault_type": "F4_nan_loss",
+    "seed": 1001,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss_or_gradient",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "numerics.finiteness"
+    ]
+  },
+  {
+    "fault_type": "F4_nan_loss",
+    "seed": 1002,
+    "split": "holdout",
+    "injection_step": 120,
+    "injection_scope": "loss_or_gradient",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "numerics.finiteness"
+    ]
+  },
+  {
+    "fault_type": "F4_nan_loss",
+    "seed": 1003,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss_or_gradient",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "numerics.finiteness"
+    ]
+  },
+  {
+    "fault_type": "F4_nan_loss",
+    "seed": 1004,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss_or_gradient",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "numerics.finiteness"
+    ]
+  },
+  {
+    "fault_type": "F4_nan_loss",
+    "seed": 1005,
+    "split": "holdout",
+    "injection_step": 120,
+    "injection_scope": "loss_or_gradient",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "numerics.finiteness"
+    ]
+  },
+  {
+    "fault_type": "F5_inf_gradient",
+    "seed": 1000,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss_or_gradient",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "numerics.finiteness"
+    ]
+  },
+  {
+    "fault_type": "F5_inf_gradient",
+    "seed": 1001,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss_or_gradient",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "numerics.finiteness"
+    ]
+  },
+  {
+    "fault_type": "F5_inf_gradient",
+    "seed": 1002,
+    "split": "holdout",
+    "injection_step": 120,
+    "injection_scope": "loss_or_gradient",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "numerics.finiteness"
+    ]
+  },
+  {
+    "fault_type": "F5_inf_gradient",
+    "seed": 1003,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss_or_gradient",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "numerics.finiteness"
+    ]
+  },
+  {
+    "fault_type": "F5_inf_gradient",
+    "seed": 1004,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss_or_gradient",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "numerics.finiteness"
+    ]
+  },
+  {
+    "fault_type": "F5_inf_gradient",
+    "seed": 1005,
+    "split": "holdout",
+    "injection_step": 120,
+    "injection_scope": "loss_or_gradient",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "numerics.finiteness"
+    ]
+  },
+  {
+    "fault_type": "F6_throughput_degradation",
+    "seed": 1000,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "throughput.regression"
+    ]
+  },
+  {
+    "fault_type": "F6_throughput_degradation",
+    "seed": 1001,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "throughput.regression"
+    ]
+  },
+  {
+    "fault_type": "F6_throughput_degradation",
+    "seed": 1002,
+    "split": "holdout",
+    "injection_step": 120,
+    "injection_scope": "loss",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "throughput.regression"
+    ]
+  },
+  {
+    "fault_type": "F6_throughput_degradation",
+    "seed": 1003,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "throughput.regression"
+    ]
+  },
+  {
+    "fault_type": "F6_throughput_degradation",
+    "seed": 1004,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "loss",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "throughput.regression"
+    ]
+  },
+  {
+    "fault_type": "F6_throughput_degradation",
+    "seed": 1005,
+    "split": "holdout",
+    "injection_step": 120,
+    "injection_scope": "loss",
+    "affected_layers": [],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "throughput.regression"
+    ]
+  },
+  {
+    "fault_type": "F7_lr_discontinuity_no_failure",
+    "seed": 1000,
+    "split": "calibration",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "F7_lr_discontinuity_no_failure",
+    "seed": 1001,
+    "split": "calibration",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "F7_lr_discontinuity_no_failure",
+    "seed": 1002,
+    "split": "holdout",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "F7_lr_discontinuity_no_failure",
+    "seed": 1003,
+    "split": "calibration",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "F7_lr_discontinuity_no_failure",
+    "seed": 1004,
+    "split": "calibration",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "F7_lr_discontinuity_no_failure",
+    "seed": 1005,
+    "split": "holdout",
+    "injection_step": null,
+    "injection_scope": "none",
+    "affected_layers": [],
+    "expected_symptom_window": [],
+    "expected_detectors": []
+  },
+  {
+    "fault_type": "F10_mixed_anomaly",
+    "seed": 1000,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "all_gradients",
+    "affected_layers": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "grad.robust_zscore",
+      "loss.robust_zscore",
+      "numerics.finiteness"
+    ]
+  },
+  {
+    "fault_type": "F10_mixed_anomaly",
+    "seed": 1001,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "all_gradients",
+    "affected_layers": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "grad.robust_zscore",
+      "loss.robust_zscore",
+      "numerics.finiteness"
+    ]
+  },
+  {
+    "fault_type": "F10_mixed_anomaly",
+    "seed": 1002,
+    "split": "holdout",
+    "injection_step": 120,
+    "injection_scope": "all_gradients",
+    "affected_layers": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "grad.robust_zscore",
+      "loss.robust_zscore",
+      "numerics.finiteness"
+    ]
+  },
+  {
+    "fault_type": "F10_mixed_anomaly",
+    "seed": 1003,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "all_gradients",
+    "affected_layers": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "grad.robust_zscore",
+      "loss.robust_zscore",
+      "numerics.finiteness"
+    ]
+  },
+  {
+    "fault_type": "F10_mixed_anomaly",
+    "seed": 1004,
+    "split": "calibration",
+    "injection_step": 120,
+    "injection_scope": "all_gradients",
+    "affected_layers": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "grad.robust_zscore",
+      "loss.robust_zscore",
+      "numerics.finiteness"
+    ]
+  },
+  {
+    "fault_type": "F10_mixed_anomaly",
+    "seed": 1005,
+    "split": "holdout",
+    "injection_step": 120,
+    "injection_scope": "all_gradients",
+    "affected_layers": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "expected_symptom_window": [
+      118,
+      160
+    ],
+    "expected_detectors": [
+      "grad.robust_zscore",
+      "loss.robust_zscore",
+      "numerics.finiteness"
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+[W2] training 216 runs once ...
+  cached 20/216 (24s)
+  cached 40/216 (47s)
+  cached 60/216 (70s)
+  cached 80/216 (105s)
+  cached 100/216 (142s)
+  cached 120/216 (175s)
+  cached 140/216 (197s)
+  cached 160/216 (218s)
+  cached 180/216 (240s)
+  cached 200/216 (262s)
+[W2] evidence cached: 216 runs
+[W2] evaluating resume_after_steps=20 ...
+[W2] evaluating resume_after_steps=30 ...
+[W2] evaluating resume_after_steps=40 ...
+[W2] evaluating resume_after_steps=60 ...
+[W2] evaluating resume_after_steps=never ...
+
+resume  tp   fp   fn   precision  recall  healthy_fp  abstain  delay
+20      44   6    52   0.880      0.458   0.050       0.031    0
+30      43   6    53   0.878      0.448   0.050       0.042    0
+40      43   6    53   0.878      0.448   0.050       0.042    0
+60      43   6    53   0.878      0.448   0.050       0.042    0
+never   43   6    53   0.878      0.448   0.050       0.042    0
+
+qualifying candidates: NONE
+paired vs default(40): {"20": {"gained_confirmed": 1, "lost_confirmed": 0, "discordant_pairs": 1, "sign_test_p": 1.0}, "30": {"gained_confirmed": 0, "lost_confirmed": 0, "discordant_pairs": 0, "sign_test_p": null}, "60": {"gained_confirmed": 0, "lost_confirmed": 0, "discordant_pairs": 0, "sign_test_p": null}, "never": {"gained_confirmed": 0, "lost_confirmed": 0, "discordant_pairs": 0, "sign_test_p": null}}
