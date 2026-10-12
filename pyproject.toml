@@ -11,7 +11,19 @@ license = { text = "Apache-2.0" }
 dependencies = [
     "numpy>=1.23",
     "pyarrow>=12",
-    "duckdb>=0.10",
+    # Upper bound is deliberate: duckdb 1.5.6 breaks `fetch_arrow_table()` with
+    # `SystemError: <built-in function __import__> returned a result with an
+    # exception set`. Observed on CI with duckdb 1.5.6 / pyarrow 26.0.0 /
+    # numpy 2.5.4 on Python 3.11 and 3.12: 23 failures, all of them in the two
+    # storage test modules, all of them at that one call. The 560-odd other tests
+    # passed and `import pyarrow` worked, so the fault is in duckdb's Arrow bridge,
+    # not in pyarrow.
+    #
+    # Python 3.9 cannot see it, because duckdb 1.5.x requires Python >= 3.10 and
+    # 3.9 resolves to 1.4.5. That is why this was invisible locally and appeared
+    # on the first CI run. Anyone on Python 3.10+ with an unpinned install had a
+    # broken build, which is why the bound is on the dependency rather than on CI.
+    "duckdb>=0.10,<1.5",
 ]
 
 [project.optional-dependencies]

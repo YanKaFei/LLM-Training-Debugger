@@ -43,6 +43,31 @@ jobs:
       - name: Quickstart
         run: python examples/quickstart.py
 
+  # Allowed to fail, on purpose.
+  #
+  # `duckdb` carries an upper bound because 1.5.6 breaks `fetch_arrow_table()`.
+  # Without this job nobody would notice when upstream fixes it, and the bound
+  # would quietly outlive its reason. A red run here is information, not a
+  # regression: it means the bound is worth re-testing.
+  latest-dependencies:
+    name: latest dependencies (informational)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install with every upper bound ignored
+        run: |
+          python -m pip install --upgrade pip
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -e ".[dev]"
+          pip install --upgrade duckdb pyarrow numpy
+          python -c "import duckdb, pyarrow, numpy; print('duckdb', duckdb.__version__, 'pyarrow', pyarrow.__version__, 'numpy', numpy.__version__)"
+      - name: Test
+        run: pytest -q
+
   package:
     name: build sdist and wheel
     runs-on: ubuntu-latest
