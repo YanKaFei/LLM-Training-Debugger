@@ -164,5 +164,11 @@ def test_drift_compares_source_not_revision_strings():
     if not head:
         return
     assert _source_differs(head, head) is False
-    # A revision that predates the scoring and provenance work changed the source.
-    assert _source_differs("9e4550cef2151b33bd89dabe45fa9480ecdde823", head) is True
+    # A revision that predates the scoring work changed src-adjacent source.
+    assert _source_differs("e6369aa", head) is True
+    # A revision that differs only in the drift checker itself must NOT count: editing
+    # a unit test or this checker cannot alter a number in outputs/, and a check that
+    # cries drift whenever somebody adds a test is a check that gets ignored.
+    prev = subprocess.run(["git", "rev-parse", "HEAD~1"], cwd=str(REPO_ROOT),
+                          capture_output=True, text=True).stdout.strip()
+    assert _source_differs(prev, head) is False

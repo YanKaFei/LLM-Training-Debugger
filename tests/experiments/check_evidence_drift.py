@@ -51,9 +51,23 @@ def _ledger() -> set:
     }
 
 
-#: Paths that define "the code". An artifact is reproducible from its revision when
-#: these are identical; evidence churn and documentation are not the code.
-SOURCE_PATHS = ("src", "tests", "pyproject.toml")
+#: Paths whose contents can change a measurement.
+#:
+#: Deliberately not all of `tests/`. Editing a unit test or this checker cannot alter a
+#: single number in `outputs/`, and a check that cries drift every time somebody adds a
+#: test is a check that gets ignored. The corpus generators, the model factory and the
+#: evaluation truth all can, so they are included.
+SOURCE_PATHS = (
+    "src",
+    "tests/experiments",
+    "tests/tiny_model.py",
+    "tests/evaluation_truth.py",
+    "tests/fault_injection",
+    "pyproject.toml",
+)
+
+#: Files inside SOURCE_PATHS that nonetheless cannot affect a measurement.
+SOURCE_EXCLUDES = ("tests/experiments/check_evidence_drift.py",)
 
 
 def _source_differs(from_sha: str, to_sha: str) -> bool:
@@ -72,8 +86,9 @@ def _source_differs(from_sha: str, to_sha: str) -> bool:
         return False
     if not _looks_like_a_sha(from_sha):
         return True
+    pathspec = [*SOURCE_PATHS, *(":(exclude)" + p for p in SOURCE_EXCLUDES)]
     completed = subprocess.run(
-        ["git", "diff", "--quiet", from_sha, to_sha, "--", *SOURCE_PATHS],
+        ["git", "diff", "--quiet", from_sha, to_sha, "--", *pathspec],
         cwd=str(ROOT), capture_output=True,
     )
     if completed.returncode not in (0, 1):
