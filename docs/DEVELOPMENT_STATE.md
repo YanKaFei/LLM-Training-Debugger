@@ -59,7 +59,7 @@ LAST_COMPLETED_TASK:     W1 COMPLETE -- temporal integrity. Root cause: the epis
 |---|---|---|---|
 | 1 | ~~`evidence_completeness`~~ | correctness | **CLOSED** (A1) |
 | 2 | S1 healthy-run false positive — root cause is the frozen reference never resuming, because benign excursions occur closer together than `resume_after_steps=40`. Fix needs a measured design decision, not a threshold nudge | detector | **DIAGNOSED**, fix not applied |
-| 3 | ~~persisted scorer~~ | scoring | **CLOSED** (B1) — but the development store holds only 14 runs and 0 relations, so quality is unmeasurable until the corpus is re-persisted |
+| 3 | ~~persisted scorer~~ | scoring | **CLOSED** (B1). The store no longer holds only 14 runs: the corpora were re-persisted and now carry 42 (development), 45 (phase 1.3) and 30 (paired, with raw events) runs. Relation scoring stays `NOT ESTIMABLE` because the relation linker is disabled by default (D-034), not because the corpus is missing. |
 | 4 | Historical 23 duplicates not split into product vs scorer error | audit | open |
 | 5 | Observer accounting race unexplained | stability | UNRESOLVED |
 | 8 | ~~S1~~ | detector | **CLOSED as a test-category error** — see D-011; the underlying 7.7 % healthy FP rate is a detector-quality finding carried under DETECTOR_RELIABILITY |

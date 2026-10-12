@@ -243,8 +243,25 @@ def main() -> int:
         "healthy_false_incident_probe": probe,
         "elapsed_s": round(time.perf_counter() - started, 1),
     }
-    (OUTPUT_DIR / "smoke_results.json").write_text(
-        json.dumps(summary, indent=2, default=str), encoding="utf-8")
+    # Rewrite every absolute path under the checkout as a path relative to it,
+    # BEFORE the result is written.
+    #
+    # This file is committed as evidence, and the README tells a reader to
+    # regenerate it. Writing `ROOT` verbatim therefore embedded one machine's
+    # absolute path into a tracked artefact on every run -- observed as
+    # `/Users/<name>/Desktop/LLM-Training-Debugger/...` reappearing in
+    # `cli_command` and `store_paths` after the file had already been sanitised
+    # once. Sanitising the output is treating the symptom; the generator is the
+    # cause, and a relative path is also the more honest thing to record: it says
+    # where the store is *within the repository*, not where the repository was.
+    text = json.dumps(summary, indent=2, default=str)
+    text = text.replace(str(ROOT) + "/", "").replace(str(ROOT), ".")
+    if str(ROOT) in text:
+        raise SystemExit(
+            "refusing to write smoke_results.json: an absolute checkout path survived "
+            "sanitisation and would be committed as evidence"
+        )
+    (OUTPUT_DIR / "smoke_results.json").write_text(text, encoding="utf-8")
     print("")
     for r in results:
         print("{:<4} {:<34} expected={:<26} actual={:<26} {}".format(

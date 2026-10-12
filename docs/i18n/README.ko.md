@@ -194,7 +194,8 @@ training-debugger --root <store> scan      <r1> ...    # 배치: 어느 런이 �
 - 4–6층 모델에서만 검증되었습니다.
 
 전체 목록: [KNOWN_LIMITATIONS.md](../../KNOWN_LIMITATIONS.md) · 설계 기록:
-[DECISIONS.md](../DECISIONS.md) · 현재 상태: [DEVELOPMENT_STATE.md](../DEVELOPMENT_STATE.md)
+[DECISIONS.md](../DECISIONS.md) · **읽기 쉬운 색인: [DECISIONS_INDEX.md](../DECISIONS_INDEX.md)** —
+이 프로젝트가 정정하거나 철회해야 했던 모든 주장의 표로 시작합니다 · 현재 상태: [DEVELOPMENT_STATE.md](../DEVELOPMENT_STATE.md)
 
 ## 수치 재현
 

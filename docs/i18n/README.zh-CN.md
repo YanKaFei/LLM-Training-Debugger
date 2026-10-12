@@ -184,7 +184,8 @@ wall-clock 与内存类指标默认排除 —— *计时差异不是算法发散
 - 仅在 4–6 层模型上验证过。
 
 完整列表：[KNOWN_LIMITATIONS.md](../../KNOWN_LIMITATIONS.md) · 设计记录：
-[DECISIONS.md](../DECISIONS.md) · 当前状态：[DEVELOPMENT_STATE.md](../DEVELOPMENT_STATE.md)
+[DECISIONS.md](../DECISIONS.md) · **可读索引：[DECISIONS_INDEX.md](../DECISIONS_INDEX.md)**，
+开头就是本项目所有被迫更正或撤回的声明 · 当前状态：[DEVELOPMENT_STATE.md](../DEVELOPMENT_STATE.md)
 
 ## 复现这些数字
 

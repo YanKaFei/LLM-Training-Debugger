@@ -196,7 +196,9 @@ Published because a monitor whose failures are undocumented cannot be trusted:
 - Validated only on 4–6 layer models.
 
 Full list: [KNOWN_LIMITATIONS.md](KNOWN_LIMITATIONS.md) · Design record:
-[DECISIONS.md](docs/DECISIONS.md) · Current state: [DEVELOPMENT_STATE.md](docs/DEVELOPMENT_STATE.md)
+[DECISIONS.md](docs/DECISIONS.md) · **Readable index: [DECISIONS_INDEX.md](docs/DECISIONS_INDEX.md)**,
+which opens with a table of every claim this project has had to correct or withdraw ·
+Current state: [DEVELOPMENT_STATE.md](docs/DEVELOPMENT_STATE.md)
 
 ## Reproducing the numbers
 

@@ -195,7 +195,8 @@ training-debugger --root <store> scan      <r1> ...    # バッチ：どの実�
 - 4〜6 層モデルでのみ検証されています。
 
 全リスト：[KNOWN_LIMITATIONS.md](../../KNOWN_LIMITATIONS.md) · 設計記録：
-[DECISIONS.md](../DECISIONS.md) · 現在の状態：[DEVELOPMENT_STATE.md](../DEVELOPMENT_STATE.md)
+[DECISIONS.md](../DECISIONS.md) · **読みやすい索引：[DECISIONS_INDEX.md](../DECISIONS_INDEX.md)** —
+このプロジェクトが訂正・撤回を余儀なくされた全主張の表から始まります · 現在の状態：[DEVELOPMENT_STATE.md](../DEVELOPMENT_STATE.md)
 
 ## 数値の再現
 

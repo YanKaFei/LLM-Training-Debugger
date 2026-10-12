@@ -205,7 +205,9 @@ Publiées parce qu'**un moniteur dont les échecs ne sont pas documentés ne peu
 - Validé uniquement sur des modèles de 4 à 6 couches.
 
 Liste complète : [KNOWN_LIMITATIONS.md](../../KNOWN_LIMITATIONS.md) · Journal de conception :
-[DECISIONS.md](../DECISIONS.md) · État actuel : [DEVELOPMENT_STATE.md](../DEVELOPMENT_STATE.md)
+[DECISIONS.md](../DECISIONS.md) · **Index lisible : [DECISIONS_INDEX.md](../DECISIONS_INDEX.md)**, qui
+s'ouvre sur un tableau de toutes les affirmations que ce projet a dû corriger ou retirer ·
+État actuel : [DEVELOPMENT_STATE.md](../DEVELOPMENT_STATE.md)
 
 ## Reproduire les chiffres
 

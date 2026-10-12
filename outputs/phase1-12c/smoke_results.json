@@ -17,10 +17,10 @@
       "episode_count": 5,
       "incident_count": 1,
       "relation_count": 0,
-      "cli_command": "training-debugger --root <repo>/outputs/phase1-12c/store verdicts s1-healthy",
+      "cli_command": "training-debugger --root outputs/phase1-12c/store verdicts s1-healthy",
       "cli_exit_code": 0,
       "store_paths": [
-        "<repo>/outputs/phase1-12c/store/runs/s1-healthy"
+        "outputs/phase1-12c/store/runs/s1-healthy"
       ],
       "passed": true,
       "failed_assertions": [],
@@ -41,10 +41,10 @@
       "episode_count": 7,
       "incident_count": 3,
       "relation_count": 0,
-      "cli_command": "training-debugger --root <repo>/outputs/phase1-12c/store verdicts s2-confirmed",
+      "cli_command": "training-debugger --root outputs/phase1-12c/store verdicts s2-confirmed",
       "cli_exit_code": 0,
       "store_paths": [
-        "<repo>/outputs/phase1-12c/store/runs/s2-confirmed"
+        "outputs/phase1-12c/store/runs/s2-confirmed"
       ],
       "passed": true,
       "failed_assertions": []
@@ -61,10 +61,10 @@
       "episode_count": 1,
       "incident_count": 0,
       "relation_count": 0,
-      "cli_command": "training-debugger --root <repo>/outputs/phase1-12c/store verdicts s3-uncertain",
+      "cli_command": "training-debugger --root outputs/phase1-12c/store verdicts s3-uncertain",
       "cli_exit_code": 0,
       "store_paths": [
-        "<repo>/outputs/phase1-12c/store/runs/s3-uncertain"
+        "outputs/phase1-12c/store/runs/s3-uncertain"
       ],
       "passed": true,
       "failed_assertions": []
@@ -81,10 +81,10 @@
       "episode_count": 2,
       "incident_count": 2,
       "relation_count": 0,
-      "cli_command": "training-debugger --root <repo>/outputs/phase1-12c/store verdicts s4-standalone-nan",
+      "cli_command": "training-debugger --root outputs/phase1-12c/store verdicts s4-standalone-nan",
       "cli_exit_code": 0,
       "store_paths": [
-        "<repo>/outputs/phase1-12c/store/runs/s4-standalone-nan"
+        "outputs/phase1-12c/store/runs/s4-standalone-nan"
       ],
       "passed": true,
       "failed_assertions": []
@@ -101,10 +101,10 @@
       "episode_count": 2,
       "incident_count": 0,
       "relation_count": 1,
-      "cli_command": "training-debugger --root <repo>/outputs/phase1-12c/store verdicts s5-linked",
+      "cli_command": "training-debugger --root outputs/phase1-12c/store verdicts s5-linked",
       "cli_exit_code": 0,
       "store_paths": [
-        "<repo>/outputs/phase1-12c/store/runs/s5-linked"
+        "outputs/phase1-12c/store/runs/s5-linked"
       ],
       "passed": true,
       "failed_assertions": [],
@@ -125,10 +125,10 @@
       "episode_count": 1,
       "incident_count": 0,
       "relation_count": 0,
-      "cli_command": "training-debugger --root <repo>/outputs/phase1-12c/store verdicts s6-candidate",
+      "cli_command": "training-debugger --root outputs/phase1-12c/store verdicts s6-candidate",
       "cli_exit_code": 0,
       "store_paths": [
-        "<repo>/outputs/phase1-12c/store/runs/s6-candidate"
+        "outputs/phase1-12c/store/runs/s6-candidate"
       ],
       "passed": true,
       "failed_assertions": []
@@ -145,10 +145,10 @@
       "episode_count": 1,
       "incident_count": 0,
       "relation_count": 0,
-      "cli_command": "training-debugger --root <repo>/outputs/phase1-12c/store verdicts s7-abstain",
+      "cli_command": "training-debugger --root outputs/phase1-12c/store verdicts s7-abstain",
       "cli_exit_code": 0,
       "store_paths": [
-        "<repo>/outputs/phase1-12c/store/runs/s7-abstain"
+        "outputs/phase1-12c/store/runs/s7-abstain"
       ],
       "passed": true,
       "failed_assertions": []
@@ -165,7 +165,7 @@
       "cli_command": null,
       "cli_exit_code": null,
       "store_paths": [
-        "<repo>/outputs/phase1-12c/store"
+        "outputs/phase1-12c/store"
       ],
       "passed": true,
       "failed_assertions": [],
@@ -213,5 +213,5 @@
     "gate": 0.05,
     "gate_passed": false
   },
-  "elapsed_s": 22.5
+  "elapsed_s": 24.5
 }
