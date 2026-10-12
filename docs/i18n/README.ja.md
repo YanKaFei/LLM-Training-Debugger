@@ -207,8 +207,21 @@ python examples/quickstart.py
 python tests/performance/audit_observer_cost.py      # 信頼区間付きのペア比較オーバーヘッド
 ```
 
-本 README の主要な数値はすべて `tests/experiments/` または `tests/performance/` のスクリプトが生成し、
+**すべての主要な数値が現在再現可能なわけではなく、この点は明記する価値があります。**
+検出器と性能の測定は `tests/experiments/` と `tests/performance/` のスクリプトが生成し、
 生の出力は `outputs/` 以下にコミットされています。
+
+一方、**品質の数値** —— 実行 precision 0.947 / recall 0.500、EPISODE precision 0.326、
+INCIDENT precision 0.720、`missed_primary_faults 18` —— は、**現在のリポジトリの状態からは
+再導出できません。** 測定はされていますが、その測定に用いた採点入力をコミットしたことが
+ありません。どちらの ground truth も採点器が読む `primary_fault_type` を持たず、開発コーパスの
+ground truth には `acceptable_window` がなく、故障クラス写像はコーパスが実際に使うシナリオ
+ラベルと**交わりを持ちません。** また旧採点成果物には store パス、ground truth パス、コマンドが
+記録されていません。
+
+`tests/experiments/level_scoring.py` は store から採点し入力を記録するようになり、欠落した
+フィールドをでっち上げる代わりに **fail closed** します。したがって上記の数値の状態は撤回では
+なく「測定済みだが再現不能」です。[EVIDENCE_REGENERATION_FINDINGS.md](../../outputs/v0.1.8-alpha/EVIDENCE_REGENERATION_FINDINGS.md) 参照。
 
 ## プロジェクトの状態
 

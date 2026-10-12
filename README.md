@@ -209,8 +209,23 @@ python examples/quickstart.py
 python tests/performance/audit_observer_cost.py      # paired overhead, with confidence intervals
 ```
 
-Every headline figure in this README is produced by a script in `tests/experiments/` or
-`tests/performance/`, and the raw output is committed under `outputs/`.
+**Not every headline figure is currently reproducible, and this is worth stating plainly.**
+The detector and performance measurements are produced by scripts in
+`tests/experiments/` and `tests/performance/`, and the raw output is committed under
+`outputs/`.
+
+The **quality figures** — RUN precision 0.947 / recall 0.500, EPISODE precision 0.326,
+INCIDENT precision 0.720, `missed_primary_faults 18` — **cannot be re-derived from this
+repository as it stands.** They were measured, but the scoring input they were measured with
+was never checked in: neither ground truth carries the `primary_fault_type` the scorer reads,
+the development ground truth has no `acceptable_window`, the fault-class mapping does not
+intersect the scenario labels the corpora actually use, and the old scoring artifacts record
+no store, no ground-truth path and no command.
+
+`tests/experiments/level_scoring.py` now scores from a store and records its inputs, and it
+**fails closed** rather than inventing the missing fields. The figures above are therefore
+recorded as measured-but-not-reproducible rather than withdrawn. See
+[EVIDENCE_REGENERATION_FINDINGS.md](outputs/v0.1.8-alpha/EVIDENCE_REGENERATION_FINDINGS.md).
 
 ## Project status
 

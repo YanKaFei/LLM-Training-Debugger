@@ -196,8 +196,18 @@ python examples/quickstart.py
 python tests/performance/audit_observer_cost.py      # 配对开销测量，含置信区间
 ```
 
-本 README 中每一个关键数字都由图 `tests/experiments/` 或 `tests/performance/` 中的脚本产出，
-原始输出已提交在 `outputs/` 下。
+**并非每个关键数字目前都可复现，这一点值得直说。** 检测器与性能测量由图
+`tests/experiments/` 与 `tests/performance/` 产出，原始输出已提交在 `outputs/` 下。
+
+而**质量数字** —— run 级 precision 0.947 / recall 0.500、EPISODE precision 0.326、
+INCIDENT precision 0.720、`missed_primary_faults 18` —— **在仓库当前状态下无法重新推导**。
+它们是被测量过的，但测量所用的评分输入从未入库：两份 ground truth 都不含评分器读取的
+`primary_fault_type`，开发语料的 ground truth 没有 `acceptable_window`，故障类别映射与语料
+实际使用的 scenario 标签**毫无交集**，且旧的评分产物没有记录 store、ground truth 路径或命令。
+
+`tests/experiments/level_scoring.py` 现在可以从 store 评分并记录其输入，且**宁可 fail closed
+也不臆造缺失字段**。因此上述数字的状态是「已测量但不可复现」，而非撤回。详见
+[EVIDENCE_REGENERATION_FINDINGS.md](../../outputs/v0.1.8-alpha/EVIDENCE_REGENERATION_FINDINGS.md)。
 
 ## 项目状态
 

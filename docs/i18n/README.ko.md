@@ -206,8 +206,21 @@ python examples/quickstart.py
 python tests/performance/audit_observer_cost.py      # 신뢰구간을 포함한 페어 오버헤드
 ```
 
-이 README의 모든 핵심 수치는 `tests/experiments/` 또는 `tests/performance/`의 스크립트가
-생성하며, 원시 출력은 `outputs/` 아래에 커밋되어 있습니다.
+**모든 핵심 수치가 현재 재현 가능한 것은 아니며, 이 점은 분명히 밝힐 가치가 있습니다.**
+탐지기 및 성능 측정은 `tests/experiments/`와 `tests/performance/`의 스크립트가 생성하며,
+원시 출력은 `outputs/` 아래에 커밋되어 있습니다.
+
+**품질 수치** — 런 precision 0.947 / recall 0.500, EPISODE precision 0.326,
+INCIDENT precision 0.720, `missed_primary_faults 18` — 는 **현재 저장소 상태로는 다시 도출할 수
+없습니다.** 측정된 값이지만, 측정에 사용된 채점 입력이 커밋된 적이 없습니다. 두 ground truth
+모두 채점기가 읽는 `primary_fault_type`을 갖고 있지 않고, 개발 코퍼스의 ground truth에는
+`acceptable_window`가 없으며, 결함 클래스 매핑은 코퍼스가 실제로 사용하는 시나리오 레이블과
+**교집합이 없습니다.** 또한 구 채점 산출물에는 store 경로, ground truth 경로, 명령이 기록되어
+있지 않습니다.
+
+`tests/experiments/level_scoring.py`는 이제 store에서 채점하고 입력을 기록하며, 누락된 필드를
+지어내는 대신 **fail closed** 합니다. 따라서 위 수치의 상태는 철회가 아니라
+"측정되었으나 재현 불가"입니다. [EVIDENCE_REGENERATION_FINDINGS.md](../../outputs/v0.1.8-alpha/EVIDENCE_REGENERATION_FINDINGS.md) 참조.
 
 ## 프로젝트 상태
 

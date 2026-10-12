@@ -218,8 +218,24 @@ python examples/quickstart.py
 python tests/performance/audit_observer_cost.py      # surcharge appariée, avec intervalles de confiance
 ```
 
-Chaque chiffre clé de ce README est produit par un script dans `tests/experiments/` ou
-`tests/performance/`, et la sortie brute est versionnée sous `outputs/`.
+**Tous les chiffres clés ne sont pas actuellement reproductibles, et cela vaut la peine de le
+dire clairement.** Les mesures du détecteur et de performance sont produites par des scripts
+dans `tests/experiments/` et `tests/performance/`, et la sortie brute est versionnée sous
+`outputs/`.
+
+Les **chiffres de qualité** — précision 0.947 / rappel 0.500 au niveau exécution, précision
+EPISODE 0.326, précision INCIDENT 0.720, `missed_primary_faults 18` — **ne peuvent pas être
+redérivés de ce dépôt en l'état.** Ils ont été mesurés, mais l'entrée de notation avec
+laquelle ils l'ont été n'a jamais été versionnée : aucune des deux vérités terrain ne porte le
+`primary_fault_type` que lit le scoreur, la vérité terrain de développement n'a pas
+d'`acceptable_window`, la table de correspondance des classes de défaut n'a **aucune
+intersection** avec les étiquettes de scénario réellement utilisées par les corpus, et les
+anciens artefacts de notation ne consignent ni store, ni chemin de vérité terrain, ni commande.
+
+`tests/experiments/level_scoring.py` note désormais depuis un store et consigne ses entrées, et
+il **échoue en mode fermé** plutôt que d'inventer les champs manquants. Les chiffres ci-dessus
+sont donc enregistrés comme mesurés mais non reproductibles, et non retirés. Voir
+[EVIDENCE_REGENERATION_FINDINGS.md](../../outputs/v0.1.8-alpha/EVIDENCE_REGENERATION_FINDINGS.md).
 
 ## État du projet
 
